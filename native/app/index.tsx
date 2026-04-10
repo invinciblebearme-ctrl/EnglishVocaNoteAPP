@@ -7,57 +7,64 @@ import {
   TouchableOpacity, 
   Image, 
   ScrollView,
-  Dimensions,
+  DeviceEventEmitter,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Haptics from 'expo-haptics';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Theme } from '../src/theme/theme';
 import allRounds from '../src/data/all_rounds.json';
 import { base64Decode } from '../src/utils/base64';
-
-const { width } = Dimensions.get('window');
-
-const RANGES = ['전체', '1-20', '21-40', '41-60', '61-80'];
+import { GRADE_CHANGE_EVENT } from '../src/components/GradeNav';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedRange, setSelectedRange] = useState('전체');
+  const [selectedGrade, setSelectedGrade] = useState('3학년 1학기');
   const [filteredRounds, setFilteredRounds] = useState(allRounds);
   const router = useRouter();
 
   useEffect(() => {
-    let filtered = allRounds;
+    // Initial grade load
+    AsyncStorage.getItem('selectedGrade').then(val => {
+      if (val) setSelectedGrade(val);
+    });
 
-    // Filter by Search
-    if (searchTerm !== '') {
-      filtered = filtered.filter(round => 
+    // Listen for grade changes
+    const subscription = DeviceEventEmitter.addListener(GRADE_CHANGE_EVENT, (grade) => {
+      setSelectedGrade(grade);
+    });
+
+    return () => subscription.remove();
+  }, []);
+
+  useEffect(() => {
+    const filtered = allRounds.filter(round => {
+      const matchSearch = 
         round.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        round.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
         round.words.some(word => 
           word.en.toLowerCase().includes(searchTerm.toLowerCase()) ||
           word.ko.includes(searchTerm)
-        )
-      );
-    }
-
-    // Filter by Range
-    if (selectedRange !== '전체') {
-      const [start, end] = selectedRange.split('-').map(Number);
-      filtered = filtered.filter(round => round.id >= start && round.id <= end);
-    }
+        );
+      
+      if (searchTerm) {
+        return matchSearch;
+      } else {
+        return round.grade === selectedGrade && matchSearch;
+      }
+    });
 
     setFilteredRounds(filtered);
-  }, [searchTerm, selectedRange]);
+  }, [searchTerm, selectedGrade]);
 
-  const categories = [...new Set(allRounds.map(r => r.category))];
+  const gradesToShow = searchTerm 
+    ? [...new Set(filteredRounds.map(r => r.grade))]
+    : [selectedGrade];
 
   const handlePress = (id: number) => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     router.push(`/challenge/${id}`);
-  };
-
-  const handleRangeChange = (range: string) => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    setSelectedRange(range);
   };
 
   return (
@@ -67,7 +74,7 @@ export default function Home() {
       showsVerticalScrollIndicator={false}
     >
       <View style={styles.header}>
-        <Text style={styles.title}>오늘의 영단어로 {"\n"} 실력 Up</Text>
+        <Text style={styles.title}>초등영어활용노트 어휘</Text>
         
         <View style={styles.searchWrapper}>
           <LinearGradient
@@ -76,7 +83,7 @@ export default function Home() {
           >
             <TextInput
               style={styles.searchInput}
-              placeholder="회차 또는 단어 검색..."
+              placeholder="회차 또는 주제 검색..."
               placeholderTextColor={Theme.colors.textMuted}
               value={searchTerm}
               onChangeText={setSearchTerm}
@@ -91,67 +98,58 @@ export default function Home() {
             )}
           </LinearGradient>
         </View>
-
-        {/* Range Tabs */}
-        <View style={styles.tabsWrapper}>
-          <ScrollView 
-            horizontal 
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.tabsContainer}
-          >
-            {RANGES.map((range) => (
-              <TouchableOpacity
-                key={range}
-                style={[styles.tabButton, selectedRange === range && styles.tabButtonActive]}
-                onPress={() => handleRangeChange(range)}
-              >
-                <Text style={[styles.tabText, selectedRange === range && styles.tabTextActive]}>
-                  {range}
-                </Text>
-                {selectedRange === range && (
-                  <View style={styles.tabIndicator} />
-                )}
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
-        </View>
       </View>
 
-      {categories.map((category) => (
-        <View key={category} style={styles.categoryContainer}>
-          <View style={styles.gridContainer}>
-            {filteredRounds
-              .filter(r => r.category === category)
-              .slice(0, 80)
-              .map(round => (
-                <TouchableOpacity 
-                  key={round.id} 
-                  style={styles.item}
-                  onPress={() => handlePress(round.id)}
-                  activeOpacity={0.6}
-                >
-                  <View style={styles.imageWrapper}>
-                    <View style={styles.imageInner}>
-                      <Image 
-                        source={{ uri: `https://englishvocanote.pages.dev/${base64Decode(round.words[0].img)}` }} 
-                        style={styles.roundImg}
-                        resizeMode="contain"
-                      />
-                    </View>
-                    <View style={styles.imageBorder} />
-                  </View>
-                  <Text style={styles.itemName}>
-                    {round.name.replace(/Today's Word|오늘의 영단어/g, '').trim().replace(/\[(.*?)회\]/g, '$1회').replace(/ /g, '\n')}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-          </View>
+      {filteredRounds.length === 0 ? (
+        <View style={styles.emptyContainer}>
+          <Text style={styles.emptyText}>검색 결과가 없습니다.</Text>
         </View>
-      ))}
+      ) : (
+        gradesToShow.map((grade) => {
+          const roundsInGrade = filteredRounds.filter(r => r.grade === grade);
+          if (roundsInGrade.length === 0) return null;
+          
+          const themesInGrade = [...new Set(roundsInGrade.map(r => r.category))];
+          
+          return (
+            <View key={grade} style={styles.gradeSection}>
+              {searchTerm && <Text style={styles.gradeHeader}>{grade}</Text>}
+              
+              {themesInGrade.map(theme => (
+                <View key={theme} style={styles.themeGroup}>
+                  <Text style={styles.themeTitle}>{theme}</Text>
+                  <View style={styles.gridContainer}>
+                    {roundsInGrade
+                      .filter(r => r.category === theme)
+                      .map(round => (
+                        <TouchableOpacity 
+                          key={round.id} 
+                          style={styles.item}
+                          onPress={() => handlePress(round.id)}
+                          activeOpacity={0.6}
+                        >
+                          <View style={styles.imageWrapper}>
+                            <View style={styles.imageInner}>
+                              <Image 
+                                source={{ uri: `https://englishvocanote.pages.dev/${base64Decode(round.words[0].img)}` }} 
+                                style={styles.roundImg}
+                                resizeMode="contain"
+                              />
+                            </View>
+                            <View style={styles.imageBorder} />
+                          </View>
+                        </TouchableOpacity>
+                      ))}
+                  </View>
+                </View>
+              ))}
+            </View>
+          );
+        })
+      )}
     </ScrollView>
   );
 }
-
 
 const styles = StyleSheet.create({
   scrollView: {
@@ -159,7 +157,7 @@ const styles = StyleSheet.create({
     backgroundColor: Theme.colors.backgroundDeep,
   },
   container: {
-    paddingTop: 140,
+    paddingTop: 180, // Space for Navbar + GradeNav
     paddingBottom: 60,
     alignItems: 'center',
   },
@@ -169,12 +167,12 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   title: {
-    fontSize: 28,
+    fontSize: 26,
     color: '#fff',
     fontFamily: Theme.fonts.extraBold,
     textAlign: 'center',
-    marginBottom: 30,
-    lineHeight: 36,
+    marginBottom: 25,
+    letterSpacing: -0.5,
   },
   searchWrapper: {
     width: 280,
@@ -182,18 +180,18 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     borderWidth: 1,
     borderColor: 'rgba(56, 189, 248, 0.2)',
-    marginBottom: 30,
+    marginBottom: 20,
   },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 4,
-    paddingVertical: 4,
+    paddingVertical: 2,
   },
   searchInput: {
     flex: 1,
     paddingHorizontal: 15,
-    paddingVertical: 12,
+    paddingVertical: 10,
     color: Theme.colors.textPrimary,
     fontFamily: Theme.fonts.semiBold,
     fontSize: 14,
@@ -210,81 +208,60 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: Theme.fonts.bold,
   },
-  tabsWrapper: {
+  gradeSection: {
     width: '100%',
-    paddingVertical: 10,
+    marginBottom: 30,
   },
-  tabsContainer: {
-    paddingHorizontal: 15,
-    gap: 20,
+  gradeHeader: {
+    fontSize: 20,
+    fontFamily: Theme.fonts.extraBold,
+    color: Theme.colors.accent,
+    paddingHorizontal: 25,
+    marginBottom: 15,
+    marginTop: 10,
+  },
+  themeGroup: {
+    width: '100%',
+    marginBottom: 25,
     alignItems: 'center',
-    justifyContent: 'center',
-    minWidth: '100%',
   },
-  tabButton: {
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-    position: 'relative',
-    alignItems: 'center',
-  },
-  tabButtonActive: {
-    // Optional
-  },
-  tabText: {
-    color: Theme.colors.textMuted,
-    fontSize: 15,
+  themeTitle: {
+    fontSize: 18,
     fontFamily: Theme.fonts.bold,
-  },
-  tabTextActive: {
-    color: '#fff',
-  },
-  tabIndicator: {
-    position: 'absolute',
-    bottom: -4,
-    width: 25,
-    height: 3,
-    backgroundColor: Theme.colors.accent,
-    borderRadius: 4,
-    shadowColor: Theme.colors.accent,
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.8,
-    shadowRadius: 5,
-  },
-  categoryContainer: {
-    width: '100%',
-    alignItems: 'center',
+    color: Theme.colors.textSecondary,
+    marginBottom: 15,
+    textAlign: 'center',
   },
   gridContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     width: '100%',
-    paddingHorizontal: '2.5%',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
+    gap: 15,
   },
   item: {
-    width: '25%',
+    width: 90,
     alignItems: 'center',
-    marginVertical: 12,
-    minHeight: 130,
+    marginBottom: 10,
   },
   imageWrapper: {
-    width: 80,
-    height: 80,
+    width: 84,
+    height: 84,
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
   },
   imageInner: {
-    width: 74,
-    height: 74,
+    width: 80,
+    height: 80,
     backgroundColor: 'rgba(15, 23, 42, 0.6)',
-    borderRadius: 18,
+    borderRadius: 22,
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.5,
-    shadowRadius: 15,
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.4,
+    shadowRadius: 10,
     elevation: 8,
     overflow: 'hidden',
     borderWidth: 1.5,
@@ -292,25 +269,26 @@ const styles = StyleSheet.create({
   },
   imageBorder: {
     position: 'absolute',
-    top: 3,
-    left: 3,
-    right: 3,
-    bottom: 3,
-    borderRadius: 18,
+    top: 2,
+    left: 2,
+    right: 2,
+    bottom: 2,
+    borderRadius: 20,
     borderWidth: 1,
     borderColor: 'rgba(56, 189, 248, 0.1)',
     pointerEvents: 'none',
   },
   roundImg: {
-    width: 68,
-    height: 68,
+    width: 72,
+    height: 72,
   },
-  itemName: {
-    marginTop: 10,
-    textAlign: 'center',
-    fontSize: 14,
-    color: Theme.colors.textSecondary,
-    fontFamily: Theme.fonts.bold,
-    lineHeight: 18,
+  emptyContainer: {
+    marginTop: 100,
+    alignItems: 'center',
+  },
+  emptyText: {
+    color: Theme.colors.textMuted,
+    fontSize: 16,
+    fontFamily: Theme.fonts.semiBold,
   }
 });

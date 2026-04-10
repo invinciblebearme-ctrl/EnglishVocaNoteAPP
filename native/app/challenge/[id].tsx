@@ -19,19 +19,31 @@ import { BlurView } from 'expo-blur';
 import { Theme } from '../../src/theme/theme';
 import allRounds from '../../src/data/all_rounds.json';
 import { base64Decode } from '../../src/utils/base64';
-import { 
-  ExpoSpeechRecognitionModule, 
-  useSpeechRecognitionEvent,
-  type ExpoSpeechRecognitionResultEvent,
-  type ExpoSpeechRecognitionErrorEvent
-} from 'expo-speech-recognition';
+// Safely handle expo-speech-recognition which requires a native module
+let ExpoSpeechRecognitionModule: any = null;
+let useSpeechRecognitionEvent: any = (_event: string, _callback: any) => {};
+
+try {
+  // We use require instead of import to prevent crash at load time in Expo Go
+  const SpeechRecog = require('expo-speech-recognition');
+  ExpoSpeechRecognitionModule = SpeechRecog.ExpoSpeechRecognitionModule;
+  useSpeechRecognitionEvent = SpeechRecog.useSpeechRecognitionEvent;
+} catch (e) {
+  // Fail silently or handle accordingly
+}
+
+type ExpoSpeechRecognitionResultEvent = any;
+type ExpoSpeechRecognitionErrorEvent = any;
 
 const { width, height: screenHeight } = Dimensions.get('window');
 
 // Responsive scaling helpers
-const headerPadding = screenHeight * 0.14; 
+const headerPadding = 190; // Fixed space for Navbar + GradeNav
 const cardHeight = screenHeight * 0.22;
 const spacingSm = screenHeight * 0.015;
+
+// Safely check for ExpoSpeechRecognitionModule
+const hasSpeechRecognition = !!ExpoSpeechRecognitionModule;
 
 export default function WordChallenge() {
   const { id } = useLocalSearchParams();
@@ -41,33 +53,36 @@ export default function WordChallenge() {
   const [pronunciationScore, setPronunciationScore] = useState<{level: number, transcript: string} | null>(null);
   const [isCapturing, setIsCapturing] = useState(false);
   
-  useSpeechRecognitionEvent('start', () => setIsCapturing(true));
-  useSpeechRecognitionEvent('end', () => setIsCapturing(false));
-  useSpeechRecognitionEvent('result', (event: ExpoSpeechRecognitionResultEvent) => {
-    const transcript = event.results[0]?.transcript.toLowerCase().trim() || '';
-    if (!transcript || !currentWord) return;
+  // Safe hook calls
+  if (hasSpeechRecognition) {
+    useSpeechRecognitionEvent('start', () => setIsCapturing(true));
+    useSpeechRecognitionEvent('end', () => setIsCapturing(false));
+    useSpeechRecognitionEvent('result', (event: ExpoSpeechRecognitionResultEvent) => {
+      const transcript = event.results[0]?.transcript.toLowerCase().trim() || '';
+      if (!transcript || !currentWord) return;
 
-    const target = currentWord.en.toLowerCase().trim();
-    let level = 1; // Try Again
-    
-    if (transcript === target) {
-      level = 3; // Excellent
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    } else if (transcript.includes(target) || target.includes(transcript)) {
-      level = 2; // Good
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    } else {
+      const target = currentWord.en.toLowerCase().trim();
+      let level = 1; // Try Again
+      
+      if (transcript === target) {
+        level = 3; // Excellent
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      } else if (transcript.includes(target) || target.includes(transcript)) {
+        level = 2; // Good
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+      } else {
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      }
+
+      setPronunciationScore({ transcript, level });
+    });
+
+    useSpeechRecognitionEvent('error', (event: ExpoSpeechRecognitionErrorEvent) => {
+      console.error('Speech Recognition Error:', event.error, event.message);
+      setIsCapturing(false);
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
-    }
-
-    setPronunciationScore({ transcript, level });
-  });
-
-  useSpeechRecognitionEvent('error', (event: ExpoSpeechRecognitionErrorEvent) => {
-    console.error('Speech Recognition Error:', event.error, event.message);
-    setIsCapturing(false);
-    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
-  });
+    });
+  }
 
   const fadeAnim = useRef(new Animated.Value(1)).current;
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -141,6 +156,11 @@ export default function WordChallenge() {
   };
 
   const handleSTT = async () => {
+    if (!hasSpeechRecognition) {
+      alert("이 환경에서는 발음 인식 기능을 사용할 수 없습니다. (커스텀 빌드 필요)");
+      return;
+    }
+
     if (isCapturing) {
       ExpoSpeechRecognitionModule.stop();
     } else {
@@ -171,7 +191,7 @@ export default function WordChallenge() {
       >
         <View style={styles.container}>
           <View style={styles.header}>
-            <Text style={styles.roundLabel}>[{roundData.id}회]</Text>
+            <Text style={styles.roundLabel}>{roundData.category}</Text>
             <Text style={styles.indexText}>단어 {index + 1} / {roundData.words.length}</Text>
           </View>
 

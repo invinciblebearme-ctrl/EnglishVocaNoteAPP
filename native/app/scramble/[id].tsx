@@ -23,7 +23,7 @@ import { base64Decode } from '../../src/utils/base64';
 const { width, height: screenHeight } = Dimensions.get('window');
 
 // Responsive scaling helpers
-const headerPadding = screenHeight * 0.16; // Approx 140 on large phones
+const headerPadding = 190; // Fixed space for Navbar + GradeNav
 const gameCardMinHeight = screenHeight * 0.55; // Fluid min-height
 const spacingSm = screenHeight * 0.015;
 const spacingMd = screenHeight * 0.03;
@@ -125,7 +125,7 @@ export default function ScrambleGame() {
         <View style={styles.container}>
           <View style={styles.header}>
             <Text style={styles.headerTitle}>
-              {roundData.name.replace(/Today's Word|오늘의 영단어/g, '').trim()}
+              {roundData.category}
             </Text>
             <Text style={styles.indexText}>단어 {index + 1} / {roundData.words.length}</Text>
           </View>

@@ -12,6 +12,7 @@ import {
   PlusJakartaSans_800ExtraBold 
 } from '@expo-google-fonts/plus-jakarta-sans';
 import { Navbar } from '../src/components/Navbar';
+import { GradeNav } from '../src/components/GradeNav';
 import { Theme } from '../src/theme/theme';
 
 // Keep the splash screen visible while we fetch resources
@@ -42,6 +43,7 @@ export default function RootLayout() {
         style={StyleSheet.absoluteFill}
       />
       <Navbar />
+      <GradeNav />
       <Stack
         screenOptions={{
           headerShown: false,
