@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "EnglishVocaNote",
+    "slug": "englishvocanote",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "영단어 발음 측정을 위해 마이크 권한이 필요합니다.",
+        "NSSpeechRecognitionUsageDescription": "영단어 발음 측정을 위해 음성 인식 권한이 필요합니다."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.cansle.englishvocanote",
+      "permissions": ["RECORD_AUDIO"]
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "영단어 발음 측정을 위해 마이크 권한이 필요합니다.",
+          "speechRecognitionPermission": "영단어 발음 측정을 위해 음성 인식 권한이 필요합니다."
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4af4e174-bb8a-48e8-829a-83fecb399467"
+      }
+    },
+    "owner": "invinciblebearme"
+  }
+}

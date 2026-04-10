@@ -1,0 +1,4562 @@
+[
+  {
+    "id": 1,
+    "name": "오늘의 영단어 [1회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "a",
+        "ko": "하나의",
+        "img": "YS53ZWJw"
+      },
+      {
+        "en": "about",
+        "ko": "~에 대하여, 대략~, 약~",
+        "img": "YWJvdXQud2VicA=="
+      },
+      {
+        "en": "above",
+        "ko": "~위에",
+        "img": "YWJvdmUud2VicA=="
+      },
+      {
+        "en": "across",
+        "ko": "~을 가로질러, ~을 건너서",
+        "img": "YWNyb3NzLndlYnA="
+      },
+      {
+        "en": "act",
+        "ko": "행동하다, 행동, 행위",
+        "img": "YWN0LndlYnA="
+      },
+      {
+        "en": "add",
+        "ko": "더하다",
+        "img": "YWRkLndlYnA="
+      },
+      {
+        "en": "address",
+        "ko": "주소, 연설",
+        "img": "YWRkcmVzcy53ZWJw"
+      },
+      {
+        "en": "adult",
+        "ko": "어른",
+        "img": "YWR1bHQud2VicA=="
+      },
+      {
+        "en": "afraid",
+        "ko": "무서워하여, 두려워하여",
+        "img": "YWZyYWlkLndlYnA="
+      },
+      {
+        "en": "after",
+        "ko": "~뒤에, ~다음에",
+        "img": "YWZ0ZXIud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "오늘의 영단어 [2회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "afternoon",
+        "ko": "오후",
+        "img": "YWZ0ZXJub29uLndlYnA="
+      },
+      {
+        "en": "again",
+        "ko": "또, 다시 한 번",
+        "img": "YWdhaW4ud2VicA=="
+      },
+      {
+        "en": "against",
+        "ko": "~에 반대하여",
+        "img": "YWdhaW5zdC53ZWJw"
+      },
+      {
+        "en": "age",
+        "ko": "나이, 연령",
+        "img": "YWdlLndlYnA="
+      },
+      {
+        "en": "ago",
+        "ko": "~전에",
+        "img": "YWdvLndlYnA="
+      },
+      {
+        "en": "agree",
+        "ko": "동의하다",
+        "img": "YWdyZWUud2VicA=="
+      },
+      {
+        "en": "ahead",
+        "ko": "앞에",
+        "img": "YWhlYWQud2VicA=="
+      },
+      {
+        "en": "air",
+        "ko": "공기, 공중",
+        "img": "YWlyLndlYnA="
+      },
+      {
+        "en": "airplane",
+        "ko": "비행기",
+        "img": "YWlycGxhbmUud2VicA=="
+      },
+      {
+        "en": "album",
+        "ko": "앨범, 사진첩",
+        "img": "YWxidW0ud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "오늘의 영단어 [3회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "all",
+        "ko": "모든, 모두, 전부",
+        "img": "YWxsLndlYnA="
+      },
+      {
+        "en": "almost",
+        "ko": "거의",
+        "img": "YWxtb3N0LndlYnA="
+      },
+      {
+        "en": "alone",
+        "ko": "혼자",
+        "img": "YWxvbmUud2VicA=="
+      },
+      {
+        "en": "along",
+        "ko": "~을 따라서",
+        "img": "YWxvbmcud2VicA=="
+      },
+      {
+        "en": "already",
+        "ko": "이미",
+        "img": "YWxyZWFkeS53ZWJw"
+      },
+      {
+        "en": "alright",
+        "ko": "괜찮은",
+        "img": "YWxyaWdodC53ZWJw"
+      },
+      {
+        "en": "also",
+        "ko": "또한",
+        "img": "YWxzby53ZWJw"
+      },
+      {
+        "en": "always",
+        "ko": "항상, 언제나",
+        "img": "YWx3YXlzLndlYnA="
+      },
+      {
+        "en": "and",
+        "ko": "그리고, ~와",
+        "img": "YW5kLndlYnA="
+      },
+      {
+        "en": "animal",
+        "ko": "동물, 짐승",
+        "img": "YW5pbWFsLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "오늘의 영단어 [4회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "another",
+        "ko": "또 다른",
+        "img": "YW5vdGhlci53ZWJw"
+      },
+      {
+        "en": "answer",
+        "ko": "대답, 대답하다",
+        "img": "YW5zd2VyLndlYnA="
+      },
+      {
+        "en": "any",
+        "ko": "어떤, 무슨, 무언가",
+        "img": "YW55LndlYnA="
+      },
+      {
+        "en": "apartment",
+        "ko": "아파트",
+        "img": "YXBhcnRtZW50LndlYnA="
+      },
+      {
+        "en": "apple",
+        "ko": "사과",
+        "img": "YXBwbGUud2VicA=="
+      },
+      {
+        "en": "area",
+        "ko": "지역",
+        "img": "YXJlYS53ZWJw"
+      },
+      {
+        "en": "arm",
+        "ko": "팔",
+        "img": "YXJtLndlYnA="
+      },
+      {
+        "en": "around",
+        "ko": "~주위에, ~둘레에",
+        "img": "YXJvdW5kLndlYnA="
+      },
+      {
+        "en": "arrive",
+        "ko": "도착하다",
+        "img": "YXJyaXZlLndlYnA="
+      },
+      {
+        "en": "art",
+        "ko": "미술",
+        "img": "YXJ0LndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "오늘의 영단어 [5회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "as",
+        "ko": "~만큼, ~할 때, ~하면서, ~로서",
+        "img": "YXMud2VicA=="
+      },
+      {
+        "en": "ask",
+        "ko": "묻다. 질문하다",
+        "img": "YXNrLndlYnA="
+      },
+      {
+        "en": "at",
+        "ko": "~때에(시간), ~에서(장소)",
+        "img": "YXQud2VicA=="
+      },
+      {
+        "en": "aunt",
+        "ko": "숙모, 고모, 이모, 아주머니",
+        "img": "YXVudC53ZWJw"
+      },
+      {
+        "en": "autumn",
+        "ko": "가을",
+        "img": "YXV0dW1uLndlYnA="
+      },
+      {
+        "en": "away",
+        "ko": "멀리, 떨어져서, 저쪽에, ~에 없는",
+        "img": "YXdheS53ZWJw"
+      },
+      {
+        "en": "baby",
+        "ko": "아기",
+        "img": "YmFieS53ZWJw"
+      },
+      {
+        "en": "back",
+        "ko": "뒤, 등, 돌아오다",
+        "img": "YmFjay53ZWJw"
+      },
+      {
+        "en": "bad",
+        "ko": "(행동이) 나쁜, 옳지 않은, (음식 등이)상한, 서투른",
+        "img": "YmFkLndlYnA="
+      },
+      {
+        "en": "badminton",
+        "ko": "배드민턴",
+        "img": "YmFkbWludG9uLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "오늘의 영단어 [6회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "bag",
+        "ko": "자루, 가방",
+        "img": "YmFnLndlYnA="
+      },
+      {
+        "en": "bake",
+        "ko": "굽다",
+        "img": "YmFrZS53ZWJw"
+      },
+      {
+        "en": "ball",
+        "ko": "공",
+        "img": "YmFsbC53ZWJw"
+      },
+      {
+        "en": "banana",
+        "ko": "바나나",
+        "img": "YmFuYW5hLndlYnA="
+      },
+      {
+        "en": "bank",
+        "ko": "은행",
+        "img": "YmFuay53ZWJw"
+      },
+      {
+        "en": "base",
+        "ko": "바닥, 밑면, (야구의)베이스, 루",
+        "img": "YmFzZS53ZWJw"
+      },
+      {
+        "en": "baseball",
+        "ko": "야구",
+        "img": "YmFzZWJhbGwud2VicA=="
+      },
+      {
+        "en": "basket",
+        "ko": "바구니",
+        "img": "YmFza2V0LndlYnA="
+      },
+      {
+        "en": "basketball",
+        "ko": "농구",
+        "img": "YmFza2V0YmFsbC53ZWJw"
+      },
+      {
+        "en": "bat",
+        "ko": "박쥐 / 방망이",
+        "img": "YmF0LndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "오늘의 영단어 [7회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "bath",
+        "ko": "목욕",
+        "img": "YmF0aC53ZWJw"
+      },
+      {
+        "en": "be",
+        "ko": "~이다, ~이 되다",
+        "img": "YmUud2VicA=="
+      },
+      {
+        "en": "beach",
+        "ko": "해변, 바닷가",
+        "img": "YmVhY2gud2VicA=="
+      },
+      {
+        "en": "bear",
+        "ko": "곰, 참다, 견디다",
+        "img": "YmVhci53ZWJw"
+      },
+      {
+        "en": "beauty",
+        "ko": "아름다움",
+        "img": "YmVhdXR5LndlYnA="
+      },
+      {
+        "en": "because",
+        "ko": "왜냐하면, ~이기 때문에",
+        "img": "YmVjYXVzZS53ZWJw"
+      },
+      {
+        "en": "become",
+        "ko": "~이 되다",
+        "img": "YmVjb21lLndlYnA="
+      },
+      {
+        "en": "bed",
+        "ko": "침대",
+        "img": "YmVkLndlYnA="
+      },
+      {
+        "en": "bee",
+        "ko": "벌",
+        "img": "YmVlLndlYnA="
+      },
+      {
+        "en": "beef",
+        "ko": "소고기",
+        "img": "YmVlZi53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "오늘의 영단어 [8회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "before",
+        "ko": "~앞에, ~전에",
+        "img": "YmVmb3JlLndlYnA="
+      },
+      {
+        "en": "begin",
+        "ko": "시작하다",
+        "img": "YmVnaW4ud2VicA=="
+      },
+      {
+        "en": "behind",
+        "ko": "~뒤에",
+        "img": "YmVoaW5kLndlYnA="
+      },
+      {
+        "en": "believe",
+        "ko": "믿다",
+        "img": "YmVsaWV2ZS53ZWJw"
+      },
+      {
+        "en": "bell",
+        "ko": "종, 방울, 종소리",
+        "img": "YmVsbC53ZWJw"
+      },
+      {
+        "en": "below",
+        "ko": "~의 밑에, ~의 아래에",
+        "img": "YmVsb3cud2VicA=="
+      },
+      {
+        "en": "belt",
+        "ko": "벨트",
+        "img": "YmVsdC53ZWJw"
+      },
+      {
+        "en": "beside",
+        "ko": "~의 옆에",
+        "img": "YmVzaWRlLndlYnA="
+      },
+      {
+        "en": "between",
+        "ko": "~의 사이에",
+        "img": "YmV0d2Vlbi53ZWJw"
+      },
+      {
+        "en": "big",
+        "ko": "큰, 커다란",
+        "img": "YmlnLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "오늘의 영단어 [9회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "bike",
+        "ko": "자전거",
+        "img": "YmlrZS53ZWJw"
+      },
+      {
+        "en": "bill",
+        "ko": "청구서 / 지폐",
+        "img": "YmlsbC53ZWJw"
+      },
+      {
+        "en": "bird",
+        "ko": "새",
+        "img": "YmlyZC53ZWJw"
+      },
+      {
+        "en": "birth",
+        "ko": "출생",
+        "img": "YmlydGgud2VicA=="
+      },
+      {
+        "en": "biscuit",
+        "ko": "비스킷",
+        "img": "YmlzY3VpdC53ZWJw"
+      },
+      {
+        "en": "black",
+        "ko": "검은, 검은색",
+        "img": "YmxhY2sud2VicA=="
+      },
+      {
+        "en": "blood",
+        "ko": "피",
+        "img": "Ymxvb2Qud2VicA=="
+      },
+      {
+        "en": "blue",
+        "ko": "파란, 푸른, 파란색, 푸른색",
+        "img": "Ymx1ZS53ZWJw"
+      },
+      {
+        "en": "board",
+        "ko": "널빤지, 판자, 판",
+        "img": "Ym9hcmQud2VicA=="
+      },
+      {
+        "en": "boat",
+        "ko": "보트, 작은 배",
+        "img": "Ym9hdC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "오늘의 영단어 [10회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "body",
+        "ko": "몸, 신체",
+        "img": "Ym9keS53ZWJw"
+      },
+      {
+        "en": "bone",
+        "ko": "뼈",
+        "img": "Ym9uZS53ZWJw"
+      },
+      {
+        "en": "book",
+        "ko": "책",
+        "img": "Ym9vay53ZWJw"
+      },
+      {
+        "en": "borrow",
+        "ko": "빌리다",
+        "img": "Ym9ycm93LndlYnA="
+      },
+      {
+        "en": "both",
+        "ko": "둘 다",
+        "img": "Ym90aC53ZWJw"
+      },
+      {
+        "en": "bottle",
+        "ko": "병",
+        "img": "Ym90dGxlLndlYnA="
+      },
+      {
+        "en": "bottom",
+        "ko": "맨 아래",
+        "img": "Ym90dG9tLndlYnA="
+      },
+      {
+        "en": "box",
+        "ko": "상자",
+        "img": "Ym94LndlYnA="
+      },
+      {
+        "en": "boy",
+        "ko": "소년, 사내아이",
+        "img": "Ym95LndlYnA="
+      },
+      {
+        "en": "brave",
+        "ko": "용감한",
+        "img": "YnJhdmUud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "오늘의 영단어 [11회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "bread",
+        "ko": "빵",
+        "img": "YnJlYWQud2VicA=="
+      },
+      {
+        "en": "break",
+        "ko": "깨다, 부수다",
+        "img": "YnJlYWsud2VicA=="
+      },
+      {
+        "en": "breakfast",
+        "ko": "아침식사",
+        "img": "YnJlYWtmYXN0LndlYnA="
+      },
+      {
+        "en": "bridge",
+        "ko": "다리, 교량",
+        "img": "YnJpZGdlLndlYnA="
+      },
+      {
+        "en": "bright",
+        "ko": "밝은, 눈부신, 빛나는",
+        "img": "YnJpZ2h0LndlYnA="
+      },
+      {
+        "en": "bring",
+        "ko": "가져오다, 데려오다",
+        "img": "YnJpbmcud2VicA=="
+      },
+      {
+        "en": "brother",
+        "ko": "형제, 형, 오빠, 남동생",
+        "img": "YnJvdGhlci53ZWJw"
+      },
+      {
+        "en": "brown",
+        "ko": "갈색의, 밤색의, 갈색, 밤색",
+        "img": "YnJvd24ud2VicA=="
+      },
+      {
+        "en": "brush",
+        "ko": "솔",
+        "img": "YnJ1c2gud2VicA=="
+      },
+      {
+        "en": "build",
+        "ko": "짓다, 세우다",
+        "img": "YnVpbGQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "오늘의 영단어 [12회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "burn",
+        "ko": "타다, 불타다, 태우다, (불에 덴) 상처, 화상",
+        "img": "YnVybi53ZWJw"
+      },
+      {
+        "en": "bus",
+        "ko": "버스",
+        "img": "YnVzLndlYnA="
+      },
+      {
+        "en": "business",
+        "ko": "사업",
+        "img": "YnVzaW5lc3Mud2VicA=="
+      },
+      {
+        "en": "busy",
+        "ko": "바쁜",
+        "img": "YnVzeS53ZWJw"
+      },
+      {
+        "en": "but",
+        "ko": "그러나, 그렇지만",
+        "img": "YnV0LndlYnA="
+      },
+      {
+        "en": "butter",
+        "ko": "버터",
+        "img": "YnV0dGVyLndlYnA="
+      },
+      {
+        "en": "button",
+        "ko": "단추, (벨의)누름단추",
+        "img": "YnV0dG9uLndlYnA="
+      },
+      {
+        "en": "buy",
+        "ko": "사다",
+        "img": "YnV5LndlYnA="
+      },
+      {
+        "en": "by",
+        "ko": "~의 옆에",
+        "img": "Ynkud2VicA=="
+      },
+      {
+        "en": "cake",
+        "ko": "케이크",
+        "img": "Y2FrZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "오늘의 영단어 [13회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "call",
+        "ko": "~를 부르다, 전화하다, (잠시)들르다",
+        "img": "Y2FsbC53ZWJw"
+      },
+      {
+        "en": "camera",
+        "ko": "카메라, 사진기",
+        "img": "Y2FtZXJhLndlYnA="
+      },
+      {
+        "en": "camp",
+        "ko": "야영하다, 캠프하다",
+        "img": "Y2FtcC53ZWJw"
+      },
+      {
+        "en": "campaign",
+        "ko": "캠페인",
+        "img": "Y2FtcGFpZ24ud2VicA=="
+      },
+      {
+        "en": "can",
+        "ko": "~할 수 있다",
+        "img": "Y2FuLndlYnA="
+      },
+      {
+        "en": "candy",
+        "ko": "사탕, 캔디",
+        "img": "Y2FuZHkud2VicA=="
+      },
+      {
+        "en": "cap",
+        "ko": "모자",
+        "img": "Y2FwLndlYnA="
+      },
+      {
+        "en": "car",
+        "ko": "자동차",
+        "img": "Y2FyLndlYnA="
+      },
+      {
+        "en": "card",
+        "ko": "카드",
+        "img": "Y2FyZC53ZWJw"
+      },
+      {
+        "en": "care",
+        "ko": "주의, 조심",
+        "img": "Y2FyZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "오늘의 영단어 [14회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "carrot",
+        "ko": "당근",
+        "img": "Y2Fycm90LndlYnA="
+      },
+      {
+        "en": "carry",
+        "ko": "~을 나르다, ~을 가지고 있다",
+        "img": "Y2Fycnkud2VicA=="
+      },
+      {
+        "en": "case",
+        "ko": "상자",
+        "img": "Y2FzZS53ZWJw"
+      },
+      {
+        "en": "cash",
+        "ko": "현금",
+        "img": "Y2FzaC53ZWJw"
+      },
+      {
+        "en": "cat",
+        "ko": "고양이",
+        "img": "Y2F0LndlYnA="
+      },
+      {
+        "en": "catch",
+        "ko": "잡다",
+        "img": "Y2F0Y2gud2VicA=="
+      },
+      {
+        "en": "center",
+        "ko": "중심, 중앙",
+        "img": "Y2VudGVyLndlYnA="
+      },
+      {
+        "en": "certain",
+        "ko": "확실한",
+        "img": "Y2VydGFpbi53ZWJw"
+      },
+      {
+        "en": "chair",
+        "ko": "의자",
+        "img": "Y2hhaXIud2VicA=="
+      },
+      {
+        "en": "chance",
+        "ko": "기회",
+        "img": "Y2hhbmNlLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "오늘의 영단어 [15회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "change",
+        "ko": "변화다, 바꾸다, 변경, 변화, 거스름돈, 잔돈",
+        "img": "Y2hhbmdlLndlYnA="
+      },
+      {
+        "en": "cheap",
+        "ko": "값싼",
+        "img": "Y2hlYXAud2VicA=="
+      },
+      {
+        "en": "check",
+        "ko": "확인하다",
+        "img": "Y2hlY2sud2VicA=="
+      },
+      {
+        "en": "cheese",
+        "ko": "치즈",
+        "img": "Y2hlZXNlLndlYnA="
+      },
+      {
+        "en": "chicken",
+        "ko": "닭, 닭고기",
+        "img": "Y2hpY2tlbi53ZWJw"
+      },
+      {
+        "en": "child",
+        "ko": "어린이, 아이",
+        "img": "Y2hpbGQud2VicA=="
+      },
+      {
+        "en": "chocolate",
+        "ko": "초콜릿",
+        "img": "Y2hvY29sYXRlLndlYnA="
+      },
+      {
+        "en": "choose",
+        "ko": "선택하다",
+        "img": "Y2hvb3NlLndlYnA="
+      },
+      {
+        "en": "church",
+        "ko": "교회",
+        "img": "Y2h1cmNoLndlYnA="
+      },
+      {
+        "en": "circle",
+        "ko": "원",
+        "img": "Y2lyY2xlLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "오늘의 영단어 [16회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "city",
+        "ko": "도시",
+        "img": "Y2l0eS53ZWJw"
+      },
+      {
+        "en": "class",
+        "ko": "학급, 반, 수업",
+        "img": "Y2xhc3Mud2VicA=="
+      },
+      {
+        "en": "clean",
+        "ko": "깨끗한, 청결한",
+        "img": "Y2xlYW4ud2VicA=="
+      },
+      {
+        "en": "clear",
+        "ko": "맑은",
+        "img": "Y2xlYXIud2VicA=="
+      },
+      {
+        "en": "clever",
+        "ko": "똑똑한",
+        "img": "Y2xldmVyLndlYnA="
+      },
+      {
+        "en": "climb",
+        "ko": "(나무, 산 등에) 오르다",
+        "img": "Y2xpbWIud2VicA=="
+      },
+      {
+        "en": "clock",
+        "ko": "시계, 탁상시계",
+        "img": "Y2xvY2sud2VicA=="
+      },
+      {
+        "en": "close",
+        "ko": "닫다",
+        "img": "Y2xvc2Uud2VicA=="
+      },
+      {
+        "en": "clothes",
+        "ko": "옷",
+        "img": "Y2xvdGhlcy53ZWJw"
+      },
+      {
+        "en": "cloud",
+        "ko": "구름",
+        "img": "Y2xvdWQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "오늘의 영단어 [17회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "club",
+        "ko": "클럽, 모임",
+        "img": "Y2x1Yi53ZWJw"
+      },
+      {
+        "en": "coat",
+        "ko": "코트, 외투",
+        "img": "Y29hdC53ZWJw"
+      },
+      {
+        "en": "coffee",
+        "ko": "커피",
+        "img": "Y29mZmVlLndlYnA="
+      },
+      {
+        "en": "cold",
+        "ko": "추운, 차가운",
+        "img": "Y29sZC53ZWJw"
+      },
+      {
+        "en": "collect",
+        "ko": "모으다",
+        "img": "Y29sbGVjdC53ZWJw"
+      },
+      {
+        "en": "college",
+        "ko": "대학",
+        "img": "Y29sbGVnZS53ZWJw"
+      },
+      {
+        "en": "color",
+        "ko": "빛깔, 색",
+        "img": "Y29sb3Iud2VicA=="
+      },
+      {
+        "en": "come",
+        "ko": "오다",
+        "img": "Y29tZS53ZWJw"
+      },
+      {
+        "en": "comic",
+        "ko": "만화",
+        "img": "Y29taWMud2VicA=="
+      },
+      {
+        "en": "company",
+        "ko": "회사",
+        "img": "Y29tcGFueS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "오늘의 영단어 [18회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "compute",
+        "ko": "계산하다",
+        "img": "Y29tcHV0ZS53ZWJw"
+      },
+      {
+        "en": "condition",
+        "ko": "상태",
+        "img": "Y29uZGl0aW9uLndlYnA="
+      },
+      {
+        "en": "congratulate",
+        "ko": "축하하다",
+        "img": "Y29uZ3JhdHVsYXRlLndlYnA="
+      },
+      {
+        "en": "control",
+        "ko": "통제하다",
+        "img": "Y29udHJvbC53ZWJw"
+      },
+      {
+        "en": "cook",
+        "ko": "요리사",
+        "img": "Y29vay53ZWJw"
+      },
+      {
+        "en": "cookie",
+        "ko": "쿠키",
+        "img": "Y29va2llLndlYnA="
+      },
+      {
+        "en": "cool",
+        "ko": "시원한, 서늘한",
+        "img": "Y29vbC53ZWJw"
+      },
+      {
+        "en": "corner",
+        "ko": "구석, 모퉁이",
+        "img": "Y29ybmVyLndlYnA="
+      },
+      {
+        "en": "cost",
+        "ko": "비용",
+        "img": "Y29zdC53ZWJw"
+      },
+      {
+        "en": "could",
+        "ko": "~할 수 있었다",
+        "img": "Y291bGQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "오늘의 영단어 [19회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "country",
+        "ko": "나라, 국가, 시골",
+        "img": "Y291bnRyeS53ZWJw"
+      },
+      {
+        "en": "couple",
+        "ko": "한 쌍",
+        "img": "Y291cGxlLndlYnA="
+      },
+      {
+        "en": "course",
+        "ko": "과목, 경로",
+        "img": "Y291cnNlLndlYnA="
+      },
+      {
+        "en": "court",
+        "ko": "코트 / 법정",
+        "img": "Y291cnQud2VicA=="
+      },
+      {
+        "en": "cousin",
+        "ko": "사촌",
+        "img": "Y291c2luLndlYnA="
+      },
+      {
+        "en": "cover",
+        "ko": "가리다, 덮다",
+        "img": "Y292ZXIud2VicA=="
+      },
+      {
+        "en": "cow",
+        "ko": "암소",
+        "img": "Y293LndlYnA="
+      },
+      {
+        "en": "crayon",
+        "ko": "크레용",
+        "img": "Y3JheW9uLndlYnA="
+      },
+      {
+        "en": "cream",
+        "ko": "크림, 크림색의",
+        "img": "Y3JlYW0ud2VicA=="
+      },
+      {
+        "en": "cross",
+        "ko": "(길 따위를) 건너다",
+        "img": "Y3Jvc3Mud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "오늘의 영단어 [20회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "cry",
+        "ko": "울다, 외치다",
+        "img": "Y3J5LndlYnA="
+      },
+      {
+        "en": "culture",
+        "ko": "문화",
+        "img": "Y3VsdHVyZS53ZWJw"
+      },
+      {
+        "en": "cup",
+        "ko": "컵, 잔",
+        "img": "Y3VwLndlYnA="
+      },
+      {
+        "en": "curtain",
+        "ko": "커튼",
+        "img": "Y3VydGFpbi53ZWJw"
+      },
+      {
+        "en": "customer",
+        "ko": "고객",
+        "img": "Y3VzdG9tZXIud2VicA=="
+      },
+      {
+        "en": "cut",
+        "ko": "자르다",
+        "img": "Y3V0LndlYnA="
+      },
+      {
+        "en": "dance",
+        "ko": "춤추다",
+        "img": "ZGFuY2Uud2VicA=="
+      },
+      {
+        "en": "danger",
+        "ko": "위험, 위독한 상태",
+        "img": "ZGFuZ2VyLndlYnA="
+      },
+      {
+        "en": "dark",
+        "ko": "캄캄한, 어두운",
+        "img": "ZGFyay53ZWJw"
+      },
+      {
+        "en": "date",
+        "ko": "날짜",
+        "img": "ZGF0ZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "오늘의 영단어 [21회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "daughter",
+        "ko": "딸",
+        "img": "ZGF1Z2h0ZXIud2VicA=="
+      },
+      {
+        "en": "day",
+        "ko": "낮, 하루, ~일",
+        "img": "ZGF5LndlYnA="
+      },
+      {
+        "en": "dead",
+        "ko": "(죽은 듯이) 조용한, 죽은",
+        "img": "ZGVhZC53ZWJw"
+      },
+      {
+        "en": "death",
+        "ko": "죽음",
+        "img": "ZGVhdGgud2VicA=="
+      },
+      {
+        "en": "decide",
+        "ko": "결정하다",
+        "img": "ZGVjaWRlLndlYnA="
+      },
+      {
+        "en": "deep",
+        "ko": "깊은, 깊숙이 들어간",
+        "img": "ZGVlcC53ZWJw"
+      },
+      {
+        "en": "delicious",
+        "ko": "맛있는",
+        "img": "ZGVsaWNpb3VzLndlYnA="
+      },
+      {
+        "en": "design",
+        "ko": "설계하다",
+        "img": "ZGVzaWduLndlYnA="
+      },
+      {
+        "en": "desk",
+        "ko": "책상",
+        "img": "ZGVzay53ZWJw"
+      },
+      {
+        "en": "dialogue",
+        "ko": "대화",
+        "img": "ZGlhbG9ndWUud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "오늘의 영단어 [22회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "die",
+        "ko": "죽다, 사망하다",
+        "img": "ZGllLndlYnA="
+      },
+      {
+        "en": "difficult",
+        "ko": "어려운",
+        "img": "ZGlmZmljdWx0LndlYnA="
+      },
+      {
+        "en": "dinner",
+        "ko": "저녁식사",
+        "img": "ZGlubmVyLndlYnA="
+      },
+      {
+        "en": "discuss",
+        "ko": "토론하다",
+        "img": "ZGlzY3Vzcy53ZWJw"
+      },
+      {
+        "en": "do",
+        "ko": "~을 하다, 행하다, 의문문·부정문의 조동사",
+        "img": "ZG8ud2VicA=="
+      },
+      {
+        "en": "doctor",
+        "ko": "의사",
+        "img": "ZG9jdG9yLndlYnA="
+      },
+      {
+        "en": "dog",
+        "ko": "개",
+        "img": "ZG9nLndlYnA="
+      },
+      {
+        "en": "doll",
+        "ko": "인형",
+        "img": "ZG9sbC53ZWJw"
+      },
+      {
+        "en": "door",
+        "ko": "문",
+        "img": "ZG9vci53ZWJw"
+      },
+      {
+        "en": "double",
+        "ko": "두 배의",
+        "img": "ZG91YmxlLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "오늘의 영단어 [23회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "doughnut",
+        "ko": "도넛",
+        "img": "ZG91Z2hudXQud2VicA=="
+      },
+      {
+        "en": "down",
+        "ko": "아래로, 낮은 곳으로",
+        "img": "ZG93bi53ZWJw"
+      },
+      {
+        "en": "draw",
+        "ko": "~을 그리다, 끌다, 끌어당기다",
+        "img": "ZHJhdy53ZWJw"
+      },
+      {
+        "en": "dream",
+        "ko": "꿈",
+        "img": "ZHJlYW0ud2VicA=="
+      },
+      {
+        "en": "dress",
+        "ko": "드레스, 옷, 옷 입다",
+        "img": "ZHJlc3Mud2VicA=="
+      },
+      {
+        "en": "drink",
+        "ko": "(물이나 음료 등을) 마시다",
+        "img": "ZHJpbmsud2VicA=="
+      },
+      {
+        "en": "drive",
+        "ko": "운전하다",
+        "img": "ZHJpdmUud2VicA=="
+      },
+      {
+        "en": "drop",
+        "ko": "방울, 물방울, ~을 떨어뜨리다",
+        "img": "ZHJvcC53ZWJw"
+      },
+      {
+        "en": "drum",
+        "ko": "북, 드럼",
+        "img": "ZHJ1bS53ZWJw"
+      },
+      {
+        "en": "dry",
+        "ko": "마른, 건조한",
+        "img": "ZHJ5LndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "오늘의 영단어 [24회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "duck",
+        "ko": "오리",
+        "img": "ZHVjay53ZWJw"
+      },
+      {
+        "en": "during",
+        "ko": "~동안",
+        "img": "ZHVyaW5nLndlYnA="
+      },
+      {
+        "en": "ear",
+        "ko": "귀",
+        "img": "ZWFyLndlYnA="
+      },
+      {
+        "en": "early",
+        "ko": "일찍",
+        "img": "ZWFybHkud2VicA=="
+      },
+      {
+        "en": "earth",
+        "ko": "지구, 땅",
+        "img": "ZWFydGgud2VicA=="
+      },
+      {
+        "en": "east",
+        "ko": "동쪽",
+        "img": "ZWFzdC53ZWJw"
+      },
+      {
+        "en": "eat",
+        "ko": "먹다",
+        "img": "ZWF0LndlYnA="
+      },
+      {
+        "en": "egg",
+        "ko": "달걀",
+        "img": "ZWdnLndlYnA="
+      },
+      {
+        "en": "eight",
+        "ko": "여덟",
+        "img": "ZWlnaHQud2VicA=="
+      },
+      {
+        "en": "elephant",
+        "ko": "코끼리",
+        "img": "ZWxlcGhhbnQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "오늘의 영단어 [25회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "eleven",
+        "ko": "열하나",
+        "img": "ZWxldmVuLndlYnA="
+      },
+      {
+        "en": "end",
+        "ko": "끝, 마지막",
+        "img": "ZW5kLndlYnA="
+      },
+      {
+        "en": "energy",
+        "ko": "에너지",
+        "img": "ZW5lcmd5LndlYnA="
+      },
+      {
+        "en": "enough",
+        "ko": "충분히, ~할 만큼",
+        "img": "ZW5vdWdoLndlYnA="
+      },
+      {
+        "en": "enter",
+        "ko": "들어가다",
+        "img": "ZW50ZXIud2VicA=="
+      },
+      {
+        "en": "evening",
+        "ko": "저녁, 밤",
+        "img": "ZXZlbmluZy53ZWJw"
+      },
+      {
+        "en": "every",
+        "ko": "매~, 모든",
+        "img": "ZXZlcnkud2VicA=="
+      },
+      {
+        "en": "example",
+        "ko": "보기, 사례",
+        "img": "ZXhhbXBsZS53ZWJw"
+      },
+      {
+        "en": "exercise",
+        "ko": "운동",
+        "img": "ZXhlcmNpc2Uud2VicA=="
+      },
+      {
+        "en": "eye",
+        "ko": "눈",
+        "img": "ZXllLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "오늘의 영단어 [26회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "face",
+        "ko": "얼굴",
+        "img": "ZmFjZS53ZWJw"
+      },
+      {
+        "en": "fact",
+        "ko": "사실, 진실",
+        "img": "ZmFjdC53ZWJw"
+      },
+      {
+        "en": "fail",
+        "ko": "실패하다",
+        "img": "ZmFpbC53ZWJw"
+      },
+      {
+        "en": "fall",
+        "ko": "떨어지다, 넘어지다, 가을",
+        "img": "ZmFsbC53ZWJw"
+      },
+      {
+        "en": "family",
+        "ko": "가족",
+        "img": "ZmFtaWx5LndlYnA="
+      },
+      {
+        "en": "fan",
+        "ko": "팬",
+        "img": "ZmFuLndlYnA="
+      },
+      {
+        "en": "far",
+        "ko": "멀리, 멀리 떨어져",
+        "img": "ZmFyLndlYnA="
+      },
+      {
+        "en": "farm",
+        "ko": "농장, 목장",
+        "img": "ZmFybS53ZWJw"
+      },
+      {
+        "en": "fast",
+        "ko": "빠른",
+        "img": "ZmFzdC53ZWJw"
+      },
+      {
+        "en": "fat",
+        "ko": "뚱뚱한, 살찐",
+        "img": "ZmF0LndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "오늘의 영단어 [27회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "father",
+        "ko": "아버지, (천주교의) 신부님",
+        "img": "ZmF0aGVyLndlYnA="
+      },
+      {
+        "en": "favorite",
+        "ko": "가장 좋아하는",
+        "img": "ZmF2b3JpdGUud2VicA=="
+      },
+      {
+        "en": "feel",
+        "ko": "~을 느끼다",
+        "img": "ZmVlbC53ZWJw"
+      },
+      {
+        "en": "festival",
+        "ko": "축제",
+        "img": "ZmVzdGl2YWwud2VicA=="
+      },
+      {
+        "en": "field",
+        "ko": "밭, 들판, 경기장",
+        "img": "ZmllbGQud2VicA=="
+      },
+      {
+        "en": "fight",
+        "ko": "싸우다",
+        "img": "ZmlnaHQud2VicA=="
+      },
+      {
+        "en": "file",
+        "ko": "파일",
+        "img": "ZmlsZS53ZWJw"
+      },
+      {
+        "en": "fill",
+        "ko": "~을 채우다",
+        "img": "ZmlsbC53ZWJw"
+      },
+      {
+        "en": "film",
+        "ko": "필름, 영화",
+        "img": "ZmlsbS53ZWJw"
+      },
+      {
+        "en": "find",
+        "ko": "~을 발견하다, ~을 찾다",
+        "img": "ZmluZC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "오늘의 영단어 [28회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "fine",
+        "ko": "좋은, 훌륭한",
+        "img": "ZmluZS53ZWJw"
+      },
+      {
+        "en": "finger",
+        "ko": "손가락",
+        "img": "ZmluZ2VyLndlYnA="
+      },
+      {
+        "en": "finish",
+        "ko": "~을 끝내다",
+        "img": "ZmluaXNoLndlYnA="
+      },
+      {
+        "en": "fire",
+        "ko": "불, 화재",
+        "img": "ZmlyZS53ZWJw"
+      },
+      {
+        "en": "first",
+        "ko": "첫 번째",
+        "img": "Zmlyc3Qud2VicA=="
+      },
+      {
+        "en": "fish",
+        "ko": "물고기",
+        "img": "ZmlzaC53ZWJw"
+      },
+      {
+        "en": "five",
+        "ko": "다섯",
+        "img": "Zml2ZS53ZWJw"
+      },
+      {
+        "en": "fix",
+        "ko": "고치다, 가다듬다, (시간·장소 등을) 정하다, ~에 달고 고정시키다",
+        "img": "Zml4LndlYnA="
+      },
+      {
+        "en": "floor",
+        "ko": "마루, 바닥",
+        "img": "Zmxvb3Iud2VicA=="
+      },
+      {
+        "en": "flower",
+        "ko": "꽃",
+        "img": "Zmxvd2VyLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "오늘의 영단어 [29회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "fly",
+        "ko": "날다, ~을 날리다",
+        "img": "Zmx5LndlYnA="
+      },
+      {
+        "en": "focus",
+        "ko": "집중하다",
+        "img": "Zm9jdXMud2VicA=="
+      },
+      {
+        "en": "food",
+        "ko": "음식",
+        "img": "Zm9vZC53ZWJw"
+      },
+      {
+        "en": "fool",
+        "ko": "바보",
+        "img": "Zm9vbC53ZWJw"
+      },
+      {
+        "en": "foot",
+        "ko": "발",
+        "img": "Zm9vdC53ZWJw"
+      },
+      {
+        "en": "football",
+        "ko": "축구",
+        "img": "Zm9vdGJhbGwud2VicA=="
+      },
+      {
+        "en": "for",
+        "ko": "~동안, ~을 위해",
+        "img": "Zm9yLndlYnA="
+      },
+      {
+        "en": "forest",
+        "ko": "숲",
+        "img": "Zm9yZXN0LndlYnA="
+      },
+      {
+        "en": "forget",
+        "ko": "~을 잊다",
+        "img": "Zm9yZ2V0LndlYnA="
+      },
+      {
+        "en": "fork",
+        "ko": "식탁용 포크, 갈림길",
+        "img": "Zm9yay53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "오늘의 영단어 [30회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "form",
+        "ko": "형태",
+        "img": "Zm9ybS53ZWJw"
+      },
+      {
+        "en": "four",
+        "ko": "넷",
+        "img": "Zm91ci53ZWJw"
+      },
+      {
+        "en": "fox",
+        "ko": "여우",
+        "img": "Zm94LndlYnA="
+      },
+      {
+        "en": "free",
+        "ko": "무료로 주는, 한가한, 여유 있는",
+        "img": "ZnJlZS53ZWJw"
+      },
+      {
+        "en": "fresh",
+        "ko": "신선한, 새로운",
+        "img": "ZnJlc2gud2VicA=="
+      },
+      {
+        "en": "friend",
+        "ko": "친구",
+        "img": "ZnJpZW5kLndlYnA="
+      },
+      {
+        "en": "from",
+        "ko": "~에서, ~로부터",
+        "img": "ZnJvbS53ZWJw"
+      },
+      {
+        "en": "front",
+        "ko": "앞",
+        "img": "ZnJvbnQud2VicA=="
+      },
+      {
+        "en": "fruit",
+        "ko": "과일",
+        "img": "ZnJ1aXQud2VicA=="
+      },
+      {
+        "en": "full",
+        "ko": "가득 찬, 가득한",
+        "img": "ZnVsbC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "오늘의 영단어 [31회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "fun",
+        "ko": "재미, 즐거움, 장난",
+        "img": "ZnVuLndlYnA="
+      },
+      {
+        "en": "future",
+        "ko": "미래",
+        "img": "ZnV0dXJlLndlYnA="
+      },
+      {
+        "en": "game",
+        "ko": "놀이, 게임, 시합",
+        "img": "Z2FtZS53ZWJw"
+      },
+      {
+        "en": "garden",
+        "ko": "정원",
+        "img": "Z2FyZGVuLndlYnA="
+      },
+      {
+        "en": "gas",
+        "ko": "휘발유, 기름",
+        "img": "Z2FzLndlYnA="
+      },
+      {
+        "en": "gentleman",
+        "ko": "신사",
+        "img": "Z2VudGxlbWFuLndlYnA="
+      },
+      {
+        "en": "get",
+        "ko": "~을 얻다, ~을 사다",
+        "img": "Z2V0LndlYnA="
+      },
+      {
+        "en": "girl",
+        "ko": "소녀",
+        "img": "Z2lybC53ZWJw"
+      },
+      {
+        "en": "give",
+        "ko": "~을 주다",
+        "img": "Z2l2ZS53ZWJw"
+      },
+      {
+        "en": "glad",
+        "ko": "즐거운, 기쁜, 기꺼이~하다",
+        "img": "Z2xhZC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "오늘의 영단어 [32회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "glass",
+        "ko": "유리, 잔",
+        "img": "Z2xhc3Mud2VicA=="
+      },
+      {
+        "en": "go",
+        "ko": "가다",
+        "img": "Z28ud2VicA=="
+      },
+      {
+        "en": "goal",
+        "ko": "목표",
+        "img": "Z29hbC53ZWJw"
+      },
+      {
+        "en": "god",
+        "ko": "신",
+        "img": "Z29kLndlYnA="
+      },
+      {
+        "en": "gold",
+        "ko": "황금, 금, 황금으로 만든",
+        "img": "Z29sZC53ZWJw"
+      },
+      {
+        "en": "good",
+        "ko": "착한, 좋은",
+        "img": "Z29vZC53ZWJw"
+      },
+      {
+        "en": "goodbye",
+        "ko": "안녕",
+        "img": "Z29vZGJ5ZS53ZWJw"
+      },
+      {
+        "en": "grandfather",
+        "ko": "할아버지",
+        "img": "Z3JhbmRmYXRoZXIud2VicA=="
+      },
+      {
+        "en": "grape",
+        "ko": "포도",
+        "img": "Z3JhcGUud2VicA=="
+      },
+      {
+        "en": "grass",
+        "ko": "풀, 잔디",
+        "img": "Z3Jhc3Mud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "오늘의 영단어 [33회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "gray",
+        "ko": "회색, 회색의",
+        "img": "Z3JheS53ZWJw"
+      },
+      {
+        "en": "great",
+        "ko": "큰, 거대한, 웅장한, 재미있는, 신나는",
+        "img": "Z3JlYXQud2VicA=="
+      },
+      {
+        "en": "green",
+        "ko": "녹색, 녹색의",
+        "img": "Z3JlZW4ud2VicA=="
+      },
+      {
+        "en": "ground",
+        "ko": "땅, 지면",
+        "img": "Z3JvdW5kLndlYnA="
+      },
+      {
+        "en": "group",
+        "ko": "모임, 집단, 무리",
+        "img": "Z3JvdXAud2VicA=="
+      },
+      {
+        "en": "grow",
+        "ko": "자라다, 성장하다, ~이 되다",
+        "img": "Z3Jvdy53ZWJw"
+      },
+      {
+        "en": "guess",
+        "ko": "추측하다",
+        "img": "Z3Vlc3Mud2VicA=="
+      },
+      {
+        "en": "guitar",
+        "ko": "기타",
+        "img": "Z3VpdGFyLndlYnA="
+      },
+      {
+        "en": "gum",
+        "ko": "껌",
+        "img": "Z3VtLndlYnA="
+      },
+      {
+        "en": "guy",
+        "ko": "남자 / 사람",
+        "img": "Z3V5LndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "오늘의 영단어 [34회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "habit",
+        "ko": "습관",
+        "img": "aGFiaXQud2VicA=="
+      },
+      {
+        "en": "hair",
+        "ko": "머리카락",
+        "img": "aGFpci53ZWJw"
+      },
+      {
+        "en": "hamburger",
+        "ko": "햄버거",
+        "img": "aGFtYnVyZ2VyLndlYnA="
+      },
+      {
+        "en": "hand",
+        "ko": "손, (시계의) 바늘",
+        "img": "aGFuZC53ZWJw"
+      },
+      {
+        "en": "hang",
+        "ko": "걸다",
+        "img": "aGFuZy53ZWJw"
+      },
+      {
+        "en": "happy",
+        "ko": "행복한",
+        "img": "aGFwcHkud2VicA=="
+      },
+      {
+        "en": "hard",
+        "ko": "어려운, 단단한, 열심히",
+        "img": "aGFyZC53ZWJw"
+      },
+      {
+        "en": "hat",
+        "ko": "모자",
+        "img": "aGF0LndlYnA="
+      },
+      {
+        "en": "hate",
+        "ko": "미워하다, 싫어하다",
+        "img": "aGF0ZS53ZWJw"
+      },
+      {
+        "en": "have",
+        "ko": "가지다, 가지고 있다, ~하다",
+        "img": "aGF2ZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "오늘의 영단어 [35회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "he",
+        "ko": "그가, 그는",
+        "img": "aGUud2VicA=="
+      },
+      {
+        "en": "head",
+        "ko": "머리, 우두머리, 대표",
+        "img": "aGVhZC53ZWJw"
+      },
+      {
+        "en": "heart",
+        "ko": "심장, 가슴, 마음",
+        "img": "aGVhcnQud2VicA=="
+      },
+      {
+        "en": "heat",
+        "ko": "열",
+        "img": "aGVhdC53ZWJw"
+      },
+      {
+        "en": "heavy",
+        "ko": "무거운",
+        "img": "aGVhdnkud2VicA=="
+      },
+      {
+        "en": "hello",
+        "ko": "(가벼운 인사) 안녕",
+        "img": "aGVsbG8ud2VicA=="
+      },
+      {
+        "en": "helmet",
+        "ko": "헬멧",
+        "img": "aGVsbWV0LndlYnA="
+      },
+      {
+        "en": "help",
+        "ko": "~을 돕다",
+        "img": "aGVscC53ZWJw"
+      },
+      {
+        "en": "here",
+        "ko": "여기에서, 여기에",
+        "img": "aGVyZS53ZWJw"
+      },
+      {
+        "en": "hero",
+        "ko": "영웅",
+        "img": "aGVyby53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "오늘의 영단어 [36회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "high",
+        "ko": "높은, 높이, 높게",
+        "img": "aGlnaC53ZWJw"
+      },
+      {
+        "en": "hike",
+        "ko": "등산하다",
+        "img": "aGlrZS53ZWJw"
+      },
+      {
+        "en": "hill",
+        "ko": "언덕",
+        "img": "aGlsbC53ZWJw"
+      },
+      {
+        "en": "history",
+        "ko": "역사",
+        "img": "aGlzdG9yeS53ZWJw"
+      },
+      {
+        "en": "hit",
+        "ko": "~을 치다, 때리다",
+        "img": "aGl0LndlYnA="
+      },
+      {
+        "en": "hobby",
+        "ko": "취미",
+        "img": "aG9iYnkud2VicA=="
+      },
+      {
+        "en": "hold",
+        "ko": "~을 들다, 잡다, 쥐다",
+        "img": "aG9sZC53ZWJw"
+      },
+      {
+        "en": "holiday",
+        "ko": "공휴일, 휴일",
+        "img": "aG9saWRheS53ZWJw"
+      },
+      {
+        "en": "home",
+        "ko": "가정, 집",
+        "img": "aG9tZS53ZWJw"
+      },
+      {
+        "en": "homework",
+        "ko": "숙제",
+        "img": "aG9tZXdvcmsud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "오늘의 영단어 [37회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "honest",
+        "ko": "정직한",
+        "img": "aG9uZXN0LndlYnA="
+      },
+      {
+        "en": "hope",
+        "ko": "희망, 기대, ~을 바라다, 희망하다",
+        "img": "aG9wZS53ZWJw"
+      },
+      {
+        "en": "horse",
+        "ko": "말",
+        "img": "aG9yc2Uud2VicA=="
+      },
+      {
+        "en": "hospital",
+        "ko": "병원",
+        "img": "aG9zcGl0YWwud2VicA=="
+      },
+      {
+        "en": "hot",
+        "ko": "뜨거운, 더운",
+        "img": "aG90LndlYnA="
+      },
+      {
+        "en": "hour",
+        "ko": "시간",
+        "img": "aG91ci53ZWJw"
+      },
+      {
+        "en": "house",
+        "ko": "집",
+        "img": "aG91c2Uud2VicA=="
+      },
+      {
+        "en": "how",
+        "ko": "어떻게, 어느 정도, 얼마만큼",
+        "img": "aG93LndlYnA="
+      },
+      {
+        "en": "however",
+        "ko": "그러나",
+        "img": "aG93ZXZlci53ZWJw"
+      },
+      {
+        "en": "human",
+        "ko": "인간",
+        "img": "aHVtYW4ud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "오늘의 영단어 [38회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "hundred",
+        "ko": "백, 백의",
+        "img": "aHVuZHJlZC53ZWJw"
+      },
+      {
+        "en": "hunt",
+        "ko": "사냥하다",
+        "img": "aHVudC53ZWJw"
+      },
+      {
+        "en": "hurry",
+        "ko": "서두르다, 급한 상태",
+        "img": "aHVycnkud2VicA=="
+      },
+      {
+        "en": "husband",
+        "ko": "남편",
+        "img": "aHVzYmFuZC53ZWJw"
+      },
+      {
+        "en": "I",
+        "ko": "나",
+        "img": "SS53ZWJw"
+      },
+      {
+        "en": "ice",
+        "ko": "얼음, 빙판",
+        "img": "aWNlLndlYnA="
+      },
+      {
+        "en": "idea",
+        "ko": "생각",
+        "img": "aWRlYS53ZWJw"
+      },
+      {
+        "en": "if",
+        "ko": "만일~라면",
+        "img": "aWYud2VicA=="
+      },
+      {
+        "en": "image",
+        "ko": "이미지 / 상",
+        "img": "aW1hZ2Uud2VicA=="
+      },
+      {
+        "en": "in",
+        "ko": "~안에(서)",
+        "img": "aW4ud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "오늘의 영단어 [39회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "inside",
+        "ko": "안쪽에",
+        "img": "aW5zaWRlLndlYnA="
+      },
+      {
+        "en": "internet",
+        "ko": "인터넷",
+        "img": "aW50ZXJuZXQud2VicA=="
+      },
+      {
+        "en": "into",
+        "ko": "~안으로, ~속으로",
+        "img": "aW50by53ZWJw"
+      },
+      {
+        "en": "introduce",
+        "ko": "~를 소개하다",
+        "img": "aW50cm9kdWNlLndlYnA="
+      },
+      {
+        "en": "invite",
+        "ko": "초대하다",
+        "img": "aW52aXRlLndlYnA="
+      },
+      {
+        "en": "issue",
+        "ko": "문제 / 발행하다",
+        "img": "aXNzdWUud2VicA=="
+      },
+      {
+        "en": "it",
+        "ko": "그것, 날씨를 나타낼 때, 사람을 나타낼 때",
+        "img": "aXQud2VicA=="
+      },
+      {
+        "en": "jacket",
+        "ko": "재킷",
+        "img": "amFja2V0LndlYnA="
+      },
+      {
+        "en": "jam",
+        "ko": "잼",
+        "img": "amFtLndlYnA="
+      },
+      {
+        "en": "job",
+        "ko": "일, 직업",
+        "img": "am9iLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "오늘의 영단어 [40회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "join",
+        "ko": "~참가하다",
+        "img": "am9pbi53ZWJw"
+      },
+      {
+        "en": "juice",
+        "ko": "주스",
+        "img": "anVpY2Uud2VicA=="
+      },
+      {
+        "en": "jump",
+        "ko": "뛰다, 뛰어오르다",
+        "img": "anVtcC53ZWJw"
+      },
+      {
+        "en": "just",
+        "ko": "바로, 금방, 조금 전에",
+        "img": "anVzdC53ZWJw"
+      },
+      {
+        "en": "keep",
+        "ko": "~을 지니다, 가지다",
+        "img": "a2VlcC53ZWJw"
+      },
+      {
+        "en": "key",
+        "ko": "열쇠",
+        "img": "a2V5LndlYnA="
+      },
+      {
+        "en": "kick",
+        "ko": "차다",
+        "img": "a2ljay53ZWJw"
+      },
+      {
+        "en": "kid",
+        "ko": "어린아이, 농담하다",
+        "img": "a2lkLndlYnA="
+      },
+      {
+        "en": "kill",
+        "ko": "죽이다, (시간을) 보내다",
+        "img": "a2lsbC53ZWJw"
+      },
+      {
+        "en": "kind",
+        "ko": "종류, 친절한",
+        "img": "a2luZC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "오늘의 영단어 [41회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "king",
+        "ko": "왕, 임금",
+        "img": "a2luZy53ZWJw"
+      },
+      {
+        "en": "kiss",
+        "ko": "키스",
+        "img": "a2lzcy53ZWJw"
+      },
+      {
+        "en": "kitchen",
+        "ko": "부엌",
+        "img": "a2l0Y2hlbi53ZWJw"
+      },
+      {
+        "en": "knife",
+        "ko": "칼, (식탁의) 나이프",
+        "img": "a25pZmUud2VicA=="
+      },
+      {
+        "en": "know",
+        "ko": "~를 알다",
+        "img": "a25vdy53ZWJw"
+      },
+      {
+        "en": "lady",
+        "ko": "숙녀, 귀부인",
+        "img": "bGFkeS53ZWJw"
+      },
+      {
+        "en": "lake",
+        "ko": "호수",
+        "img": "bGFrZS53ZWJw"
+      },
+      {
+        "en": "land",
+        "ko": "육지, 땅",
+        "img": "bGFuZC53ZWJw"
+      },
+      {
+        "en": "large",
+        "ko": "큰, 커다란",
+        "img": "bGFyZ2Uud2VicA=="
+      },
+      {
+        "en": "laser",
+        "ko": "레이저",
+        "img": "bGFzZXIud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "오늘의 영단어 [42회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "last",
+        "ko": "마지막의, 최후의, 지난, 앞선",
+        "img": "bGFzdC53ZWJw"
+      },
+      {
+        "en": "late",
+        "ko": "늦은",
+        "img": "bGF0ZS53ZWJw"
+      },
+      {
+        "en": "lazy",
+        "ko": "게으른",
+        "img": "bGF6eS53ZWJw"
+      },
+      {
+        "en": "learn",
+        "ko": "~을 배우다, 익히다",
+        "img": "bGVhcm4ud2VicA=="
+      },
+      {
+        "en": "left",
+        "ko": "왼쪽, leave의 과거·과거 분사형",
+        "img": "bGVmdC53ZWJw"
+      },
+      {
+        "en": "leg",
+        "ko": "다리",
+        "img": "bGVnLndlYnA="
+      },
+      {
+        "en": "lesson",
+        "ko": "(교과서) 과, 수업, 레슨",
+        "img": "bGVzc29uLndlYnA="
+      },
+      {
+        "en": "letter",
+        "ko": "글자, 편지",
+        "img": "bGV0dGVyLndlYnA="
+      },
+      {
+        "en": "library",
+        "ko": "도서관",
+        "img": "bGlicmFyeS53ZWJw"
+      },
+      {
+        "en": "lie",
+        "ko": "거짓말, 눕다",
+        "img": "bGllLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "오늘의 영단어 [43회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "life",
+        "ko": "삶",
+        "img": "bGlmZS53ZWJw"
+      },
+      {
+        "en": "light",
+        "ko": "빛, 불을 붙이다, 가벼운",
+        "img": "bGlnaHQud2VicA=="
+      },
+      {
+        "en": "like",
+        "ko": "좋아하다, ~와 같은, ~와 닮은",
+        "img": "bGlrZS53ZWJw"
+      },
+      {
+        "en": "line",
+        "ko": "선, 줄",
+        "img": "bGluZS53ZWJw"
+      },
+      {
+        "en": "lion",
+        "ko": "사자",
+        "img": "bGlvbi53ZWJw"
+      },
+      {
+        "en": "lip",
+        "ko": "입술",
+        "img": "bGlwLndlYnA="
+      },
+      {
+        "en": "listen",
+        "ko": "듣다, 귀를 기울이다",
+        "img": "bGlzdGVuLndlYnA="
+      },
+      {
+        "en": "little",
+        "ko": "작은",
+        "img": "bGl0dGxlLndlYnA="
+      },
+      {
+        "en": "live",
+        "ko": "살다",
+        "img": "bGl2ZS53ZWJw"
+      },
+      {
+        "en": "long",
+        "ko": "(물건의 길이가) 긴, 길쭉한, (시간이) 긴, 오랫동안",
+        "img": "bG9uZy53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "오늘의 영단어 [44회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "look",
+        "ko": "찾다, 보다, 바라보다",
+        "img": "bG9vay53ZWJw"
+      },
+      {
+        "en": "love",
+        "ko": "사랑하다, 아주 좋아하다, 사랑",
+        "img": "bG92ZS53ZWJw"
+      },
+      {
+        "en": "low",
+        "ko": "낮은",
+        "img": "bG93LndlYnA="
+      },
+      {
+        "en": "luck",
+        "ko": "운, 행운",
+        "img": "bHVjay53ZWJw"
+      },
+      {
+        "en": "lunch",
+        "ko": "점심",
+        "img": "bHVuY2gud2VicA=="
+      },
+      {
+        "en": "mad",
+        "ko": "화난",
+        "img": "bWFkLndlYnA="
+      },
+      {
+        "en": "mail",
+        "ko": "우편",
+        "img": "bWFpbC53ZWJw"
+      },
+      {
+        "en": "make",
+        "ko": "~을 만들다",
+        "img": "bWFrZS53ZWJw"
+      },
+      {
+        "en": "man",
+        "ko": "남자, 사람, 인간",
+        "img": "bWFuLndlYnA="
+      },
+      {
+        "en": "many",
+        "ko": "많은, 다수의",
+        "img": "bWFueS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "오늘의 영단어 [45회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "map",
+        "ko": "지도",
+        "img": "bWFwLndlYnA="
+      },
+      {
+        "en": "marathon",
+        "ko": "마라톤",
+        "img": "bWFyYXRob24ud2VicA=="
+      },
+      {
+        "en": "market",
+        "ko": "시장",
+        "img": "bWFya2V0LndlYnA="
+      },
+      {
+        "en": "marry",
+        "ko": "결혼하다",
+        "img": "bWFycnkud2VicA=="
+      },
+      {
+        "en": "mathematics",
+        "ko": "수학",
+        "img": "bWF0aGVtYXRpY3Mud2VicA=="
+      },
+      {
+        "en": "may",
+        "ko": "~해도 좋다(허락), ~일지도 모른다(추측)",
+        "img": "bWF5LndlYnA="
+      },
+      {
+        "en": "meat",
+        "ko": "고기",
+        "img": "bWVhdC53ZWJw"
+      },
+      {
+        "en": "medal",
+        "ko": "메달, 훈장",
+        "img": "bWVkYWwud2VicA=="
+      },
+      {
+        "en": "meet",
+        "ko": "만나다",
+        "img": "bWVldC53ZWJw"
+      },
+      {
+        "en": "member",
+        "ko": "회원",
+        "img": "bWVtYmVyLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "오늘의 영단어 [46회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "memory",
+        "ko": "기억",
+        "img": "bWVtb3J5LndlYnA="
+      },
+      {
+        "en": "middle",
+        "ko": "중간, 중앙",
+        "img": "bWlkZGxlLndlYnA="
+      },
+      {
+        "en": "might",
+        "ko": "~일지도 모른다",
+        "img": "bWlnaHQud2VicA=="
+      },
+      {
+        "en": "milk",
+        "ko": "우유",
+        "img": "bWlsay53ZWJw"
+      },
+      {
+        "en": "mind",
+        "ko": "마음",
+        "img": "bWluZC53ZWJw"
+      },
+      {
+        "en": "miss",
+        "ko": "그리워하다 / 놓치다",
+        "img": "bWlzcy53ZWJw"
+      },
+      {
+        "en": "model",
+        "ko": "모델",
+        "img": "bW9kZWwud2VicA=="
+      },
+      {
+        "en": "money",
+        "ko": "돈",
+        "img": "bW9uZXkud2VicA=="
+      },
+      {
+        "en": "monkey",
+        "ko": "원숭이",
+        "img": "bW9ua2V5LndlYnA="
+      },
+      {
+        "en": "month",
+        "ko": "달, 개월",
+        "img": "bW9udGgud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "오늘의 영단어 [47회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "moon",
+        "ko": "달",
+        "img": "bW9vbi53ZWJw"
+      },
+      {
+        "en": "morning",
+        "ko": "아침, 오전",
+        "img": "bW9ybmluZy53ZWJw"
+      },
+      {
+        "en": "mother",
+        "ko": "어머니",
+        "img": "bW90aGVyLndlYnA="
+      },
+      {
+        "en": "mountain",
+        "ko": "산",
+        "img": "bW91bnRhaW4ud2VicA=="
+      },
+      {
+        "en": "mouse",
+        "ko": "쥐",
+        "img": "bW91c2Uud2VicA=="
+      },
+      {
+        "en": "mouth",
+        "ko": "입",
+        "img": "bW91dGgud2VicA=="
+      },
+      {
+        "en": "move",
+        "ko": "움직이다",
+        "img": "bW92ZS53ZWJw"
+      },
+      {
+        "en": "movie",
+        "ko": "영화",
+        "img": "bW92aWUud2VicA=="
+      },
+      {
+        "en": "much",
+        "ko": "많은",
+        "img": "bXVjaC53ZWJw"
+      },
+      {
+        "en": "music",
+        "ko": "음악",
+        "img": "bXVzaWMud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "오늘의 영단어 [48회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "must",
+        "ko": "~해야 한다, ~임에 틀림없다",
+        "img": "bXVzdC53ZWJw"
+      },
+      {
+        "en": "name",
+        "ko": "이름",
+        "img": "bmFtZS53ZWJw"
+      },
+      {
+        "en": "nation",
+        "ko": "국가",
+        "img": "bmF0aW9uLndlYnA="
+      },
+      {
+        "en": "nature",
+        "ko": "자연",
+        "img": "bmF0dXJlLndlYnA="
+      },
+      {
+        "en": "near",
+        "ko": "가까운",
+        "img": "bmVhci53ZWJw"
+      },
+      {
+        "en": "neck",
+        "ko": "목",
+        "img": "bmVjay53ZWJw"
+      },
+      {
+        "en": "need",
+        "ko": "~가 필요하다, ~을 필요로 하다",
+        "img": "bmVlZC53ZWJw"
+      },
+      {
+        "en": "never",
+        "ko": "결코~않다",
+        "img": "bmV2ZXIud2VicA=="
+      },
+      {
+        "en": "new",
+        "ko": "새로운",
+        "img": "bmV3LndlYnA="
+      },
+      {
+        "en": "news",
+        "ko": "뉴스, 소식",
+        "img": "bmV3cy53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "오늘의 영단어 [49회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "newspaper",
+        "ko": "신문",
+        "img": "bmV3c3BhcGVyLndlYnA="
+      },
+      {
+        "en": "next",
+        "ko": "(to와 함께) ~의 옆에, 다음의",
+        "img": "bmV4dC53ZWJw"
+      },
+      {
+        "en": "nice",
+        "ko": "좋은, 멋진, 친절한",
+        "img": "bmljZS53ZWJw"
+      },
+      {
+        "en": "night",
+        "ko": "밤",
+        "img": "bmlnaHQud2VicA=="
+      },
+      {
+        "en": "nine",
+        "ko": "아홉",
+        "img": "bmluZS53ZWJw"
+      },
+      {
+        "en": "no",
+        "ko": "(대답에서) 아니오, 하나도~없는",
+        "img": "bm8ud2VicA=="
+      },
+      {
+        "en": "north",
+        "ko": "북쪽",
+        "img": "bm9ydGgud2VicA=="
+      },
+      {
+        "en": "nose",
+        "ko": "코",
+        "img": "bm9zZS53ZWJw"
+      },
+      {
+        "en": "not",
+        "ko": "~아니다",
+        "img": "bm90LndlYnA="
+      },
+      {
+        "en": "note",
+        "ko": "짧은 기록, 메모",
+        "img": "bm90ZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "오늘의 영단어 [50회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "notebook",
+        "ko": "공책",
+        "img": "bm90ZWJvb2sud2VicA=="
+      },
+      {
+        "en": "nothing",
+        "ko": "아무것도 ~아니다",
+        "img": "bm90aGluZy53ZWJw"
+      },
+      {
+        "en": "now",
+        "ko": "지금, 현재",
+        "img": "bm93LndlYnA="
+      },
+      {
+        "en": "number",
+        "ko": "수, 숫자",
+        "img": "bnVtYmVyLndlYnA="
+      },
+      {
+        "en": "nurse",
+        "ko": "간호사",
+        "img": "bnVyc2Uud2VicA=="
+      },
+      {
+        "en": "of",
+        "ko": "~의, ~중에서, ~로 만든",
+        "img": "b2Yud2VicA=="
+      },
+      {
+        "en": "off",
+        "ko": "(옷·신발 등을) 벗고, 멀리, (전기·가스 등을) 꺼 놓고",
+        "img": "b2ZmLndlYnA="
+      },
+      {
+        "en": "office",
+        "ko": "사무실",
+        "img": "b2ZmaWNlLndlYnA="
+      },
+      {
+        "en": "often",
+        "ko": "흔히, 자주",
+        "img": "b2Z0ZW4ud2VicA=="
+      },
+      {
+        "en": "oil",
+        "ko": "기름, 유화, 유화물감",
+        "img": "b2lsLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "오늘의 영단어 [51회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "okay",
+        "ko": "좋아",
+        "img": "b2theS53ZWJw"
+      },
+      {
+        "en": "old",
+        "ko": "낡은, 오래된, (나이가) ~살인, 늙은, 나이든",
+        "img": "b2xkLndlYnA="
+      },
+      {
+        "en": "on",
+        "ko": "~위에",
+        "img": "b24ud2VicA=="
+      },
+      {
+        "en": "one",
+        "ko": "하나",
+        "img": "b25lLndlYnA="
+      },
+      {
+        "en": "only",
+        "ko": "오직",
+        "img": "b25seS53ZWJw"
+      },
+      {
+        "en": "open",
+        "ko": "~을 열다, 열려 있는",
+        "img": "b3Blbi53ZWJw"
+      },
+      {
+        "en": "or",
+        "ko": "또는, 혹은",
+        "img": "b3Iud2VicA=="
+      },
+      {
+        "en": "orange",
+        "ko": "오렌지",
+        "img": "b3JhbmdlLndlYnA="
+      },
+      {
+        "en": "out",
+        "ko": "밖에, 밖으로",
+        "img": "b3V0LndlYnA="
+      },
+      {
+        "en": "over",
+        "ko": "~위에, 끝난",
+        "img": "b3Zlci53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "오늘의 영단어 [52회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "page",
+        "ko": "페이지, 쪽",
+        "img": "cGFnZS53ZWJw"
+      },
+      {
+        "en": "paint",
+        "ko": "페인트, 페인트를 칠하다, 그림 그리다",
+        "img": "cGFpbnQud2VicA=="
+      },
+      {
+        "en": "pants",
+        "ko": "바지",
+        "img": "cGFudHMud2VicA=="
+      },
+      {
+        "en": "paper",
+        "ko": "종이, 신문",
+        "img": "cGFwZXIud2VicA=="
+      },
+      {
+        "en": "parent",
+        "ko": "부모 중의 어느 한 편",
+        "img": "cGFyZW50LndlYnA="
+      },
+      {
+        "en": "park",
+        "ko": "공원, 유원지",
+        "img": "cGFyay53ZWJw"
+      },
+      {
+        "en": "part",
+        "ko": "부분",
+        "img": "cGFydC53ZWJw"
+      },
+      {
+        "en": "partner",
+        "ko": "파트너",
+        "img": "cGFydG5lci53ZWJw"
+      },
+      {
+        "en": "party",
+        "ko": "파티, 모임",
+        "img": "cGFydHkud2VicA=="
+      },
+      {
+        "en": "pass",
+        "ko": "(시간이) 지나다, ~을 건네주다, (시험에) 합격하다",
+        "img": "cGFzcy53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "오늘의 영단어 [53회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "pay",
+        "ko": "(돈을) 지불하다",
+        "img": "cGF5LndlYnA="
+      },
+      {
+        "en": "pen",
+        "ko": "펜",
+        "img": "cGVuLndlYnA="
+      },
+      {
+        "en": "pencil",
+        "ko": "연필",
+        "img": "cGVuY2lsLndlYnA="
+      },
+      {
+        "en": "people",
+        "ko": "사람들",
+        "img": "cGVvcGxlLndlYnA="
+      },
+      {
+        "en": "piano",
+        "ko": "피아노",
+        "img": "cGlhbm8ud2VicA=="
+      },
+      {
+        "en": "pick",
+        "ko": "(꽃·과일 따위를) 꺾다, 따다",
+        "img": "cGljay53ZWJw"
+      },
+      {
+        "en": "picture",
+        "ko": "그림, 사진",
+        "img": "cGljdHVyZS53ZWJw"
+      },
+      {
+        "en": "pig",
+        "ko": "돼지",
+        "img": "cGlnLndlYnA="
+      },
+      {
+        "en": "pilot",
+        "ko": "조종사",
+        "img": "cGlsb3Qud2VicA=="
+      },
+      {
+        "en": "pink",
+        "ko": "연분홍색, 핑크색",
+        "img": "cGluay53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "오늘의 영단어 [54회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "pizza",
+        "ko": "피자",
+        "img": "cGl6emEud2VicA=="
+      },
+      {
+        "en": "place",
+        "ko": "장소, 곳",
+        "img": "cGxhY2Uud2VicA=="
+      },
+      {
+        "en": "plan",
+        "ko": "계획",
+        "img": "cGxhbi53ZWJw"
+      },
+      {
+        "en": "plastic",
+        "ko": "플라스틱",
+        "img": "cGxhc3RpYy53ZWJw"
+      },
+      {
+        "en": "play",
+        "ko": "놀다, (운동 경기를) 하다, 연주하다",
+        "img": "cGxheS53ZWJw"
+      },
+      {
+        "en": "please",
+        "ko": "제발, 미안하지만, ~를 기쁘게 하다",
+        "img": "cGxlYXNlLndlYnA="
+      },
+      {
+        "en": "point",
+        "ko": "(뾰족한)끝, ~를 가리키다",
+        "img": "cG9pbnQud2VicA=="
+      },
+      {
+        "en": "police",
+        "ko": "경찰",
+        "img": "cG9saWNlLndlYnA="
+      },
+      {
+        "en": "poor",
+        "ko": "가난한",
+        "img": "cG9vci53ZWJw"
+      },
+      {
+        "en": "potato",
+        "ko": "감자",
+        "img": "cG90YXRvLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "오늘의 영단어 [55회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "power",
+        "ko": "힘",
+        "img": "cG93ZXIud2VicA=="
+      },
+      {
+        "en": "present",
+        "ko": "현재, 참석한, 출석한, 선물",
+        "img": "cHJlc2VudC53ZWJw"
+      },
+      {
+        "en": "pretty",
+        "ko": "예쁜, 귀여운",
+        "img": "cHJldHR5LndlYnA="
+      },
+      {
+        "en": "prince",
+        "ko": "왕자",
+        "img": "cHJpbmNlLndlYnA="
+      },
+      {
+        "en": "print",
+        "ko": "인쇄, 인쇄하다, 발행하다, (프린터에서) 프린트하다",
+        "img": "cHJpbnQud2VicA=="
+      },
+      {
+        "en": "problem",
+        "ko": "문제",
+        "img": "cHJvYmxlbS53ZWJw"
+      },
+      {
+        "en": "program",
+        "ko": "프로그램",
+        "img": "cHJvZ3JhbS53ZWJw"
+      },
+      {
+        "en": "project",
+        "ko": "프로젝트",
+        "img": "cHJvamVjdC53ZWJw"
+      },
+      {
+        "en": "puppy",
+        "ko": "강아지",
+        "img": "cHVwcHkud2VicA=="
+      },
+      {
+        "en": "push",
+        "ko": "~을 밀다",
+        "img": "cHVzaC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "오늘의 영단어 [56회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "put",
+        "ko": "~을 놓다, 두다",
+        "img": "cHV0LndlYnA="
+      },
+      {
+        "en": "queen",
+        "ko": "왕비, 여왕",
+        "img": "cXVlZW4ud2VicA=="
+      },
+      {
+        "en": "question",
+        "ko": "물음, 질문",
+        "img": "cXVlc3Rpb24ud2VicA=="
+      },
+      {
+        "en": "quick",
+        "ko": "빠른",
+        "img": "cXVpY2sud2VicA=="
+      },
+      {
+        "en": "quiet",
+        "ko": "조용한, 고요한",
+        "img": "cXVpZXQud2VicA=="
+      },
+      {
+        "en": "quiz",
+        "ko": "퀴즈",
+        "img": "cXVpei53ZWJw"
+      },
+      {
+        "en": "rabbit",
+        "ko": "토끼",
+        "img": "cmFiYml0LndlYnA="
+      },
+      {
+        "en": "race",
+        "ko": "경주",
+        "img": "cmFjZS53ZWJw"
+      },
+      {
+        "en": "radio",
+        "ko": "라디오",
+        "img": "cmFkaW8ud2VicA=="
+      },
+      {
+        "en": "rain",
+        "ko": "비, 비가 오다",
+        "img": "cmFpbi53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "오늘의 영단어 [57회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "read",
+        "ko": "읽다",
+        "img": "cmVhZC53ZWJw"
+      },
+      {
+        "en": "ready",
+        "ko": "준비된",
+        "img": "cmVhZHkud2VicA=="
+      },
+      {
+        "en": "recreation",
+        "ko": "오락 / 여가활동",
+        "img": "cmVjcmVhdGlvbi53ZWJw"
+      },
+      {
+        "en": "red",
+        "ko": "빨간, 붉은색의",
+        "img": "cmVkLndlYnA="
+      },
+      {
+        "en": "remember",
+        "ko": "기억하다",
+        "img": "cmVtZW1iZXIud2VicA=="
+      },
+      {
+        "en": "restaurant",
+        "ko": "식당, 음식점",
+        "img": "cmVzdGF1cmFudC53ZWJw"
+      },
+      {
+        "en": "restroom",
+        "ko": "화장실",
+        "img": "cmVzdHJvb20ud2VicA=="
+      },
+      {
+        "en": "return",
+        "ko": "~로 돌아가다, 돌아오다, ~을 돌려주다, 반납하다",
+        "img": "cmV0dXJuLndlYnA="
+      },
+      {
+        "en": "ribbon",
+        "ko": "리본, 장식용 띠",
+        "img": "cmliYm9uLndlYnA="
+      },
+      {
+        "en": "rich",
+        "ko": "돈 많은, 부자의",
+        "img": "cmljaC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "오늘의 영단어 [58회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "right",
+        "ko": "오른쪽, 옳은",
+        "img": "cmlnaHQud2VicA=="
+      },
+      {
+        "en": "ring",
+        "ko": "반지, (종·벨이) 울리다, (종·벨을) 치다",
+        "img": "cmluZy53ZWJw"
+      },
+      {
+        "en": "river",
+        "ko": "강",
+        "img": "cml2ZXIud2VicA=="
+      },
+      {
+        "en": "road",
+        "ko": "길, 도로",
+        "img": "cm9hZC53ZWJw"
+      },
+      {
+        "en": "robot",
+        "ko": "로봇",
+        "img": "cm9ib3Qud2VicA=="
+      },
+      {
+        "en": "rock",
+        "ko": "바위, 작은 돌",
+        "img": "cm9jay53ZWJw"
+      },
+      {
+        "en": "room",
+        "ko": "방",
+        "img": "cm9vbS53ZWJw"
+      },
+      {
+        "en": "rose",
+        "ko": "장미, rise의 과거형",
+        "img": "cm9zZS53ZWJw"
+      },
+      {
+        "en": "run",
+        "ko": "달리다, 작동하다, 움직이다",
+        "img": "cnVuLndlYnA="
+      },
+      {
+        "en": "sad",
+        "ko": "슬픈",
+        "img": "c2FkLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "오늘의 영단어 [59회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "safe",
+        "ko": "안전한",
+        "img": "c2FmZS53ZWJw"
+      },
+      {
+        "en": "salad",
+        "ko": "샐러드",
+        "img": "c2FsYWQud2VicA=="
+      },
+      {
+        "en": "sale",
+        "ko": "세일",
+        "img": "c2FsZS53ZWJw"
+      },
+      {
+        "en": "salt",
+        "ko": "소금",
+        "img": "c2FsdC53ZWJw"
+      },
+      {
+        "en": "same",
+        "ko": "같은 것, 같은, 똑같은",
+        "img": "c2FtZS53ZWJw"
+      },
+      {
+        "en": "sand",
+        "ko": "모래",
+        "img": "c2FuZC53ZWJw"
+      },
+      {
+        "en": "sandwich",
+        "ko": "샌드위치",
+        "img": "c2FuZHdpY2gud2VicA=="
+      },
+      {
+        "en": "save",
+        "ko": "저장하다",
+        "img": "c2F2ZS53ZWJw"
+      },
+      {
+        "en": "say",
+        "ko": "말하다",
+        "img": "c2F5LndlYnA="
+      },
+      {
+        "en": "school",
+        "ko": "학교",
+        "img": "c2Nob29sLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "오늘의 영단어 [60회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "science",
+        "ko": "과학",
+        "img": "c2NpZW5jZS53ZWJw"
+      },
+      {
+        "en": "scissors",
+        "ko": "가위",
+        "img": "c2Npc3NvcnMud2VicA=="
+      },
+      {
+        "en": "score",
+        "ko": "점수, 득점",
+        "img": "c2NvcmUud2VicA=="
+      },
+      {
+        "en": "sea",
+        "ko": "바다",
+        "img": "c2VhLndlYnA="
+      },
+      {
+        "en": "season",
+        "ko": "계절",
+        "img": "c2Vhc29uLndlYnA="
+      },
+      {
+        "en": "second",
+        "ko": "초 / 두 번째",
+        "img": "c2Vjb25kLndlYnA="
+      },
+      {
+        "en": "see",
+        "ko": "보다",
+        "img": "c2VlLndlYnA="
+      },
+      {
+        "en": "sell",
+        "ko": "~을 팔다",
+        "img": "c2VsbC53ZWJw"
+      },
+      {
+        "en": "send",
+        "ko": "~을 보내다",
+        "img": "c2VuZC53ZWJw"
+      },
+      {
+        "en": "service",
+        "ko": "서비스, 손님 시중, 예배, 교통편, 군대",
+        "img": "c2VydmljZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "오늘의 영단어 [61회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "set",
+        "ko": "~을 두다, 놓다, (시간·장소·가격 등을) 정하다, (해·달이) 지다, (기구의) 한 벌, 세트",
+        "img": "c2V0LndlYnA="
+      },
+      {
+        "en": "seven",
+        "ko": "일곱",
+        "img": "c2V2ZW4ud2VicA=="
+      },
+      {
+        "en": "she",
+        "ko": "그녀는, 그녀가",
+        "img": "c2hlLndlYnA="
+      },
+      {
+        "en": "ship",
+        "ko": "배",
+        "img": "c2hpcC53ZWJw"
+      },
+      {
+        "en": "shirt",
+        "ko": "셔츠",
+        "img": "c2hpcnQud2VicA=="
+      },
+      {
+        "en": "shoe",
+        "ko": "신발",
+        "img": "c2hvZS53ZWJw"
+      },
+      {
+        "en": "shop",
+        "ko": "상점, 가계, 장을 보다, 물건을 사다",
+        "img": "c2hvcC53ZWJw"
+      },
+      {
+        "en": "short",
+        "ko": "(길이·거리·시간이) 짧은, (키가) 작은",
+        "img": "c2hvcnQud2VicA=="
+      },
+      {
+        "en": "should",
+        "ko": "~해야 한다",
+        "img": "c2hvdWxkLndlYnA="
+      },
+      {
+        "en": "show",
+        "ko": "보여주다, 구경거리, 쇼, 전시회",
+        "img": "c2hvdy53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "오늘의 영단어 [62회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "shy",
+        "ko": "수줍은",
+        "img": "c2h5LndlYnA="
+      },
+      {
+        "en": "sick",
+        "ko": "병든, 병난",
+        "img": "c2ljay53ZWJw"
+      },
+      {
+        "en": "side",
+        "ko": "옆, 측면, 쪽",
+        "img": "c2lkZS53ZWJw"
+      },
+      {
+        "en": "sing",
+        "ko": "노래하다",
+        "img": "c2luZy53ZWJw"
+      },
+      {
+        "en": "sister",
+        "ko": "여동생, 누나, 언니",
+        "img": "c2lzdGVyLndlYnA="
+      },
+      {
+        "en": "sit",
+        "ko": "앉다",
+        "img": "c2l0LndlYnA="
+      },
+      {
+        "en": "six",
+        "ko": "여섯",
+        "img": "c2l4LndlYnA="
+      },
+      {
+        "en": "size",
+        "ko": "크기, 치수",
+        "img": "c2l6ZS53ZWJw"
+      },
+      {
+        "en": "skate",
+        "ko": "스케이트, 스케이트 타다",
+        "img": "c2thdGUud2VicA=="
+      },
+      {
+        "en": "ski",
+        "ko": "스키 타다",
+        "img": "c2tpLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "오늘의 영단어 [63회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "skin",
+        "ko": "피부",
+        "img": "c2tpbi53ZWJw"
+      },
+      {
+        "en": "skirt",
+        "ko": "치마, 스커트",
+        "img": "c2tpcnQud2VicA=="
+      },
+      {
+        "en": "sky",
+        "ko": "하늘",
+        "img": "c2t5LndlYnA="
+      },
+      {
+        "en": "sleep",
+        "ko": "잠, 잠을 자다",
+        "img": "c2xlZXAud2VicA=="
+      },
+      {
+        "en": "slow",
+        "ko": "느린",
+        "img": "c2xvdy53ZWJw"
+      },
+      {
+        "en": "small",
+        "ko": "작은",
+        "img": "c21hbGwud2VicA=="
+      },
+      {
+        "en": "smell",
+        "ko": "냄새",
+        "img": "c21lbGwud2VicA=="
+      },
+      {
+        "en": "smile",
+        "ko": "미소",
+        "img": "c21pbGUud2VicA=="
+      },
+      {
+        "en": "snow",
+        "ko": "눈, 눈이 내리다",
+        "img": "c25vdy53ZWJw"
+      },
+      {
+        "en": "so",
+        "ko": "그렇게, 그와 같이, 몹시, 상당히",
+        "img": "c28ud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "오늘의 영단어 [64회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "soccer",
+        "ko": "축구",
+        "img": "c29jY2VyLndlYnA="
+      },
+      {
+        "en": "sock",
+        "ko": "양말",
+        "img": "c29jay53ZWJw"
+      },
+      {
+        "en": "soft",
+        "ko": "조용한, 차분한, (날씨·기후 등이) 화창한, 따뜻한, 부드러운, 푹신푹신한",
+        "img": "c29mdC53ZWJw"
+      },
+      {
+        "en": "software",
+        "ko": "소프트웨어",
+        "img": "c29mdHdhcmUud2VicA=="
+      },
+      {
+        "en": "some",
+        "ko": "얼마간의, 약간의, 대략, ~쯤",
+        "img": "c29tZS53ZWJw"
+      },
+      {
+        "en": "son",
+        "ko": "아들",
+        "img": "c29uLndlYnA="
+      },
+      {
+        "en": "song",
+        "ko": "노래",
+        "img": "c29uZy53ZWJw"
+      },
+      {
+        "en": "sorry",
+        "ko": "가엾은, 미안한, 죄송한",
+        "img": "c29ycnkud2VicA=="
+      },
+      {
+        "en": "sound",
+        "ko": "소리, 음, ~인 것 같다, 건전한, 건강한",
+        "img": "c291bmQud2VicA=="
+      },
+      {
+        "en": "soup",
+        "ko": "수프",
+        "img": "c291cC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "오늘의 영단어 [65회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "south",
+        "ko": "남쪽",
+        "img": "c291dGgud2VicA=="
+      },
+      {
+        "en": "space",
+        "ko": "우주, 공간, 틈",
+        "img": "c3BhY2Uud2VicA=="
+      },
+      {
+        "en": "spaghetti",
+        "ko": "스파게티",
+        "img": "c3BhZ2hldHRpLndlYnA="
+      },
+      {
+        "en": "speak",
+        "ko": "말하다",
+        "img": "c3BlYWsud2VicA=="
+      },
+      {
+        "en": "speed",
+        "ko": "속도, 속력",
+        "img": "c3BlZWQud2VicA=="
+      },
+      {
+        "en": "spoon",
+        "ko": "숟가락",
+        "img": "c3Bvb24ud2VicA=="
+      },
+      {
+        "en": "sport",
+        "ko": "운동",
+        "img": "c3BvcnQud2VicA=="
+      },
+      {
+        "en": "spring",
+        "ko": "봄",
+        "img": "c3ByaW5nLndlYnA="
+      },
+      {
+        "en": "staff",
+        "ko": "직원",
+        "img": "c3RhZmYud2VicA=="
+      },
+      {
+        "en": "stand",
+        "ko": "서다, 참다, 견디다",
+        "img": "c3RhbmQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "오늘의 영단어 [66회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "star",
+        "ko": "별, 인기인, 유명인사, (호텔이나 식당의) 등급 표시",
+        "img": "c3Rhci53ZWJw"
+      },
+      {
+        "en": "start",
+        "ko": "출발하다, 떠나다, 시작하다",
+        "img": "c3RhcnQud2VicA=="
+      },
+      {
+        "en": "stay",
+        "ko": "남다, 머무르다",
+        "img": "c3RheS53ZWJw"
+      },
+      {
+        "en": "steak",
+        "ko": "스테이크",
+        "img": "c3RlYWsud2VicA=="
+      },
+      {
+        "en": "stone",
+        "ko": "돌",
+        "img": "c3RvbmUud2VicA=="
+      },
+      {
+        "en": "stop",
+        "ko": "멈추다, 정류장",
+        "img": "c3RvcC53ZWJw"
+      },
+      {
+        "en": "store",
+        "ko": "가게, 상점, ~을 저장하다, 쌓아 두다",
+        "img": "c3RvcmUud2VicA=="
+      },
+      {
+        "en": "story",
+        "ko": "이야기",
+        "img": "c3Rvcnkud2VicA=="
+      },
+      {
+        "en": "street",
+        "ko": "거리, 길",
+        "img": "c3RyZWV0LndlYnA="
+      },
+      {
+        "en": "strong",
+        "ko": "힘센, 강한, 단단한, 유능한",
+        "img": "c3Ryb25nLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "오늘의 영단어 [67회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "study",
+        "ko": "공부하다, 조사하다, 관찰하다",
+        "img": "c3R1ZHkud2VicA=="
+      },
+      {
+        "en": "style",
+        "ko": "스타일",
+        "img": "c3R5bGUud2VicA=="
+      },
+      {
+        "en": "subway",
+        "ko": "지하철",
+        "img": "c3Vid2F5LndlYnA="
+      },
+      {
+        "en": "sugar",
+        "ko": "설탕",
+        "img": "c3VnYXIud2VicA=="
+      },
+      {
+        "en": "summer",
+        "ko": "여름",
+        "img": "c3VtbWVyLndlYnA="
+      },
+      {
+        "en": "sun",
+        "ko": "태양, 해",
+        "img": "c3VuLndlYnA="
+      },
+      {
+        "en": "sure",
+        "ko": "~을 확신하는",
+        "img": "c3VyZS53ZWJw"
+      },
+      {
+        "en": "swim",
+        "ko": "헤엄치다, 수영하다",
+        "img": "c3dpbS53ZWJw"
+      },
+      {
+        "en": "table",
+        "ko": "식탁, 테이블, 표, 목록",
+        "img": "dGFibGUud2VicA=="
+      },
+      {
+        "en": "tail",
+        "ko": "꼬리",
+        "img": "dGFpbC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "오늘의 영단어 [68회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "take",
+        "ko": "가져가다, 데려가다, ~을 쥐다, ~을 먹다, 마시다",
+        "img": "dGFrZS53ZWJw"
+      },
+      {
+        "en": "talk",
+        "ko": "말하다, 이야기하다",
+        "img": "dGFsay53ZWJw"
+      },
+      {
+        "en": "tall",
+        "ko": "키가 큰",
+        "img": "dGFsbC53ZWJw"
+      },
+      {
+        "en": "tape",
+        "ko": "(테이프로) ~을 붙이다, 접착용 테이프, 녹음용 테이프",
+        "img": "dGFwZS53ZWJw"
+      },
+      {
+        "en": "taste",
+        "ko": "~을 맛보다, 먹어보다, 맛이 나다, 맛",
+        "img": "dGFzdGUud2VicA=="
+      },
+      {
+        "en": "taxi",
+        "ko": "택시",
+        "img": "dGF4aS53ZWJw"
+      },
+      {
+        "en": "teach",
+        "ko": "가르치다",
+        "img": "dGVhY2gud2VicA=="
+      },
+      {
+        "en": "team",
+        "ko": "팀, 조",
+        "img": "dGVhbS53ZWJw"
+      },
+      {
+        "en": "telephone",
+        "ko": "전화기",
+        "img": "dGVsZXBob25lLndlYnA="
+      },
+      {
+        "en": "television",
+        "ko": "텔레비전",
+        "img": "dGVsZXZpc2lvbi53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "오늘의 영단어 [69회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "tell",
+        "ko": "말하다, 이야기하다",
+        "img": "dGVsbC53ZWJw"
+      },
+      {
+        "en": "ten",
+        "ko": "열",
+        "img": "dGVuLndlYnA="
+      },
+      {
+        "en": "tennis",
+        "ko": "정구, 테니스",
+        "img": "dGVubmlzLndlYnA="
+      },
+      {
+        "en": "tent",
+        "ko": "텐트",
+        "img": "dGVudC53ZWJw"
+      },
+      {
+        "en": "test",
+        "ko": "테스트, 시험",
+        "img": "dGVzdC53ZWJw"
+      },
+      {
+        "en": "textbook",
+        "ko": "교과서",
+        "img": "dGV4dGJvb2sud2VicA=="
+      },
+      {
+        "en": "than",
+        "ko": "~보다",
+        "img": "dGhhbi53ZWJw"
+      },
+      {
+        "en": "thank",
+        "ko": "~에게 고맙다고 하다",
+        "img": "dGhhbmsud2VicA=="
+      },
+      {
+        "en": "that",
+        "ko": "저것, 그것, 저~, 그~",
+        "img": "dGhhdC53ZWJw"
+      },
+      {
+        "en": "the",
+        "ko": "그~, 저~, 유일한 사물·대상을 나타낼 때",
+        "img": "dGhlLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "오늘의 영단어 [70회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "there",
+        "ko": "그 곳에, 거기에, (be동사와 함께)~이 있다",
+        "img": "dGhlcmUud2VicA=="
+      },
+      {
+        "en": "they",
+        "ko": "그들, 그것들",
+        "img": "dGhleS53ZWJw"
+      },
+      {
+        "en": "thing",
+        "ko": "물건",
+        "img": "dGhpbmcud2VicA=="
+      },
+      {
+        "en": "think",
+        "ko": "생각하다",
+        "img": "dGhpbmsud2VicA=="
+      },
+      {
+        "en": "third",
+        "ko": "셋째",
+        "img": "dGhpcmQud2VicA=="
+      },
+      {
+        "en": "thirst",
+        "ko": "갈증",
+        "img": "dGhpcnN0LndlYnA="
+      },
+      {
+        "en": "thirteen",
+        "ko": "열셋",
+        "img": "dGhpcnRlZW4ud2VicA=="
+      },
+      {
+        "en": "thirty",
+        "ko": "서른",
+        "img": "dGhpcnR5LndlYnA="
+      },
+      {
+        "en": "this",
+        "ko": "이~, 이 사람, 이것",
+        "img": "dGhpcy53ZWJw"
+      },
+      {
+        "en": "three",
+        "ko": "셋",
+        "img": "dGhyZWUud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "오늘의 영단어 [71회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "ticket",
+        "ko": "표, 티켓",
+        "img": "dGlja2V0LndlYnA="
+      },
+      {
+        "en": "tiger",
+        "ko": "호랑이",
+        "img": "dGlnZXIud2VicA=="
+      },
+      {
+        "en": "time",
+        "ko": "시간, 시각, 곱하기, ~배, ~번",
+        "img": "dGltZS53ZWJw"
+      },
+      {
+        "en": "tire",
+        "ko": "피곤하게 하다",
+        "img": "dGlyZS53ZWJw"
+      },
+      {
+        "en": "to",
+        "ko": "~에, ~로, ~에게",
+        "img": "dG8ud2VicA=="
+      },
+      {
+        "en": "today",
+        "ko": "오늘",
+        "img": "dG9kYXkud2VicA=="
+      },
+      {
+        "en": "together",
+        "ko": "함께, 같이",
+        "img": "dG9nZXRoZXIud2VicA=="
+      },
+      {
+        "en": "tomato",
+        "ko": "토마토",
+        "img": "dG9tYXRvLndlYnA="
+      },
+      {
+        "en": "tomorrow",
+        "ko": "내일",
+        "img": "dG9tb3Jyb3cud2VicA=="
+      },
+      {
+        "en": "tonight",
+        "ko": "오늘 밤",
+        "img": "dG9uaWdodC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "오늘의 영단어 [72회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "too",
+        "ko": "또한, 역시, 너무, 지나치게",
+        "img": "dG9vLndlYnA="
+      },
+      {
+        "en": "tooth",
+        "ko": "이, 치아",
+        "img": "dG9vdGgud2VicA=="
+      },
+      {
+        "en": "top",
+        "ko": "꼭대기, 한껏, 최고",
+        "img": "dG9wLndlYnA="
+      },
+      {
+        "en": "touch",
+        "ko": "(손으로) 만지다, ~에 대다",
+        "img": "dG91Y2gud2VicA=="
+      },
+      {
+        "en": "town",
+        "ko": "소도시",
+        "img": "dG93bi53ZWJw"
+      },
+      {
+        "en": "toy",
+        "ko": "장난감",
+        "img": "dG95LndlYnA="
+      },
+      {
+        "en": "track",
+        "ko": "트랙 / 경주로",
+        "img": "dHJhY2sud2VicA=="
+      },
+      {
+        "en": "train",
+        "ko": "기차",
+        "img": "dHJhaW4ud2VicA=="
+      },
+      {
+        "en": "travel",
+        "ko": "여행하다",
+        "img": "dHJhdmVsLndlYnA="
+      },
+      {
+        "en": "tree",
+        "ko": "나무",
+        "img": "dHJlZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "오늘의 영단어 [73회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "trip",
+        "ko": "여행",
+        "img": "dHJpcC53ZWJw"
+      },
+      {
+        "en": "truck",
+        "ko": "트럭",
+        "img": "dHJ1Y2sud2VicA=="
+      },
+      {
+        "en": "True",
+        "ko": "진실의, 정말인",
+        "img": "dHJ1ZS53ZWJw"
+      },
+      {
+        "en": "try",
+        "ko": "~을 해보다, 시도하다, 노력하다",
+        "img": "dHJ5LndlYnA="
+      },
+      {
+        "en": "turn",
+        "ko": "돌다, ~을 돌리다",
+        "img": "dHVybi53ZWJw"
+      },
+      {
+        "en": "twelve",
+        "ko": "열둘",
+        "img": "dHdlbHZlLndlYnA="
+      },
+      {
+        "en": "twenty",
+        "ko": "스물",
+        "img": "dHdlbnR5LndlYnA="
+      },
+      {
+        "en": "twenty-first",
+        "ko": "스물한 번째",
+        "img": "dHdlbnR5LWZpcnN0LndlYnA="
+      },
+      {
+        "en": "twenty-second",
+        "ko": "스물두 번째",
+        "img": "dHdlbnR5LXNlY29uZC53ZWJw"
+      },
+      {
+        "en": "twenty-third",
+        "ko": "스물세 번째",
+        "img": "dHdlbnR5LXRoaXJkLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "오늘의 영단어 [74회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "twice",
+        "ko": "두 번, 2회",
+        "img": "dHdpY2Uud2VicA=="
+      },
+      {
+        "en": "two",
+        "ko": "둘",
+        "img": "dHdvLndlYnA="
+      },
+      {
+        "en": "type",
+        "ko": "유형 / 종류",
+        "img": "dHlwZS53ZWJw"
+      },
+      {
+        "en": "ugly",
+        "ko": "못생긴",
+        "img": "dWdseS53ZWJw"
+      },
+      {
+        "en": "umbrella",
+        "ko": "우산",
+        "img": "dW1icmVsbGEud2VicA=="
+      },
+      {
+        "en": "uncle",
+        "ko": "아저씨, 삼촌, 숙부",
+        "img": "dW5jbGUud2VicA=="
+      },
+      {
+        "en": "under",
+        "ko": "~의 밑에, (나이, 가격이) ~아래인, ~한 상태인",
+        "img": "dW5kZXIud2VicA=="
+      },
+      {
+        "en": "understand",
+        "ko": "이해하다, 알아듣다",
+        "img": "dW5kZXJzdGFuZC53ZWJw"
+      },
+      {
+        "en": "up",
+        "ko": "위로, 위쪽으로",
+        "img": "dXAud2VicA=="
+      },
+      {
+        "en": "use",
+        "ko": "~을 사용하다, 쓰다",
+        "img": "dXNlLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "오늘의 영단어 [75회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "vegetable",
+        "ko": "채소, 야채",
+        "img": "dmVnZXRhYmxlLndlYnA="
+      },
+      {
+        "en": "very",
+        "ko": "아주, 대단히",
+        "img": "dmVyeS53ZWJw"
+      },
+      {
+        "en": "video",
+        "ko": "비디오",
+        "img": "dmlkZW8ud2VicA=="
+      },
+      {
+        "en": "violin",
+        "ko": "바이올린",
+        "img": "dmlvbGluLndlYnA="
+      },
+      {
+        "en": "visit",
+        "ko": "방문하다",
+        "img": "dmlzaXQud2VicA=="
+      },
+      {
+        "en": "voice",
+        "ko": "목소리",
+        "img": "dm9pY2Uud2VicA=="
+      },
+      {
+        "en": "wait",
+        "ko": "기다리다",
+        "img": "d2FpdC53ZWJw"
+      },
+      {
+        "en": "wake",
+        "ko": "잠이 깨다, ~을 깨우다",
+        "img": "d2FrZS53ZWJw"
+      },
+      {
+        "en": "walk",
+        "ko": "걷기, 산책, 걷다",
+        "img": "d2Fsay53ZWJw"
+      },
+      {
+        "en": "wall",
+        "ko": "벽, 담",
+        "img": "d2FsbC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "오늘의 영단어 [76회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "want",
+        "ko": "~을 원하다, ~하고 싶다",
+        "img": "d2FudC53ZWJw"
+      },
+      {
+        "en": "war",
+        "ko": "전쟁",
+        "img": "d2FyLndlYnA="
+      },
+      {
+        "en": "warm",
+        "ko": "따뜻한",
+        "img": "d2FybS53ZWJw"
+      },
+      {
+        "en": "wash",
+        "ko": "~을 씻다",
+        "img": "d2FzaC53ZWJw"
+      },
+      {
+        "en": "watch",
+        "ko": "지켜보다, 구경하다, 손목시계",
+        "img": "d2F0Y2gud2VicA=="
+      },
+      {
+        "en": "water",
+        "ko": "물",
+        "img": "d2F0ZXIud2VicA=="
+      },
+      {
+        "en": "watermelon",
+        "ko": "수박",
+        "img": "d2F0ZXJtZWxvbi53ZWJw"
+      },
+      {
+        "en": "way",
+        "ko": "길, 도로, 방법, 방식",
+        "img": "d2F5LndlYnA="
+      },
+      {
+        "en": "we",
+        "ko": "우리",
+        "img": "d2Uud2VicA=="
+      },
+      {
+        "en": "wear",
+        "ko": "(옷을) 입다",
+        "img": "d2Vhci53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "오늘의 영단어 [77회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "weather",
+        "ko": "날씨, 기후",
+        "img": "d2VhdGhlci53ZWJw"
+      },
+      {
+        "en": "website",
+        "ko": "웹사이트",
+        "img": "d2Vic2l0ZS53ZWJw"
+      },
+      {
+        "en": "wedding",
+        "ko": "결혼식",
+        "img": "d2VkZGluZy53ZWJw"
+      },
+      {
+        "en": "week",
+        "ko": "주, 1주일",
+        "img": "d2Vlay53ZWJw"
+      },
+      {
+        "en": "weekend",
+        "ko": "주말",
+        "img": "d2Vla2VuZC53ZWJw"
+      },
+      {
+        "en": "weight",
+        "ko": "무게",
+        "img": "d2VpZ2h0LndlYnA="
+      },
+      {
+        "en": "welcome",
+        "ko": "환영하다",
+        "img": "d2VsY29tZS53ZWJw"
+      },
+      {
+        "en": "well",
+        "ko": "잘, 훌륭하게",
+        "img": "d2VsbC53ZWJw"
+      },
+      {
+        "en": "west",
+        "ko": "서쪽",
+        "img": "d2VzdC53ZWJw"
+      },
+      {
+        "en": "wet",
+        "ko": "젖은",
+        "img": "d2V0LndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "오늘의 영단어 [78회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "what",
+        "ko": "무엇, 무슨",
+        "img": "d2hhdC53ZWJw"
+      },
+      {
+        "en": "when",
+        "ko": "~할 때, 언제",
+        "img": "d2hlbi53ZWJw"
+      },
+      {
+        "en": "where",
+        "ko": "~곳, 어디에",
+        "img": "d2hlcmUud2VicA=="
+      },
+      {
+        "en": "white",
+        "ko": "흰색의",
+        "img": "d2hpdGUud2VicA=="
+      },
+      {
+        "en": "who",
+        "ko": "누구",
+        "img": "d2hvLndlYnA="
+      },
+      {
+        "en": "why",
+        "ko": "왜, 어째서",
+        "img": "d2h5LndlYnA="
+      },
+      {
+        "en": "wife",
+        "ko": "아내",
+        "img": "d2lmZS53ZWJw"
+      },
+      {
+        "en": "will",
+        "ko": "~일 것이다, ~하겠다",
+        "img": "d2lsbC53ZWJw"
+      },
+      {
+        "en": "win",
+        "ko": "이기다",
+        "img": "d2luLndlYnA="
+      },
+      {
+        "en": "wind",
+        "ko": "바람, ~을 감다",
+        "img": "d2luZC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "오늘의 영단어 [79회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "window",
+        "ko": "창문",
+        "img": "d2luZG93LndlYnA="
+      },
+      {
+        "en": "wine",
+        "ko": "와인",
+        "img": "d2luZS53ZWJw"
+      },
+      {
+        "en": "winter",
+        "ko": "겨울",
+        "img": "d2ludGVyLndlYnA="
+      },
+      {
+        "en": "wish",
+        "ko": "소원 / 바라다",
+        "img": "d2lzaC53ZWJw"
+      },
+      {
+        "en": "with",
+        "ko": "~와 함께, ~으로, ~을 써서",
+        "img": "d2l0aC53ZWJw"
+      },
+      {
+        "en": "woman",
+        "ko": "여자, 여성",
+        "img": "d29tYW4ud2VicA=="
+      },
+      {
+        "en": "wood",
+        "ko": "목재, 재목",
+        "img": "d29vZC53ZWJw"
+      },
+      {
+        "en": "word",
+        "ko": "단어, 낱말",
+        "img": "d29yZC53ZWJw"
+      },
+      {
+        "en": "work",
+        "ko": "일, 일하다, 근무하다, 직장, 사무실",
+        "img": "d29yay53ZWJw"
+      },
+      {
+        "en": "world",
+        "ko": "세계, 세상",
+        "img": "d29ybGQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "오늘의 영단어 [80회]",
+    "category": "오늘의 영단어로 실력 Up",
+    "words": [
+      {
+        "en": "worry",
+        "ko": "걱정하다",
+        "img": "d29ycnkud2VicA=="
+      },
+      {
+        "en": "write",
+        "ko": "쓰다",
+        "img": "d3JpdGUud2VicA=="
+      },
+      {
+        "en": "wrong",
+        "ko": "나쁜, 잘못된, 틀린",
+        "img": "d3Jvbmcud2VicA=="
+      },
+      {
+        "en": "year",
+        "ko": "해, 년, (나이) ~살",
+        "img": "eWVhci53ZWJw"
+      },
+      {
+        "en": "yellow",
+        "ko": "노란색, 노란색의",
+        "img": "eWVsbG93LndlYnA="
+      },
+      {
+        "en": "yes",
+        "ko": "네, 그렇습니다",
+        "img": "eWVzLndlYnA="
+      },
+      {
+        "en": "yesterday",
+        "ko": "어제",
+        "img": "eWVzdGVyZGF5LndlYnA="
+      },
+      {
+        "en": "you",
+        "ko": "너, 너희들, 당신(들), (일般적으로) 사람들",
+        "img": "eW91LndlYnA="
+      },
+      {
+        "en": "young",
+        "ko": "젊은, 어린",
+        "img": "eW91bmcud2VicA=="
+      },
+      {
+        "en": "zoo",
+        "ko": "동물원",
+        "img": "em9vLndlYnA="
+      }
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.17.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/cansle/Documents/AntigravityProjects/WordChallenge/native/.npmrc
+5 silly config load:file:/Users/cansle/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install @expo-google-fonts/plus-jakarta-sans
+8 verbose argv "install" "@expo-google-fonts/plus-jakarta-sans" "--cache" "../.npm-cache" "--save"
+9 verbose logfile logs-max:10 dir:/Users/cansle/Documents/AntigravityProjects/WordChallenge/.npm-cache/_logs/2026-04-04T11_52_36_842Z-
+10 verbose logfile /Users/cansle/Documents/AntigravityProjects/WordChallenge/.npm-cache/_logs/2026-04-04T11_52_36_842Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @expo-google-fonts/plus-jakarta-sans@*
+15 silly packumentCache full:https://registry.npmjs.org/@expo-google-fonts%2fplus-jakarta-sans cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@expo-google-fonts%2fplus-jakarta-sans 755ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@expo-google-fonts%2fplus-jakarta-sans set size:undefined disposed:false
+18 silly placeDep ROOT @expo-google-fonts/plus-jakarta-sans@0.4.2 OK for: native@1.0.0 want: *
+19 silly fetch manifest react@^19.2.4
+20 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+21 http cache https://registry.npmjs.org/react 10ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/react set size:6585005 disposed:false
+23 verbose stack Error: could not resolve
+23 verbose stack     at PlaceDep.failPeerConflict (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:503:25)
+23 verbose stack     at new PlaceDep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:157:21)
+23 verbose stack     at #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:920:18)
+23 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:181:7)
+23 verbose stack     at async Promise.all (index 1)
+23 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:131:5)
+23 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:150:5)
+23 verbose stack     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:207:9)
+23 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:74:5)
+24 error code ERESOLVE
+25 error ERESOLVE could not resolve
+26 error
+27 error While resolving: react-dom@19.2.4
+27 error Found: react@19.1.0[2m[22m
+27 error [2mnode_modules/react[22m
+27 error   peerOptional react@"*" from @expo/devtools@0.1.8[2m[22m
+27 error   [2mnode_modules/@expo/devtools[22m
+27 error     @expo/devtools@"0.1.8" from expo@54.0.33[2m[22m
+27 error     [2mnode_modules/expo[22m
+27 error       [95mpeer[39m expo@"*" from expo-blur@15.0.8[2m[22m
+27 error       [2mnode_modules/expo-blur[22m
+27 error         expo-blur@"~15.0.8" from the root project
+27 error       14 more (expo-constants, expo-font, expo-haptics, expo-router, ...)
+27 error   [95mpeer[39m react@"*" from @expo/vector-icons@15.1.1[2m[22m
+27 error   [2mnode_modules/@expo/vector-icons[22m
+27 error     @expo/vector-icons@"^15.0.3" from expo@54.0.33
+27 error     @expo/vector-icons@"^15.1.1" from the root project
+27 error   57 more (@radix-ui/react-compose-refs, ...)
+27 error
+27 error Could not resolve dependency:
+27 error [95mpeer[39m react@"^19.2.4" from react-dom@19.2.4[2m[22m
+27 error [2mnode_modules/react-dom[22m
+27 error   peerOptional react-dom@"*" from expo-router@6.0.23[2m[22m
+27 error   [2mnode_modules/expo-router[22m
+27 error     peerOptional expo-router@"*" from @expo/cli@54.0.23[2m[22m
+27 error     [2mnode_modules/expo/node_modules/@expo/cli[22m
+27 error       @expo/cli@"54.0.23" from expo@54.0.33[2m[22m
+27 error       [2mnode_modules/expo[22m
+27 error     1 more (the root project)
+27 error   peerOptional react-dom@"*" from @expo/metro-runtime@6.1.2[2m[22m
+27 error   [2mnode_modules/expo-router/node_modules/@expo/metro-runtime[22m
+27 error     @expo/metro-runtime@"^6.1.2" from expo-router@6.0.23
+27 error   12 more (@radix-ui/react-collection, ...)
+27 error
+27 error Conflicting peer dependency: react@19.2.4[2m[22m
+27 error [2mnode_modules/react[22m
+27 error   [95mpeer[39m react@"^19.2.4" from react-dom@19.2.4[2m[22m
+27 error   [2mnode_modules/react-dom[22m
+27 error     peerOptional react-dom@"*" from expo-router@6.0.23[2m[22m
+27 error     [2mnode_modules/expo-router[22m
+27 error       peerOptional expo-router@"*" from @expo/cli@54.0.23[2m[22m
+27 error       [2mnode_modules/expo/node_modules/@expo/cli[22m
+27 error         @expo/cli@"54.0.23" from expo@54.0.33[2m[22m
+27 error         [2mnode_modules/expo[22m
+27 error       1 more (the root project)
+27 error     peerOptional react-dom@"*" from @expo/metro-runtime@6.1.2[2m[22m
+27 error     [2mnode_modules/expo-router/node_modules/@expo/metro-runtime[22m
+27 error       @expo/metro-runtime@"^6.1.2" from expo-router@6.0.23
+27 error     12 more (@radix-ui/react-collection, ...)
+27 error
+27 error Fix the upstream dependency conflict, or retry
+27 error this command with --force or --legacy-peer-deps
+27 error to accept an incorrect (and potentially broken) dependency resolution.
+28 error
+28 error
+28 error For a full report see:
+28 error /Users/cansle/Documents/AntigravityProjects/WordChallenge/.npm-cache/_logs/2026-04-04T11_52_36_842Z-eresolve-report.txt
+29 silly unfinished npm timer reify 1775303557099
+30 silly unfinished npm timer reify:loadTrees 1775303557100
+31 silly unfinished npm timer idealTree:buildDeps 1775303557230
+32 silly unfinished npm timer idealTree:node_modules/react-dom 1775303557991
+33 verbose cwd /Users/cansle/Documents/AntigravityProjects/WordChallenge/native
+34 verbose os Darwin 24.6.0
+35 verbose node v22.17.0
+36 verbose npm  v10.9.2
+37 verbose exit 1
+38 verbose code 1
+39 error A complete log of this run can be found in: /Users/cansle/Documents/AntigravityProjects/WordChallenge/.npm-cache/_logs/2026-04-04T11_52_36_842Z-debug-0.log

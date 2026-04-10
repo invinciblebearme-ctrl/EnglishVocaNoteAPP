@@ -1,0 +1,72 @@
+export const Theme = {
+  colors: {
+    backgroundDeep: '#020617',
+    backgroundMain: '#0f172a',
+    surface: 'rgba(15, 23, 42, 0.45)',
+    surfaceHover: 'rgba(30, 41, 59, 0.8)',
+    border: 'rgba(148, 163, 184, 0.15)',
+    borderBright: 'rgba(255, 255, 255, 0.1)',
+    accent: '#38bdf8',
+    accentGlow: 'rgba(56, 189, 248, 0.5)',
+    indigo: '#6366f1',
+    textPrimary: '#f8fafc',
+    textSecondary: '#cbd5e1',
+    textMuted: '#64748b',
+    amber: '#fbbf24',
+    error: '#ef4444',
+    success: '#10b981',
+  },
+  fonts: {
+    regular: 'PlusJakartaSans_400Regular',
+    semiBold: 'PlusJakartaSans_600SemiBold',
+    bold: 'PlusJakartaSans_700Bold',
+    extraBold: 'PlusJakartaSans_800ExtraBold',
+    krRegular: 'PlusJakartaSans_400Regular',
+    krBold: 'PlusJakartaSans_700Bold',
+  },
+  gradients: {
+    surface: ['rgba(30, 41, 59, 0.5)', 'rgba(15, 23, 42, 0.7)'],
+    accent: ['#0ea5e9', '#6366f1'],
+    neon: ['#22d3ee', '#3b82f6'],
+    success: ['#059669', '#10b981'],
+    warning: ['#d97706', '#fbbf24'],
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+    xxl: 40,
+  },
+  radius: {
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 24,
+    xxl: 32,
+    full: 9999,
+  },
+  typography: {
+    fontFamily: 'PlusJakartaSans_700Bold',
+    letterSpacing: 0,
+    sizes: {
+      xs: 12,
+      sm: 14,
+      md: 16,
+      lg: 20,
+      xl: 24,
+      xxl: 32,
+      xxxl: 40,
+    },
+  },
+  shadows: {
+    glow: {
+      shadowColor: '#38bdf8',
+      shadowOffset: { width: 0, height: 0 },
+      shadowOpacity: 0.5,
+      shadowRadius: 15,
+      elevation: 10,
+    }
+  }
+};
