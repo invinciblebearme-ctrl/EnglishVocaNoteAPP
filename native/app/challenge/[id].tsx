@@ -39,7 +39,8 @@ const { width, height: screenHeight } = Dimensions.get('window');
 
 // Responsive scaling helpers
 const headerPadding = 190; // Fixed space for Navbar + GradeNav
-const cardHeight = screenHeight * 0.22;
+const cardHeight = 120; // Reduced text box height
+const imageHeight = screenHeight * 0.18; // Specific image height to not be overly large
 const spacingSm = screenHeight * 0.015;
 
 // Safely check for ExpoSpeechRecognitionModule
@@ -319,11 +320,11 @@ const styles = StyleSheet.create({
     width: width * 0.85,
     maxWidth: 320,
     height: cardHeight,
-    borderRadius: 36,
+    borderRadius: 24, // softer radius for smaller box
     overflow: 'hidden',
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.08)',
-    marginBottom: spacingSm * 1.5,
+    marginBottom: spacingSm,
   },
   cardInner: {
     flex: 1,
@@ -355,8 +356,8 @@ const styles = StyleSheet.create({
     marginTop: spacingSm,
   },
   imageAreaFree: {
-    width: width * 0.75,
-    height: cardHeight * 0.9,
+    width: width * 0.70,
+    height: imageHeight,
     borderRadius: 14,
     overflow: 'hidden',
     backgroundColor: 'rgba(0, 0, 0, 0.2)',
@@ -381,11 +382,11 @@ const styles = StyleSheet.create({
   },
   sttFeedback: {
     width: width * 0.85,
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-    borderRadius: 20,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 15,
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 10,
   },
   sttLevel3: {
     backgroundColor: 'rgba(16, 185, 129, 0.15)',
@@ -437,7 +438,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   micContainer: {
-    marginTop: spacingSm + 15,
+    marginTop: spacingSm + 10,
     alignItems: 'center',
     width: '100%',
   },
