@@ -8,6 +8,8 @@ function Navbar() {
   const isReadingActive = location.pathname === '/' || location.pathname.startsWith('/challenge')
   // Writing mode is active for Scramble pages
   const isWritingActive = location.pathname.startsWith('/scramble')
+  // My Vocabulary mode is active
+  const isMyVocaActive = location.pathname === '/my-voca'
 
   return (
     <nav className="floating-navbar">
@@ -23,6 +25,12 @@ function Navbar() {
           className={`segment-item ${isWritingActive ? 'active' : ''}`}
         >
           <span className="nav-icon">✍️</span> 쓰기 연습
+        </Link>
+        <Link 
+          to="/my-voca" 
+          className={`segment-item ${isMyVocaActive ? 'active' : ''}`}
+        >
+          <span className="nav-icon">⭐</span> 단어장
         </Link>
       </div>
     </nav>

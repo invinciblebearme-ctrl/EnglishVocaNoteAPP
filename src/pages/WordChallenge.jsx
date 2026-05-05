@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
+import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 
 function WordChallenge() {
   const { id } = useParams()
@@ -8,6 +9,7 @@ function WordChallenge() {
   const [roundData, setRoundData] = useState(null)
   const [index, setIndex] = useState(0)
   const [showingEnglish, setShowingEnglish] = useState(true)
+  const [fav, setFav] = useState(false)
   useEffect(() => {
     const round = allRounds.find(r => r.id === parseInt(id))
     if (round) {
@@ -80,11 +82,25 @@ function WordChallenge() {
   const [isListening, setIsListening] = useState(false)
   const [pronunciationScore, setPronunciationScore] = useState(null)
   
-  // 단어가 바뀔 때마다 이미지 에러 및 발음 점수 초기화
+  // 단어가 바뀔 때마다 이미지 에러 및 발음 점수 초기화, 즐겨찾기 확인
   useEffect(() => {
     setImgError(false)
     setPronunciationScore(null)
-  }, [index, id])
+    if (roundData && roundData.words[index]) {
+      setFav(isFavorite(roundData.words[index].en))
+    }
+  }, [index, id, roundData])
+
+  const toggleFavorite = () => {
+    const currentWord = roundData.words[index];
+    if (fav) {
+      removeFromMyVoca(currentWord.en);
+      setFav(false);
+    } else {
+      addToMyVoca(currentWord);
+      setFav(true);
+    }
+  };
 
   if (!roundData) return <div className="challenge-body">데이터를 불러오는 중...</div>;
 
@@ -93,11 +109,10 @@ function WordChallenge() {
 
   // STT 발음 측정 시작
   const startSTT = () => {
-    // Chrome 여부 확인
-    const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    const isChromium = !!window.chrome;
     
-    if (!isChrome) {
-      alert("⚠️ 이 기능은 Google Chrome 브라우저에서만 정상적으로 작동합니다.\n현재 브라우저에서는 인식이 안 될 수 있으니, Chrome으로 접속해 주세요!");
+    if (!isChromium) {
+      alert("⚠️ 이 기능은 크롬, 엣지, 웨일 브라우저에서 가장 잘 작동합니다.\n현재 브라우저에서는 인식이 안 될 수 있으니 참고해 주세요!");
     }
 
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -159,7 +174,21 @@ function WordChallenge() {
         </h1>
         <div className="challenge-index">단어 {index + 1} / {roundData.words.length}</div>
         
-        <div className="challenge-card">
+        <div 
+          className="challenge-card" 
+          onClick={() => setShowingEnglish(prev => !prev)}
+          style={{ cursor: 'pointer', position: 'relative' }}
+        >
+          <button 
+            className={`favorite-btn ${fav ? 'active' : ''}`} 
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleFavorite();
+            }}
+            title="나만의 단어장에 저장"
+          >
+            {fav ? '⭐' : '☆'}
+          </button>
           {showingEnglish ? (
             <div className="word-en">{currentWord.en}</div>
           ) : (
@@ -204,7 +233,7 @@ function WordChallenge() {
           >
             {isListening ? "🎤 측정중..." : "🎤 발음하기"}
           </button>
-          <div className="mic-hint">※ 발음확인은 크롬브라우저만 가능</div>
+          <div className="mic-hint">※ 크롬, 엣지, 웨일 브라우저에서 발음 확인이 가능합니다.</div>
         </div>
       </div>
     </div>
