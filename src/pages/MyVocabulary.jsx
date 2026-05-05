@@ -163,9 +163,9 @@ function MyVocabulary() {
         </div>
 
         {vocaList.length === 0 ? (
-          <div className="challenge-card" style={{ 
-            padding: '30px 20px', 
-            background: '#1a1f2e', 
+          <div className="challenge-card" style={{
+            padding: '30px 20px',
+            background: '#1a1f2e',
             borderRadius: '25px',
             border: '1px solid rgba(255, 255, 255, 0.1)',
             boxShadow: '0 15px 30px rgba(0,0,0,0.4)',
@@ -173,27 +173,27 @@ function MyVocabulary() {
             marginTop: '15px',
             width: '85%'
           }}>
-            <div style={{ 
-              fontSize: '1.2rem', 
-              fontWeight: 'bold', 
-              color: '#facc15', 
+            <div style={{
+              fontSize: '1.2rem',
+              fontWeight: 'bold',
+              color: '#facc15',
               textShadow: '0 0 10px rgba(250, 204, 21, 0.4)',
               marginBottom: '15px'
             }}>
               저장된 단어가 없습니다.
             </div>
-            <p style={{ 
-              color: '#94a3b8', 
-              fontSize: '0.85rem', 
+            <p style={{
+              color: '#94a3b8',
+              fontSize: '0.85rem',
               lineHeight: '1.4',
               marginBottom: '25px'
             }}>
-              학습 중에 ⭐ 버튼을 눌러<br/>단어를 추가해 보세요!
+              학습 중에 ⭐ 버튼을 눌러<br />단어를 추가해 보세요!
             </p>
-            <button 
-              className="dark-button" 
-              style={{ 
-                padding: '8px 20px', 
+            <button
+              className="dark-button"
+              style={{
+                padding: '8px 20px',
                 fontSize: '0.9rem',
                 fontWeight: 'bold',
                 borderRadius: '10px',
@@ -201,7 +201,7 @@ function MyVocabulary() {
                 border: '1px solid rgba(255,255,255,0.1)',
                 color: 'white',
                 cursor: 'pointer'
-              }} 
+              }}
               onClick={() => navigate('/')}
             >
               학습하러 가기
@@ -292,7 +292,7 @@ function MyVocabulary() {
                         <div style={{
                           position: 'absolute',
                           left: '110px',
-                          top: '20px', 
+                          top: '110px',
                           width: '215px'
                         }}>
                           <div style={{
