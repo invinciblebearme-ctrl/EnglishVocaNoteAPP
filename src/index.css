@@ -198,6 +198,39 @@ header {
     margin-bottom: 40px;
 }
 
+.grade-header {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin: 30px 0 15px 0;
+    text-align: center;
+    text-shadow: 0 0 20px var(--accent-glow);
+}
+
+.theme-group {
+    width: 100%;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theme-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 18px;
+    background: rgba(30, 41, 59, 0.45);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+}
+
 .grid-container {
     display: flex;
     flex-wrap: wrap;
