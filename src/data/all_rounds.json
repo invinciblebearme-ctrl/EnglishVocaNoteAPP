@@ -2217,5 +2217,2203 @@
         "img": "d2F0Y2gud2VicA=="
       }
     ]
+  },
+  {
+    "id": 44,
+    "name": "감정",
+    "grade": "3학년 2학기",
+    "category": "감정",
+    "words": [
+      {
+        "en": "angry",
+        "ko": "화난",
+        "img": "YW5ncnkud2VicA=="
+      },
+      {
+        "en": "happy",
+        "ko": "행복한",
+        "img": "aGFwcHkud2VicA=="
+      },
+      {
+        "en": "hungry",
+        "ko": "배고픈",
+        "img": "aHVuZ3J5LndlYnA="
+      },
+      {
+        "en": "sad",
+        "ko": "슬픈",
+        "img": "c2FkLndlYnA="
+      },
+      {
+        "en": "tired",
+        "ko": "피곤한",
+        "img": "dGlyZWQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "학용품",
+    "grade": "3학년 2학기",
+    "category": "학용품",
+    "words": [
+      {
+        "en": "crayon",
+        "ko": "크레용",
+        "img": "Y3JheW9uLndlYnA="
+      },
+      {
+        "en": "eraser",
+        "ko": "지우개",
+        "img": "ZXJhc2VyLndlYnA="
+      },
+      {
+        "en": "glue stick",
+        "ko": "딱풀",
+        "img": "Z2x1ZV9zdGljay53ZWJw"
+      },
+      {
+        "en": "notebook",
+        "ko": "공책",
+        "img": "bm90ZWJvb2sud2VicA=="
+      },
+      {
+        "en": "pen",
+        "ko": "펜",
+        "img": "cGVuLndlYnA="
+      },
+      {
+        "en": "pencil",
+        "ko": "연필",
+        "img": "cGVuY2lsLndlYnA="
+      },
+      {
+        "en": "ruler",
+        "ko": "자",
+        "img": "cnVsZXIud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "동작",
+    "grade": "3학년 2학기",
+    "category": "동작",
+    "words": [
+      {
+        "en": "dance",
+        "ko": "춤추다",
+        "img": "ZGFuY2Uud2VicA=="
+      },
+      {
+        "en": "eat",
+        "ko": "먹다",
+        "img": "ZWF0LndlYnA="
+      },
+      {
+        "en": "jump",
+        "ko": "뛰다",
+        "img": "anVtcC53ZWJw"
+      },
+      {
+        "en": "run",
+        "ko": "달리다",
+        "img": "cnVuLndlYnA="
+      },
+      {
+        "en": "sing",
+        "ko": "노래하다",
+        "img": "c2luZy53ZWJw"
+      },
+      {
+        "en": "skate",
+        "ko": "스케이트를 타다",
+        "img": "c2thdGUud2VicA=="
+      },
+      {
+        "en": "ski",
+        "ko": "스키를 타다",
+        "img": "c2tpLndlYnA="
+      },
+      {
+        "en": "swim",
+        "ko": "수영하다",
+        "img": "c3dpbS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "숫자",
+    "grade": "3학년 2학기",
+    "category": "숫자",
+    "words": [
+      {
+        "en": "one",
+        "ko": "일, 하나",
+        "img": "b25lLndlYnA="
+      },
+      {
+        "en": "two",
+        "ko": "이, 둘",
+        "img": "dHdvLndlYnA="
+      },
+      {
+        "en": "three",
+        "ko": "삼, 셋",
+        "img": "dGhyZWUud2VicA=="
+      },
+      {
+        "en": "four",
+        "ko": "사, 넷",
+        "img": "Zm91ci53ZWJw"
+      },
+      {
+        "en": "five",
+        "ko": "오, 다섯",
+        "img": "Zml2ZS53ZWJw"
+      },
+      {
+        "en": "six",
+        "ko": "육, 여섯",
+        "img": "c2l4LndlYnA="
+      },
+      {
+        "en": "seven",
+        "ko": "칠, 일곱",
+        "img": "c2V2ZW4ud2VicA=="
+      },
+      {
+        "en": "eight",
+        "ko": "팔, 여덟",
+        "img": "ZWlnaHQud2VicA=="
+      },
+      {
+        "en": "nine",
+        "ko": "구, 아홉",
+        "img": "bmluZS53ZWJw"
+      },
+      {
+        "en": "ten",
+        "ko": "십, 열",
+        "img": "dGVuLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "동물",
+    "grade": "3학년 2학기",
+    "category": "동물",
+    "words": [
+      {
+        "en": "bear",
+        "ko": "곰",
+        "img": "YmVhci53ZWJw"
+      },
+      {
+        "en": "bird",
+        "ko": "새",
+        "img": "YmlyZC53ZWJw"
+      },
+      {
+        "en": "cat",
+        "ko": "고양이",
+        "img": "Y2F0LndlYnA="
+      },
+      {
+        "en": "cow",
+        "ko": "암소",
+        "img": "Y293LndlYnA="
+      },
+      {
+        "en": "dog",
+        "ko": "개",
+        "img": "ZG9nLndlYnA="
+      },
+      {
+        "en": "duck",
+        "ko": "오리",
+        "img": "ZHVjay53ZWJw"
+      },
+      {
+        "en": "fox",
+        "ko": "여우",
+        "img": "Zm94LndlYnA="
+      },
+      {
+        "en": "lion",
+        "ko": "사자",
+        "img": "bGlvbi53ZWJw"
+      },
+      {
+        "en": "pig",
+        "ko": "돼지",
+        "img": "cGlnLndlYnA="
+      },
+      {
+        "en": "tiger",
+        "ko": "호랑이",
+        "img": "dGlnZXIud2VicA=="
+      },
+      {
+        "en": "zebra",
+        "ko": "얼룩말",
+        "img": "emVicmEud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "색깔",
+    "grade": "3학년 2학기",
+    "category": "색깔",
+    "words": [
+      {
+        "en": "color",
+        "ko": "색깔",
+        "img": "Y29sb3Iud2VicA=="
+      },
+      {
+        "en": "black",
+        "ko": "검은색, 검은",
+        "img": "YmxhY2sud2VicA=="
+      },
+      {
+        "en": "blue",
+        "ko": "파란색, 파란",
+        "img": "Ymx1ZS53ZWJw"
+      },
+      {
+        "en": "brown",
+        "ko": "갈색, 갈색의",
+        "img": "YnJvd24ud2VicA=="
+      },
+      {
+        "en": "green",
+        "ko": "초록색, 초록색의",
+        "img": "Z3JlZW4ud2VicA=="
+      },
+      {
+        "en": "orange",
+        "ko": "주황색, 주황색의",
+        "img": "b3JhbmdlLndlYnA="
+      },
+      {
+        "en": "pink",
+        "ko": "분홍색, 분홍색의",
+        "img": "cGluay53ZWJw"
+      },
+      {
+        "en": "red",
+        "ko": "빨간색, 빨간",
+        "img": "cmVkLndlYnA="
+      },
+      {
+        "en": "white",
+        "ko": "흰색, 하얀",
+        "img": "d2hpdGUud2VicA=="
+      },
+      {
+        "en": "yellow",
+        "ko": "노란색, 노란",
+        "img": "eWVsbG93LndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "과일·채소",
+    "grade": "3학년 2학기",
+    "category": "과일·채소",
+    "words": [
+      {
+        "en": "apple",
+        "ko": "사과",
+        "img": "YXBwbGUud2VicA=="
+      },
+      {
+        "en": "banana",
+        "ko": "바나나",
+        "img": "YmFuYW5hLndlYnA="
+      },
+      {
+        "en": "carrot",
+        "ko": "당근",
+        "img": "Y2Fycm90LndlYnA="
+      },
+      {
+        "en": "potato",
+        "ko": "감자",
+        "img": "cG90YXRvLndlYnA="
+      },
+      {
+        "en": "tomato",
+        "ko": "토마토",
+        "img": "dG9tYXRvLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "크기",
+    "grade": "3학년 2학기",
+    "category": "크기",
+    "words": [
+      {
+        "en": "big",
+        "ko": "큰",
+        "img": "YmlnLndlYnA="
+      },
+      {
+        "en": "small",
+        "ko": "작은",
+        "img": "c21hbGwud2VicA=="
+      },
+      {
+        "en": "tall",
+        "ko": "키가 큰",
+        "img": "dGFsbC53ZWJw"
+      },
+      {
+        "en": "tree",
+        "ko": "나무",
+        "img": "dHJlZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "가족",
+    "grade": "3학년 2학기",
+    "category": "가족",
+    "words": [
+      {
+        "en": "brother",
+        "ko": "형, 오빠, 남동생",
+        "img": "YnJvdGhlci53ZWJw"
+      },
+      {
+        "en": "dad",
+        "ko": "아빠",
+        "img": "ZGFkLndlYnA="
+      },
+      {
+        "en": "grandfather (grandpa)",
+        "ko": "할아버지",
+        "img": "Z3JhbmRmYXRoZXJfX2dyYW5kcGFfLndlYnA="
+      },
+      {
+        "en": "grandmother (grandma)",
+        "ko": "할머니",
+        "img": "Z3JhbmRtb3RoZXJfX2dyYW5kbWFfLndlYnA="
+      },
+      {
+        "en": "mom",
+        "ko": "엄마",
+        "img": "bW9tLndlYnA="
+      },
+      {
+        "en": "sister",
+        "ko": "언니, 누나, 여동생",
+        "img": "c2lzdGVyLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "날씨",
+    "grade": "3학년 2학기",
+    "category": "날씨",
+    "words": [
+      {
+        "en": "cloudy",
+        "ko": "흐린",
+        "img": "Y2xvdWR5LndlYnA="
+      },
+      {
+        "en": "cold",
+        "ko": "추운",
+        "img": "Y29sZC53ZWJw"
+      },
+      {
+        "en": "hot",
+        "ko": "더운",
+        "img": "aG90LndlYnA="
+      },
+      {
+        "en": "raining",
+        "ko": "비가 내리는",
+        "img": "cmFpbmluZy53ZWJw"
+      },
+      {
+        "en": "snowing",
+        "ko": "눈이 내리는",
+        "img": "c25vd2luZy53ZWJw"
+      },
+      {
+        "en": "sunny",
+        "ko": "맑은",
+        "img": "c3Vubnkud2VicA=="
+      },
+      {
+        "en": "windy",
+        "ko": "바람이 부는",
+        "img": "d2luZHkud2VicA=="
+      },
+      {
+        "en": "weather",
+        "ko": "날씨",
+        "img": "d2VhdGhlci53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "스포츠",
+    "grade": "4학년 2학기",
+    "category": "스포츠",
+    "words": [
+      {
+        "en": "badminton",
+        "ko": "배드민턴",
+        "img": "YmFkbWludG9uLndlYnA="
+      },
+      {
+        "en": "baseball",
+        "ko": "야구",
+        "img": "YmFzZWJhbGwud2VicA=="
+      },
+      {
+        "en": "basketball",
+        "ko": "농구",
+        "img": "YmFza2V0YmFsbC53ZWJw"
+      },
+      {
+        "en": "soccer",
+        "ko": "축구",
+        "img": "c29jY2VyLndlYnA="
+      },
+      {
+        "en": "tennis",
+        "ko": "테니스",
+        "img": "dGVubmlzLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "주문하기",
+    "grade": "4학년 2학기",
+    "category": "주문하기",
+    "words": [
+      {
+        "en": "apple pie",
+        "ko": "사과파이",
+        "img": "YXBwbGVfcGllLndlYnA="
+      },
+      {
+        "en": "chicken",
+        "ko": "치킨",
+        "img": "Y2hpY2tlbi53ZWJw"
+      },
+      {
+        "en": "curry",
+        "ko": "카레",
+        "img": "Y3Vycnkud2VicA=="
+      },
+      {
+        "en": "hamburger",
+        "ko": "햄버거",
+        "img": "aGFtYnVyZ2VyLndlYnA="
+      },
+      {
+        "en": "ice cream",
+        "ko": "아이스크림",
+        "img": "aWNlX2NyZWFtLndlYnA="
+      },
+      {
+        "en": "juice",
+        "ko": "주스",
+        "img": "anVpY2Uud2VicA=="
+      },
+      {
+        "en": "milk",
+        "ko": "우유",
+        "img": "bWlsay53ZWJw"
+      },
+      {
+        "en": "pizza",
+        "ko": "피자",
+        "img": "cGl6emEud2VicA=="
+      },
+      {
+        "en": "snack",
+        "ko": "간식",
+        "img": "c25hY2sud2VicA=="
+      },
+      {
+        "en": "spaghetti",
+        "ko": "스파게티",
+        "img": "c3BhZ2hldHRpLndlYnA="
+      },
+      {
+        "en": "water",
+        "ko": "물",
+        "img": "d2F0ZXIud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "위치",
+    "grade": "4학년 2학기",
+    "category": "위치",
+    "words": [
+      {
+        "en": "box",
+        "ko": "상자",
+        "img": "Ym94LndlYnA="
+      },
+      {
+        "en": "chair",
+        "ko": "의자",
+        "img": "Y2hhaXIud2VicA=="
+      },
+      {
+        "en": "desk",
+        "ko": "책상",
+        "img": "ZGVzay53ZWJw"
+      },
+      {
+        "en": "room",
+        "ko": "방",
+        "img": "cm9vbS53ZWJw"
+      },
+      {
+        "en": "sofa",
+        "ko": "소파",
+        "img": "c29mYS53ZWJw"
+      },
+      {
+        "en": "table",
+        "ko": "탁자",
+        "img": "dGFibGUud2VicA=="
+      },
+      {
+        "en": "in",
+        "ko": "~안에",
+        "img": "aW4ud2VicA=="
+      },
+      {
+        "en": "on",
+        "ko": "~위에",
+        "img": "b24ud2VicA=="
+      },
+      {
+        "en": "under",
+        "ko": "~아래에",
+        "img": "dW5kZXIud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "요일",
+    "grade": "4학년 2학기",
+    "category": "요일",
+    "words": [
+      {
+        "en": "Monday",
+        "ko": "월요일",
+        "img": "bW9uZGF5LndlYnA="
+      },
+      {
+        "en": "Tuesday",
+        "ko": "화요일",
+        "img": "dHVlc2RheS53ZWJw"
+      },
+      {
+        "en": "Wednesday",
+        "ko": "수요일",
+        "img": "d2VkbmVzZGF5LndlYnA="
+      },
+      {
+        "en": "Thursday",
+        "ko": "목요일",
+        "img": "dGh1cnNkYXkud2VicA=="
+      },
+      {
+        "en": "Friday",
+        "ko": "금요일",
+        "img": "ZnJpZGF5LndlYnA="
+      },
+      {
+        "en": "Saturday",
+        "ko": "토요일",
+        "img": "c2F0dXJkYXkud2VicA=="
+      },
+      {
+        "en": "Sunday",
+        "ko": "일요일",
+        "img": "c3VuZGF5LndlYnA="
+      },
+      {
+        "en": "art class",
+        "ko": "미술 수업",
+        "img": "YXJ0X2NsYXNzLndlYnA="
+      },
+      {
+        "en": "computer class",
+        "ko": "컴퓨터 수업",
+        "img": "Y29tcHV0ZXJfY2xhc3Mud2VicA=="
+      },
+      {
+        "en": "cooking class",
+        "ko": "요리 수업",
+        "img": "Y29va2luZ19jbGFzcy53ZWJw"
+      },
+      {
+        "en": "dance class",
+        "ko": "무용 수업",
+        "img": "ZGFuY2VfY2xhc3Mud2VicA=="
+      },
+      {
+        "en": "piano class",
+        "ko": "피아노 수업",
+        "img": "cGlhbm9fY2xhc3Mud2VicA=="
+      },
+      {
+        "en": "swimming class",
+        "ko": "수영 수업",
+        "img": "c3dpbW1pbmdfY2xhc3Mud2VicA=="
+      },
+      {
+        "en": "violin class",
+        "ko": "바이올린 수업",
+        "img": "dmlvbGluX2NsYXNzLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "물건사기",
+    "grade": "4학년 2학기",
+    "category": "물건사기",
+    "words": [
+      {
+        "en": "ball",
+        "ko": "공",
+        "img": "YmFsbC53ZWJw"
+      },
+      {
+        "en": "bat",
+        "ko": "야구 방망이",
+        "img": "YmF0LndlYnA="
+      },
+      {
+        "en": "coat",
+        "ko": "코트",
+        "img": "Y29hdC53ZWJw"
+      },
+      {
+        "en": "cup",
+        "ko": "컵",
+        "img": "Y3VwLndlYnA="
+      },
+      {
+        "en": "glove",
+        "ko": "글러브",
+        "img": "Z2xvdmUud2VicA=="
+      },
+      {
+        "en": "hairpin",
+        "ko": "머리핀",
+        "img": "aGFpcnBpbi53ZWJw"
+      },
+      {
+        "en": "hat",
+        "ko": "모자",
+        "img": "aGF0LndlYnA="
+      },
+      {
+        "en": "jump rope",
+        "ko": "줄넘기",
+        "img": "anVtcF9yb3BlLndlYnA="
+      },
+      {
+        "en": "pencil case",
+        "ko": "필통",
+        "img": "cGVuY2lsX2Nhc2Uud2VicA=="
+      },
+      {
+        "en": "ribbon",
+        "ko": "리본",
+        "img": "cmliYm9uLndlYnA="
+      },
+      {
+        "en": "scarf",
+        "ko": "목도리",
+        "img": "c2NhcmYud2VicA=="
+      },
+      {
+        "en": "sweater",
+        "ko": "스웨터",
+        "img": "c3dlYXRlci53ZWJw"
+      },
+      {
+        "en": "toy car",
+        "ko": "장난감 자동차",
+        "img": "dG95X2Nhci53ZWJw"
+      },
+      {
+        "en": "hundred",
+        "ko": "100, 백",
+        "img": "aHVuZHJlZC53ZWJw"
+      },
+      {
+        "en": "thousand",
+        "ko": "1000, 천",
+        "img": "dGhvdXNhbmQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "주인찾기",
+    "grade": "4학년 2학기",
+    "category": "주인찾기",
+    "words": [
+      {
+        "en": "my",
+        "ko": "나의",
+        "img": "bXkud2VicA=="
+      },
+      {
+        "en": "your",
+        "ko": "너의",
+        "img": "eW91ci53ZWJw"
+      },
+      {
+        "en": "bag",
+        "ko": "가방",
+        "img": "YmFnLndlYnA="
+      },
+      {
+        "en": "brush",
+        "ko": "붓",
+        "img": "YnJ1c2gud2VicA=="
+      },
+      {
+        "en": "cap",
+        "ko": "모자",
+        "img": "Y2FwLndlYnA="
+      },
+      {
+        "en": "doll",
+        "ko": "인형",
+        "img": "ZG9sbC53ZWJw"
+      },
+      {
+        "en": "dress",
+        "ko": "원피스",
+        "img": "ZHJlc3Mud2VicA=="
+      },
+      {
+        "en": "jacket",
+        "ko": "재킷",
+        "img": "amFja2V0LndlYnA="
+      },
+      {
+        "en": "robot",
+        "ko": "로봇",
+        "img": "cm9ib3Qud2VicA=="
+      },
+      {
+        "en": "skirt",
+        "ko": "치마",
+        "img": "c2tpcnQud2VicA=="
+      },
+      {
+        "en": "T-shirt",
+        "ko": "티셔츠",
+        "img": "dC1zaGlydC53ZWJw"
+      },
+      {
+        "en": "umbrella",
+        "ko": "우산",
+        "img": "dW1icmVsbGEud2VicA=="
+      },
+      {
+        "en": "watch",
+        "ko": "시계",
+        "img": "d2F0Y2gud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "시각·일정",
+    "grade": "4학년 2학기",
+    "category": "시각·일정",
+    "words": [
+      {
+        "en": "time",
+        "ko": "시각, 시간",
+        "img": "dGltZS53ZWJw"
+      },
+      {
+        "en": "twenty",
+        "ko": "20, 이십",
+        "img": "dHdlbnR5LndlYnA="
+      },
+      {
+        "en": "thirty",
+        "ko": "30, 삼십",
+        "img": "dGhpcnR5LndlYnA="
+      },
+      {
+        "en": "forty",
+        "ko": "40, 사십",
+        "img": "Zm9ydHkud2VicA=="
+      },
+      {
+        "en": "fifty",
+        "ko": "50, 오십",
+        "img": "ZmlmdHkud2VicA=="
+      },
+      {
+        "en": "breakfast",
+        "ko": "아침 식사",
+        "img": "YnJlYWtmYXN0LndlYnA="
+      },
+      {
+        "en": "lunch",
+        "ko": "점심 식사",
+        "img": "bHVuY2gud2VicA=="
+      },
+      {
+        "en": "dinner",
+        "ko": "저녁 식사",
+        "img": "ZGlubmVyLndlYnA="
+      },
+      {
+        "en": "bed",
+        "ko": "침대",
+        "img": "YmVkLndlYnA="
+      },
+      {
+        "en": "school",
+        "ko": "학교",
+        "img": "c2Nob29sLndlYnA="
+      },
+      {
+        "en": "late",
+        "ko": "늦은",
+        "img": "bGF0ZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "하고 있는 일",
+    "grade": "4학년 2학기",
+    "category": "하고 있는 일",
+    "words": [
+      {
+        "en": "clean",
+        "ko": "청소하다",
+        "img": "Y2xlYW4ud2VicA=="
+      },
+      {
+        "en": "cook",
+        "ko": "요리하다",
+        "img": "Y29vay53ZWJw"
+      },
+      {
+        "en": "draw",
+        "ko": "그리다",
+        "img": "ZHJhdy53ZWJw"
+      },
+      {
+        "en": "fly",
+        "ko": "날리다",
+        "img": "Zmx5LndlYnA="
+      },
+      {
+        "en": "homework",
+        "ko": "숙제",
+        "img": "aG9tZXdvcmsud2VicA=="
+      },
+      {
+        "en": "listen",
+        "ko": "듣다",
+        "img": "bGlzdGVuLndlYnA="
+      },
+      {
+        "en": "make",
+        "ko": "만들다",
+        "img": "bWFrZS53ZWJw"
+      },
+      {
+        "en": "music",
+        "ko": "음악",
+        "img": "bXVzaWMud2VicA=="
+      },
+      {
+        "en": "picture",
+        "ko": "그림",
+        "img": "cGljdHVyZS53ZWJw"
+      },
+      {
+        "en": "play (the piano)",
+        "ko": "(피아노를) 연주하다",
+        "img": "cGxheV9fdGhlX3BpYW5vXy53ZWJw"
+      },
+      {
+        "en": "play (soccer)",
+        "ko": "(축구를) 하다",
+        "img": "cGxheV9fc29jY2VyXy53ZWJw"
+      },
+      {
+        "en": "read",
+        "ko": "읽다",
+        "img": "cmVhZC53ZWJw"
+      },
+      {
+        "en": "sleep",
+        "ko": "자다",
+        "img": "c2xlZXAud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "직업",
+    "grade": "4학년 2학기",
+    "category": "직업",
+    "words": [
+      {
+        "en": "cook",
+        "ko": "요리사",
+        "img": "Y29vay53ZWJw"
+      },
+      {
+        "en": "doctor",
+        "ko": "의사",
+        "img": "ZG9jdG9yLndlYnA="
+      },
+      {
+        "en": "farmer",
+        "ko": "농부",
+        "img": "ZmFybWVyLndlYnA="
+      },
+      {
+        "en": "firefighter",
+        "ko": "소방관",
+        "img": "ZmlyZWZpZ2h0ZXIud2VicA=="
+      },
+      {
+        "en": "nurse",
+        "ko": "간호사",
+        "img": "bnVyc2Uud2VicA=="
+      },
+      {
+        "en": "painter",
+        "ko": "화가",
+        "img": "cGFpbnRlci53ZWJw"
+      },
+      {
+        "en": "pilot",
+        "ko": "조종사",
+        "img": "cGlsb3Qud2VicA=="
+      },
+      {
+        "en": "scientist",
+        "ko": "과학자",
+        "img": "c2NpZW50aXN0LndlYnA="
+      },
+      {
+        "en": "teacher",
+        "ko": "선생님",
+        "img": "dGVhY2hlci53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "과거 활동",
+    "grade": "5학년 2학기",
+    "category": "과거 활동",
+    "words": [
+      {
+        "en": "did",
+        "ko": "했다",
+        "img": "ZGlkLndlYnA="
+      },
+      {
+        "en": "was",
+        "ko": "~이었다",
+        "img": "d2FzLndlYnA="
+      },
+      {
+        "en": "ate",
+        "ko": "먹었다",
+        "img": "YXRlLndlYnA="
+      },
+      {
+        "en": "made",
+        "ko": "만들었다",
+        "img": "bWFkZS53ZWJw"
+      },
+      {
+        "en": "saw",
+        "ko": "보았다",
+        "img": "c2F3LndlYnA="
+      },
+      {
+        "en": "swam",
+        "ko": "수영했다",
+        "img": "c3dhbS53ZWJw"
+      },
+      {
+        "en": "took",
+        "ko": "(사진을) 찍었다, (수업을) 들었다",
+        "img": "dG9vay53ZWJw"
+      },
+      {
+        "en": "went",
+        "ko": "갔다",
+        "img": "d2VudC53ZWJw"
+      },
+      {
+        "en": "played",
+        "ko": "(운동 경기를) 했다",
+        "img": "cGxheWVkLndlYnA="
+      },
+      {
+        "en": "visited",
+        "ko": "방문했다",
+        "img": "dmlzaXRlZC53ZWJw"
+      },
+      {
+        "en": "watched",
+        "ko": "보았다",
+        "img": "d2F0Y2hlZC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "위치",
+    "grade": "5학년 2학기",
+    "category": "위치",
+    "words": [
+      {
+        "en": "go straight",
+        "ko": "직진하다",
+        "img": "Z29fc3RyYWlnaHQud2VicA=="
+      },
+      {
+        "en": "left",
+        "ko": "왼쪽의",
+        "img": "bGVmdC53ZWJw"
+      },
+      {
+        "en": "right",
+        "ko": "오른쪽의",
+        "img": "cmlnaHQud2VicA=="
+      },
+      {
+        "en": "in front of",
+        "ko": "~의 앞에",
+        "img": "aW5fZnJvbnRfb2Yud2VicA=="
+      },
+      {
+        "en": "next to",
+        "ko": "(위치상으로) ~바로 옆에",
+        "img": "bmV4dF90by53ZWJw"
+      },
+      {
+        "en": "bank",
+        "ko": "은행",
+        "img": "YmFuay53ZWJw"
+      },
+      {
+        "en": "hospital",
+        "ko": "병원",
+        "img": "aG9zcGl0YWwud2VicA=="
+      },
+      {
+        "en": "library",
+        "ko": "도서관",
+        "img": "bGlicmFyeS53ZWJw"
+      },
+      {
+        "en": "museum",
+        "ko": "박물관",
+        "img": "bXVzZXVtLndlYnA="
+      },
+      {
+        "en": "park",
+        "ko": "공원",
+        "img": "cGFyay53ZWJw"
+      },
+      {
+        "en": "restaurant",
+        "ko": "식당, 레스토랑",
+        "img": "cmVzdGF1cmFudC53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "가격",
+    "grade": "5학년 2학기",
+    "category": "가격",
+    "words": [
+      {
+        "en": "how much",
+        "ko": "(양, 값이) 얼마, 어느 정도",
+        "img": "aG93X211Y2gud2VicA=="
+      },
+      {
+        "en": "size",
+        "ko": "크기, 사이즈",
+        "img": "c2l6ZS53ZWJw"
+      },
+      {
+        "en": "thousand",
+        "ko": "1000, 천",
+        "img": "dGhvdXNhbmQud2VicA=="
+      },
+      {
+        "en": "expensive",
+        "ko": "비싼",
+        "img": "ZXhwZW5zaXZlLndlYnA="
+      },
+      {
+        "en": "gloves",
+        "ko": "장갑, 글러브",
+        "img": "Z2xvdmVzLndlYnA="
+      },
+      {
+        "en": "pants",
+        "ko": "바지",
+        "img": "cGFudHMud2VicA=="
+      },
+      {
+        "en": "shoes",
+        "ko": "신발",
+        "img": "c2hvZXMud2VicA=="
+      },
+      {
+        "en": "shorts",
+        "ko": "반바지",
+        "img": "c2hvcnRzLndlYnA="
+      },
+      {
+        "en": "socks",
+        "ko": "양말",
+        "img": "c29ja3Mud2VicA=="
+      },
+      {
+        "en": "sunglasses",
+        "ko": "선글라스",
+        "img": "c3VuZ2xhc3Nlcy53ZWJw"
+      },
+      {
+        "en": "medium",
+        "ko": "중간의",
+        "img": "bWVkaXVtLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "외모",
+    "grade": "5학년 2학기",
+    "category": "외모",
+    "words": [
+      {
+        "en": "look like",
+        "ko": "(모양, 생김새 등이) ~처럼 보이다",
+        "img": "bG9va19saWtlLndlYnA="
+      },
+      {
+        "en": "hair",
+        "ko": "머리카락",
+        "img": "aGFpci53ZWJw"
+      },
+      {
+        "en": "long",
+        "ko": "긴",
+        "img": "bG9uZy53ZWJw"
+      },
+      {
+        "en": "short",
+        "ko": "짧은",
+        "img": "c2hvcnQud2VicA=="
+      },
+      {
+        "en": "curly",
+        "ko": "곱슬곱슬한",
+        "img": "Y3VybHkud2VicA=="
+      },
+      {
+        "en": "straight",
+        "ko": "곧은, 똑바른",
+        "img": "c3RyYWlnaHQud2VicA=="
+      },
+      {
+        "en": "eyes",
+        "ko": "눈",
+        "img": "ZXllcy53ZWJw"
+      },
+      {
+        "en": "glasses",
+        "ko": "안경",
+        "img": "Z2xhc3Nlcy53ZWJw"
+      },
+      {
+        "en": "wear",
+        "ko": "입고[쓰고/끼고/신고/착용하고] 있다",
+        "img": "d2Vhci53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "집 안 물건",
+    "grade": "5학년 2학기",
+    "category": "집 안 물건",
+    "words": [
+      {
+        "en": "there is / there are",
+        "ko": "~이 있다 / ~들이 있다",
+        "img": "dGhlcmVfaXNfX190aGVyZV9hcmUud2VicA=="
+      },
+      {
+        "en": "bedroom",
+        "ko": "침실",
+        "img": "YmVkcm9vbS53ZWJw"
+      },
+      {
+        "en": "bathroom",
+        "ko": "욕실, 화장실",
+        "img": "YmF0aHJvb20ud2VicA=="
+      },
+      {
+        "en": "kitchen",
+        "ko": "부엌, 주방",
+        "img": "a2l0Y2hlbi53ZWJw"
+      },
+      {
+        "en": "living room",
+        "ko": "거실",
+        "img": "bGl2aW5nX3Jvb20ud2VicA=="
+      },
+      {
+        "en": "garden",
+        "ko": "정원",
+        "img": "Z2FyZGVuLndlYnA="
+      },
+      {
+        "en": "bath",
+        "ko": "욕조",
+        "img": "YmF0aC53ZWJw"
+      },
+      {
+        "en": "table",
+        "ko": "식탁, 탁자",
+        "img": "dGFibGUud2VicA=="
+      },
+      {
+        "en": "chair",
+        "ko": "의자",
+        "img": "Y2hhaXIud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "과목·활동",
+    "grade": "5학년 2학기",
+    "category": "과목·활동",
+    "words": [
+      {
+        "en": "favorite",
+        "ko": "가장 좋아하는",
+        "img": "ZmF2b3JpdGUud2VicA=="
+      },
+      {
+        "en": "subject",
+        "ko": "과목",
+        "img": "c3ViamVjdC53ZWJw"
+      },
+      {
+        "en": "Korean",
+        "ko": "국어, 한국어의",
+        "img": "a29yZWFuLndlYnA="
+      },
+      {
+        "en": "English",
+        "ko": "영어",
+        "img": "ZW5nbGlzaC53ZWJw"
+      },
+      {
+        "en": "art",
+        "ko": "미술",
+        "img": "YXJ0LndlYnA="
+      },
+      {
+        "en": "math",
+        "ko": "수학",
+        "img": "bWF0aC53ZWJw"
+      },
+      {
+        "en": "music",
+        "ko": "음악",
+        "img": "bXVzaWMud2VicA=="
+      },
+      {
+        "en": "P.E. (Physical Education)",
+        "ko": "체육",
+        "img": "cF9lX19fcGh5c2ljYWxfZWR1Y2F0aW9uXy53ZWJw"
+      },
+      {
+        "en": "science",
+        "ko": "과학",
+        "img": "c2NpZW5jZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "장래 희망",
+    "grade": "5학년 2학기",
+    "category": "장래 희망",
+    "words": [
+      {
+        "en": "want",
+        "ko": "원하다",
+        "img": "d2FudC53ZWJw"
+      },
+      {
+        "en": "animal doctor",
+        "ko": "수의사",
+        "img": "YW5pbWFsX2RvY3Rvci53ZWJw"
+      },
+      {
+        "en": "designer",
+        "ko": "디자이너",
+        "img": "ZGVzaWduZXIud2VicA=="
+      },
+      {
+        "en": "engineer",
+        "ko": "기술자",
+        "img": "ZW5naW5lZXIud2VicA=="
+      },
+      {
+        "en": "pilot",
+        "ko": "조종사",
+        "img": "cGlsb3Qud2VicA=="
+      },
+      {
+        "en": "scientist",
+        "ko": "과학자",
+        "img": "c2NpZW50aXN0LndlYnA="
+      },
+      {
+        "en": "soccer player",
+        "ko": "축구 선수",
+        "img": "c29jY2VyX3BsYXllci53ZWJw"
+      },
+      {
+        "en": "writer",
+        "ko": "작가",
+        "img": "d3JpdGVyLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "미래 계획",
+    "grade": "5학년 2학기",
+    "category": "미래 계획",
+    "words": [
+      {
+        "en": "go",
+        "ko": "하러 가다",
+        "img": "Z28ud2VicA=="
+      },
+      {
+        "en": "join",
+        "ko": "가입하다",
+        "img": "am9pbi53ZWJw"
+      },
+      {
+        "en": "stay",
+        "ko": "머무르다",
+        "img": "c3RheS53ZWJw"
+      },
+      {
+        "en": "study",
+        "ko": "공부하다",
+        "img": "c3R1ZHkud2VicA=="
+      },
+      {
+        "en": "take a class",
+        "ko": "(수업을) 듣다",
+        "img": "dGFrZV9hX2NsYXNzLndlYnA="
+      },
+      {
+        "en": "read",
+        "ko": "읽다",
+        "img": "cmVhZC53ZWJw"
+      },
+      {
+        "en": "cousin",
+        "ko": "사촌",
+        "img": "Y291c2luLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "일과·시간",
+    "grade": "5학년 2학기",
+    "category": "일과·시간",
+    "words": [
+      {
+        "en": "get up",
+        "ko": "일어나다",
+        "img": "Z2V0X3VwLndlYnA="
+      },
+      {
+        "en": "go to bed",
+        "ko": "자다",
+        "img": "Z29fdG9fYmVkLndlYnA="
+      },
+      {
+        "en": "go to school",
+        "ko": "학교에 가다",
+        "img": "Z29fdG9fc2Nob29sLndlYnA="
+      },
+      {
+        "en": "do my homework",
+        "ko": "숙제하다",
+        "img": "ZG9fbXlfaG9tZXdvcmsud2VicA=="
+      },
+      {
+        "en": "lunch",
+        "ko": "점심",
+        "img": "bHVuY2gud2VicA=="
+      },
+      {
+        "en": "exercise",
+        "ko": "운동하다",
+        "img": "ZXhlcmNpc2Uud2VicA=="
+      },
+      {
+        "en": "early",
+        "ko": "일찍",
+        "img": "ZWFybHkud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "하고 싶은 것",
+    "grade": "5학년 2학기",
+    "category": "하고 싶은 것",
+    "words": [
+      {
+        "en": "draw",
+        "ko": "그리다",
+        "img": "ZHJhdy53ZWJw"
+      },
+      {
+        "en": "fly",
+        "ko": "(비행기 등을) 조종하다",
+        "img": "Zmx5LndlYnA="
+      },
+      {
+        "en": "invite",
+        "ko": "초대하다",
+        "img": "aW52aXRlLndlYnA="
+      },
+      {
+        "en": "learn",
+        "ko": "배우다",
+        "img": "bGVhcm4ud2VicA=="
+      },
+      {
+        "en": "ride",
+        "ko": "타다",
+        "img": "cmlkZS53ZWJw"
+      },
+      {
+        "en": "take pictures",
+        "ko": "사진을 찍다",
+        "img": "dGFrZV9waWN0dXJlcy53ZWJw"
+      },
+      {
+        "en": "activity",
+        "ko": "활동",
+        "img": "YWN0aXZpdHkud2VicA=="
+      },
+      {
+        "en": "winter",
+        "ko": "겨울",
+        "img": "d2ludGVyLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "음식",
+    "grade": "5학년 2학기",
+    "category": "음식",
+    "words": [
+      {
+        "en": "cheese",
+        "ko": "치즈",
+        "img": "Y2hlZXNlLndlYnA="
+      },
+      {
+        "en": "spaghetti",
+        "ko": "스파게티",
+        "img": "c3BhZ2hldHRpLndlYnA="
+      },
+      {
+        "en": "salty",
+        "ko": "짠, 짭짤한",
+        "img": "c2FsdHkud2VicA=="
+      },
+      {
+        "en": "spicy",
+        "ko": "매운",
+        "img": "c3BpY3kud2VicA=="
+      },
+      {
+        "en": "sweet",
+        "ko": "단, 달콤한",
+        "img": "c3dlZXQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "증상",
+    "grade": "5학년 2학기",
+    "category": "증상",
+    "words": [
+      {
+        "en": "wrong",
+        "ko": "틀린, 잘못된",
+        "img": "d3Jvbmcud2VicA=="
+      },
+      {
+        "en": "cold",
+        "ko": "감기",
+        "img": "Y29sZC53ZWJw"
+      },
+      {
+        "en": "headache",
+        "ko": "두통",
+        "img": "aGVhZGFjaGUud2VicA=="
+      },
+      {
+        "en": "stomachache",
+        "ko": "복통",
+        "img": "c3RvbWFjaGFjaGUud2VicA=="
+      },
+      {
+        "en": "runny nose",
+        "ko": "콧물",
+        "img": "cnVubnlfbm9zZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "과거 일",
+    "grade": "6학년 2학기",
+    "category": "과거 일",
+    "words": [
+      {
+        "en": "painted",
+        "ko": "그렸다",
+        "img": "cGFpbnRlZC53ZWJw"
+      },
+      {
+        "en": "picture",
+        "ko": "그림, 사진",
+        "img": "cGljdHVyZS53ZWJw"
+      },
+      {
+        "en": "invented",
+        "ko": "발명했다",
+        "img": "aW52ZW50ZWQud2VicA=="
+      },
+      {
+        "en": "studied",
+        "ko": "연구했다",
+        "img": "c3R1ZGllZC53ZWJw"
+      },
+      {
+        "en": "built",
+        "ko": "(건물, 집 등을) 지었다",
+        "img": "YnVpbHQud2VicA=="
+      },
+      {
+        "en": "made",
+        "ko": "만들었다",
+        "img": "bWFkZS53ZWJw"
+      },
+      {
+        "en": "poor",
+        "ko": "가난한",
+        "img": "cG9vci53ZWJw"
+      },
+      {
+        "en": "wrote",
+        "ko": "썼다",
+        "img": "d3JvdGUud2VicA=="
+      },
+      {
+        "en": "trip",
+        "ko": "여행",
+        "img": "dHJpcC53ZWJw"
+      },
+      {
+        "en": "swam",
+        "ko": "수영했다",
+        "img": "c3dhbS53ZWJw"
+      },
+      {
+        "en": "took",
+        "ko": "(수업을) 들었다",
+        "img": "dG9vay53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "음식 주문",
+    "grade": "6학년 2학기",
+    "category": "음식 주문",
+    "words": [
+      {
+        "en": "order",
+        "ko": "주문, 주문하다",
+        "img": "b3JkZXIud2VicA=="
+      },
+      {
+        "en": "delicious",
+        "ko": "맛있는",
+        "img": "ZGVsaWNpb3VzLndlYnA="
+      },
+      {
+        "en": "hot",
+        "ko": "(맛이) 매운",
+        "img": "aG90LndlYnA="
+      },
+      {
+        "en": "salty",
+        "ko": "(맛이) 짠",
+        "img": "c2FsdHkud2VicA=="
+      },
+      {
+        "en": "sweet",
+        "ko": "(맛이) 단, 달콤한",
+        "img": "c3dlZXQud2VicA=="
+      },
+      {
+        "en": "sour",
+        "ko": "(맛이) 신, 시큼한",
+        "img": "c291ci53ZWJw"
+      },
+      {
+        "en": "salad",
+        "ko": "샐러드",
+        "img": "c2FsYWQud2VicA=="
+      },
+      {
+        "en": "spaghetti",
+        "ko": "스파게티",
+        "img": "c3BhZ2hldHRpLndlYnA="
+      },
+      {
+        "en": "juice",
+        "ko": "(과일·채소의) 즙, 주스",
+        "img": "anVpY2Uud2VicA=="
+      },
+      {
+        "en": "pizza",
+        "ko": "피자",
+        "img": "cGl6emEud2VicA=="
+      },
+      {
+        "en": "steak",
+        "ko": "스테이크",
+        "img": "c3RlYWsud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "선호·계절",
+    "grade": "6학년 2학기",
+    "category": "선호·계절",
+    "words": [
+      {
+        "en": "favorite",
+        "ko": "가장 좋아하는",
+        "img": "ZmF2b3JpdGUud2VicA=="
+      },
+      {
+        "en": "season",
+        "ko": "계절",
+        "img": "c2Vhc29uLndlYnA="
+      },
+      {
+        "en": "spring",
+        "ko": "봄",
+        "img": "c3ByaW5nLndlYnA="
+      },
+      {
+        "en": "summer",
+        "ko": "여름",
+        "img": "c3VtbWVyLndlYnA="
+      },
+      {
+        "en": "fall",
+        "ko": "가을",
+        "img": "ZmFsbC53ZWJw"
+      },
+      {
+        "en": "winter",
+        "ko": "겨울",
+        "img": "d2ludGVyLndlYnA="
+      },
+      {
+        "en": "subject",
+        "ko": "과목",
+        "img": "c3ViamVjdC53ZWJw"
+      },
+      {
+        "en": "English",
+        "ko": "영어",
+        "img": "ZW5nbGlzaC53ZWJw"
+      },
+      {
+        "en": "Korean",
+        "ko": "국어",
+        "img": "a29yZWFuLndlYnA="
+      },
+      {
+        "en": "math",
+        "ko": "수학",
+        "img": "bWF0aC53ZWJw"
+      },
+      {
+        "en": "music",
+        "ko": "음악",
+        "img": "bXVzaWMud2VicA=="
+      },
+      {
+        "en": "science",
+        "ko": "과학",
+        "img": "c2NpZW5jZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "비교",
+    "grade": "6학년 2학기",
+    "category": "비교",
+    "words": [
+      {
+        "en": "than",
+        "ko": "~보다",
+        "img": "dGhhbi53ZWJw"
+      },
+      {
+        "en": "bigger",
+        "ko": "더 큰",
+        "img": "YmlnZ2VyLndlYnA="
+      },
+      {
+        "en": "faster",
+        "ko": "더 빠른",
+        "img": "ZmFzdGVyLndlYnA="
+      },
+      {
+        "en": "heavier",
+        "ko": "더 무거운",
+        "img": "aGVhdmllci53ZWJw"
+      },
+      {
+        "en": "longer",
+        "ko": "더 긴",
+        "img": "bG9uZ2VyLndlYnA="
+      },
+      {
+        "en": "older",
+        "ko": "더 나이가 많은",
+        "img": "b2xkZXIud2VicA=="
+      },
+      {
+        "en": "stronger",
+        "ko": "더 힘이 센",
+        "img": "c3Ryb25nZXIud2VicA=="
+      },
+      {
+        "en": "taller",
+        "ko": "더 키가 큰",
+        "img": "dGFsbGVyLndlYnA="
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "빈도",
+    "grade": "6학년 2학기",
+    "category": "빈도",
+    "words": [
+      {
+        "en": "often",
+        "ko": "자주",
+        "img": "b2Z0ZW4ud2VicA=="
+      },
+      {
+        "en": "brush",
+        "ko": "칫솔[칫솔질]하다",
+        "img": "YnJ1c2gud2VicA=="
+      },
+      {
+        "en": "exercise",
+        "ko": "운동하다",
+        "img": "ZXhlcmNpc2Uud2VicA=="
+      },
+      {
+        "en": "vegetable",
+        "ko": "야채, 채소",
+        "img": "dmVnZXRhYmxlLndlYnA="
+      },
+      {
+        "en": "wash",
+        "ko": "씻다",
+        "img": "d2FzaC53ZWJw"
+      },
+      {
+        "en": "once",
+        "ko": "한 번",
+        "img": "b25jZS53ZWJw"
+      },
+      {
+        "en": "twice",
+        "ko": "두 번",
+        "img": "dHdpY2Uud2VicA=="
+      },
+      {
+        "en": "week",
+        "ko": "일주일",
+        "img": "d2Vlay53ZWJw"
+      },
+      {
+        "en": "month",
+        "ko": "달, 월",
+        "img": "bW9udGgud2VicA=="
+      },
+      {
+        "en": "more",
+        "ko": "더",
+        "img": "bW9yZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "길찾기",
+    "grade": "6학년 2학기",
+    "category": "길찾기",
+    "words": [
+      {
+        "en": "get to",
+        "ko": "(~에) 가다, 도착하다",
+        "img": "Z2V0X3RvLndlYnA="
+      },
+      {
+        "en": "bookstore",
+        "ko": "서점, 책방",
+        "img": "Ym9va3N0b3JlLndlYnA="
+      },
+      {
+        "en": "library",
+        "ko": "도서관",
+        "img": "bGlicmFyeS53ZWJw"
+      },
+      {
+        "en": "museum",
+        "ko": "박물관",
+        "img": "bXVzZXVtLndlYnA="
+      },
+      {
+        "en": "by",
+        "ko": "(수단 등) ~타고, ~로",
+        "img": "Ynkud2VicA=="
+      },
+      {
+        "en": "subway",
+        "ko": "지하철",
+        "img": "c3Vid2F5LndlYnA="
+      },
+      {
+        "en": "behind",
+        "ko": "(위치가) ~뒤에",
+        "img": "YmVoaW5kLndlYnA="
+      },
+      {
+        "en": "between",
+        "ko": "(위치가) ~사이에, ~중간에",
+        "img": "YmV0d2Vlbi53ZWJw"
+      },
+      {
+        "en": "in front of",
+        "ko": "~앞쪽에, ~앞에",
+        "img": "aW5fZnJvbnRfb2Yud2VicA=="
+      },
+      {
+        "en": "next to",
+        "ko": "(위치가) ~바로 옆에",
+        "img": "bmV4dF90by53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "경험·지식",
+    "grade": "6학년 2학기",
+    "category": "경험·지식",
+    "words": [
+      {
+        "en": "know",
+        "ko": "알다",
+        "img": "a25vdy53ZWJw"
+      },
+      {
+        "en": "anything",
+        "ko": "무엇, 아무것",
+        "img": "YW55dGhpbmcud2VicA=="
+      },
+      {
+        "en": "about",
+        "ko": "~에 대한",
+        "img": "YWJvdXQud2VicA=="
+      },
+      {
+        "en": "idea",
+        "ko": "생각",
+        "img": "aWRlYS53ZWJw"
+      },
+      {
+        "en": "traditional",
+        "ko": "전통의",
+        "img": "dHJhZGl0aW9uYWwud2VicA=="
+      },
+      {
+        "en": "Chinese",
+        "ko": "중국의",
+        "img": "Y2hpbmVzZS53ZWJw"
+      },
+      {
+        "en": "Vietnamese",
+        "ko": "베트남의",
+        "img": "dmlldG5hbWVzZS53ZWJw"
+      },
+      {
+        "en": "Indian",
+        "ko": "인도의",
+        "img": "aW5kaWFuLndlYnA="
+      },
+      {
+        "en": "Australian",
+        "ko": "오스트레일리아의",
+        "img": "YXVzdHJhbGlhbi53ZWJw"
+      },
+      {
+        "en": "African",
+        "ko": "아프리카의",
+        "img": "YWZyaWNhbi53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "환경 보호",
+    "grade": "6학년 2학기",
+    "category": "환경 보호",
+    "words": [
+      {
+        "en": "save",
+        "ko": "구하다, 절약하다",
+        "img": "c2F2ZS53ZWJw"
+      },
+      {
+        "en": "should",
+        "ko": "~해야 한다",
+        "img": "c2hvdWxkLndlYnA="
+      },
+      {
+        "en": "turn off",
+        "ko": "(불, 전기 등을) 끄다",
+        "img": "dHVybl9vZmYud2VicA=="
+      },
+      {
+        "en": "light",
+        "ko": "(특히 전깃) 불, (전)등",
+        "img": "bGlnaHQud2VicA=="
+      },
+      {
+        "en": "energy",
+        "ko": "에너지, 동력 자원",
+        "img": "ZW5lcmd5LndlYnA="
+      },
+      {
+        "en": "use",
+        "ko": "사용하다",
+        "img": "dXNlLndlYnA="
+      },
+      {
+        "en": "stair",
+        "ko": "(하나의) 계단",
+        "img": "c3RhaXIud2VicA=="
+      },
+      {
+        "en": "recycle",
+        "ko": "재활용하다",
+        "img": "cmVjeWNsZS53ZWJw"
+      },
+      {
+        "en": "reuse",
+        "ko": "재사용하다",
+        "img": "cmV1c2Uud2VicA=="
+      },
+      {
+        "en": "plant",
+        "ko": "(나무·씨앗 등을) 심다",
+        "img": "cGxhbnQud2VicA=="
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "의견",
+    "grade": "6학년 2학기",
+    "category": "의견",
+    "words": [
+      {
+        "en": "think",
+        "ko": "(~라고) 생각하다",
+        "img": "dGhpbmsud2VicA=="
+      },
+      {
+        "en": "boring",
+        "ko": "재미없는, 지루한",
+        "img": "Ym9yaW5nLndlYnA="
+      },
+      {
+        "en": "fun",
+        "ko": "재미있는",
+        "img": "ZnVuLndlYnA="
+      },
+      {
+        "en": "scary",
+        "ko": "무서운, 겁나는",
+        "img": "c2Nhcnkud2VicA=="
+      },
+      {
+        "en": "cheap",
+        "ko": "값이 싼, 저렴한",
+        "img": "Y2hlYXAud2VicA=="
+      },
+      {
+        "en": "expensive",
+        "ko": "비싼",
+        "img": "ZXhwZW5zaXZlLndlYnA="
+      },
+      {
+        "en": "difficult",
+        "ko": "어려운",
+        "img": "ZGlmZmljdWx0LndlYnA="
+      },
+      {
+        "en": "easy",
+        "ko": "쉬운, 수월한",
+        "img": "ZWFzeS53ZWJw"
+      },
+      {
+        "en": "dangerous",
+        "ko": "위험한",
+        "img": "ZGFuZ2Vyb3VzLndlYnA="
+      },
+      {
+        "en": "safe",
+        "ko": "안전한",
+        "img": "c2FmZS53ZWJw"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "초대",
+    "grade": "6학년 2학기",
+    "category": "초대",
+    "words": [
+      {
+        "en": "can",
+        "ko": "(가능) ~할 수 있다",
+        "img": "Y2FuLndlYnA="
+      },
+      {
+        "en": "will",
+        "ko": "~일[할] 것이다",
+        "img": "d2lsbC53ZWJw"
+      },
+      {
+        "en": "come",
+        "ko": "(~쪽으로) 오다",
+        "img": "Y29tZS53ZWJw"
+      },
+      {
+        "en": "bring",
+        "ko": "가져오다",
+        "img": "YnJpbmcud2VicA=="
+      },
+      {
+        "en": "festival",
+        "ko": "축제, 기념제",
+        "img": "ZmVzdGl2YWwud2VicA=="
+      },
+      {
+        "en": "graduation",
+        "ko": "졸업, 졸업식",
+        "img": "Z3JhZHVhdGlvbi53ZWJw"
+      },
+      {
+        "en": "party",
+        "ko": "파티",
+        "img": "cGFydHkud2VicA=="
+      },
+      {
+        "en": "soft drink",
+        "ko": "청량음료",
+        "img": "c29mdF9kcmluay53ZWJw"
+      }
+    ]
   }
 ]

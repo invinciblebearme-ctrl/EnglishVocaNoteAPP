@@ -18,7 +18,7 @@ import { base64Decode } from '../src/utils/base64';
 
 const { width } = Dimensions.get('window');
 
-const RANGES = ['전체', '1-20', '21-40', '41-60', '61-80'];
+const RANGES = ['전체', '1-20', '21-40', '41-60', '61-84'];
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');

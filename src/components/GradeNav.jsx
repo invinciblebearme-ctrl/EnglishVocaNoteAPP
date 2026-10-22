@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
-const GRADES = ['3학년 1학기', '4학년 1학기', '5학년 1학기', '6학년 1학기']
+const SEMESTERS = ['1학기', '2학기']
+const GRADES = ['3학년', '4학년', '5학년', '6학년']
 
 function GradeNav() {
-  const [selectedGrade, setSelectedGrade] = useState(
-    localStorage.getItem('selectedGrade') || GRADES[0]
-  )
+  const location = useLocation()
+  const isNavVisible = location.pathname === '/' || location.pathname === '/scramble'
+
+  const [selectedGrade, setSelectedGrade] = useState(() => {
+    return localStorage.getItem('selectedGrade') || '3학년 1학기'
+  })
+
+  // Parse current grade and semester
+  const currentGrade = GRADES.find(g => selectedGrade.startsWith(g)) || '3학년'
+  const currentSemester = SEMESTERS.find(s => selectedGrade.includes(s)) || '1학기'
 
   useEffect(() => {
-    // Listen for storage changes in the same window (to sync components if needed)
     const handleStorageChange = () => {
       const stored = localStorage.getItem('selectedGrade')
       if (stored && stored !== selectedGrade) {
@@ -19,20 +27,46 @@ function GradeNav() {
     return () => window.removeEventListener('storage_grade_change', handleStorageChange)
   }, [selectedGrade])
 
-  const handleGradeSelect = (grade) => {
-    localStorage.setItem('selectedGrade', grade)
-    setSelectedGrade(grade)
-    // Dispatch custom event to notify other components
+  const updateSelection = (newGrade, newSemester) => {
+    const combined = `${newGrade} ${newSemester}`
+    localStorage.setItem('selectedGrade', combined)
+    setSelectedGrade(combined)
     window.dispatchEvent(new Event('storage_grade_change'))
+  }
+
+  const handleSemesterSelect = (semester) => {
+    updateSelection(currentGrade, semester)
+  }
+
+  const handleGradeSelect = (grade) => {
+    updateSelection(grade, currentSemester)
+  }
+
+  if (!isNavVisible) {
+    return null
   }
 
   return (
     <div className="grade-nav-container">
+      {/* Semester Selector */}
+      <div className="semester-tabs">
+        {SEMESTERS.map((semester) => (
+          <button
+            key={semester}
+            className={`semester-tab-item ${currentSemester === semester ? 'active' : ''}`}
+            onClick={() => handleSemesterSelect(semester)}
+          >
+            {semester}
+          </button>
+        ))}
+      </div>
+
+      {/* Grade Selector */}
       <div className="grade-tabs">
         {GRADES.map((grade) => (
           <button
             key={grade}
-            className={`grade-tab-item ${selectedGrade === grade ? 'active' : ''}`}
+            className={`grade-tab-item ${currentGrade === grade ? 'active' : ''}`}
             onClick={() => handleGradeSelect(grade)}
           >
             {grade}

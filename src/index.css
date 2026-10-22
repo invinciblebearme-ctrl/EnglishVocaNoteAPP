@@ -91,36 +91,80 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 190px;
     padding-bottom: 3rem;
 }
 
 .grade-nav-container {
     position: fixed;
-    top: 95px;
+    top: 86px;
     left: 50%;
     transform: translateX(-50%);
     width: 95%;
     max-width: 380px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
     z-index: 1000;
+}
+
+.semester-tabs {
+    display: flex;
+    width: 200px;
+    gap: 4px;
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(12px);
+    padding: 3px 4px;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    justify-content: space-around;
+}
+
+.semester-tab-item {
+    padding: 5px 14px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.semester-tab-item:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.semester-tab-item.active {
+    background: var(--surface);
+    color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
 }
 
 .grade-tabs {
     display: flex;
     width: 100%;
     gap: 4px;
-    background: rgba(15, 23, 42, 0.4);
+    background: rgba(15, 23, 42, 0.55);
     backdrop-filter: blur(10px);
-    padding: 6px;
+    padding: 5px;
     border-radius: 50px;
     border: 1px solid var(--border);
     justify-content: space-around;
 }
 
 .grade-tab-item {
-    padding: 8px 10px;
+    padding: 7px 10px;
     border-radius: 30px;
     border: 1px solid transparent;
     background: transparent;
