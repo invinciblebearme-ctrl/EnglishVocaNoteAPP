@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
+import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 
 function WordChallenge() {
   const { id } = useParams()
@@ -8,6 +9,7 @@ function WordChallenge() {
   const [roundData, setRoundData] = useState(null)
   const [index, setIndex] = useState(0)
   const [showingEnglish, setShowingEnglish] = useState(true)
+  const [fav, setFav] = useState(false)
   useEffect(() => {
     const round = allRounds.find(r => r.id === parseInt(id))
     if (round) {
@@ -80,11 +82,26 @@ function WordChallenge() {
   const [isListening, setIsListening] = useState(false)
   const [pronunciationScore, setPronunciationScore] = useState(null)
   
-  // 단어가 바뀔 때마다 이미지 에러 및 발음 점수 초기화
+  // 단어가 바뀔 때마다 이미지 에러 및 발음 점수 초기화, 즐겨찾기 상태 확인
   useEffect(() => {
     setImgError(false)
     setPronunciationScore(null)
-  }, [index, id])
+    if (roundData && roundData.words[index]) {
+      setFav(isFavorite(roundData.words[index].en))
+    }
+  }, [index, id, roundData])
+
+  const toggleFavorite = () => {
+    if (!roundData || !roundData.words[index]) return;
+    const currentWord = roundData.words[index];
+    if (fav) {
+      removeFromMyVoca(currentWord.en);
+      setFav(false);
+    } else {
+      addToMyVoca(currentWord);
+      setFav(true);
+    }
+  };
 
   if (!roundData) return <div className="challenge-body">데이터를 불러오는 중...</div>;
 
@@ -159,7 +176,21 @@ function WordChallenge() {
         </h1>
         <div className="challenge-index">단어 {index + 1} / {roundData.words.length}</div>
         
-        <div className="challenge-card">
+        <div 
+          className="challenge-card"
+          onClick={() => setShowingEnglish(prev => !prev)}
+          style={{ cursor: 'pointer', position: 'relative' }}
+        >
+          <button 
+            className={`favorite-btn ${fav ? 'active' : ''}`} 
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleFavorite();
+            }}
+            title="나만의 단어장에 저장"
+          >
+            {fav ? '⭐' : '☆'}
+          </button>
           {showingEnglish ? (
             <div className="word-en">{currentWord.en}</div>
           ) : (
