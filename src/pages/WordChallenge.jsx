@@ -205,6 +205,7 @@ function WordChallenge() {
         )}
 
         <div className="challenge-controls">
+          <button onClick={() => navigate(`/listen-quiz/${id}`)} className="nav-btn-premium">🎧 듣기 퀴즈</button>
           <button onClick={prevWord} className="nav-btn-premium">이전</button>
           <button onClick={nextWord} className="nav-btn-premium">다음</button>
           <button onClick={handleManualSpeak} className="nav-btn-premium">발음 듣기</button>

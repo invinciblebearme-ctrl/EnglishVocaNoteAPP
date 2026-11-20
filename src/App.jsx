@@ -1,6 +1,7 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import WordChallenge from './pages/WordChallenge'
+import ListenQuiz from './pages/ListenQuiz'
 import ScrambleHome from './pages/ScrambleHome'
 import ScrambleGame from './pages/ScrambleGame'
 import MyVocabulary from './pages/MyVocabulary'
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/challenge/:id" element={<WordChallenge />} />
+        <Route path="/listen-quiz/:id" element={<ListenQuiz />} />
         <Route path="/scramble" element={<ScrambleHome />} />
         <Route path="/scramble-game/:id" element={<ScrambleGame />} />
         <Route path="/my-voca" element={<MyVocabulary />} />
