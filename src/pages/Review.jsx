@@ -43,7 +43,7 @@ function Review() {
   const grade = (gaveUp = false) => {
     if (!current || result) return
     const correct = !gaveUp && isCorrectAnswer(input, current.en)
-    recordResult(current, correct)
+    recordResult(current, correct, { source: 'review' })
     setResult(correct ? 'correct' : 'wrong')
     setScore((s) =>
       correct ? { ...s, correct: s.correct + 1 } : { ...s, missed: [...s.missed, current] }

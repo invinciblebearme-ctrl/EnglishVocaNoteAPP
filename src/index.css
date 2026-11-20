@@ -35,8 +35,10 @@ header {
     left: 50%;
     transform: translateX(-50%);
     width: 95%;
-    max-width: 380px;
+    max-width: 470px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     z-index: 2000;
     pointer-events: none;
@@ -101,7 +103,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     width: 95%;
-    max-width: 380px;
+    max-width: 470px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1290,3 +1292,81 @@ img:active {
 .example-sentence.large { max-width: 80vw; background: none; border: none; }
 .example-sentence.large .example-en { font-size: clamp(1.4rem, 3.2vw, 3rem); }
 .example-sentence.large .example-ko { font-size: clamp(1rem, 2vw, 1.8rem); }
+
+/* InstallButton (앱 설치) */
+.install-wrap { position: relative; display: flex; justify-content: center; margin-top: 8px; pointer-events: auto; }
+.install-btn {
+  font: inherit; font-size: 0.8rem; font-weight: 700;
+  color: var(--accent); background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 999px;
+  padding: 4px 12px; cursor: pointer;
+}
+.install-help {
+  position: absolute; top: 34px; z-index: 50;
+  padding: 10px 14px; border-radius: 12px; width: 240px;
+  background: var(--bg-main); border: 1px solid var(--border);
+  font-size: 0.85rem; line-height: 1.5; text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+/* 우리 반 · 학급 현황판 */
+.list-footer { display: flex; justify-content: center; gap: 10px; margin: 40px 0 30px; font-size: 0.9rem; color: var(--text-muted); }
+.list-footer a { color: var(--text-secondary); text-decoration: none; }
+.list-footer a:hover { color: var(--accent); }
+.class-page { text-align: center; }
+.class-desc { color: var(--text-secondary); line-height: 1.6; font-size: 0.9rem; }
+.class-form { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 320px; margin: 12px auto; text-align: left; }
+.class-form label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: var(--text-secondary); }
+.class-form input {
+  font: inherit; font-size: 1rem; color: var(--text-primary);
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px;
+}
+.class-warn { font-size: 0.8rem; color: #fbbf24; margin: 0; }
+.class-error { font-size: 0.85rem; color: #f87171; }
+.class-card { margin: 16px auto; padding: 16px 24px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); display: inline-block; }
+.class-card-name { font-size: 1.4rem; font-weight: 800; margin-bottom: 4px; }
+
+.teacher-page { padding-bottom: 40px; }
+.dash { max-width: 1000px; margin: 0 auto; padding: 0 12px; text-align: left; }
+.dash section { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px; margin-bottom: 16px; }
+.dash h2 { margin: 0; }
+.dash h3 { margin: 0 0 12px; font-size: 1rem; }
+.dash-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.dash-code { color: var(--text-secondary); font-size: 0.9rem; }
+.dash-code b { color: var(--accent); font-size: 1.2rem; letter-spacing: 2px; }
+.dash-actions { display: flex; gap: 8px; }
+.dash-summary { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.dash-summary div { flex: 1; min-width: 140px; padding: 12px 16px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); color: var(--text-secondary); }
+.dash-summary b { color: var(--text-primary); font-size: 1.4rem; }
+.dash-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.dash-table th { text-align: left; color: var(--text-muted); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.dash-table td { padding: 8px; border-bottom: 1px solid var(--border); }
+.dash-row { cursor: pointer; }
+.dash-row:hover { background: var(--surface-hover); }
+.dash-detail td { background: rgba(56, 189, 248, 0.05); }
+.dash-bar { display: inline-block; width: 60px; height: 6px; border-radius: 999px; background: rgba(148,163,184,0.2); overflow: hidden; vertical-align: middle; margin-right: 6px; }
+.dash-bar span { display: block; height: 100%; }
+.dash-cols { display: grid; grid-template-columns: 1fr 1.4fr; gap: 16px; }
+.dash-cols section { margin-bottom: 0; }
+@media (max-width: 760px) { .dash-cols { grid-template-columns: 1fr; } }
+.dash-wrong { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 6px; }
+.dash-wrong li small { color: var(--text-secondary); margin-left: 4px; }
+.dash-muted { color: var(--text-muted); font-size: 0.8rem; margin-left: 6px; }
+.dash-empty, .dash-hint { color: var(--text-muted); font-size: 0.85rem; margin: 6px 0 0; }
+.dash-danger { margin-top: 16px; }
+
+/* 공통 버튼 (challenge-controls 밖에서도 같은 모양) */
+.nav-btn-premium {
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text-primary);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.nav-btn-premium:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.nav-btn-premium:disabled { opacity: 0.5; cursor: not-allowed; }

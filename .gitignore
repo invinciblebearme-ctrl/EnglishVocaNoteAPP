@@ -32,3 +32,6 @@ npm_cache/
 
 # 로컬 Claude Code 설정
 .claude/
+
+# wrangler 로컬 데이터 (로컬 D1 등)
+.wrangler/

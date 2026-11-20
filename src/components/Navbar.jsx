@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { getDueCount, PROGRESS_EVENT } from '../utils/progress'
+import InstallButton from './InstallButton'
 
 function Navbar() {
   const location = useLocation()
@@ -50,6 +51,7 @@ function Navbar() {
           {dueCount > 0 && <span className="nav-badge">{dueCount}</span>}
         </Link>
       </div>
+      <InstallButton />
     </nav>
   )
 }
