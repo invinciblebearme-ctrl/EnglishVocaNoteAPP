@@ -48,13 +48,16 @@ function WordChallenge() {
     }
   }, [index, roundData]);
 
-  // 자동 의미 전환 (영어 <-> 한글 무한 반복)
+  // 자동 의미 전환 (영어 <-> 한글)
+  // 단어가 바뀌거나 카드를 직접 누르면 타이머가 처음부터 다시 시작된다
+  const [autoFlip, setAutoFlip] = useState(true)
   useEffect(() => {
-    const timer = setInterval(() => {
+    if (!autoFlip) return;
+    const timer = setTimeout(() => {
       setShowingEnglish(prev => !prev);
     }, 1500); // 1.5초 간격 전환
-    return () => clearInterval(timer);
-  }, []);
+    return () => clearTimeout(timer);
+  }, [autoFlip, showingEnglish, index]);
 
   const [imgError, setImgError] = useState(false)
   const [isListening, setIsListening] = useState(false)
@@ -201,6 +204,9 @@ function WordChallenge() {
           <button onClick={prevWord} className="nav-btn-premium">이전</button>
           <button onClick={nextWord} className="nav-btn-premium">다음</button>
           <button onClick={handleManualSpeak} className="nav-btn-premium">발음 듣기</button>
+          <button onClick={() => setAutoFlip(prev => !prev)} className="nav-btn-premium">
+            {autoFlip ? '자동 전환 끄기' : '자동 전환 켜기'}
+          </button>
           <button onClick={() => navigate('/')} className="nav-btn-premium">목록으로</button>
         </div>
 
