@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
+import { getPrimaryAnswer, isCorrectAnswer, shuffleLetters } from '../utils/answer'
 
 function ScrambleGame() {
   const { id } = useParams()
@@ -16,22 +17,11 @@ function ScrambleGame() {
   
   const roundData = useMemo(() => allRounds.find(r => r.id === parseInt(id)), [id])
   const currentWord = roundData?.words[index]
-
-  // Shuffle algorithm
-  const shuffleWord = (word) => {
-    let arr = word.split('')
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    // If it's the same as original, shuffle again
-    if (arr.join('') === word && word.length > 1) return shuffleWord(word)
-    return arr
-  }
+  const wordCount = currentWord ? getPrimaryAnswer(currentWord.en).split(' ').length : 0
 
   useEffect(() => {
     if (currentWord) {
-      setScrambled(shuffleWord(currentWord.en.toLowerCase()))
+      setScrambled(shuffleLetters(getPrimaryAnswer(currentWord.en)))
       setUserInput('')
       setFeedback(null)
       setShowImage(false)
@@ -54,7 +44,7 @@ function ScrambleGame() {
   if (!roundData) return <div>게임을 찾을 수 없습니다.</div>
 
   const handleCheck = () => {
-    if (userInput.toLowerCase().trim() === currentWord.en.toLowerCase().trim()) {
+    if (isCorrectAnswer(userInput, currentWord.en)) {
       setFeedback({ level: 3, message: 'Excellent! ⭐⭐⭐' })
       handleSpeak()
       setShowImage(true) // Show image on correct answer
@@ -140,6 +130,9 @@ function ScrambleGame() {
               </span>
             ))}
           </div>
+          {wordCount > 1 && (
+            <div className="transcript-hint">💡 {wordCount}개의 단어로 이루어져 있어요 (띄어쓰기 자유)</div>
+          )}
           <input 
             type="text" 
             className="scramble-input"

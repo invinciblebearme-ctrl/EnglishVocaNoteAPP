@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
+import { isCorrectAnswer, isPartialAnswer } from '../utils/answer'
 
 function WordChallenge() {
   const { id } = useParams()
@@ -133,12 +134,11 @@ function WordChallenge() {
 
     recognition.onresult = (event) => {
       const transcript = event.results[0][0].transcript.toLowerCase().trim();
-      const target = currentWord.en.toLowerCase().trim();
-      
+
       let level = 1; // Try Again
-      if (transcript === target) {
+      if (isCorrectAnswer(transcript, currentWord.en)) {
         level = 3; // Excellent
-      } else if (transcript.includes(target) || target.includes(transcript)) {
+      } else if (isPartialAnswer(transcript, currentWord.en)) {
         level = 2; // Good
       }
       
