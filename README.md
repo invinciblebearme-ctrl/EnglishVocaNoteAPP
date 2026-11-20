@@ -5,6 +5,10 @@
 - **듣기 / 읽기**: 그림과 함께 단어 카드 보기, 발음 듣기, 발음 평가(크롬)
 - **쓰기 연습**: 섞인 글자로 단어 완성하기(스크램블)
 - **단어장**: ⭐로 저장한 단어 모아 보기, PDF로 저장
+- **듣기 퀴즈**: 발음을 듣고 그림 4개 중 고르기
+- **복습**: 틀린 단어 자동 수집, 간격 반복(1일 → 3일 → 7일…)으로 오늘의 복습
+- **선생님 도구**: 전자칠판용 수업 모드, 인쇄용 학습지(그림 보고 쓰기·따라 쓰기·짝짓기)
+- **예문**: 단어마다 교과서 표현 수준의 예문과 해석, 문장 듣기
 
 배포 주소: https://english-voca-note-app.pages.dev
 
@@ -30,7 +34,10 @@ Windows에서는 `deploy_cloudflare.bat`을 더블클릭해도 배포됩니다.
 | `src/utils/answer.js` | 정답 추출·비교 (괄호·기호 처리) |
 | `src/utils/speech.js` | 영어 발음 재생 |
 | `src/utils/image.js` | 단어 이미지 URL (englishvocanote.pages.dev에서 제공) |
+| `src/utils/progress.js` | 학습 기록·간격 반복·연속 학습일 (브라우저 localStorage에 저장) |
+| `src/pages/ClassMode.jsx`, `Worksheet.jsx` | 수업 모드, 학습지 |
 | `data/vocab/` | 원본 어휘 목록 (학년/학기·주제·어휘·뜻, 탭 구분) |
+| `data/vocab/examples.tsv` | 예문 원본 (en, ex, exKo) — 고친 뒤 `python3 scripts/merge_examples.py` |
 | `data/image-lists/` | 이미지 작업용 파일 목록 |
 | `native/` | Expo(React Native) 앱 — 예전 어휘 세트를 사용 중 |
 
@@ -38,7 +45,8 @@ Windows에서는 `deploy_cloudflare.bat`을 더블클릭해도 배포됩니다.
 
 ```json
 { "id": 2, "name": "사물", "grade": "3학년 1학기", "category": "사물",
-  "words": [{ "en": "bag", "ko": "가방", "img": "<파일명 base64>" }] }
+  "words": [{ "en": "bag", "ko": "가방", "img": "<파일명 base64>",
+               "ex": "This is my bag.", "exKo": "이것은 내 가방이야." }] }
 ```
 
 `en`에 `P.E. (physical education)`, `there is / there are`처럼 괄호나 `/`가 있으면,

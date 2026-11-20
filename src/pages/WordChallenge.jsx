@@ -5,6 +5,7 @@ import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 import { isCorrectAnswer, isPartialAnswer } from '../utils/answer'
 import { speakWord } from '../utils/speech'
 import { recordResult } from '../utils/progress'
+import ExampleSentence from '../components/ExampleSentence'
 import { getImageUrl } from '../utils/image'
 
 function WordChallenge() {
@@ -194,6 +195,8 @@ function WordChallenge() {
             <div className="no-image">{imgUrl ? "이미지 준비중" : "이미지 없음"}</div>
           )}
         </div>
+
+        <ExampleSentence key={currentWord.en} word={currentWord} />
 
         {pronunciationScore && (
           <div className={`stt-feedback level-${pronunciationScore.level}`}>

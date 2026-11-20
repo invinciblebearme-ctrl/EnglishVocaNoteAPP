@@ -8,17 +8,23 @@
       {
         "en": "hi",
         "ko": "안녕",
-        "img": "aGkud2VicA=="
+        "img": "aGkud2VicA==",
+        "ex": "Hi, I'm Mina.",
+        "exKo": "안녕, 나는 미나야."
       },
       {
         "en": "hello",
         "ko": "안녕하세요",
-        "img": "aGVsbG8ud2VicA=="
+        "img": "aGVsbG8ud2VicA==",
+        "ex": "Hello, my name is Tom.",
+        "exKo": "안녕하세요, 제 이름은 톰이에요."
       },
       {
         "en": "bye",
         "ko": "안녕, 잘 가",
-        "img": "YnllLndlYnA="
+        "img": "YnllLndlYnA=",
+        "ex": "Bye, see you tomorrow.",
+        "exKo": "안녕, 내일 봐."
       }
     ]
   },
@@ -31,57 +37,79 @@
       {
         "en": "bag",
         "ko": "가방",
-        "img": "YmFnLndlYnA="
+        "img": "YmFnLndlYnA=",
+        "ex": "This is my bag.",
+        "exKo": "이것은 내 가방이야."
       },
       {
         "en": "ball",
         "ko": "공",
-        "img": "YmFsbC53ZWJw"
+        "img": "YmFsbC53ZWJw",
+        "ex": "I have a ball.",
+        "exKo": "나는 공이 있어."
       },
       {
         "en": "bike",
         "ko": "자전거",
-        "img": "YmlrZS53ZWJw"
+        "img": "YmlrZS53ZWJw",
+        "ex": "I can ride a bike.",
+        "exKo": "나는 자전거를 탈 수 있어."
       },
       {
         "en": "book",
         "ko": "책",
-        "img": "Ym9vay53ZWJw"
+        "img": "Ym9vay53ZWJw",
+        "ex": "Open your book.",
+        "exKo": "책을 펴세요."
       },
       {
         "en": "car",
         "ko": "자동차",
-        "img": "Y2FyLndlYnA="
+        "img": "Y2FyLndlYnA=",
+        "ex": "It's a red car.",
+        "exKo": "그것은 빨간 자동차야."
       },
       {
         "en": "chair",
         "ko": "의자",
-        "img": "Y2hhaXIud2VicA=="
+        "img": "Y2hhaXIud2VicA==",
+        "ex": "Sit on the chair.",
+        "exKo": "의자에 앉아."
       },
       {
         "en": "clock",
         "ko": "시계",
-        "img": "Y2xvY2sud2VicA=="
+        "img": "Y2xvY2sud2VicA==",
+        "ex": "Look at the clock.",
+        "exKo": "시계를 봐."
       },
       {
         "en": "cup",
         "ko": "컵",
-        "img": "Y3VwLndlYnA="
+        "img": "Y3VwLndlYnA=",
+        "ex": "This is my cup.",
+        "exKo": "이것은 내 컵이야."
       },
       {
         "en": "doll",
         "ko": "인형",
-        "img": "ZG9sbC53ZWJw"
+        "img": "ZG9sbC53ZWJw",
+        "ex": "I like this doll.",
+        "exKo": "나는 이 인형이 좋아."
       },
       {
         "en": "hat",
         "ko": "모자",
-        "img": "aGF0LndlYnA="
+        "img": "aGF0LndlYnA=",
+        "ex": "Is it your hat?",
+        "exKo": "그거 네 모자니?"
       },
       {
         "en": "robot",
         "ko": "로봇",
-        "img": "cm9ib3Qud2VicA=="
+        "img": "cm9ib3Qud2VicA==",
+        "ex": "Look! It's a robot.",
+        "exKo": "봐! 로봇이야."
       }
     ]
   },
@@ -94,67 +122,93 @@
       {
         "en": "close",
         "ko": "닫다",
-        "img": "Y2xvc2Uud2VicA=="
+        "img": "Y2xvc2Uud2VicA==",
+        "ex": "Close the door, please.",
+        "exKo": "문을 닫아 주세요."
       },
       {
         "en": "come",
         "ko": "오다",
-        "img": "Y29tZS53ZWJw"
+        "img": "Y29tZS53ZWJw",
+        "ex": "Come here, please.",
+        "exKo": "이리 오세요."
       },
       {
         "en": "dance",
         "ko": "춤추다",
-        "img": "ZGFuY2Uud2VicA=="
+        "img": "ZGFuY2Uud2VicA==",
+        "ex": "Let's dance together.",
+        "exKo": "같이 춤추자."
       },
       {
         "en": "go",
         "ko": "가다",
-        "img": "Z28ud2VicA=="
+        "img": "Z28ud2VicA==",
+        "ex": "Let's go to school.",
+        "exKo": "학교에 가자."
       },
       {
         "en": "jump",
         "ko": "뛰다",
-        "img": "anVtcC53ZWJw"
+        "img": "anVtcC53ZWJw",
+        "ex": "I can jump high.",
+        "exKo": "나는 높이 뛸 수 있어."
       },
       {
         "en": "look",
         "ko": "보다",
-        "img": "bG9vay53ZWJw"
+        "img": "bG9vay53ZWJw",
+        "ex": "Look at me.",
+        "exKo": "나를 봐."
       },
       {
         "en": "open",
         "ko": "열다",
-        "img": "b3Blbi53ZWJw"
+        "img": "b3Blbi53ZWJw",
+        "ex": "Open the window, please.",
+        "exKo": "창문을 열어 주세요."
       },
       {
         "en": "run",
         "ko": "달리다",
-        "img": "cnVuLndlYnA="
+        "img": "cnVuLndlYnA=",
+        "ex": "Don't run.",
+        "exKo": "뛰지 마."
       },
       {
         "en": "sit",
         "ko": "앉다",
-        "img": "c2l0LndlYnA="
+        "img": "c2l0LndlYnA=",
+        "ex": "Sit down, please.",
+        "exKo": "앉으세요."
       },
       {
         "en": "skate",
         "ko": "스케이트를 타다",
-        "img": "c2thdGUud2VicA=="
+        "img": "c2thdGUud2VicA==",
+        "ex": "Can you skate?",
+        "exKo": "너는 스케이트를 탈 수 있니?"
       },
       {
         "en": "stand",
         "ko": "서다",
-        "img": "c3RhbmQud2VicA=="
+        "img": "c3RhbmQud2VicA==",
+        "ex": "Stand up, please.",
+        "exKo": "일어서세요."
       },
       {
         "en": "swim",
         "ko": "수영하다",
-        "img": "c3dpbS53ZWJw"
+        "img": "c3dpbS53ZWJw",
+        "ex": "I can swim.",
+        "exKo": "나는 수영할 수 있어."
       },
       {
         "en": "walk",
         "ko": "걷다",
-        "img": "d2Fsay53ZWJw"
+        "img": "d2Fsay53ZWJw",
+        "ex": "Let's walk to the park.",
+        "exKo": "공원까지 걸어가자."
       }
     ]
   },
@@ -167,42 +221,58 @@
       {
         "en": "brush",
         "ko": "붓",
-        "img": "YnJ1c2gud2VicA=="
+        "img": "YnJ1c2gud2VicA==",
+        "ex": "I have a brush.",
+        "exKo": "나는 붓이 있어."
       },
       {
         "en": "eraser",
         "ko": "지우개",
-        "img": "ZXJhc2VyLndlYnA="
+        "img": "ZXJhc2VyLndlYnA=",
+        "ex": "Can I use your eraser?",
+        "exKo": "네 지우개를 써도 되니?"
       },
       {
         "en": "glue stick",
         "ko": "딱풀",
-        "img": "Z2x1ZV9zdGljay53ZWJw"
+        "img": "Z2x1ZV9zdGljay53ZWJw",
+        "ex": "I need a glue stick.",
+        "exKo": "나는 딱풀이 필요해."
       },
       {
         "en": "pen",
         "ko": "펜",
-        "img": "cGVuLndlYnA="
+        "img": "cGVuLndlYnA=",
+        "ex": "This is a blue pen.",
+        "exKo": "이것은 파란 펜이야."
       },
       {
         "en": "pencil",
         "ko": "연필",
-        "img": "cGVuY2lsLndlYnA="
+        "img": "cGVuY2lsLndlYnA=",
+        "ex": "I have two pencils.",
+        "exKo": "나는 연필이 두 자루 있어."
       },
       {
         "en": "ruler",
         "ko": "자",
-        "img": "cnVsZXIud2VicA=="
+        "img": "cnVsZXIud2VicA==",
+        "ex": "Is this your ruler?",
+        "exKo": "이거 네 자니?"
       },
       {
         "en": "scissors",
         "ko": "가위",
-        "img": "c2Npc3NvcnMud2VicA=="
+        "img": "c2Npc3NvcnMud2VicA==",
+        "ex": "I need scissors.",
+        "exKo": "나는 가위가 필요해."
       },
       {
         "en": "tape",
         "ko": "테이프",
-        "img": "dGFwZS53ZWJw"
+        "img": "dGFwZS53ZWJw",
+        "ex": "Do you have tape?",
+        "exKo": "너 테이프 있니?"
       }
     ]
   },
@@ -215,62 +285,86 @@
       {
         "en": "bird",
         "ko": "새",
-        "img": "YmlyZC53ZWJw"
+        "img": "YmlyZC53ZWJw",
+        "ex": "The bird can fly.",
+        "exKo": "새는 날 수 있어."
       },
       {
         "en": "cat",
         "ko": "고양이",
-        "img": "Y2F0LndlYnA="
+        "img": "Y2F0LndlYnA=",
+        "ex": "I have a cat.",
+        "exKo": "나는 고양이가 있어."
       },
       {
         "en": "cow",
         "ko": "암소",
-        "img": "Y293LndlYnA="
+        "img": "Y293LndlYnA=",
+        "ex": "The cow is big.",
+        "exKo": "암소는 커."
       },
       {
         "en": "dog",
         "ko": "개",
-        "img": "ZG9nLndlYnA="
+        "img": "ZG9nLndlYnA=",
+        "ex": "It's a cute dog.",
+        "exKo": "그것은 귀여운 개야."
       },
       {
         "en": "kangaroo",
         "ko": "캥거루",
-        "img": "a2FuZ2Fyb28ud2VicA=="
+        "img": "a2FuZ2Fyb28ud2VicA==",
+        "ex": "The kangaroo can jump.",
+        "exKo": "캥거루는 뛸 수 있어."
       },
       {
         "en": "lion",
         "ko": "사자",
-        "img": "bGlvbi53ZWJw"
+        "img": "bGlvbi53ZWJw",
+        "ex": "The lion is strong.",
+        "exKo": "사자는 힘이 세."
       },
       {
         "en": "monkey",
         "ko": "원숭이",
-        "img": "bW9ua2V5LndlYnA="
+        "img": "bW9ua2V5LndlYnA=",
+        "ex": "The monkey likes bananas.",
+        "exKo": "원숭이는 바나나를 좋아해."
       },
       {
         "en": "panda",
         "ko": "판다",
-        "img": "cGFuZGEud2VicA=="
+        "img": "cGFuZGEud2VicA==",
+        "ex": "Look at the panda.",
+        "exKo": "판다를 봐."
       },
       {
         "en": "pig",
         "ko": "돼지",
-        "img": "cGlnLndlYnA="
+        "img": "cGlnLndlYnA=",
+        "ex": "The pig is pink.",
+        "exKo": "돼지는 분홍색이야."
       },
       {
         "en": "rabbit",
         "ko": "토끼",
-        "img": "cmFiYml0LndlYnA="
+        "img": "cmFiYml0LndlYnA=",
+        "ex": "The rabbit is white.",
+        "exKo": "토끼는 하얀색이야."
       },
       {
         "en": "tiger",
         "ko": "호랑이",
-        "img": "dGlnZXIud2VicA=="
+        "img": "dGlnZXIud2VicA==",
+        "ex": "Is it a tiger?",
+        "exKo": "그것은 호랑이니?"
       },
       {
         "en": "zebra",
         "ko": "얼룩말",
-        "img": "emVicmEud2VicA=="
+        "img": "emVicmEud2VicA==",
+        "ex": "The zebra is black and white.",
+        "exKo": "얼룩말은 검은색과 흰색이야."
       }
     ]
   },
@@ -283,37 +377,51 @@
       {
         "en": "black",
         "ko": "검은색, 검은",
-        "img": "YmxhY2sud2VicA=="
+        "img": "YmxhY2sud2VicA==",
+        "ex": "I like black.",
+        "exKo": "나는 검은색이 좋아."
       },
       {
         "en": "blue",
         "ko": "파란색, 파란",
-        "img": "Ymx1ZS53ZWJw"
+        "img": "Ymx1ZS53ZWJw",
+        "ex": "The sky is blue.",
+        "exKo": "하늘은 파란색이야."
       },
       {
         "en": "green",
         "ko": "초록색, 초록색의",
-        "img": "Z3JlZW4ud2VicA=="
+        "img": "Z3JlZW4ud2VicA==",
+        "ex": "The tree is green.",
+        "exKo": "나무는 초록색이야."
       },
       {
         "en": "orange",
         "ko": "주황색, 주황색의",
-        "img": "b3JhbmdlLndlYnA="
+        "img": "b3JhbmdlLndlYnA=",
+        "ex": "It's an orange hat.",
+        "exKo": "그것은 주황색 모자야."
       },
       {
         "en": "red",
         "ko": "빨간색, 빨간",
-        "img": "cmVkLndlYnA="
+        "img": "cmVkLndlYnA=",
+        "ex": "The apple is red.",
+        "exKo": "사과는 빨간색이야."
       },
       {
         "en": "white",
         "ko": "흰색, 하얀",
-        "img": "d2hpdGUud2VicA=="
+        "img": "d2hpdGUud2VicA==",
+        "ex": "The snow is white.",
+        "exKo": "눈은 하얀색이야."
       },
       {
         "en": "yellow",
         "ko": "노란색, 노란",
-        "img": "eWVsbG93LndlYnA="
+        "img": "eWVsbG93LndlYnA=",
+        "ex": "The banana is yellow.",
+        "exKo": "바나나는 노란색이야."
       }
     ]
   },
@@ -326,52 +434,72 @@
       {
         "en": "apple",
         "ko": "사과",
-        "img": "YXBwbGUud2VicA=="
+        "img": "YXBwbGUud2VicA==",
+        "ex": "I like apples.",
+        "exKo": "나는 사과를 좋아해."
       },
       {
         "en": "banana",
         "ko": "바나나",
-        "img": "YmFuYW5hLndlYnA="
+        "img": "YmFuYW5hLndlYnA=",
+        "ex": "Do you like bananas?",
+        "exKo": "너는 바나나를 좋아하니?"
       },
       {
         "en": "carrot",
         "ko": "당근",
-        "img": "Y2Fycm90LndlYnA="
+        "img": "Y2Fycm90LndlYnA=",
+        "ex": "Rabbits like carrots.",
+        "exKo": "토끼는 당근을 좋아해."
       },
       {
         "en": "grapes",
         "ko": "포도",
-        "img": "Z3JhcGVzLndlYnA="
+        "img": "Z3JhcGVzLndlYnA=",
+        "ex": "I like grapes.",
+        "exKo": "나는 포도를 좋아해."
       },
       {
         "en": "kiwi",
         "ko": "키위",
-        "img": "a2l3aS53ZWJw"
+        "img": "a2l3aS53ZWJw",
+        "ex": "The kiwi is green.",
+        "exKo": "키위는 초록색이야."
       },
       {
         "en": "lemon",
         "ko": "레몬",
-        "img": "bGVtb24ud2VicA=="
+        "img": "bGVtb24ud2VicA==",
+        "ex": "The lemon is sour.",
+        "exKo": "레몬은 셔."
       },
       {
         "en": "melon",
         "ko": "멜론",
-        "img": "bWVsb24ud2VicA=="
+        "img": "bWVsb24ud2VicA==",
+        "ex": "This melon is sweet.",
+        "exKo": "이 멜론은 달아."
       },
       {
         "en": "orange",
         "ko": "오렌지",
-        "img": "b3JhbmdlLndlYnA="
+        "img": "b3JhbmdlLndlYnA=",
+        "ex": "It's an orange hat.",
+        "exKo": "그것은 주황색 모자야."
       },
       {
         "en": "potato",
         "ko": "감자",
-        "img": "cG90YXRvLndlYnA="
+        "img": "cG90YXRvLndlYnA=",
+        "ex": "I don't like potatoes.",
+        "exKo": "나는 감자를 좋아하지 않아."
       },
       {
         "en": "tomato",
         "ko": "토마토",
-        "img": "dG9tYXRvLndlYnA="
+        "img": "dG9tYXRvLndlYnA=",
+        "ex": "The tomato is red.",
+        "exKo": "토마토는 빨간색이야."
       }
     ]
   },
@@ -384,52 +512,72 @@
       {
         "en": "bread",
         "ko": "빵",
-        "img": "YnJlYWQud2VicA=="
+        "img": "YnJlYWQud2VicA==",
+        "ex": "I eat bread.",
+        "exKo": "나는 빵을 먹어."
       },
       {
         "en": "cake",
         "ko": "케이크",
-        "img": "Y2FrZS53ZWJw"
+        "img": "Y2FrZS53ZWJw",
+        "ex": "This cake is delicious.",
+        "exKo": "이 케이크는 맛있어."
       },
       {
         "en": "chicken",
         "ko": "닭고기",
-        "img": "Y2hpY2tlbi53ZWJw"
+        "img": "Y2hpY2tlbi53ZWJw",
+        "ex": "I like chicken.",
+        "exKo": "나는 닭고기를 좋아해."
       },
       {
         "en": "cookie",
         "ko": "쿠키",
-        "img": "Y29va2llLndlYnA="
+        "img": "Y29va2llLndlYnA=",
+        "ex": "Have a cookie.",
+        "exKo": "쿠키 하나 먹어."
       },
       {
         "en": "fish",
         "ko": "생선",
-        "img": "ZmlzaC53ZWJw"
+        "img": "ZmlzaC53ZWJw",
+        "ex": "I don't like fish.",
+        "exKo": "나는 생선을 좋아하지 않아."
       },
       {
         "en": "ice cream",
         "ko": "아이스크림",
-        "img": "aWNlX2NyZWFtLndlYnA="
+        "img": "aWNlX2NyZWFtLndlYnA=",
+        "ex": "I want ice cream.",
+        "exKo": "나는 아이스크림을 원해."
       },
       {
         "en": "milk",
         "ko": "우유",
-        "img": "bWlsay53ZWJw"
+        "img": "bWlsay53ZWJw",
+        "ex": "I drink milk.",
+        "exKo": "나는 우유를 마셔."
       },
       {
         "en": "salad",
         "ko": "샐러드",
-        "img": "c2FsYWQud2VicA=="
+        "img": "c2FsYWQud2VicA==",
+        "ex": "Do you like salad?",
+        "exKo": "너는 샐러드를 좋아하니?"
       },
       {
         "en": "steak",
         "ko": "스테이크",
-        "img": "c3RlYWsud2VicA=="
+        "img": "c3RlYWsud2VicA==",
+        "ex": "I want steak.",
+        "exKo": "나는 스테이크를 원해."
       },
       {
         "en": "pizza",
         "ko": "피자",
-        "img": "cGl6emEud2VicA=="
+        "img": "cGl6emEud2VicA==",
+        "ex": "Pizza, please.",
+        "exKo": "피자 주세요."
       }
     ]
   },
@@ -442,47 +590,65 @@
       {
         "en": "good",
         "ko": "좋은",
-        "img": "Z29vZC53ZWJw"
+        "img": "Z29vZC53ZWJw",
+        "ex": "Good morning!",
+        "exKo": "좋은 아침이야!"
       },
       {
         "en": "great",
         "ko": "정말 좋은",
-        "img": "Z3JlYXQud2VicA=="
+        "img": "Z3JlYXQud2VicA==",
+        "ex": "I'm great, thank you.",
+        "exKo": "나는 정말 좋아, 고마워."
       },
       {
         "en": "fine",
         "ko": "괜찮은",
-        "img": "ZmluZS53ZWJw"
+        "img": "ZmluZS53ZWJw",
+        "ex": "I'm fine, thanks.",
+        "exKo": "나는 괜찮아, 고마워."
       },
       {
         "en": "bad",
         "ko": "나쁜",
-        "img": "YmFkLndlYnA="
+        "img": "YmFkLndlYnA=",
+        "ex": "Not bad.",
+        "exKo": "나쁘지 않아."
       },
       {
         "en": "morning",
         "ko": "아침",
-        "img": "bW9ybmluZy53ZWJw"
+        "img": "bW9ybmluZy53ZWJw",
+        "ex": "Good morning, Mr. Kim.",
+        "exKo": "안녕하세요, 김 선생님."
       },
       {
         "en": "afternoon",
         "ko": "오후",
-        "img": "YWZ0ZXJub29uLndlYnA="
+        "img": "YWZ0ZXJub29uLndlYnA=",
+        "ex": "Good afternoon.",
+        "exKo": "안녕하세요. (오후 인사)"
       },
       {
         "en": "evening",
         "ko": "저녁",
-        "img": "ZXZlbmluZy53ZWJw"
+        "img": "ZXZlbmluZy53ZWJw",
+        "ex": "Good evening.",
+        "exKo": "안녕하세요. (저녁 인사)"
       },
       {
         "en": "night",
         "ko": "밤",
-        "img": "bmlnaHQud2VicA=="
+        "img": "bmlnaHQud2VicA==",
+        "ex": "Good night.",
+        "exKo": "잘 자."
       },
       {
         "en": "how",
         "ko": "어떻게",
-        "img": "aG93LndlYnA="
+        "img": "aG93LndlYnA=",
+        "ex": "How are you?",
+        "exKo": "어떻게 지내?"
       }
     ]
   },
@@ -495,82 +661,114 @@
       {
         "en": "what",
         "ko": "무엇",
-        "img": "d2hhdC53ZWJw"
+        "img": "d2hhdC53ZWJw",
+        "ex": "What's your name?",
+        "exKo": "네 이름은 뭐니?"
       },
       {
         "en": "my",
         "ko": "나의",
-        "img": "bXkud2VicA=="
+        "img": "bXkud2VicA==",
+        "ex": "My name is Jiho.",
+        "exKo": "내 이름은 지호야."
       },
       {
         "en": "father",
         "ko": "아버지",
-        "img": "ZmF0aGVyLndlYnA="
+        "img": "ZmF0aGVyLndlYnA=",
+        "ex": "This is my father.",
+        "exKo": "이분은 우리 아버지야."
       },
       {
         "en": "mother",
         "ko": "어머니",
-        "img": "bW90aGVyLndlYnA="
+        "img": "bW90aGVyLndlYnA=",
+        "ex": "This is my mother.",
+        "exKo": "이분은 우리 어머니야."
       },
       {
         "en": "teacher",
         "ko": "선생님",
-        "img": "dGVhY2hlci53ZWJw"
+        "img": "dGVhY2hlci53ZWJw",
+        "ex": "She is my teacher.",
+        "exKo": "그녀는 우리 선생님이야."
       },
       {
         "en": "friend",
         "ko": "친구",
-        "img": "ZnJpZW5kLndlYnA="
+        "img": "ZnJpZW5kLndlYnA=",
+        "ex": "He is my friend.",
+        "exKo": "그는 내 친구야."
       },
       {
         "en": "nice",
         "ko": "좋은",
-        "img": "bmljZS53ZWJw"
+        "img": "bmljZS53ZWJw",
+        "ex": "Nice to meet you.",
+        "exKo": "만나서 반가워."
       },
       {
         "en": "meet",
         "ko": "만나다",
-        "img": "bWVldC53ZWJw"
+        "img": "bWVldC53ZWJw",
+        "ex": "Nice to meet you, too.",
+        "exKo": "나도 만나서 반가워."
       },
       {
         "en": "family",
         "ko": "가족",
-        "img": "ZmFtaWx5LndlYnA="
+        "img": "ZmFtaWx5LndlYnA=",
+        "ex": "This is my family.",
+        "exKo": "이분들은 우리 가족이야."
       },
       {
         "en": "who",
         "ko": "누구",
-        "img": "d2hvLndlYnA="
+        "img": "d2hvLndlYnA=",
+        "ex": "Who is she?",
+        "exKo": "그녀는 누구니?"
       },
       {
         "en": "she",
         "ko": "그녀",
-        "img": "c2hlLndlYnA="
+        "img": "c2hlLndlYnA=",
+        "ex": "She is my sister.",
+        "exKo": "그녀는 우리 언니야."
       },
       {
         "en": "he",
         "ko": "그",
-        "img": "aGUud2VicA=="
+        "img": "aGUud2VicA==",
+        "ex": "He is my brother.",
+        "exKo": "그는 우리 형이야."
       },
       {
         "en": "aunt",
         "ko": "이모, 숙모",
-        "img": "YXVudC53ZWJw"
+        "img": "YXVudC53ZWJw",
+        "ex": "She is my aunt.",
+        "exKo": "그녀는 우리 이모야."
       },
       {
         "en": "uncle",
         "ko": "삼촌",
-        "img": "dW5jbGUud2VicA=="
+        "img": "dW5jbGUud2VicA==",
+        "ex": "He is my uncle.",
+        "exKo": "그는 우리 삼촌이야."
       },
       {
         "en": "cute",
         "ko": "귀여운",
-        "img": "Y3V0ZS53ZWJw"
+        "img": "Y3V0ZS53ZWJw",
+        "ex": "She is cute.",
+        "exKo": "그녀는 귀여워."
       },
       {
         "en": "cool",
         "ko": "멋진",
-        "img": "Y29vbC53ZWJw"
+        "img": "Y29vbC53ZWJw",
+        "ex": "He is cool.",
+        "exKo": "그는 멋져."
       }
     ]
   },
@@ -583,17 +781,23 @@
       {
         "en": "happy",
         "ko": "행복한",
-        "img": "aGFwcHkud2VicA=="
+        "img": "aGFwcHkud2VicA==",
+        "ex": "I'm happy.",
+        "exKo": "나는 행복해."
       },
       {
         "en": "tired",
         "ko": "피곤한",
-        "img": "dGlyZWQud2VicA=="
+        "img": "dGlyZWQud2VicA==",
+        "ex": "Are you tired?",
+        "exKo": "너 피곤하니?"
       },
       {
         "en": "sad",
         "ko": "슬픈",
-        "img": "c2FkLndlYnA="
+        "img": "c2FkLndlYnA=",
+        "ex": "I'm sad.",
+        "exKo": "나는 슬퍼."
       }
     ]
   },
@@ -606,17 +810,23 @@
       {
         "en": "sleepy",
         "ko": "졸리는",
-        "img": "c2xlZXB5LndlYnA="
+        "img": "c2xlZXB5LndlYnA=",
+        "ex": "I'm sleepy.",
+        "exKo": "나는 졸려."
       },
       {
         "en": "angry",
         "ko": "화난",
-        "img": "YW5ncnkud2VicA=="
+        "img": "YW5ncnkud2VicA==",
+        "ex": "Are you angry?",
+        "exKo": "너 화났니?"
       },
       {
         "en": "thirsty",
         "ko": "목이 마른",
-        "img": "dGhpcnN0eS53ZWJw"
+        "img": "dGhpcnN0eS53ZWJw",
+        "ex": "I'm thirsty.",
+        "exKo": "나는 목말라."
       }
     ]
   },
@@ -629,7 +839,9 @@
       {
         "en": "hungry",
         "ko": "배고픈",
-        "img": "aHVuZ3J5LndlYnA="
+        "img": "aHVuZ3J5LndlYnA=",
+        "ex": "I'm hungry.",
+        "exKo": "나는 배고파."
       }
     ]
   },
@@ -642,57 +854,79 @@
       {
         "en": "badminton",
         "ko": "배드민턴",
-        "img": "YmFkbWludG9uLndlYnA="
+        "img": "YmFkbWludG9uLndlYnA=",
+        "ex": "Let's play badminton.",
+        "exKo": "배드민턴 하자."
       },
       {
         "en": "baseball",
         "ko": "야구",
-        "img": "YmFzZWJhbGwud2VicA=="
+        "img": "YmFzZWJhbGwud2VicA==",
+        "ex": "Let's play baseball.",
+        "exKo": "야구 하자."
       },
       {
         "en": "basketball",
         "ko": "농구",
-        "img": "YmFza2V0YmFsbC53ZWJw"
+        "img": "YmFza2V0YmFsbC53ZWJw",
+        "ex": "Let's play basketball.",
+        "exKo": "농구 하자."
       },
       {
         "en": "soccer",
         "ko": "축구",
-        "img": "c29jY2VyLndlYnA="
+        "img": "c29jY2VyLndlYnA=",
+        "ex": "Let's play soccer.",
+        "exKo": "축구 하자."
       },
       {
         "en": "tennis",
         "ko": "테니스",
-        "img": "dGVubmlzLndlYnA="
+        "img": "dGVubmlzLndlYnA=",
+        "ex": "I play tennis.",
+        "exKo": "나는 테니스를 쳐."
       },
       {
         "en": "play",
         "ko": "하다",
-        "img": "cGxheS53ZWJw"
+        "img": "cGxheS53ZWJw",
+        "ex": "Let's play outside.",
+        "exKo": "밖에서 놀자."
       },
       {
         "en": "ride",
         "ko": "타다",
-        "img": "cmlkZS53ZWJw"
+        "img": "cmlkZS53ZWJw",
+        "ex": "Let's ride a bike.",
+        "exKo": "자전거 타자."
       },
       {
         "en": "let's",
         "ko": "~ 하자",
-        "img": "bGV0X3Mud2VicA=="
+        "img": "bGV0X3Mud2VicA==",
+        "ex": "Let's go!",
+        "exKo": "가자!"
       },
       {
         "en": "bike",
         "ko": "자전거",
-        "img": "YmlrZS53ZWJw"
+        "img": "YmlrZS53ZWJw",
+        "ex": "I can ride a bike.",
+        "exKo": "나는 자전거를 탈 수 있어."
       },
       {
         "en": "busy",
         "ko": "바쁜",
-        "img": "YnVzeS53ZWJw"
+        "img": "YnVzeS53ZWJw",
+        "ex": "Sorry, I'm busy.",
+        "exKo": "미안해, 나 바빠."
       },
       {
         "en": "sick",
         "ko": "아픈",
-        "img": "c2ljay53ZWJw"
+        "img": "c2ljay53ZWJw",
+        "ex": "I'm sick today.",
+        "exKo": "나는 오늘 아파."
       }
     ]
   },
@@ -705,52 +939,72 @@
       {
         "en": "don't",
         "ko": "~ 하지 마",
-        "img": "ZG9uX3Qud2VicA=="
+        "img": "ZG9uX3Qud2VicA==",
+        "ex": "Don't run, please.",
+        "exKo": "뛰지 마세요."
       },
       {
         "en": "push",
         "ko": "밀다",
-        "img": "cHVzaC53ZWJw"
+        "img": "cHVzaC53ZWJw",
+        "ex": "Don't push.",
+        "exKo": "밀지 마."
       },
       {
         "en": "touch",
         "ko": "만지다",
-        "img": "dG91Y2gud2VicA=="
+        "img": "dG91Y2gud2VicA==",
+        "ex": "Don't touch it.",
+        "exKo": "그것을 만지지 마."
       },
       {
         "en": "drink",
         "ko": "마시다",
-        "img": "ZHJpbmsud2VicA=="
+        "img": "ZHJpbmsud2VicA==",
+        "ex": "Don't drink here.",
+        "exKo": "여기서 마시지 마."
       },
       {
         "en": "enter",
         "ko": "들어가다",
-        "img": "ZW50ZXIud2VicA=="
+        "img": "ZW50ZXIud2VicA==",
+        "ex": "Don't enter, please.",
+        "exKo": "들어가지 마세요."
       },
       {
         "en": "talk",
         "ko": "말하다",
-        "img": "dGFsay53ZWJw"
+        "img": "dGFsay53ZWJw",
+        "ex": "Don't talk, please.",
+        "exKo": "말하지 마세요."
       },
       {
         "en": "sit",
         "ko": "앉다",
-        "img": "c2l0LndlYnA="
+        "img": "c2l0LndlYnA=",
+        "ex": "Sit down, please.",
+        "exKo": "앉으세요."
       },
       {
         "en": "here",
         "ko": "여기",
-        "img": "aGVyZS53ZWJw"
+        "img": "aGVyZS53ZWJw",
+        "ex": "Come here.",
+        "exKo": "여기로 와."
       },
       {
         "en": "quiet",
         "ko": "조용한",
-        "img": "cXVpZXQud2VicA=="
+        "img": "cXVpZXQud2VicA==",
+        "ex": "Be quiet, please.",
+        "exKo": "조용히 해 주세요."
       },
       {
         "en": "please",
         "ko": "제발",
-        "img": "cGxlYXNlLndlYnA="
+        "img": "cGxlYXNlLndlYnA=",
+        "ex": "Sit down, please.",
+        "exKo": "앉아 주세요."
       }
     ]
   },
@@ -763,62 +1017,86 @@
       {
         "en": "bag",
         "ko": "가방",
-        "img": "YmFnLndlYnA="
+        "img": "YmFnLndlYnA=",
+        "ex": "This is my bag.",
+        "exKo": "이것은 내 가방이야."
       },
       {
         "en": "jacket",
         "ko": "재킷",
-        "img": "amFja2V0LndlYnA="
+        "img": "amFja2V0LndlYnA=",
+        "ex": "Is this your jacket?",
+        "exKo": "이거 네 재킷이니?"
       },
       {
         "en": "cap",
         "ko": "모자",
-        "img": "Y2FwLndlYnA="
+        "img": "Y2FwLndlYnA=",
+        "ex": "Is this your cap?",
+        "exKo": "이거 네 모자니?"
       },
       {
         "en": "shoe",
         "ko": "신발 (한 짝)",
-        "img": "c2hvZS53ZWJw"
+        "img": "c2hvZS53ZWJw",
+        "ex": "I lost my shoe.",
+        "exKo": "나는 신발 한 짝을 잃어버렸어."
       },
       {
         "en": "umbrella",
         "ko": "우산",
-        "img": "dW1icmVsbGEud2VicA=="
+        "img": "dW1icmVsbGEud2VicA==",
+        "ex": "Is this your umbrella?",
+        "exKo": "이거 네 우산이니?"
       },
       {
         "en": "your",
         "ko": "너의",
-        "img": "eW91ci53ZWJw"
+        "img": "eW91ci53ZWJw",
+        "ex": "Is this your book?",
+        "exKo": "이거 네 책이니?"
       },
       {
         "en": "long",
         "ko": "긴",
-        "img": "bG9uZy53ZWJw"
+        "img": "bG9uZy53ZWJw",
+        "ex": "It's long.",
+        "exKo": "그것은 길어."
       },
       {
         "en": "glove",
         "ko": "글러브",
-        "img": "Z2xvdmUud2VicA=="
+        "img": "Z2xvdmUud2VicA==",
+        "ex": "Is this your glove?",
+        "exKo": "이거 네 글러브니?"
       },
       {
         "en": "watch",
         "ko": "시계",
-        "img": "d2F0Y2gud2VicA=="
+        "img": "d2F0Y2gud2VicA==",
+        "ex": "It's my watch.",
+        "exKo": "그것은 내 시계야."
       },
       {
         "en": "bottle",
         "ko": "병",
-        "img": "Ym90dGxlLndlYnA="
+        "img": "Ym90dGxlLndlYnA=",
+        "ex": "Is this your bottle?",
+        "exKo": "이거 네 병이니?"
       },
       {
         "en": "helmet",
         "ko": "헬멧",
-        "img": "aGVsbWV0LndlYnA="
+        "img": "aGVsbWV0LndlYnA=",
+        "ex": "Wear a helmet.",
+        "exKo": "헬멧을 써."
       },
       {
         "en": "bat",
         "ko": "야구방망이",
-        "img": "YmF0LndlYnA="
+        "img": "YmF0LndlYnA=",
+        "ex": "This is my bat.",
+        "exKo": "이것은 내 야구방망이야."
       }
     ]
   },
@@ -831,52 +1109,72 @@
       {
         "en": "box",
         "ko": "상자",
-        "img": "Ym94LndlYnA="
+        "img": "Ym94LndlYnA=",
+        "ex": "It's in the box.",
+        "exKo": "그것은 상자 안에 있어."
       },
       {
         "en": "chair",
         "ko": "의자",
-        "img": "Y2hhaXIud2VicA=="
+        "img": "Y2hhaXIud2VicA==",
+        "ex": "Sit on the chair.",
+        "exKo": "의자에 앉아."
       },
       {
         "en": "desk",
         "ko": "책상",
-        "img": "ZGVzay53ZWJw"
+        "img": "ZGVzay53ZWJw",
+        "ex": "It's on the desk.",
+        "exKo": "그것은 책상 위에 있어."
       },
       {
         "en": "table",
         "ko": "탁자",
-        "img": "dGFibGUud2VicA=="
+        "img": "dGFibGUud2VicA==",
+        "ex": "It's under the table.",
+        "exKo": "그것은 탁자 아래에 있어."
       },
       {
         "en": "bed",
         "ko": "침대",
-        "img": "YmVkLndlYnA="
+        "img": "YmVkLndlYnA=",
+        "ex": "The cat is on the bed.",
+        "exKo": "고양이가 침대 위에 있어."
       },
       {
         "en": "in",
         "ko": "~ 안에",
-        "img": "aW4ud2VicA=="
+        "img": "aW4ud2VicA==",
+        "ex": "The ball is in the box.",
+        "exKo": "공은 상자 안에 있어."
       },
       {
         "en": "on",
         "ko": "~ 위에",
-        "img": "b24ud2VicA=="
+        "img": "b24ud2VicA==",
+        "ex": "The book is on the desk.",
+        "exKo": "책은 책상 위에 있어."
       },
       {
         "en": "under",
         "ko": "~ 아래에",
-        "img": "dW5kZXIud2VicA=="
+        "img": "dW5kZXIud2VicA==",
+        "ex": "The cat is under the chair.",
+        "exKo": "고양이는 의자 아래에 있어."
       },
       {
         "en": "book",
         "ko": "책",
-        "img": "Ym9vay53ZWJw"
+        "img": "Ym9vay53ZWJw",
+        "ex": "Open your book.",
+        "exKo": "책을 펴세요."
       },
       {
         "en": "where",
         "ko": "어디에",
-        "img": "d2hlcmUud2VicA=="
+        "img": "d2hlcmUud2VicA==",
+        "ex": "Where is my cap?",
+        "exKo": "내 모자는 어디 있니?"
       }
     ]
   },
@@ -889,77 +1187,107 @@
       {
         "en": "o'clock",
         "ko": "시 (정각)",
-        "img": "b19jbG9jay53ZWJw"
+        "img": "b19jbG9jay53ZWJw",
+        "ex": "It's seven o'clock.",
+        "exKo": "7시 정각이야."
       },
       {
         "en": "time",
         "ko": "시각, 시간",
-        "img": "dGltZS53ZWJw"
+        "img": "dGltZS53ZWJw",
+        "ex": "What time is it?",
+        "exKo": "몇 시니?"
       },
       {
         "en": "eleven",
         "ko": "11, 십일",
-        "img": "ZWxldmVuLndlYnA="
+        "img": "ZWxldmVuLndlYnA=",
+        "ex": "It's eleven o'clock.",
+        "exKo": "11시야."
       },
       {
         "en": "twelve",
         "ko": "12, 십이",
-        "img": "dHdlbHZlLndlYnA="
+        "img": "dHdlbHZlLndlYnA=",
+        "ex": "It's twelve o'clock.",
+        "exKo": "12시야."
       },
       {
         "en": "twenty",
         "ko": "20, 이십",
-        "img": "dHdlbnR5LndlYnA="
+        "img": "dHdlbnR5LndlYnA=",
+        "ex": "It's eight twenty.",
+        "exKo": "8시 20분이야."
       },
       {
         "en": "thirty",
         "ko": "30, 삼십",
-        "img": "dGhpcnR5LndlYnA="
+        "img": "dGhpcnR5LndlYnA=",
+        "ex": "It's nine thirty.",
+        "exKo": "9시 30분이야."
       },
       {
         "en": "forty",
         "ko": "40, 사십",
-        "img": "Zm9ydHkud2VicA=="
+        "img": "Zm9ydHkud2VicA==",
+        "ex": "It's two forty.",
+        "exKo": "2시 40분이야."
       },
       {
         "en": "fifty",
         "ko": "50, 오십",
-        "img": "ZmlmdHkud2VicA=="
+        "img": "ZmlmdHkud2VicA==",
+        "ex": "It's ten fifty.",
+        "exKo": "10시 50분이야."
       },
       {
         "en": "breakfast",
         "ko": "아침 식사",
-        "img": "YnJlYWtmYXN0LndlYnA="
+        "img": "YnJlYWtmYXN0LndlYnA=",
+        "ex": "It's time for breakfast.",
+        "exKo": "아침 먹을 시간이야."
       },
       {
         "en": "lunch",
         "ko": "점심 식사",
-        "img": "bHVuY2gud2VicA=="
+        "img": "bHVuY2gud2VicA==",
+        "ex": "It's time for lunch.",
+        "exKo": "점심 먹을 시간이야."
       },
       {
         "en": "dinner",
         "ko": "저녁 식사",
-        "img": "ZGlubmVyLndlYnA="
+        "img": "ZGlubmVyLndlYnA=",
+        "ex": "It's time for dinner.",
+        "exKo": "저녁 먹을 시간이야."
       },
       {
         "en": "school",
         "ko": "학교",
-        "img": "c2Nob29sLndlYnA="
+        "img": "c2Nob29sLndlYnA=",
+        "ex": "It's time for school.",
+        "exKo": "학교 갈 시간이야."
       },
       {
         "en": "late",
         "ko": "늦은",
-        "img": "bGF0ZS53ZWJw"
+        "img": "bGF0ZS53ZWJw",
+        "ex": "I'm late.",
+        "exKo": "나 늦었어."
       },
       {
         "en": "class",
         "ko": "수업",
-        "img": "Y2xhc3Mud2VicA=="
+        "img": "Y2xhc3Mud2VicA==",
+        "ex": "It's time for class.",
+        "exKo": "수업 시간이야."
       },
       {
         "en": "hurry",
         "ko": "서두르다",
-        "img": "aHVycnkud2VicA=="
+        "img": "aHVycnkud2VicA==",
+        "ex": "Hurry up!",
+        "exKo": "서둘러!"
       }
     ]
   },
@@ -972,32 +1300,44 @@
       {
         "en": "clean",
         "ko": "청소하다",
-        "img": "Y2xlYW4ud2VicA=="
+        "img": "Y2xlYW4ud2VicA==",
+        "ex": "I'm cleaning my room.",
+        "exKo": "나는 내 방을 청소하고 있어."
       },
       {
         "en": "cook",
         "ko": "요리하다",
-        "img": "Y29vay53ZWJw"
+        "img": "Y29vay53ZWJw",
+        "ex": "My dad is cooking.",
+        "exKo": "우리 아빠는 요리하고 계셔."
       },
       {
         "en": "draw",
         "ko": "그리다",
-        "img": "ZHJhdy53ZWJw"
+        "img": "ZHJhdy53ZWJw",
+        "ex": "I'm drawing a cat.",
+        "exKo": "나는 고양이를 그리고 있어."
       },
       {
         "en": "listen",
         "ko": "듣다",
-        "img": "bGlzdGVuLndlYnA="
+        "img": "bGlzdGVuLndlYnA=",
+        "ex": "Listen carefully.",
+        "exKo": "잘 들어 봐."
       },
       {
         "en": "make",
         "ko": "만들다",
-        "img": "bWFrZS53ZWJw"
+        "img": "bWFrZS53ZWJw",
+        "ex": "I'm making a cake.",
+        "exKo": "나는 케이크를 만들고 있어."
       },
       {
         "en": "read",
         "ko": "읽다",
-        "img": "cmVhZC53ZWJw"
+        "img": "cmVhZC53ZWJw",
+        "ex": "I'm reading a book.",
+        "exKo": "나는 책을 읽고 있어."
       }
     ]
   },
@@ -1010,17 +1350,23 @@
       {
         "en": "want",
         "ko": "원하다",
-        "img": "d2FudC53ZWJw"
+        "img": "d2FudC53ZWJw",
+        "ex": "Do you want some milk?",
+        "exKo": "우유 좀 줄까?"
       },
       {
         "en": "some",
         "ko": "약간의",
-        "img": "c29tZS53ZWJw"
+        "img": "c29tZS53ZWJw",
+        "ex": "Do you want some cookies?",
+        "exKo": "쿠키 좀 먹을래?"
       },
       {
         "en": "bread",
         "ko": "빵",
-        "img": "YnJlYWQud2VicA=="
+        "img": "YnJlYWQud2VicA==",
+        "ex": "I eat bread.",
+        "exKo": "나는 빵을 먹어."
       }
     ]
   },
@@ -1033,52 +1379,72 @@
       {
         "en": "where",
         "ko": "어디, 어디로",
-        "img": "d2hlcmUud2VicA=="
+        "img": "d2hlcmUud2VicA==",
+        "ex": "Where is my cap?",
+        "exKo": "내 모자는 어디 있니?"
       },
       {
         "en": "from",
         "ko": "~출신의",
-        "img": "ZnJvbS53ZWJw"
+        "img": "ZnJvbS53ZWJw",
+        "ex": "Where are you from?",
+        "exKo": "너는 어디에서 왔니?"
       },
       {
         "en": "spell",
         "ko": "철자를 말하다",
-        "img": "c3BlbGwud2VicA=="
+        "img": "c3BlbGwud2VicA==",
+        "ex": "How do you spell your name?",
+        "exKo": "네 이름의 철자가 어떻게 되니?"
       },
       {
         "en": "Korea",
         "ko": "한국",
-        "img": "a29yZWEud2VicA=="
+        "img": "a29yZWEud2VicA==",
+        "ex": "I'm from Korea.",
+        "exKo": "나는 한국에서 왔어."
       },
       {
         "en": "Canada",
         "ko": "캐나다",
-        "img": "Y2FuYWRhLndlYnA="
+        "img": "Y2FuYWRhLndlYnA=",
+        "ex": "I'm from Canada.",
+        "exKo": "나는 캐나다에서 왔어."
       },
       {
         "en": "France",
         "ko": "프랑스",
-        "img": "ZnJhbmNlLndlYnA="
+        "img": "ZnJhbmNlLndlYnA=",
+        "ex": "She is from France.",
+        "exKo": "그녀는 프랑스에서 왔어."
       },
       {
         "en": "India",
         "ko": "인도",
-        "img": "aW5kaWEud2VicA=="
+        "img": "aW5kaWEud2VicA==",
+        "ex": "He is from India.",
+        "exKo": "그는 인도에서 왔어."
       },
       {
         "en": "Kenya",
         "ko": "케냐",
-        "img": "a2VueWEud2VicA=="
+        "img": "a2VueWEud2VicA==",
+        "ex": "I'm from Kenya.",
+        "exKo": "나는 케냐에서 왔어."
       },
       {
         "en": "Australia",
         "ko": "호주",
-        "img": "YXVzdHJhbGlhLndlYnA="
+        "img": "YXVzdHJhbGlhLndlYnA=",
+        "ex": "Are you from Australia?",
+        "exKo": "너는 호주에서 왔니?"
       },
       {
         "en": "U.S.",
         "ko": "미국",
-        "img": "dV9zXy53ZWJw"
+        "img": "dV9zXy53ZWJw",
+        "ex": "I'm from the U.S.",
+        "exKo": "나는 미국에서 왔어."
       }
     ]
   },
@@ -1091,52 +1457,72 @@
       {
         "en": "whose",
         "ko": "누구의",
-        "img": "d2hvc2Uud2VicA=="
+        "img": "d2hvc2Uud2VicA==",
+        "ex": "Whose bag is this?",
+        "exKo": "이것은 누구의 가방이니?"
       },
       {
         "en": "this",
         "ko": "(가까이 있는 것을 가리켜) 이, 이것",
-        "img": "dGhpcy53ZWJw"
+        "img": "dGhpcy53ZWJw",
+        "ex": "This is my pencil.",
+        "exKo": "이것은 내 연필이야."
       },
       {
         "en": "these",
         "ko": "(가까이 있는 것을 가리켜) 이것들",
-        "img": "dGhlc2Uud2VicA=="
+        "img": "dGhlc2Uud2VicA==",
+        "ex": "These are my shoes.",
+        "exKo": "이것들은 내 신발이야."
       },
       {
         "en": "mine",
         "ko": "나의 것",
-        "img": "bWluZS53ZWJw"
+        "img": "bWluZS53ZWJw",
+        "ex": "It's mine.",
+        "exKo": "그것은 내 거야."
       },
       {
         "en": "bottle",
         "ko": "(물 등을 담는) 병",
-        "img": "Ym90dGxlLndlYnA="
+        "img": "Ym90dGxlLndlYnA=",
+        "ex": "Is this your bottle?",
+        "exKo": "이거 네 병이니?"
       },
       {
         "en": "phone",
         "ko": "전화",
-        "img": "cGhvbmUud2VicA=="
+        "img": "cGhvbmUud2VicA==",
+        "ex": "Whose phone is this?",
+        "exKo": "이것은 누구의 전화기니?"
       },
       {
         "en": "textbook",
         "ko": "교과서",
-        "img": "dGV4dGJvb2sud2VicA=="
+        "img": "dGV4dGJvb2sud2VicA==",
+        "ex": "Is this your textbook?",
+        "exKo": "이거 네 교과서니?"
       },
       {
         "en": "umbrella",
         "ko": "우산",
-        "img": "dW1icmVsbGEud2VicA=="
+        "img": "dW1icmVsbGEud2VicA==",
+        "ex": "Is this your umbrella?",
+        "exKo": "이거 네 우산이니?"
       },
       {
         "en": "glasses",
         "ko": "안경",
-        "img": "Z2xhc3Nlcy53ZWJw"
+        "img": "Z2xhc3Nlcy53ZWJw",
+        "ex": "These are my glasses.",
+        "exKo": "이것은 내 안경이야."
       },
       {
         "en": "shoes",
         "ko": "신발",
-        "img": "c2hvZXMud2VicA=="
+        "img": "c2hvZXMud2VicA==",
+        "ex": "Whose shoes are these?",
+        "exKo": "이것은 누구의 신발이니?"
       }
     ]
   },
@@ -1149,62 +1535,86 @@
       {
         "en": "can",
         "ko": "~ 해도 된다",
-        "img": "Y2FuLndlYnA="
+        "img": "Y2FuLndlYnA=",
+        "ex": "Can I sit here?",
+        "exKo": "여기 앉아도 되니?"
       },
       {
         "en": "borrow",
         "ko": "빌리다",
-        "img": "Ym9ycm93LndlYnA="
+        "img": "Ym9ycm93LndlYnA=",
+        "ex": "Can I borrow your pen?",
+        "exKo": "네 펜을 빌려도 되니?"
       },
       {
         "en": "bring",
         "ko": "가져오다, 데려오다",
-        "img": "YnJpbmcud2VicA=="
+        "img": "YnJpbmcud2VicA==",
+        "ex": "Can I bring my dog?",
+        "exKo": "우리 개를 데려가도 되니?"
       },
       {
         "en": "drink",
         "ko": "마시다",
-        "img": "ZHJpbmsud2VicA=="
+        "img": "ZHJpbmsud2VicA==",
+        "ex": "Don't drink here.",
+        "exKo": "여기서 마시지 마."
       },
       {
         "en": "eat",
         "ko": "먹다",
-        "img": "ZWF0LndlYnA="
+        "img": "ZWF0LndlYnA=",
+        "ex": "Can I eat this?",
+        "exKo": "이거 먹어도 되니?"
       },
       {
         "en": "have",
         "ko": "먹다, 가지다",
-        "img": "aGF2ZS53ZWJw"
+        "img": "aGF2ZS53ZWJw",
+        "ex": "Can I have some water?",
+        "exKo": "물 좀 마셔도 되니?"
       },
       {
         "en": "ride",
         "ko": "타다",
-        "img": "cmlkZS53ZWJw"
+        "img": "cmlkZS53ZWJw",
+        "ex": "Let's ride a bike.",
+        "exKo": "자전거 타자."
       },
       {
         "en": "touch",
         "ko": "만지다",
-        "img": "dG91Y2gud2VicA=="
+        "img": "dG91Y2gud2VicA==",
+        "ex": "Don't touch it.",
+        "exKo": "그것을 만지지 마."
       },
       {
         "en": "use",
         "ko": "쓰다, 사용하다",
-        "img": "dXNlLndlYnA="
+        "img": "dXNlLndlYnA=",
+        "ex": "Can I use your phone?",
+        "exKo": "네 전화기를 써도 되니?"
       },
       {
         "en": "here",
         "ko": "여기",
-        "img": "aGVyZS53ZWJw"
+        "img": "aGVyZS53ZWJw",
+        "ex": "Come here.",
+        "exKo": "여기로 와."
       },
       {
         "en": "problem",
         "ko": "문제",
-        "img": "cHJvYmxlbS53ZWJw"
+        "img": "cHJvYmxlbS53ZWJw",
+        "ex": "No problem.",
+        "exKo": "문제없어."
       },
       {
         "en": "restroom",
         "ko": "화장실",
-        "img": "cmVzdHJvb20ud2VicA=="
+        "img": "cmVzdHJvb20ud2VicA==",
+        "ex": "Can I go to the restroom?",
+        "exKo": "화장실에 가도 되니?"
       }
     ]
   },
@@ -1217,52 +1627,72 @@
       {
         "en": "favorite",
         "ko": "가장 좋아하는",
-        "img": "ZmF2b3JpdGUud2VicA=="
+        "img": "ZmF2b3JpdGUud2VicA==",
+        "ex": "What's your favorite subject?",
+        "exKo": "네가 가장 좋아하는 과목은 뭐니?"
       },
       {
         "en": "subject",
         "ko": "과목",
-        "img": "c3ViamVjdC53ZWJw"
+        "img": "c3ViamVjdC53ZWJw",
+        "ex": "My favorite subject is math.",
+        "exKo": "내가 가장 좋아하는 과목은 수학이야."
       },
       {
         "en": "Korean",
         "ko": "국어, 한국어의",
-        "img": "a29yZWFuLndlYnA="
+        "img": "a29yZWFuLndlYnA=",
+        "ex": "I like Korean.",
+        "exKo": "나는 국어를 좋아해."
       },
       {
         "en": "English",
         "ko": "영어",
-        "img": "ZW5nbGlzaC53ZWJw"
+        "img": "ZW5nbGlzaC53ZWJw",
+        "ex": "I like English.",
+        "exKo": "나는 영어를 좋아해."
       },
       {
         "en": "art",
         "ko": "미술",
-        "img": "YXJ0LndlYnA="
+        "img": "YXJ0LndlYnA=",
+        "ex": "My favorite subject is art.",
+        "exKo": "내가 가장 좋아하는 과목은 미술이야."
       },
       {
         "en": "math",
         "ko": "수학",
-        "img": "bWF0aC53ZWJw"
+        "img": "bWF0aC53ZWJw",
+        "ex": "I like math.",
+        "exKo": "나는 수학을 좋아해."
       },
       {
         "en": "music",
         "ko": "음악",
-        "img": "bXVzaWMud2VicA=="
+        "img": "bXVzaWMud2VicA==",
+        "ex": "I like music.",
+        "exKo": "나는 음악을 좋아해."
       },
       {
         "en": "P.E. (physical education)",
         "ko": "체육",
-        "img": "cF9lX18ocGh5c2ljYWxfZWR1Y2F0aW9uKS53ZWJw"
+        "img": "cF9lX18ocGh5c2ljYWxfZWR1Y2F0aW9uKS53ZWJw",
+        "ex": "My favorite subject is P.E.",
+        "exKo": "내가 가장 좋아하는 과목은 체육이야."
       },
       {
         "en": "science",
         "ko": "과학",
-        "img": "c2NpZW5jZS53ZWJw"
+        "img": "c2NpZW5jZS53ZWJw",
+        "ex": "Science is fun.",
+        "exKo": "과학은 재미있어."
       },
       {
         "en": "social studies",
         "ko": "사회",
-        "img": "c29jaWFsX3N0dWRpZXMud2VicA=="
+        "img": "c29jaWFsX3N0dWRpZXMud2VicA==",
+        "ex": "I like social studies.",
+        "exKo": "나는 사회를 좋아해."
       }
     ]
   },
@@ -1275,52 +1705,72 @@
       {
         "en": "get up",
         "ko": "(잠자리에서) 일어나다",
-        "img": "Z2V0X3VwLndlYnA="
+        "img": "Z2V0X3VwLndlYnA=",
+        "ex": "I get up at seven.",
+        "exKo": "나는 7시에 일어나."
       },
       {
         "en": "go to school",
         "ko": "학교에 가다",
-        "img": "Z29fdG9fc2Nob29sLndlYnA="
+        "img": "Z29fdG9fc2Nob29sLndlYnA=",
+        "ex": "I go to school at eight.",
+        "exKo": "나는 8시에 학교에 가."
       },
       {
         "en": "come home",
         "ko": "집에 오다",
-        "img": "Y29tZV9ob21lLndlYnA="
+        "img": "Y29tZV9ob21lLndlYnA=",
+        "ex": "I come home at three.",
+        "exKo": "나는 3시에 집에 와."
       },
       {
         "en": "go to bed",
         "ko": "자다, 취침하다",
-        "img": "Z29fdG9fYmVkLndlYnA="
+        "img": "Z29fdG9fYmVkLndlYnA=",
+        "ex": "I go to bed at nine.",
+        "exKo": "나는 9시에 자."
       },
       {
         "en": "do my/your homework",
         "ko": "나의/너의 숙제를 하다",
-        "img": "ZG9fbXkveW91cl9ob21ld29yay53ZWJw"
+        "img": "ZG9fbXkveW91cl9ob21ld29yay53ZWJw",
+        "ex": "I do my homework after dinner.",
+        "exKo": "나는 저녁 먹고 숙제를 해."
       },
       {
         "en": "have a soccer lesson",
         "ko": "축구 수업이 있다",
-        "img": "aGF2ZV9hX3NvY2Nlcl9sZXNzb24ud2VicA=="
+        "img": "aGF2ZV9hX3NvY2Nlcl9sZXNzb24ud2VicA==",
+        "ex": "I have a soccer lesson today.",
+        "exKo": "나는 오늘 축구 수업이 있어."
       },
       {
         "en": "walk the dog",
         "ko": "개를 산책시키다",
-        "img": "d2Fsa190aGVfZG9nLndlYnA="
+        "img": "d2Fsa190aGVfZG9nLndlYnA=",
+        "ex": "I walk the dog every day.",
+        "exKo": "나는 매일 개를 산책시켜."
       },
       {
         "en": "exercise",
         "ko": "운동하다",
-        "img": "ZXhlcmNpc2Uud2VicA=="
+        "img": "ZXhlcmNpc2Uud2VicA==",
+        "ex": "I exercise in the morning.",
+        "exKo": "나는 아침에 운동해."
       },
       {
         "en": "early",
         "ko": "이른, 일찍",
-        "img": "ZWFybHkud2VicA=="
+        "img": "ZWFybHkud2VicA==",
+        "ex": "I get up early.",
+        "exKo": "나는 일찍 일어나."
       },
       {
         "en": "people",
         "ko": "사람들",
-        "img": "cGVvcGxlLndlYnA="
+        "img": "cGVvcGxlLndlYnA=",
+        "ex": "Many people are here.",
+        "exKo": "많은 사람들이 여기 있어."
       }
     ]
   },
@@ -1333,52 +1783,72 @@
       {
         "en": "bathroom",
         "ko": "욕실",
-        "img": "YmF0aHJvb20ud2VicA=="
+        "img": "YmF0aHJvb20ud2VicA==",
+        "ex": "He is in the bathroom.",
+        "exKo": "그는 욕실에 있어."
       },
       {
         "en": "bedroom",
         "ko": "침실",
-        "img": "YmVkcm9vbS53ZWJw"
+        "img": "YmVkcm9vbS53ZWJw",
+        "ex": "This is my bedroom.",
+        "exKo": "이것은 내 침실이야."
       },
       {
         "en": "garden",
         "ko": "정원",
-        "img": "Z2FyZGVuLndlYnA="
+        "img": "Z2FyZGVuLndlYnA=",
+        "ex": "Mom is in the garden.",
+        "exKo": "엄마는 정원에 계셔."
       },
       {
         "en": "kitchen",
         "ko": "부엌",
-        "img": "a2l0Y2hlbi53ZWJw"
+        "img": "a2l0Y2hlbi53ZWJw",
+        "ex": "Dad is in the kitchen.",
+        "exKo": "아빠는 부엌에 계셔."
       },
       {
         "en": "living room",
         "ko": "거실",
-        "img": "bGl2aW5nX3Jvb20ud2VicA=="
+        "img": "bGl2aW5nX3Jvb20ud2VicA==",
+        "ex": "We are in the living room.",
+        "exKo": "우리는 거실에 있어."
       },
       {
         "en": "chair",
         "ko": "의자",
-        "img": "Y2hhaXIud2VicA=="
+        "img": "Y2hhaXIud2VicA==",
+        "ex": "Sit on the chair.",
+        "exKo": "의자에 앉아."
       },
       {
         "en": "mirror",
         "ko": "거울",
-        "img": "bWlycm9yLndlYnA="
+        "img": "bWlycm9yLndlYnA=",
+        "ex": "Look in the mirror.",
+        "exKo": "거울을 봐."
       },
       {
         "en": "picture",
         "ko": "그림, 사진",
-        "img": "cGljdHVyZS53ZWJw"
+        "img": "cGljdHVyZS53ZWJw",
+        "ex": "This is a picture of my family.",
+        "exKo": "이것은 우리 가족 사진이야."
       },
       {
         "en": "table",
         "ko": "식탁",
-        "img": "dGFibGUud2VicA=="
+        "img": "dGFibGUud2VicA==",
+        "ex": "It's under the table.",
+        "exKo": "그것은 탁자 아래에 있어."
       },
       {
         "en": "TV",
         "ko": "텔레비전",
-        "img": "dHYud2VicA=="
+        "img": "dHYud2VicA==",
+        "ex": "Let's watch TV.",
+        "exKo": "텔레비전 보자."
       }
     ]
   },
@@ -1391,42 +1861,58 @@
       {
         "en": "let's",
         "ko": "~ 하자",
-        "img": "bGV0X3Mud2VicA=="
+        "img": "bGV0X3Mud2VicA==",
+        "ex": "Let's go!",
+        "exKo": "가자!"
       },
       {
         "en": "tomorrow",
         "ko": "내일",
-        "img": "dG9tb3Jyb3cud2VicA=="
+        "img": "dG9tb3Jyb3cud2VicA==",
+        "ex": "See you tomorrow.",
+        "exKo": "내일 봐."
       },
       {
         "en": "weekend",
         "ko": "주말",
-        "img": "d2Vla2VuZC53ZWJw"
+        "img": "d2Vla2VuZC53ZWJw",
+        "ex": "What will you do this weekend?",
+        "exKo": "이번 주말에 뭐 할 거니?"
       },
       {
         "en": "go camping",
         "ko": "캠핑 가다",
-        "img": "Z29fY2FtcGluZy53ZWJw"
+        "img": "Z29fY2FtcGluZy53ZWJw",
+        "ex": "Let's go camping.",
+        "exKo": "캠핑 가자."
       },
       {
         "en": "go hiking",
         "ko": "하이킹 (도보여행)을 가다",
-        "img": "Z29faGlraW5nLndlYnA="
+        "img": "Z29faGlraW5nLndlYnA=",
+        "ex": "Let's go hiking this weekend.",
+        "exKo": "이번 주말에 하이킹 가자."
       },
       {
         "en": "go shopping",
         "ko": "쇼핑하러 가다",
-        "img": "Z29fc2hvcHBpbmcud2VicA=="
+        "img": "Z29fc2hvcHBpbmcud2VicA==",
+        "ex": "Let's go shopping.",
+        "exKo": "쇼핑하러 가자."
       },
       {
         "en": "go swimming",
         "ko": "수영하러 가다",
-        "img": "Z29fc3dpbW1pbmcud2VicA=="
+        "img": "Z29fc3dpbW1pbmcud2VicA==",
+        "ex": "Let's go swimming.",
+        "exKo": "수영하러 가자."
       },
       {
         "en": "go to the movies",
         "ko": "영화 보러 가다",
-        "img": "Z29fdG9fdGhlX21vdmllcy53ZWJw"
+        "img": "Z29fdG9fdGhlX21vdmllcy53ZWJw",
+        "ex": "Let's go to the movies.",
+        "exKo": "영화 보러 가자."
       }
     ]
   },
@@ -1439,52 +1925,72 @@
       {
         "en": "order",
         "ko": "주문하다",
-        "img": "b3JkZXIud2VicA=="
+        "img": "b3JkZXIud2VicA==",
+        "ex": "May I take your order?",
+        "exKo": "주문하시겠어요?"
       },
       {
         "en": "cheese",
         "ko": "치즈",
-        "img": "Y2hlZXNlLndlYnA="
+        "img": "Y2hlZXNlLndlYnA=",
+        "ex": "I'd like cheese pizza.",
+        "exKo": "치즈 피자로 할게요."
       },
       {
         "en": "chocolate",
         "ko": "초콜릿",
-        "img": "Y2hvY29sYXRlLndlYnA="
+        "img": "Y2hvY29sYXRlLndlYnA=",
+        "ex": "I like chocolate.",
+        "exKo": "나는 초콜릿을 좋아해."
       },
       {
         "en": "sandwich",
         "ko": "샌드위치",
-        "img": "c2FuZHdpY2gud2VicA=="
+        "img": "c2FuZHdpY2gud2VicA==",
+        "ex": "I'd like a sandwich.",
+        "exKo": "샌드위치로 할게요."
       },
       {
         "en": "spaghetti",
         "ko": "스파게티",
-        "img": "c3BhZ2hldHRpLndlYnA="
+        "img": "c3BhZ2hldHRpLndlYnA=",
+        "ex": "I'd like spaghetti, please.",
+        "exKo": "스파게티 주세요."
       },
       {
         "en": "delicious",
         "ko": "아주 맛있는",
-        "img": "ZGVsaWNpb3VzLndlYnA="
+        "img": "ZGVsaWNpb3VzLndlYnA=",
+        "ex": "It's delicious.",
+        "exKo": "그거 정말 맛있어."
       },
       {
         "en": "salty",
         "ko": "짠, 짭짤한",
-        "img": "c2FsdHkud2VicA=="
+        "img": "c2FsdHkud2VicA==",
+        "ex": "It's too salty.",
+        "exKo": "그건 너무 짜."
       },
       {
         "en": "sour",
         "ko": "신, 시큼한",
-        "img": "c291ci53ZWJw"
+        "img": "c291ci53ZWJw",
+        "ex": "The lemon is sour.",
+        "exKo": "레몬은 셔."
       },
       {
         "en": "spicy",
         "ko": "매운",
-        "img": "c3BpY3kud2VicA=="
+        "img": "c3BpY3kud2VicA==",
+        "ex": "Is it spicy?",
+        "exKo": "그거 맵니?"
       },
       {
         "en": "sweet",
         "ko": "달콤한",
-        "img": "c3dlZXQud2VicA=="
+        "img": "c3dlZXQud2VicA==",
+        "ex": "It's sweet.",
+        "exKo": "그건 달아."
       }
     ]
   },
@@ -1497,52 +2003,72 @@
       {
         "en": "will",
         "ko": "~ 할 것이다",
-        "img": "d2lsbC53ZWJw"
+        "img": "d2lsbC53ZWJw",
+        "ex": "I will visit my grandma.",
+        "exKo": "나는 할머니 댁을 방문할 거야."
       },
       {
         "en": "do",
         "ko": "하다",
-        "img": "ZG8ud2VicA=="
+        "img": "ZG8ud2VicA==",
+        "ex": "What will you do?",
+        "exKo": "너는 무엇을 할 거니?"
       },
       {
         "en": "summer",
         "ko": "여름",
-        "img": "c3VtbWVyLndlYnA="
+        "img": "c3VtbWVyLndlYnA=",
+        "ex": "It's summer.",
+        "exKo": "여름이야."
       },
       {
         "en": "join",
         "ko": "가입하다",
-        "img": "am9pbi53ZWJw"
+        "img": "am9pbi53ZWJw",
+        "ex": "I will join the art club.",
+        "exKo": "나는 미술 동아리에 가입할 거야."
       },
       {
         "en": "learn",
         "ko": "배우다",
-        "img": "bGVhcm4ud2VicA=="
+        "img": "bGVhcm4ud2VicA==",
+        "ex": "I will learn Chinese.",
+        "exKo": "나는 중국어를 배울 거야."
       },
       {
         "en": "take",
         "ko": "(과목을) 듣다, 수강하다",
-        "img": "dGFrZS53ZWJw"
+        "img": "dGFrZS53ZWJw",
+        "ex": "I will take a swimming class.",
+        "exKo": "나는 수영 수업을 들을 거야."
       },
       {
         "en": "visit",
         "ko": "방문하다",
-        "img": "dmlzaXQud2VicA=="
+        "img": "dmlzaXQud2VicA==",
+        "ex": "I will visit Jeju-do.",
+        "exKo": "나는 제주도를 방문할 거야."
       },
       {
         "en": "beach",
         "ko": "해변",
-        "img": "YmVhY2gud2VicA=="
+        "img": "YmVhY2gud2VicA==",
+        "ex": "Let's go to the beach.",
+        "exKo": "해변에 가자."
       },
       {
         "en": "plan",
         "ko": "계획",
-        "img": "cGxhbi53ZWJw"
+        "img": "cGxhbi53ZWJw",
+        "ex": "What's your plan?",
+        "exKo": "네 계획은 뭐니?"
       },
       {
         "en": "sound",
         "ko": "~처럼 들리다, ~ 인 것 같다",
-        "img": "c291bmQud2VicA=="
+        "img": "c291bmQud2VicA==",
+        "ex": "That sounds great.",
+        "exKo": "그거 정말 좋을 것 같아."
       }
     ]
   },
@@ -1555,62 +2081,86 @@
       {
         "en": "what",
         "ko": "무엇",
-        "img": "d2hhdC53ZWJw"
+        "img": "d2hhdC53ZWJw",
+        "ex": "What's your name?",
+        "exKo": "네 이름은 뭐니?"
       },
       {
         "en": "those",
         "ko": "(멀리 있는 것을 가리켜) 저것들",
-        "img": "dGhvc2Uud2VicA=="
+        "img": "dGhvc2Uud2VicA==",
+        "ex": "Those are my shoes.",
+        "exKo": "저것들은 내 신발이야."
       },
       {
         "en": "they",
         "ko": "그들, 그것들",
-        "img": "dGhleS53ZWJw"
+        "img": "dGhleS53ZWJw",
+        "ex": "They are my friends.",
+        "exKo": "그들은 내 친구들이야."
       },
       {
         "en": "look",
         "ko": "(~해, ~처럼) 보이다, 보다",
-        "img": "bG9vay53ZWJw"
+        "img": "bG9vay53ZWJw",
+        "ex": "Look at me.",
+        "exKo": "나를 봐."
       },
       {
         "en": "wear",
         "ko": "입고[쓰고/끼고/신고/착용하고] 있다",
-        "img": "d2Vhci53ZWJw"
+        "img": "d2Vhci53ZWJw",
+        "ex": "She wears glasses.",
+        "exKo": "그녀는 안경을 써."
       },
       {
         "en": "short",
         "ko": "(길이가) 짧은",
-        "img": "c2hvcnQud2VicA=="
+        "img": "c2hvcnQud2VicA==",
+        "ex": "He has short hair.",
+        "exKo": "그는 머리가 짧아."
       },
       {
         "en": "long",
         "ko": "(길이가) 긴",
-        "img": "bG9uZy53ZWJw"
+        "img": "bG9uZy53ZWJw",
+        "ex": "It's long.",
+        "exKo": "그것은 길어."
       },
       {
         "en": "straight",
         "ko": "(굽거나 휘지 않고) 곧은",
-        "img": "c3RyYWlnaHQud2VicA=="
+        "img": "c3RyYWlnaHQud2VicA==",
+        "ex": "She has straight hair.",
+        "exKo": "그녀는 생머리야."
       },
       {
         "en": "curly",
         "ko": "곱슬곱슬한",
-        "img": "Y3VybHkud2VicA=="
+        "img": "Y3VybHkud2VicA==",
+        "ex": "He has curly hair.",
+        "exKo": "그는 곱슬머리야."
       },
       {
         "en": "want to",
         "ko": "~하고 싶다",
-        "img": "d2FudF90by53ZWJw"
+        "img": "d2FudF90by53ZWJw",
+        "ex": "I want to be a pilot.",
+        "exKo": "나는 조종사가 되고 싶어."
       },
       {
         "en": "grow",
         "ko": "(식물 등을) 기르다",
-        "img": "Z3Jvdy53ZWJw"
+        "img": "Z3Jvdy53ZWJw",
+        "ex": "I want to grow tomatoes.",
+        "exKo": "나는 토마토를 기르고 싶어."
       },
       {
         "en": "make",
         "ko": "(재료를 섞거나 모아서) 만들다",
-        "img": "bWFrZS53ZWJw"
+        "img": "bWFrZS53ZWJw",
+        "ex": "I'm making a cake.",
+        "exKo": "나는 케이크를 만들고 있어."
       }
     ]
   },
@@ -1623,62 +2173,86 @@
       {
         "en": "grade",
         "ko": "학년, 등급",
-        "img": "Z3JhZGUud2VicA=="
+        "img": "Z3JhZGUud2VicA==",
+        "ex": "What grade are you in?",
+        "exKo": "너는 몇 학년이니?"
       },
       {
         "en": "first",
         "ko": "첫 번째의, 첫째",
-        "img": "Zmlyc3Qud2VicA=="
+        "img": "Zmlyc3Qud2VicA==",
+        "ex": "I'm in the first grade.",
+        "exKo": "나는 1학년이야."
       },
       {
         "en": "second",
         "ko": "두 번째의, 둘째",
-        "img": "c2Vjb25kLndlYnA="
+        "img": "c2Vjb25kLndlYnA=",
+        "ex": "It's on the second floor.",
+        "exKo": "그것은 2층에 있어."
       },
       {
         "en": "third",
         "ko": "세 번째의, 셋째",
-        "img": "dGhpcmQud2VicA=="
+        "img": "dGhpcmQud2VicA==",
+        "ex": "I'm in the third grade.",
+        "exKo": "나는 3학년이야."
       },
       {
         "en": "fourth",
         "ko": "네 번째의, 넷째",
-        "img": "Zm91cnRoLndlYnA="
+        "img": "Zm91cnRoLndlYnA=",
+        "ex": "It's on the fourth floor.",
+        "exKo": "그것은 4층에 있어."
       },
       {
         "en": "fifth",
         "ko": "다섯 번째의, 다섯째",
-        "img": "ZmlmdGgud2VicA=="
+        "img": "ZmlmdGgud2VicA==",
+        "ex": "I'm in the fifth grade.",
+        "exKo": "나는 5학년이야."
       },
       {
         "en": "sixth",
         "ko": "여섯 번째의, 여섯째",
-        "img": "c2l4dGgud2VicA=="
+        "img": "c2l4dGgud2VicA==",
+        "ex": "I'm in the sixth grade.",
+        "exKo": "나는 6학년이야."
       },
       {
         "en": "spell",
         "ko": "철자를 말하다, 철자를 쓰다",
-        "img": "c3BlbGwud2VicA=="
+        "img": "c3BlbGwud2VicA==",
+        "ex": "How do you spell your name?",
+        "exKo": "네 이름의 철자가 어떻게 되니?"
       },
       {
         "en": "where",
         "ko": "어디에, 어디로",
-        "img": "d2hlcmUud2VicA=="
+        "img": "d2hlcmUud2VicA==",
+        "ex": "Where is my cap?",
+        "exKo": "내 모자는 어디 있니?"
       },
       {
         "en": "floor",
         "ko": "층, 바닥",
-        "img": "Zmxvb3Iud2VicA=="
+        "img": "Zmxvb3Iud2VicA==",
+        "ex": "The library is on the first floor.",
+        "exKo": "도서관은 1층에 있어."
       },
       {
         "en": "classroom",
         "ko": "교실",
-        "img": "Y2xhc3Nyb29tLndlYnA="
+        "img": "Y2xhc3Nyb29tLndlYnA=",
+        "ex": "This is my classroom.",
+        "exKo": "이곳은 우리 교실이야."
       },
       {
         "en": "room",
         "ko": "~실, 방",
-        "img": "cm9vbS53ZWJw"
+        "img": "cm9vbS53ZWJw",
+        "ex": "Where is the music room?",
+        "exKo": "음악실은 어디에 있니?"
       }
     ]
   },
@@ -1691,47 +2265,65 @@
       {
         "en": "want",
         "ko": "원하다, ~하고 싶어하다",
-        "img": "d2FudC53ZWJw"
+        "img": "d2FudC53ZWJw",
+        "ex": "Do you want some milk?",
+        "exKo": "우유 좀 줄까?"
       },
       {
         "en": "actor",
         "ko": "배우",
-        "img": "YWN0b3Iud2VicA=="
+        "img": "YWN0b3Iud2VicA==",
+        "ex": "I want to be an actor.",
+        "exKo": "나는 배우가 되고 싶어."
       },
       {
         "en": "designer",
         "ko": "디자이너",
-        "img": "ZGVzaWduZXIud2VicA=="
+        "img": "ZGVzaWduZXIud2VicA==",
+        "ex": "She wants to be a designer.",
+        "exKo": "그녀는 디자이너가 되고 싶어 해."
       },
       {
         "en": "gardener",
         "ko": "정원사",
-        "img": "Z2FyZGVuZXIud2VicA=="
+        "img": "Z2FyZGVuZXIud2VicA==",
+        "ex": "He is a gardener.",
+        "exKo": "그는 정원사야."
       },
       {
         "en": "be good at",
         "ko": "(~을/를) 잘하다",
-        "img": "YmVfZ29vZF9hdC53ZWJw"
+        "img": "YmVfZ29vZF9hdC53ZWJw",
+        "ex": "I'm good at drawing.",
+        "exKo": "나는 그림을 잘 그려."
       },
       {
         "en": "pilot",
         "ko": "조종사, 비행사",
-        "img": "cGlsb3Qud2VicA=="
+        "img": "cGlsb3Qud2VicA==",
+        "ex": "I want to be a pilot.",
+        "exKo": "나는 조종사가 되고 싶어."
       },
       {
         "en": "scientist",
         "ko": "과학자",
-        "img": "c2NpZW50aXN0LndlYnA="
+        "img": "c2NpZW50aXN0LndlYnA=",
+        "ex": "I want to be a scientist.",
+        "exKo": "나는 과학자가 되고 싶어."
       },
       {
         "en": "soccer player",
         "ko": "축구 선수",
-        "img": "c29jY2VyX3BsYXllci53ZWJw"
+        "img": "c29jY2VyX3BsYXllci53ZWJw",
+        "ex": "He is a soccer player.",
+        "exKo": "그는 축구 선수야."
       },
       {
         "en": "writer",
         "ko": "작가",
-        "img": "d3JpdGVyLndlYnA="
+        "img": "d3JpdGVyLndlYnA=",
+        "ex": "I want to be a writer.",
+        "exKo": "나는 작가가 되고 싶어."
       }
     ]
   },
@@ -1744,62 +2336,86 @@
       {
         "en": "January",
         "ko": "1월",
-        "img": "amFudWFyeS53ZWJw"
+        "img": "amFudWFyeS53ZWJw",
+        "ex": "My birthday is in January.",
+        "exKo": "내 생일은 1월이야."
       },
       {
         "en": "February",
         "ko": "2월",
-        "img": "ZmVicnVhcnkud2VicA=="
+        "img": "ZmVicnVhcnkud2VicA==",
+        "ex": "It's February 14th.",
+        "exKo": "2월 14일이야."
       },
       {
         "en": "March",
         "ko": "3월",
-        "img": "bWFyY2gud2VicA=="
+        "img": "bWFyY2gud2VicA==",
+        "ex": "School starts in March.",
+        "exKo": "학교는 3월에 시작해."
       },
       {
         "en": "April",
         "ko": "4월",
-        "img": "YXByaWwud2VicA=="
+        "img": "YXByaWwud2VicA==",
+        "ex": "My birthday is April 5th.",
+        "exKo": "내 생일은 4월 5일이야."
       },
       {
         "en": "May",
         "ko": "5월",
-        "img": "bWF5LndlYnA="
+        "img": "bWF5LndlYnA=",
+        "ex": "It's May 5th.",
+        "exKo": "5월 5일이야."
       },
       {
         "en": "June",
         "ko": "6월",
-        "img": "anVuZS53ZWJw"
+        "img": "anVuZS53ZWJw",
+        "ex": "It's hot in June.",
+        "exKo": "6월에는 더워."
       },
       {
         "en": "July",
         "ko": "7월",
-        "img": "anVseS53ZWJw"
+        "img": "anVseS53ZWJw",
+        "ex": "My birthday is in July.",
+        "exKo": "내 생일은 7월이야."
       },
       {
         "en": "August",
         "ko": "8월",
-        "img": "YXVndXN0LndlYnA="
+        "img": "YXVndXN0LndlYnA=",
+        "ex": "It's August 15th.",
+        "exKo": "8월 15일이야."
       },
       {
         "en": "September",
         "ko": "9월",
-        "img": "c2VwdGVtYmVyLndlYnA="
+        "img": "c2VwdGVtYmVyLndlYnA=",
+        "ex": "When is your birthday? It's in September.",
+        "exKo": "네 생일은 언제니? 9월이야."
       },
       {
         "en": "October",
         "ko": "10월",
-        "img": "b2N0b2Jlci53ZWJw"
+        "img": "b2N0b2Jlci53ZWJw",
+        "ex": "It's October 9th.",
+        "exKo": "10월 9일이야."
       },
       {
         "en": "November",
         "ko": "11월",
-        "img": "bm92ZW1iZXIud2VicA=="
+        "img": "bm92ZW1iZXIud2VicA==",
+        "ex": "My birthday is in November.",
+        "exKo": "내 생일은 11월이야."
       },
       {
         "en": "December",
         "ko": "12월",
-        "img": "ZGVjZW1iZXIud2VicA=="
+        "img": "ZGVjZW1iZXIud2VicA==",
+        "ex": "Christmas is in December.",
+        "exKo": "크리스마스는 12월에 있어."
       }
     ]
   },
@@ -1812,47 +2428,65 @@
       {
         "en": "wrong",
         "ko": "틀린, 잘못된",
-        "img": "d3Jvbmcud2VicA=="
+        "img": "d3Jvbmcud2VicA==",
+        "ex": "What's wrong?",
+        "exKo": "무슨 일 있니?"
       },
       {
         "en": "cold",
         "ko": "감기",
-        "img": "Y29sZC53ZWJw"
+        "img": "Y29sZC53ZWJw",
+        "ex": "I have a cold.",
+        "exKo": "나는 감기에 걸렸어."
       },
       {
         "en": "fever",
         "ko": "열",
-        "img": "ZmV2ZXIud2VicA=="
+        "img": "ZmV2ZXIud2VicA==",
+        "ex": "I have a fever.",
+        "exKo": "나는 열이 나."
       },
       {
         "en": "headache",
         "ko": "두통",
-        "img": "aGVhZGFjaGUud2VicA=="
+        "img": "aGVhZGFjaGUud2VicA==",
+        "ex": "I have a headache.",
+        "exKo": "나는 머리가 아파."
       },
       {
         "en": "medicine",
         "ko": "약",
-        "img": "bWVkaWNpbmUud2VicA=="
+        "img": "bWVkaWNpbmUud2VicA==",
+        "ex": "Take some medicine.",
+        "exKo": "약을 좀 먹어."
       },
       {
         "en": "rest",
         "ko": "휴식",
-        "img": "cmVzdC53ZWJw"
+        "img": "cmVzdC53ZWJw",
+        "ex": "Get some rest.",
+        "exKo": "좀 쉬어."
       },
       {
         "en": "runny nose",
         "ko": "콧물",
-        "img": "cnVubnlfbm9zZS53ZWJw"
+        "img": "cnVubnlfbm9zZS53ZWJw",
+        "ex": "I have a runny nose.",
+        "exKo": "나는 콧물이 나."
       },
       {
         "en": "stomachache",
         "ko": "복통",
-        "img": "c3RvbWFjaGFjaGUud2VicA=="
+        "img": "c3RvbWFjaGFjaGUud2VicA==",
+        "ex": "I have a stomachache.",
+        "exKo": "나는 배가 아파."
       },
       {
         "en": "toothache",
         "ko": "치통",
-        "img": "dG9vdGhhY2hlLndlYnA="
+        "img": "dG9vdGhhY2hlLndlYnA=",
+        "ex": "I have a toothache.",
+        "exKo": "나는 이가 아파."
       }
     ]
   },
@@ -1865,17 +2499,23 @@
       {
         "en": "why",
         "ko": "('이유'를 묻는 의문문에서) 왜",
-        "img": "d2h5LndlYnA="
+        "img": "d2h5LndlYnA=",
+        "ex": "Why are you happy?",
+        "exKo": "너는 왜 기쁘니?"
       },
       {
         "en": "sad",
         "ko": "슬픈",
-        "img": "c2FkLndlYnA="
+        "img": "c2FkLndlYnA=",
+        "ex": "I'm sad.",
+        "exKo": "나는 슬퍼."
       },
       {
         "en": "excited",
         "ko": "신이 난, 흥분한",
-        "img": "ZXhjaXRlZC53ZWJw"
+        "img": "ZXhjaXRlZC53ZWJw",
+        "ex": "I'm excited.",
+        "exKo": "나는 신이 나."
       }
     ]
   },
@@ -1888,17 +2528,23 @@
       {
         "en": "upset",
         "ko": "속상한, 화가 난",
-        "img": "dXBzZXQud2VicA=="
+        "img": "dXBzZXQud2VicA==",
+        "ex": "Why are you upset?",
+        "exKo": "너는 왜 속상하니?"
       },
       {
         "en": "worried",
         "ko": "걱정하는",
-        "img": "d29ycmllZC53ZWJw"
+        "img": "d29ycmllZC53ZWJw",
+        "ex": "I'm worried about the test.",
+        "exKo": "나는 시험이 걱정돼."
       },
       {
         "en": "angry",
         "ko": "화난",
-        "img": "YW5ncnkud2VicA=="
+        "img": "YW5ncnkud2VicA==",
+        "ex": "Are you angry?",
+        "exKo": "너 화났니?"
       }
     ]
   },
@@ -1911,17 +2557,23 @@
       {
         "en": "tired",
         "ko": "피곤한",
-        "img": "dGlyZWQud2VicA=="
+        "img": "dGlyZWQud2VicA==",
+        "ex": "Are you tired?",
+        "exKo": "너 피곤하니?"
       },
       {
         "en": "because",
         "ko": "~ 때문에, 왜냐하면",
-        "img": "YmVjYXVzZS53ZWJw"
+        "img": "YmVjYXVzZS53ZWJw",
+        "ex": "I'm happy because it's my birthday.",
+        "exKo": "내 생일이라서 나는 기뻐."
       },
       {
         "en": "broke",
         "ko": "부쳤다",
-        "img": "YnJva2Uud2VicA=="
+        "img": "YnJva2Uud2VicA==",
+        "ex": "I broke my leg.",
+        "exKo": "나는 다리가 부러졌어."
       }
     ]
   },
@@ -1934,7 +2586,9 @@
       {
         "en": "congratulations",
         "ko": "축하해요",
-        "img": "Y29uZ3JhdHVsYXRpb25zLndlYnA="
+        "img": "Y29uZ3JhdHVsYXRpb25zLndlYnA=",
+        "ex": "Congratulations!",
+        "exKo": "축하해!"
       }
     ]
   },
@@ -1947,67 +2601,93 @@
       {
         "en": "look",
         "ko": "(~해, ~처럼) 보이다",
-        "img": "bG9vay53ZWJw"
+        "img": "bG9vay53ZWJw",
+        "ex": "Look at me.",
+        "exKo": "나를 봐."
       },
       {
         "en": "wear",
         "ko": "입고[신고, 쓰고, 차고, 매고] 있다",
-        "img": "d2Vhci53ZWJw"
+        "img": "d2Vhci53ZWJw",
+        "ex": "She wears glasses.",
+        "exKo": "그녀는 안경을 써."
       },
       {
         "en": "short",
         "ko": "(길이, 거리가) 짧은",
-        "img": "c2hvcnQud2VicA=="
+        "img": "c2hvcnQud2VicA==",
+        "ex": "He has short hair.",
+        "exKo": "그는 머리가 짧아."
       },
       {
         "en": "straight",
         "ko": "(굽거나 휘지 않고) 곧은, 똑바른",
-        "img": "c3RyYWlnaHQud2VicA=="
+        "img": "c3RyYWlnaHQud2VicA==",
+        "ex": "She has straight hair.",
+        "exKo": "그녀는 생머리야."
       },
       {
         "en": "curly",
         "ko": "곱슬곱슬한",
-        "img": "Y3VybHkud2VicA=="
+        "img": "Y3VybHkud2VicA==",
+        "ex": "He has curly hair.",
+        "exKo": "그는 곱슬머리야."
       },
       {
         "en": "hair",
         "ko": "머리(털)",
-        "img": "aGFpci53ZWJw"
+        "img": "aGFpci53ZWJw",
+        "ex": "She has long hair.",
+        "exKo": "그녀는 머리가 길어."
       },
       {
         "en": "eyes",
         "ko": "눈",
-        "img": "ZXllcy53ZWJw"
+        "img": "ZXllcy53ZWJw",
+        "ex": "He has big eyes.",
+        "exKo": "그는 눈이 커."
       },
       {
         "en": "shirt",
         "ko": "셔츠",
-        "img": "c2hpcnQud2VicA=="
+        "img": "c2hpcnQud2VicA==",
+        "ex": "He is wearing a blue shirt.",
+        "exKo": "그는 파란 셔츠를 입고 있어."
       },
       {
         "en": "jacket",
         "ko": "재킷, (셔츠 위에 입는) 상의",
-        "img": "amFja2V0LndlYnA="
+        "img": "amFja2V0LndlYnA=",
+        "ex": "Is this your jacket?",
+        "exKo": "이거 네 재킷이니?"
       },
       {
         "en": "pants",
         "ko": "바지",
-        "img": "cGFudHMud2VicA=="
+        "img": "cGFudHMud2VicA==",
+        "ex": "He is wearing black pants.",
+        "exKo": "그는 검은 바지를 입고 있어."
       },
       {
         "en": "skirt",
         "ko": "치마",
-        "img": "c2tpcnQud2VicA=="
+        "img": "c2tpcnQud2VicA==",
+        "ex": "She is wearing a red skirt.",
+        "exKo": "그녀는 빨간 치마를 입고 있어."
       },
       {
         "en": "dress",
         "ko": "드레스, 원피스",
-        "img": "ZHJlc3Mud2VicA=="
+        "img": "ZHJlc3Mud2VicA==",
+        "ex": "She is wearing a white dress.",
+        "exKo": "그녀는 흰 원피스를 입고 있어."
       },
       {
         "en": "glasses",
         "ko": "안경",
-        "img": "Z2xhc3Nlcy53ZWJw"
+        "img": "Z2xhc3Nlcy53ZWJw",
+        "ex": "These are my glasses.",
+        "exKo": "이것은 내 안경이야."
       }
     ]
   },
@@ -2020,42 +2700,58 @@
       {
         "en": "how much",
         "ko": "얼마, 어느 정도",
-        "img": "aG93X211Y2gud2VicA=="
+        "img": "aG93X211Y2gud2VicA==",
+        "ex": "How much is it?",
+        "exKo": "그거 얼마예요?"
       },
       {
         "en": "help",
         "ko": "돕다",
-        "img": "aGVscC53ZWJw"
+        "img": "aGVscC53ZWJw",
+        "ex": "Can I help you?",
+        "exKo": "도와드릴까요?"
       },
       {
         "en": "socks",
         "ko": "양말",
-        "img": "c29ja3Mud2VicA=="
+        "img": "c29ja3Mud2VicA==",
+        "ex": "How much are these socks?",
+        "exKo": "이 양말은 얼마예요?"
       },
       {
         "en": "shoes",
         "ko": "신발",
-        "img": "c2hvZXMud2VicA=="
+        "img": "c2hvZXMud2VicA==",
+        "ex": "Whose shoes are these?",
+        "exKo": "이것은 누구의 신발이니?"
       },
       {
         "en": "gloves",
         "ko": "장갑",
-        "img": "Z2xvdmVzLndlYnA="
+        "img": "Z2xvdmVzLndlYnA=",
+        "ex": "I want these gloves.",
+        "exKo": "이 장갑을 원해요."
       },
       {
         "en": "hundred",
         "ko": "100, 백",
-        "img": "aHVuZHJlZC53ZWJw"
+        "img": "aHVuZHJlZC53ZWJw",
+        "ex": "It's five hundred won.",
+        "exKo": "500원이에요."
       },
       {
         "en": "thousand",
         "ko": "1000, 천",
-        "img": "dGhvdXNhbmQud2VicA=="
+        "img": "dGhvdXNhbmQud2VicA==",
+        "ex": "It's three thousand won.",
+        "exKo": "3,000원이에요."
       },
       {
         "en": "please",
         "ko": "부디, 제발",
-        "img": "cGxlYXNlLndlYnA="
+        "img": "cGxlYXNlLndlYnA=",
+        "ex": "Sit down, please.",
+        "exKo": "앉아 주세요."
       }
     ]
   },
@@ -2068,47 +2764,65 @@
       {
         "en": "than",
         "ko": "~보다",
-        "img": "dGhhbi53ZWJw"
+        "img": "dGhhbi53ZWJw",
+        "ex": "I'm taller than you.",
+        "exKo": "나는 너보다 키가 커."
       },
       {
         "en": "bigger",
         "ko": "더 큰",
-        "img": "YmlnZ2VyLndlYnA="
+        "img": "YmlnZ2VyLndlYnA=",
+        "ex": "An elephant is bigger than a dog.",
+        "exKo": "코끼리는 개보다 더 커."
       },
       {
         "en": "cheaper",
         "ko": "더 값이 싼",
-        "img": "Y2hlYXBlci53ZWJw"
+        "img": "Y2hlYXBlci53ZWJw",
+        "ex": "This one is cheaper.",
+        "exKo": "이것이 더 싸요."
       },
       {
         "en": "faster",
         "ko": "더 빠른",
-        "img": "ZmFzdGVyLndlYnA="
+        "img": "ZmFzdGVyLndlYnA=",
+        "ex": "A cheetah is faster than a lion.",
+        "exKo": "치타는 사자보다 더 빨라."
       },
       {
         "en": "heavier",
         "ko": "더 무거운",
-        "img": "aGVhdmllci53ZWJw"
+        "img": "aGVhdmllci53ZWJw",
+        "ex": "My bag is heavier than yours.",
+        "exKo": "내 가방은 네 것보다 더 무거워."
       },
       {
         "en": "longer",
         "ko": "더 긴",
-        "img": "bG9uZ2VyLndlYnA="
+        "img": "bG9uZ2VyLndlYnA=",
+        "ex": "My hair is longer than yours.",
+        "exKo": "내 머리는 네 머리보다 더 길어."
       },
       {
         "en": "older",
         "ko": "더 나이가 많은",
-        "img": "b2xkZXIud2VicA=="
+        "img": "b2xkZXIud2VicA==",
+        "ex": "My brother is older than me.",
+        "exKo": "우리 형은 나보다 나이가 많아."
       },
       {
         "en": "stronger",
         "ko": "더 센",
-        "img": "c3Ryb25nZXIud2VicA=="
+        "img": "c3Ryb25nZXIud2VicA==",
+        "ex": "A tiger is stronger than a cat.",
+        "exKo": "호랑이는 고양이보다 더 힘이 세."
       },
       {
         "en": "taller",
         "ko": "더 키가 큰",
-        "img": "dGFsbGVyLndlYnA="
+        "img": "dGFsbGVyLndlYnA=",
+        "ex": "He is taller than me.",
+        "exKo": "그는 나보다 키가 더 커."
       }
     ]
   },
@@ -2121,52 +2835,72 @@
       {
         "en": "often",
         "ko": "자주",
-        "img": "b2Z0ZW4ud2VicA=="
+        "img": "b2Z0ZW4ud2VicA==",
+        "ex": "How often do you exercise?",
+        "exKo": "너는 얼마나 자주 운동하니?"
       },
       {
         "en": "brush",
         "ko": "칫솔[빗,솔]질을 하다",
-        "img": "YnJ1c2gud2VicA=="
+        "img": "YnJ1c2gud2VicA==",
+        "ex": "I have a brush.",
+        "exKo": "나는 붓이 있어."
       },
       {
         "en": "exercise",
         "ko": "운동하다",
-        "img": "ZXhlcmNpc2Uud2VicA=="
+        "img": "ZXhlcmNpc2Uud2VicA==",
+        "ex": "I exercise in the morning.",
+        "exKo": "나는 아침에 운동해."
       },
       {
         "en": "vegetable",
         "ko": "채소, 야채",
-        "img": "dmVnZXRhYmxlLndlYnA="
+        "img": "dmVnZXRhYmxlLndlYnA=",
+        "ex": "Eat more vegetables.",
+        "exKo": "채소를 더 먹어."
       },
       {
         "en": "wash",
         "ko": "씻다",
-        "img": "d2FzaC53ZWJw"
+        "img": "d2FzaC53ZWJw",
+        "ex": "Wash your hands.",
+        "exKo": "손을 씻어."
       },
       {
         "en": "once",
         "ko": "한 번",
-        "img": "b25jZS53ZWJw"
+        "img": "b25jZS53ZWJw",
+        "ex": "I play soccer once a week.",
+        "exKo": "나는 일주일에 한 번 축구를 해."
       },
       {
         "en": "twice",
         "ko": "두 번",
-        "img": "dHdpY2Uud2VicA=="
+        "img": "dHdpY2Uud2VicA==",
+        "ex": "I swim twice a week.",
+        "exKo": "나는 일주일에 두 번 수영해."
       },
       {
         "en": "week",
         "ko": "일주일",
-        "img": "d2Vlay53ZWJw"
+        "img": "d2Vlay53ZWJw",
+        "ex": "I read books three times a week.",
+        "exKo": "나는 일주일에 세 번 책을 읽어."
       },
       {
         "en": "month",
         "ko": "달, 월",
-        "img": "bW9udGgud2VicA=="
+        "img": "bW9udGgud2VicA==",
+        "ex": "I visit my grandma once a month.",
+        "exKo": "나는 한 달에 한 번 할머니 댁을 방문해."
       },
       {
         "en": "more",
         "ko": "더",
-        "img": "bW9yZS53ZWJw"
+        "img": "bW9yZS53ZWJw",
+        "ex": "Exercise more.",
+        "exKo": "운동을 더 해."
       }
     ]
   },
@@ -2179,42 +2913,58 @@
       {
         "en": "afternoon",
         "ko": "오후",
-        "img": "YWZ0ZXJub29uLndlYnA="
+        "img": "YWZ0ZXJub29uLndlYnA=",
+        "ex": "Good afternoon.",
+        "exKo": "안녕하세요. (오후 인사)"
       },
       {
         "en": "tomorrow",
         "ko": "내일",
-        "img": "dG9tb3Jyb3cud2VicA=="
+        "img": "dG9tb3Jyb3cud2VicA==",
+        "ex": "See you tomorrow.",
+        "exKo": "내일 봐."
       },
       {
         "en": "weekend",
         "ko": "주말",
-        "img": "d2Vla2VuZC53ZWJw"
+        "img": "d2Vla2VuZC53ZWJw",
+        "ex": "What will you do this weekend?",
+        "exKo": "이번 주말에 뭐 할 거니?"
       },
       {
         "en": "do",
         "ko": "(어떤 동작이나 행위를) 하다",
-        "img": "ZG8ud2VicA=="
+        "img": "ZG8ud2VicA==",
+        "ex": "What will you do?",
+        "exKo": "너는 무엇을 할 거니?"
       },
       {
         "en": "plan",
         "ko": "계획",
-        "img": "cGxhbi53ZWJw"
+        "img": "cGxhbi53ZWJw",
+        "ex": "What's your plan?",
+        "exKo": "네 계획은 뭐니?"
       },
       {
         "en": "stay",
         "ko": "(다른 곳에 가지 않고) 있다, 머무르다",
-        "img": "c3RheS53ZWJw"
+        "img": "c3RheS53ZWJw",
+        "ex": "I'll stay home.",
+        "exKo": "나는 집에 있을 거야."
       },
       {
         "en": "visit",
         "ko": "방문하다",
-        "img": "dmlzaXQud2VicA=="
+        "img": "dmlzaXQud2VicA==",
+        "ex": "I will visit Jeju-do.",
+        "exKo": "나는 제주도를 방문할 거야."
       },
       {
         "en": "watch",
         "ko": "(~을/를) 보다",
-        "img": "d2F0Y2gud2VicA=="
+        "img": "d2F0Y2gud2VicA==",
+        "ex": "It's my watch.",
+        "exKo": "그것은 내 시계야."
       }
     ]
   },
@@ -2227,27 +2977,37 @@
       {
         "en": "angry",
         "ko": "화난",
-        "img": "YW5ncnkud2VicA=="
+        "img": "YW5ncnkud2VicA==",
+        "ex": "Are you angry?",
+        "exKo": "너 화났니?"
       },
       {
         "en": "happy",
         "ko": "행복한",
-        "img": "aGFwcHkud2VicA=="
+        "img": "aGFwcHkud2VicA==",
+        "ex": "I'm happy.",
+        "exKo": "나는 행복해."
       },
       {
         "en": "hungry",
         "ko": "배고픈",
-        "img": "aHVuZ3J5LndlYnA="
+        "img": "aHVuZ3J5LndlYnA=",
+        "ex": "I'm hungry.",
+        "exKo": "나는 배고파."
       },
       {
         "en": "sad",
         "ko": "슬픈",
-        "img": "c2FkLndlYnA="
+        "img": "c2FkLndlYnA=",
+        "ex": "I'm sad.",
+        "exKo": "나는 슬퍼."
       },
       {
         "en": "tired",
         "ko": "피곤한",
-        "img": "dGlyZWQud2VicA=="
+        "img": "dGlyZWQud2VicA==",
+        "ex": "Are you tired?",
+        "exKo": "너 피곤하니?"
       }
     ]
   },
@@ -2260,37 +3020,51 @@
       {
         "en": "crayon",
         "ko": "크레용",
-        "img": "Y3JheW9uLndlYnA="
+        "img": "Y3JheW9uLndlYnA=",
+        "ex": "I have a crayon.",
+        "exKo": "나는 크레용이 있어."
       },
       {
         "en": "eraser",
         "ko": "지우개",
-        "img": "ZXJhc2VyLndlYnA="
+        "img": "ZXJhc2VyLndlYnA=",
+        "ex": "Can I use your eraser?",
+        "exKo": "네 지우개를 써도 되니?"
       },
       {
         "en": "glue stick",
         "ko": "딱풀",
-        "img": "Z2x1ZV9zdGljay53ZWJw"
+        "img": "Z2x1ZV9zdGljay53ZWJw",
+        "ex": "I need a glue stick.",
+        "exKo": "나는 딱풀이 필요해."
       },
       {
         "en": "notebook",
         "ko": "공책",
-        "img": "bm90ZWJvb2sud2VicA=="
+        "img": "bm90ZWJvb2sud2VicA==",
+        "ex": "This is my notebook.",
+        "exKo": "이것은 내 공책이야."
       },
       {
         "en": "pen",
         "ko": "펜",
-        "img": "cGVuLndlYnA="
+        "img": "cGVuLndlYnA=",
+        "ex": "This is a blue pen.",
+        "exKo": "이것은 파란 펜이야."
       },
       {
         "en": "pencil",
         "ko": "연필",
-        "img": "cGVuY2lsLndlYnA="
+        "img": "cGVuY2lsLndlYnA=",
+        "ex": "I have two pencils.",
+        "exKo": "나는 연필이 두 자루 있어."
       },
       {
         "en": "ruler",
         "ko": "자",
-        "img": "cnVsZXIud2VicA=="
+        "img": "cnVsZXIud2VicA==",
+        "ex": "Is this your ruler?",
+        "exKo": "이거 네 자니?"
       }
     ]
   },
@@ -2303,42 +3077,58 @@
       {
         "en": "dance",
         "ko": "춤추다",
-        "img": "ZGFuY2Uud2VicA=="
+        "img": "ZGFuY2Uud2VicA==",
+        "ex": "Let's dance together.",
+        "exKo": "같이 춤추자."
       },
       {
         "en": "eat",
         "ko": "먹다",
-        "img": "ZWF0LndlYnA="
+        "img": "ZWF0LndlYnA=",
+        "ex": "Can I eat this?",
+        "exKo": "이거 먹어도 되니?"
       },
       {
         "en": "jump",
         "ko": "뛰다",
-        "img": "anVtcC53ZWJw"
+        "img": "anVtcC53ZWJw",
+        "ex": "I can jump high.",
+        "exKo": "나는 높이 뛸 수 있어."
       },
       {
         "en": "run",
         "ko": "달리다",
-        "img": "cnVuLndlYnA="
+        "img": "cnVuLndlYnA=",
+        "ex": "Don't run.",
+        "exKo": "뛰지 마."
       },
       {
         "en": "sing",
         "ko": "노래하다",
-        "img": "c2luZy53ZWJw"
+        "img": "c2luZy53ZWJw",
+        "ex": "I can sing.",
+        "exKo": "나는 노래할 수 있어."
       },
       {
         "en": "skate",
         "ko": "스케이트를 타다",
-        "img": "c2thdGUud2VicA=="
+        "img": "c2thdGUud2VicA==",
+        "ex": "Can you skate?",
+        "exKo": "너는 스케이트를 탈 수 있니?"
       },
       {
         "en": "ski",
         "ko": "스키를 타다",
-        "img": "c2tpLndlYnA="
+        "img": "c2tpLndlYnA=",
+        "ex": "Can you ski?",
+        "exKo": "너는 스키를 탈 수 있니?"
       },
       {
         "en": "swim",
         "ko": "수영하다",
-        "img": "c3dpbS53ZWJw"
+        "img": "c3dpbS53ZWJw",
+        "ex": "I can swim.",
+        "exKo": "나는 수영할 수 있어."
       }
     ]
   },
@@ -2351,52 +3141,72 @@
       {
         "en": "one",
         "ko": "일, 하나",
-        "img": "b25lLndlYnA="
+        "img": "b25lLndlYnA=",
+        "ex": "I have one cat.",
+        "exKo": "나는 고양이가 한 마리 있어."
       },
       {
         "en": "two",
         "ko": "이, 둘",
-        "img": "dHdvLndlYnA="
+        "img": "dHdvLndlYnA=",
+        "ex": "I have two dogs.",
+        "exKo": "나는 개가 두 마리 있어."
       },
       {
         "en": "three",
         "ko": "삼, 셋",
-        "img": "dGhyZWUud2VicA=="
+        "img": "dGhyZWUud2VicA==",
+        "ex": "I have three pencils.",
+        "exKo": "나는 연필이 세 자루 있어."
       },
       {
         "en": "four",
         "ko": "사, 넷",
-        "img": "Zm91ci53ZWJw"
+        "img": "Zm91ci53ZWJw",
+        "ex": "I see four birds.",
+        "exKo": "나는 새 네 마리가 보여."
       },
       {
         "en": "five",
         "ko": "오, 다섯",
-        "img": "Zml2ZS53ZWJw"
+        "img": "Zml2ZS53ZWJw",
+        "ex": "I'm five.",
+        "exKo": "나는 다섯 살이야."
       },
       {
         "en": "six",
         "ko": "육, 여섯",
-        "img": "c2l4LndlYnA="
+        "img": "c2l4LndlYnA=",
+        "ex": "How many? Six.",
+        "exKo": "몇 개니? 여섯 개."
       },
       {
         "en": "seven",
         "ko": "칠, 일곱",
-        "img": "c2V2ZW4ud2VicA=="
+        "img": "c2V2ZW4ud2VicA==",
+        "ex": "I'm seven years old.",
+        "exKo": "나는 일곱 살이야."
       },
       {
         "en": "eight",
         "ko": "팔, 여덟",
-        "img": "ZWlnaHQud2VicA=="
+        "img": "ZWlnaHQud2VicA==",
+        "ex": "I'm eight years old.",
+        "exKo": "나는 여덟 살이야."
       },
       {
         "en": "nine",
         "ko": "구, 아홉",
-        "img": "bmluZS53ZWJw"
+        "img": "bmluZS53ZWJw",
+        "ex": "I'm nine years old.",
+        "exKo": "나는 아홉 살이야."
       },
       {
         "en": "ten",
         "ko": "십, 열",
-        "img": "dGVuLndlYnA="
+        "img": "dGVuLndlYnA=",
+        "ex": "I'm ten years old.",
+        "exKo": "나는 열 살이야."
       }
     ]
   },
@@ -2409,57 +3219,79 @@
       {
         "en": "bear",
         "ko": "곰",
-        "img": "YmVhci53ZWJw"
+        "img": "YmVhci53ZWJw",
+        "ex": "The bear is big.",
+        "exKo": "곰은 커."
       },
       {
         "en": "bird",
         "ko": "새",
-        "img": "YmlyZC53ZWJw"
+        "img": "YmlyZC53ZWJw",
+        "ex": "The bird can fly.",
+        "exKo": "새는 날 수 있어."
       },
       {
         "en": "cat",
         "ko": "고양이",
-        "img": "Y2F0LndlYnA="
+        "img": "Y2F0LndlYnA=",
+        "ex": "I have a cat.",
+        "exKo": "나는 고양이가 있어."
       },
       {
         "en": "cow",
         "ko": "암소",
-        "img": "Y293LndlYnA="
+        "img": "Y293LndlYnA=",
+        "ex": "The cow is big.",
+        "exKo": "암소는 커."
       },
       {
         "en": "dog",
         "ko": "개",
-        "img": "ZG9nLndlYnA="
+        "img": "ZG9nLndlYnA=",
+        "ex": "It's a cute dog.",
+        "exKo": "그것은 귀여운 개야."
       },
       {
         "en": "duck",
         "ko": "오리",
-        "img": "ZHVjay53ZWJw"
+        "img": "ZHVjay53ZWJw",
+        "ex": "The duck can swim.",
+        "exKo": "오리는 수영할 수 있어."
       },
       {
         "en": "fox",
         "ko": "여우",
-        "img": "Zm94LndlYnA="
+        "img": "Zm94LndlYnA=",
+        "ex": "The fox is brown.",
+        "exKo": "여우는 갈색이야."
       },
       {
         "en": "lion",
         "ko": "사자",
-        "img": "bGlvbi53ZWJw"
+        "img": "bGlvbi53ZWJw",
+        "ex": "The lion is strong.",
+        "exKo": "사자는 힘이 세."
       },
       {
         "en": "pig",
         "ko": "돼지",
-        "img": "cGlnLndlYnA="
+        "img": "cGlnLndlYnA=",
+        "ex": "The pig is pink.",
+        "exKo": "돼지는 분홍색이야."
       },
       {
         "en": "tiger",
         "ko": "호랑이",
-        "img": "dGlnZXIud2VicA=="
+        "img": "dGlnZXIud2VicA==",
+        "ex": "Is it a tiger?",
+        "exKo": "그것은 호랑이니?"
       },
       {
         "en": "zebra",
         "ko": "얼룩말",
-        "img": "emVicmEud2VicA=="
+        "img": "emVicmEud2VicA==",
+        "ex": "The zebra is black and white.",
+        "exKo": "얼룩말은 검은색과 흰색이야."
       }
     ]
   },
@@ -2472,52 +3304,72 @@
       {
         "en": "color",
         "ko": "색깔",
-        "img": "Y29sb3Iud2VicA=="
+        "img": "Y29sb3Iud2VicA==",
+        "ex": "What color is it?",
+        "exKo": "그것은 무슨 색이니?"
       },
       {
         "en": "black",
         "ko": "검은색, 검은",
-        "img": "YmxhY2sud2VicA=="
+        "img": "YmxhY2sud2VicA==",
+        "ex": "I like black.",
+        "exKo": "나는 검은색이 좋아."
       },
       {
         "en": "blue",
         "ko": "파란색, 파란",
-        "img": "Ymx1ZS53ZWJw"
+        "img": "Ymx1ZS53ZWJw",
+        "ex": "The sky is blue.",
+        "exKo": "하늘은 파란색이야."
       },
       {
         "en": "brown",
         "ko": "갈색, 갈색의",
-        "img": "YnJvd24ud2VicA=="
+        "img": "YnJvd24ud2VicA==",
+        "ex": "The bear is brown.",
+        "exKo": "곰은 갈색이야."
       },
       {
         "en": "green",
         "ko": "초록색, 초록색의",
-        "img": "Z3JlZW4ud2VicA=="
+        "img": "Z3JlZW4ud2VicA==",
+        "ex": "The tree is green.",
+        "exKo": "나무는 초록색이야."
       },
       {
         "en": "orange",
         "ko": "주황색, 주황색의",
-        "img": "b3JhbmdlLndlYnA="
+        "img": "b3JhbmdlLndlYnA=",
+        "ex": "It's an orange hat.",
+        "exKo": "그것은 주황색 모자야."
       },
       {
         "en": "pink",
         "ko": "분홍색, 분홍색의",
-        "img": "cGluay53ZWJw"
+        "img": "cGluay53ZWJw",
+        "ex": "I like pink.",
+        "exKo": "나는 분홍색이 좋아."
       },
       {
         "en": "red",
         "ko": "빨간색, 빨간",
-        "img": "cmVkLndlYnA="
+        "img": "cmVkLndlYnA=",
+        "ex": "The apple is red.",
+        "exKo": "사과는 빨간색이야."
       },
       {
         "en": "white",
         "ko": "흰색, 하얀",
-        "img": "d2hpdGUud2VicA=="
+        "img": "d2hpdGUud2VicA==",
+        "ex": "The snow is white.",
+        "exKo": "눈은 하얀색이야."
       },
       {
         "en": "yellow",
         "ko": "노란색, 노란",
-        "img": "eWVsbG93LndlYnA="
+        "img": "eWVsbG93LndlYnA=",
+        "ex": "The banana is yellow.",
+        "exKo": "바나나는 노란색이야."
       }
     ]
   },
@@ -2530,27 +3382,37 @@
       {
         "en": "apple",
         "ko": "사과",
-        "img": "YXBwbGUud2VicA=="
+        "img": "YXBwbGUud2VicA==",
+        "ex": "I like apples.",
+        "exKo": "나는 사과를 좋아해."
       },
       {
         "en": "banana",
         "ko": "바나나",
-        "img": "YmFuYW5hLndlYnA="
+        "img": "YmFuYW5hLndlYnA=",
+        "ex": "Do you like bananas?",
+        "exKo": "너는 바나나를 좋아하니?"
       },
       {
         "en": "carrot",
         "ko": "당근",
-        "img": "Y2Fycm90LndlYnA="
+        "img": "Y2Fycm90LndlYnA=",
+        "ex": "Rabbits like carrots.",
+        "exKo": "토끼는 당근을 좋아해."
       },
       {
         "en": "potato",
         "ko": "감자",
-        "img": "cG90YXRvLndlYnA="
+        "img": "cG90YXRvLndlYnA=",
+        "ex": "I don't like potatoes.",
+        "exKo": "나는 감자를 좋아하지 않아."
       },
       {
         "en": "tomato",
         "ko": "토마토",
-        "img": "dG9tYXRvLndlYnA="
+        "img": "dG9tYXRvLndlYnA=",
+        "ex": "The tomato is red.",
+        "exKo": "토마토는 빨간색이야."
       }
     ]
   },
@@ -2563,22 +3425,30 @@
       {
         "en": "big",
         "ko": "큰",
-        "img": "YmlnLndlYnA="
+        "img": "YmlnLndlYnA=",
+        "ex": "It's big.",
+        "exKo": "그것은 커."
       },
       {
         "en": "small",
         "ko": "작은",
-        "img": "c21hbGwud2VicA=="
+        "img": "c21hbGwud2VicA==",
+        "ex": "It's small.",
+        "exKo": "그것은 작아."
       },
       {
         "en": "tall",
         "ko": "키가 큰",
-        "img": "dGFsbC53ZWJw"
+        "img": "dGFsbC53ZWJw",
+        "ex": "The tree is tall.",
+        "exKo": "나무가 키가 커."
       },
       {
         "en": "tree",
         "ko": "나무",
-        "img": "dHJlZS53ZWJw"
+        "img": "dHJlZS53ZWJw",
+        "ex": "Look at the tree.",
+        "exKo": "나무를 봐."
       }
     ]
   },
@@ -2591,32 +3461,44 @@
       {
         "en": "brother",
         "ko": "형, 오빠, 남동생",
-        "img": "YnJvdGhlci53ZWJw"
+        "img": "YnJvdGhlci53ZWJw",
+        "ex": "This is my brother.",
+        "exKo": "이 아이는 내 남동생이야."
       },
       {
         "en": "dad",
         "ko": "아빠",
-        "img": "ZGFkLndlYnA="
+        "img": "ZGFkLndlYnA=",
+        "ex": "This is my dad.",
+        "exKo": "이분은 우리 아빠야."
       },
       {
         "en": "grandfather (grandpa)",
         "ko": "할아버지",
-        "img": "Z3JhbmRmYXRoZXJfX2dyYW5kcGFfLndlYnA="
+        "img": "Z3JhbmRmYXRoZXJfX2dyYW5kcGFfLndlYnA=",
+        "ex": "This is my grandfather.",
+        "exKo": "이분은 우리 할아버지야."
       },
       {
         "en": "grandmother (grandma)",
         "ko": "할머니",
-        "img": "Z3JhbmRtb3RoZXJfX2dyYW5kbWFfLndlYnA="
+        "img": "Z3JhbmRtb3RoZXJfX2dyYW5kbWFfLndlYnA=",
+        "ex": "This is my grandmother.",
+        "exKo": "이분은 우리 할머니야."
       },
       {
         "en": "mom",
         "ko": "엄마",
-        "img": "bW9tLndlYnA="
+        "img": "bW9tLndlYnA=",
+        "ex": "This is my mom.",
+        "exKo": "이분은 우리 엄마야."
       },
       {
         "en": "sister",
         "ko": "언니, 누나, 여동생",
-        "img": "c2lzdGVyLndlYnA="
+        "img": "c2lzdGVyLndlYnA=",
+        "ex": "This is my sister.",
+        "exKo": "이 아이는 내 여동생이야."
       }
     ]
   },
@@ -2629,42 +3511,58 @@
       {
         "en": "cloudy",
         "ko": "흐린",
-        "img": "Y2xvdWR5LndlYnA="
+        "img": "Y2xvdWR5LndlYnA=",
+        "ex": "It's cloudy.",
+        "exKo": "날씨가 흐려."
       },
       {
         "en": "cold",
         "ko": "추운",
-        "img": "Y29sZC53ZWJw"
+        "img": "Y29sZC53ZWJw",
+        "ex": "I have a cold.",
+        "exKo": "나는 감기에 걸렸어."
       },
       {
         "en": "hot",
         "ko": "더운",
-        "img": "aG90LndlYnA="
+        "img": "aG90LndlYnA=",
+        "ex": "It's hot today.",
+        "exKo": "오늘은 더워."
       },
       {
         "en": "raining",
         "ko": "비가 내리는",
-        "img": "cmFpbmluZy53ZWJw"
+        "img": "cmFpbmluZy53ZWJw",
+        "ex": "It's raining.",
+        "exKo": "비가 오고 있어."
       },
       {
         "en": "snowing",
         "ko": "눈이 내리는",
-        "img": "c25vd2luZy53ZWJw"
+        "img": "c25vd2luZy53ZWJw",
+        "ex": "It's snowing.",
+        "exKo": "눈이 오고 있어."
       },
       {
         "en": "sunny",
         "ko": "맑은",
-        "img": "c3Vubnkud2VicA=="
+        "img": "c3Vubnkud2VicA==",
+        "ex": "It's sunny.",
+        "exKo": "날씨가 맑아."
       },
       {
         "en": "windy",
         "ko": "바람이 부는",
-        "img": "d2luZHkud2VicA=="
+        "img": "d2luZHkud2VicA==",
+        "ex": "It's windy.",
+        "exKo": "바람이 불어."
       },
       {
         "en": "weather",
         "ko": "날씨",
-        "img": "d2VhdGhlci53ZWJw"
+        "img": "d2VhdGhlci53ZWJw",
+        "ex": "How's the weather?",
+        "exKo": "날씨가 어때?"
       }
     ]
   },
@@ -2677,27 +3575,37 @@
       {
         "en": "badminton",
         "ko": "배드민턴",
-        "img": "YmFkbWludG9uLndlYnA="
+        "img": "YmFkbWludG9uLndlYnA=",
+        "ex": "Let's play badminton.",
+        "exKo": "배드민턴 하자."
       },
       {
         "en": "baseball",
         "ko": "야구",
-        "img": "YmFzZWJhbGwud2VicA=="
+        "img": "YmFzZWJhbGwud2VicA==",
+        "ex": "Let's play baseball.",
+        "exKo": "야구 하자."
       },
       {
         "en": "basketball",
         "ko": "농구",
-        "img": "YmFza2V0YmFsbC53ZWJw"
+        "img": "YmFza2V0YmFsbC53ZWJw",
+        "ex": "Let's play basketball.",
+        "exKo": "농구 하자."
       },
       {
         "en": "soccer",
         "ko": "축구",
-        "img": "c29jY2VyLndlYnA="
+        "img": "c29jY2VyLndlYnA=",
+        "ex": "Let's play soccer.",
+        "exKo": "축구 하자."
       },
       {
         "en": "tennis",
         "ko": "테니스",
-        "img": "dGVubmlzLndlYnA="
+        "img": "dGVubmlzLndlYnA=",
+        "ex": "I play tennis.",
+        "exKo": "나는 테니스를 쳐."
       }
     ]
   },
@@ -2710,57 +3618,79 @@
       {
         "en": "apple pie",
         "ko": "사과파이",
-        "img": "YXBwbGVfcGllLndlYnA="
+        "img": "YXBwbGVfcGllLndlYnA=",
+        "ex": "I'd like apple pie.",
+        "exKo": "사과파이로 할게요."
       },
       {
         "en": "chicken",
         "ko": "치킨",
-        "img": "Y2hpY2tlbi53ZWJw"
+        "img": "Y2hpY2tlbi53ZWJw",
+        "ex": "I like chicken.",
+        "exKo": "나는 닭고기를 좋아해."
       },
       {
         "en": "curry",
         "ko": "카레",
-        "img": "Y3Vycnkud2VicA=="
+        "img": "Y3Vycnkud2VicA==",
+        "ex": "I want curry.",
+        "exKo": "나는 카레를 원해."
       },
       {
         "en": "hamburger",
         "ko": "햄버거",
-        "img": "aGFtYnVyZ2VyLndlYnA="
+        "img": "aGFtYnVyZ2VyLndlYnA=",
+        "ex": "I want a hamburger.",
+        "exKo": "나는 햄버거를 원해."
       },
       {
         "en": "ice cream",
         "ko": "아이스크림",
-        "img": "aWNlX2NyZWFtLndlYnA="
+        "img": "aWNlX2NyZWFtLndlYnA=",
+        "ex": "I want ice cream.",
+        "exKo": "나는 아이스크림을 원해."
       },
       {
         "en": "juice",
         "ko": "주스",
-        "img": "anVpY2Uud2VicA=="
+        "img": "anVpY2Uud2VicA==",
+        "ex": "Do you want some juice?",
+        "exKo": "주스 좀 마실래?"
       },
       {
         "en": "milk",
         "ko": "우유",
-        "img": "bWlsay53ZWJw"
+        "img": "bWlsay53ZWJw",
+        "ex": "I drink milk.",
+        "exKo": "나는 우유를 마셔."
       },
       {
         "en": "pizza",
         "ko": "피자",
-        "img": "cGl6emEud2VicA=="
+        "img": "cGl6emEud2VicA==",
+        "ex": "Pizza, please.",
+        "exKo": "피자 주세요."
       },
       {
         "en": "snack",
         "ko": "간식",
-        "img": "c25hY2sud2VicA=="
+        "img": "c25hY2sud2VicA==",
+        "ex": "Let's have a snack.",
+        "exKo": "간식 먹자."
       },
       {
         "en": "spaghetti",
         "ko": "스파게티",
-        "img": "c3BhZ2hldHRpLndlYnA="
+        "img": "c3BhZ2hldHRpLndlYnA=",
+        "ex": "I'd like spaghetti, please.",
+        "exKo": "스파게티 주세요."
       },
       {
         "en": "water",
         "ko": "물",
-        "img": "d2F0ZXIud2VicA=="
+        "img": "d2F0ZXIud2VicA==",
+        "ex": "Can I have some water?",
+        "exKo": "물 좀 마셔도 될까요?"
       }
     ]
   },
@@ -2773,47 +3703,65 @@
       {
         "en": "box",
         "ko": "상자",
-        "img": "Ym94LndlYnA="
+        "img": "Ym94LndlYnA=",
+        "ex": "It's in the box.",
+        "exKo": "그것은 상자 안에 있어."
       },
       {
         "en": "chair",
         "ko": "의자",
-        "img": "Y2hhaXIud2VicA=="
+        "img": "Y2hhaXIud2VicA==",
+        "ex": "Sit on the chair.",
+        "exKo": "의자에 앉아."
       },
       {
         "en": "desk",
         "ko": "책상",
-        "img": "ZGVzay53ZWJw"
+        "img": "ZGVzay53ZWJw",
+        "ex": "It's on the desk.",
+        "exKo": "그것은 책상 위에 있어."
       },
       {
         "en": "room",
         "ko": "방",
-        "img": "cm9vbS53ZWJw"
+        "img": "cm9vbS53ZWJw",
+        "ex": "Where is the music room?",
+        "exKo": "음악실은 어디에 있니?"
       },
       {
         "en": "sofa",
         "ko": "소파",
-        "img": "c29mYS53ZWJw"
+        "img": "c29mYS53ZWJw",
+        "ex": "The cat is on the sofa.",
+        "exKo": "고양이가 소파 위에 있어."
       },
       {
         "en": "table",
         "ko": "탁자",
-        "img": "dGFibGUud2VicA=="
+        "img": "dGFibGUud2VicA==",
+        "ex": "It's under the table.",
+        "exKo": "그것은 탁자 아래에 있어."
       },
       {
         "en": "in",
         "ko": "~안에",
-        "img": "aW4ud2VicA=="
+        "img": "aW4ud2VicA==",
+        "ex": "The ball is in the box.",
+        "exKo": "공은 상자 안에 있어."
       },
       {
         "en": "on",
         "ko": "~위에",
-        "img": "b24ud2VicA=="
+        "img": "b24ud2VicA==",
+        "ex": "The book is on the desk.",
+        "exKo": "책은 책상 위에 있어."
       },
       {
         "en": "under",
         "ko": "~아래에",
-        "img": "dW5kZXIud2VicA=="
+        "img": "dW5kZXIud2VicA==",
+        "ex": "The cat is under the chair.",
+        "exKo": "고양이는 의자 아래에 있어."
       }
     ]
   },
@@ -2826,72 +3774,100 @@
       {
         "en": "Monday",
         "ko": "월요일",
-        "img": "bW9uZGF5LndlYnA="
+        "img": "bW9uZGF5LndlYnA=",
+        "ex": "What day is it today? It's Monday.",
+        "exKo": "오늘은 무슨 요일이니? 월요일이야."
       },
       {
         "en": "Tuesday",
         "ko": "화요일",
-        "img": "dHVlc2RheS53ZWJw"
+        "img": "dHVlc2RheS53ZWJw",
+        "ex": "I have a piano class on Tuesday.",
+        "exKo": "나는 화요일에 피아노 수업이 있어."
       },
       {
         "en": "Wednesday",
         "ko": "수요일",
-        "img": "d2VkbmVzZGF5LndlYnA="
+        "img": "d2VkbmVzZGF5LndlYnA=",
+        "ex": "It's Wednesday.",
+        "exKo": "수요일이야."
       },
       {
         "en": "Thursday",
         "ko": "목요일",
-        "img": "dGh1cnNkYXkud2VicA=="
+        "img": "dGh1cnNkYXkud2VicA==",
+        "ex": "I have a dance class on Thursday.",
+        "exKo": "나는 목요일에 무용 수업이 있어."
       },
       {
         "en": "Friday",
         "ko": "금요일",
-        "img": "ZnJpZGF5LndlYnA="
+        "img": "ZnJpZGF5LndlYnA=",
+        "ex": "It's Friday.",
+        "exKo": "금요일이야."
       },
       {
         "en": "Saturday",
         "ko": "토요일",
-        "img": "c2F0dXJkYXkud2VicA=="
+        "img": "c2F0dXJkYXkud2VicA==",
+        "ex": "Let's play on Saturday.",
+        "exKo": "토요일에 놀자."
       },
       {
         "en": "Sunday",
         "ko": "일요일",
-        "img": "c3VuZGF5LndlYnA="
+        "img": "c3VuZGF5LndlYnA=",
+        "ex": "I go to church on Sunday.",
+        "exKo": "나는 일요일에 교회에 가."
       },
       {
         "en": "art class",
         "ko": "미술 수업",
-        "img": "YXJ0X2NsYXNzLndlYnA="
+        "img": "YXJ0X2NsYXNzLndlYnA=",
+        "ex": "I have an art class today.",
+        "exKo": "나는 오늘 미술 수업이 있어."
       },
       {
         "en": "computer class",
         "ko": "컴퓨터 수업",
-        "img": "Y29tcHV0ZXJfY2xhc3Mud2VicA=="
+        "img": "Y29tcHV0ZXJfY2xhc3Mud2VicA==",
+        "ex": "I have a computer class on Monday.",
+        "exKo": "나는 월요일에 컴퓨터 수업이 있어."
       },
       {
         "en": "cooking class",
         "ko": "요리 수업",
-        "img": "Y29va2luZ19jbGFzcy53ZWJw"
+        "img": "Y29va2luZ19jbGFzcy53ZWJw",
+        "ex": "I have a cooking class.",
+        "exKo": "나는 요리 수업이 있어."
       },
       {
         "en": "dance class",
         "ko": "무용 수업",
-        "img": "ZGFuY2VfY2xhc3Mud2VicA=="
+        "img": "ZGFuY2VfY2xhc3Mud2VicA==",
+        "ex": "I have a dance class on Friday.",
+        "exKo": "나는 금요일에 무용 수업이 있어."
       },
       {
         "en": "piano class",
         "ko": "피아노 수업",
-        "img": "cGlhbm9fY2xhc3Mud2VicA=="
+        "img": "cGlhbm9fY2xhc3Mud2VicA==",
+        "ex": "I have a piano class today.",
+        "exKo": "나는 오늘 피아노 수업이 있어."
       },
       {
         "en": "swimming class",
         "ko": "수영 수업",
-        "img": "c3dpbW1pbmdfY2xhc3Mud2VicA=="
+        "img": "c3dpbW1pbmdfY2xhc3Mud2VicA==",
+        "ex": "I have a swimming class on Saturday.",
+        "exKo": "나는 토요일에 수영 수업이 있어."
       },
       {
         "en": "violin class",
         "ko": "바이올린 수업",
-        "img": "dmlvbGluX2NsYXNzLndlYnA="
+        "img": "dmlvbGluX2NsYXNzLndlYnA=",
+        "ex": "I have a violin class on Wednesday.",
+        "exKo": "나는 수요일에 바이올린 수업이 있어."
       }
     ]
   },
@@ -2904,77 +3880,107 @@
       {
         "en": "ball",
         "ko": "공",
-        "img": "YmFsbC53ZWJw"
+        "img": "YmFsbC53ZWJw",
+        "ex": "I have a ball.",
+        "exKo": "나는 공이 있어."
       },
       {
         "en": "bat",
         "ko": "야구 방망이",
-        "img": "YmF0LndlYnA="
+        "img": "YmF0LndlYnA=",
+        "ex": "This is my bat.",
+        "exKo": "이것은 내 야구방망이야."
       },
       {
         "en": "coat",
         "ko": "코트",
-        "img": "Y29hdC53ZWJw"
+        "img": "Y29hdC53ZWJw",
+        "ex": "How much is this coat?",
+        "exKo": "이 코트는 얼마예요?"
       },
       {
         "en": "cup",
         "ko": "컵",
-        "img": "Y3VwLndlYnA="
+        "img": "Y3VwLndlYnA=",
+        "ex": "This is my cup.",
+        "exKo": "이것은 내 컵이야."
       },
       {
         "en": "glove",
         "ko": "글러브",
-        "img": "Z2xvdmUud2VicA=="
+        "img": "Z2xvdmUud2VicA==",
+        "ex": "Is this your glove?",
+        "exKo": "이거 네 글러브니?"
       },
       {
         "en": "hairpin",
         "ko": "머리핀",
-        "img": "aGFpcnBpbi53ZWJw"
+        "img": "aGFpcnBpbi53ZWJw",
+        "ex": "How much is the hairpin?",
+        "exKo": "머리핀은 얼마예요?"
       },
       {
         "en": "hat",
         "ko": "모자",
-        "img": "aGF0LndlYnA="
+        "img": "aGF0LndlYnA=",
+        "ex": "Is it your hat?",
+        "exKo": "그거 네 모자니?"
       },
       {
         "en": "jump rope",
         "ko": "줄넘기",
-        "img": "anVtcF9yb3BlLndlYnA="
+        "img": "anVtcF9yb3BlLndlYnA=",
+        "ex": "I want a jump rope.",
+        "exKo": "나는 줄넘기를 원해."
       },
       {
         "en": "pencil case",
         "ko": "필통",
-        "img": "cGVuY2lsX2Nhc2Uud2VicA=="
+        "img": "cGVuY2lsX2Nhc2Uud2VicA==",
+        "ex": "How much is this pencil case?",
+        "exKo": "이 필통은 얼마예요?"
       },
       {
         "en": "ribbon",
         "ko": "리본",
-        "img": "cmliYm9uLndlYnA="
+        "img": "cmliYm9uLndlYnA=",
+        "ex": "I like the pink ribbon.",
+        "exKo": "나는 분홍색 리본이 좋아."
       },
       {
         "en": "scarf",
         "ko": "목도리",
-        "img": "c2NhcmYud2VicA=="
+        "img": "c2NhcmYud2VicA==",
+        "ex": "I want this scarf.",
+        "exKo": "나는 이 목도리를 원해."
       },
       {
         "en": "sweater",
         "ko": "스웨터",
-        "img": "c3dlYXRlci53ZWJw"
+        "img": "c3dlYXRlci53ZWJw",
+        "ex": "It's a nice sweater.",
+        "exKo": "멋진 스웨터네."
       },
       {
         "en": "toy car",
         "ko": "장난감 자동차",
-        "img": "dG95X2Nhci53ZWJw"
+        "img": "dG95X2Nhci53ZWJw",
+        "ex": "How much is the toy car?",
+        "exKo": "장난감 자동차는 얼마예요?"
       },
       {
         "en": "hundred",
         "ko": "100, 백",
-        "img": "aHVuZHJlZC53ZWJw"
+        "img": "aHVuZHJlZC53ZWJw",
+        "ex": "It's five hundred won.",
+        "exKo": "500원이에요."
       },
       {
         "en": "thousand",
         "ko": "1000, 천",
-        "img": "dGhvdXNhbmQud2VicA=="
+        "img": "dGhvdXNhbmQud2VicA==",
+        "ex": "It's three thousand won.",
+        "exKo": "3,000원이에요."
       }
     ]
   },
@@ -2987,67 +3993,93 @@
       {
         "en": "my",
         "ko": "나의",
-        "img": "bXkud2VicA=="
+        "img": "bXkud2VicA==",
+        "ex": "My name is Jiho.",
+        "exKo": "내 이름은 지호야."
       },
       {
         "en": "your",
         "ko": "너의",
-        "img": "eW91ci53ZWJw"
+        "img": "eW91ci53ZWJw",
+        "ex": "Is this your book?",
+        "exKo": "이거 네 책이니?"
       },
       {
         "en": "bag",
         "ko": "가방",
-        "img": "YmFnLndlYnA="
+        "img": "YmFnLndlYnA=",
+        "ex": "This is my bag.",
+        "exKo": "이것은 내 가방이야."
       },
       {
         "en": "brush",
         "ko": "붓",
-        "img": "YnJ1c2gud2VicA=="
+        "img": "YnJ1c2gud2VicA==",
+        "ex": "I have a brush.",
+        "exKo": "나는 붓이 있어."
       },
       {
         "en": "cap",
         "ko": "모자",
-        "img": "Y2FwLndlYnA="
+        "img": "Y2FwLndlYnA=",
+        "ex": "Is this your cap?",
+        "exKo": "이거 네 모자니?"
       },
       {
         "en": "doll",
         "ko": "인형",
-        "img": "ZG9sbC53ZWJw"
+        "img": "ZG9sbC53ZWJw",
+        "ex": "I like this doll.",
+        "exKo": "나는 이 인형이 좋아."
       },
       {
         "en": "dress",
         "ko": "원피스",
-        "img": "ZHJlc3Mud2VicA=="
+        "img": "ZHJlc3Mud2VicA==",
+        "ex": "She is wearing a white dress.",
+        "exKo": "그녀는 흰 원피스를 입고 있어."
       },
       {
         "en": "jacket",
         "ko": "재킷",
-        "img": "amFja2V0LndlYnA="
+        "img": "amFja2V0LndlYnA=",
+        "ex": "Is this your jacket?",
+        "exKo": "이거 네 재킷이니?"
       },
       {
         "en": "robot",
         "ko": "로봇",
-        "img": "cm9ib3Qud2VicA=="
+        "img": "cm9ib3Qud2VicA==",
+        "ex": "Look! It's a robot.",
+        "exKo": "봐! 로봇이야."
       },
       {
         "en": "skirt",
         "ko": "치마",
-        "img": "c2tpcnQud2VicA=="
+        "img": "c2tpcnQud2VicA==",
+        "ex": "She is wearing a red skirt.",
+        "exKo": "그녀는 빨간 치마를 입고 있어."
       },
       {
         "en": "T-shirt",
         "ko": "티셔츠",
-        "img": "dC1zaGlydC53ZWJw"
+        "img": "dC1zaGlydC53ZWJw",
+        "ex": "Is this your T-shirt?",
+        "exKo": "이거 네 티셔츠니?"
       },
       {
         "en": "umbrella",
         "ko": "우산",
-        "img": "dW1icmVsbGEud2VicA=="
+        "img": "dW1icmVsbGEud2VicA==",
+        "ex": "Is this your umbrella?",
+        "exKo": "이거 네 우산이니?"
       },
       {
         "en": "watch",
         "ko": "시계",
-        "img": "d2F0Y2gud2VicA=="
+        "img": "d2F0Y2gud2VicA==",
+        "ex": "It's my watch.",
+        "exKo": "그것은 내 시계야."
       }
     ]
   },
@@ -3060,57 +4092,79 @@
       {
         "en": "time",
         "ko": "시각, 시간",
-        "img": "dGltZS53ZWJw"
+        "img": "dGltZS53ZWJw",
+        "ex": "What time is it?",
+        "exKo": "몇 시니?"
       },
       {
         "en": "twenty",
         "ko": "20, 이십",
-        "img": "dHdlbnR5LndlYnA="
+        "img": "dHdlbnR5LndlYnA=",
+        "ex": "It's eight twenty.",
+        "exKo": "8시 20분이야."
       },
       {
         "en": "thirty",
         "ko": "30, 삼십",
-        "img": "dGhpcnR5LndlYnA="
+        "img": "dGhpcnR5LndlYnA=",
+        "ex": "It's nine thirty.",
+        "exKo": "9시 30분이야."
       },
       {
         "en": "forty",
         "ko": "40, 사십",
-        "img": "Zm9ydHkud2VicA=="
+        "img": "Zm9ydHkud2VicA==",
+        "ex": "It's two forty.",
+        "exKo": "2시 40분이야."
       },
       {
         "en": "fifty",
         "ko": "50, 오십",
-        "img": "ZmlmdHkud2VicA=="
+        "img": "ZmlmdHkud2VicA==",
+        "ex": "It's ten fifty.",
+        "exKo": "10시 50분이야."
       },
       {
         "en": "breakfast",
         "ko": "아침 식사",
-        "img": "YnJlYWtmYXN0LndlYnA="
+        "img": "YnJlYWtmYXN0LndlYnA=",
+        "ex": "It's time for breakfast.",
+        "exKo": "아침 먹을 시간이야."
       },
       {
         "en": "lunch",
         "ko": "점심 식사",
-        "img": "bHVuY2gud2VicA=="
+        "img": "bHVuY2gud2VicA==",
+        "ex": "It's time for lunch.",
+        "exKo": "점심 먹을 시간이야."
       },
       {
         "en": "dinner",
         "ko": "저녁 식사",
-        "img": "ZGlubmVyLndlYnA="
+        "img": "ZGlubmVyLndlYnA=",
+        "ex": "It's time for dinner.",
+        "exKo": "저녁 먹을 시간이야."
       },
       {
         "en": "bed",
         "ko": "침대",
-        "img": "YmVkLndlYnA="
+        "img": "YmVkLndlYnA=",
+        "ex": "The cat is on the bed.",
+        "exKo": "고양이가 침대 위에 있어."
       },
       {
         "en": "school",
         "ko": "학교",
-        "img": "c2Nob29sLndlYnA="
+        "img": "c2Nob29sLndlYnA=",
+        "ex": "It's time for school.",
+        "exKo": "학교 갈 시간이야."
       },
       {
         "en": "late",
         "ko": "늦은",
-        "img": "bGF0ZS53ZWJw"
+        "img": "bGF0ZS53ZWJw",
+        "ex": "I'm late.",
+        "exKo": "나 늦었어."
       }
     ]
   },
@@ -3123,67 +4177,93 @@
       {
         "en": "clean",
         "ko": "청소하다",
-        "img": "Y2xlYW4ud2VicA=="
+        "img": "Y2xlYW4ud2VicA==",
+        "ex": "I'm cleaning my room.",
+        "exKo": "나는 내 방을 청소하고 있어."
       },
       {
         "en": "cook",
         "ko": "요리하다",
-        "img": "Y29vay53ZWJw"
+        "img": "Y29vay53ZWJw",
+        "ex": "My dad is cooking.",
+        "exKo": "우리 아빠는 요리하고 계셔."
       },
       {
         "en": "draw",
         "ko": "그리다",
-        "img": "ZHJhdy53ZWJw"
+        "img": "ZHJhdy53ZWJw",
+        "ex": "I'm drawing a cat.",
+        "exKo": "나는 고양이를 그리고 있어."
       },
       {
         "en": "fly",
         "ko": "날리다",
-        "img": "Zmx5LndlYnA="
+        "img": "Zmx5LndlYnA=",
+        "ex": "I'm flying a kite.",
+        "exKo": "나는 연을 날리고 있어."
       },
       {
         "en": "homework",
         "ko": "숙제",
-        "img": "aG9tZXdvcmsud2VicA=="
+        "img": "aG9tZXdvcmsud2VicA==",
+        "ex": "I'm doing my homework.",
+        "exKo": "나는 숙제를 하고 있어."
       },
       {
         "en": "listen",
         "ko": "듣다",
-        "img": "bGlzdGVuLndlYnA="
+        "img": "bGlzdGVuLndlYnA=",
+        "ex": "Listen carefully.",
+        "exKo": "잘 들어 봐."
       },
       {
         "en": "make",
         "ko": "만들다",
-        "img": "bWFrZS53ZWJw"
+        "img": "bWFrZS53ZWJw",
+        "ex": "I'm making a cake.",
+        "exKo": "나는 케이크를 만들고 있어."
       },
       {
         "en": "music",
         "ko": "음악",
-        "img": "bXVzaWMud2VicA=="
+        "img": "bXVzaWMud2VicA==",
+        "ex": "I like music.",
+        "exKo": "나는 음악을 좋아해."
       },
       {
         "en": "picture",
         "ko": "그림",
-        "img": "cGljdHVyZS53ZWJw"
+        "img": "cGljdHVyZS53ZWJw",
+        "ex": "This is a picture of my family.",
+        "exKo": "이것은 우리 가족 사진이야."
       },
       {
         "en": "play (the piano)",
         "ko": "(피아노를) 연주하다",
-        "img": "cGxheV9fdGhlX3BpYW5vXy53ZWJw"
+        "img": "cGxheV9fdGhlX3BpYW5vXy53ZWJw",
+        "ex": "I'm playing the piano.",
+        "exKo": "나는 피아노를 연주하고 있어."
       },
       {
         "en": "play (soccer)",
         "ko": "(축구를) 하다",
-        "img": "cGxheV9fc29jY2VyXy53ZWJw"
+        "img": "cGxheV9fc29jY2VyXy53ZWJw",
+        "ex": "I'm playing soccer.",
+        "exKo": "나는 축구를 하고 있어."
       },
       {
         "en": "read",
         "ko": "읽다",
-        "img": "cmVhZC53ZWJw"
+        "img": "cmVhZC53ZWJw",
+        "ex": "I'm reading a book.",
+        "exKo": "나는 책을 읽고 있어."
       },
       {
         "en": "sleep",
         "ko": "자다",
-        "img": "c2xlZXAud2VicA=="
+        "img": "c2xlZXAud2VicA==",
+        "ex": "The baby is sleeping.",
+        "exKo": "아기가 자고 있어."
       }
     ]
   },
@@ -3196,47 +4276,65 @@
       {
         "en": "cook",
         "ko": "요리사",
-        "img": "Y29vay53ZWJw"
+        "img": "Y29vay53ZWJw",
+        "ex": "My dad is cooking.",
+        "exKo": "우리 아빠는 요리하고 계셔."
       },
       {
         "en": "doctor",
         "ko": "의사",
-        "img": "ZG9jdG9yLndlYnA="
+        "img": "ZG9jdG9yLndlYnA=",
+        "ex": "She is a doctor.",
+        "exKo": "그녀는 의사야."
       },
       {
         "en": "farmer",
         "ko": "농부",
-        "img": "ZmFybWVyLndlYnA="
+        "img": "ZmFybWVyLndlYnA=",
+        "ex": "He is a farmer.",
+        "exKo": "그는 농부야."
       },
       {
         "en": "firefighter",
         "ko": "소방관",
-        "img": "ZmlyZWZpZ2h0ZXIud2VicA=="
+        "img": "ZmlyZWZpZ2h0ZXIud2VicA==",
+        "ex": "I want to be a firefighter.",
+        "exKo": "나는 소방관이 되고 싶어."
       },
       {
         "en": "nurse",
         "ko": "간호사",
-        "img": "bnVyc2Uud2VicA=="
+        "img": "bnVyc2Uud2VicA==",
+        "ex": "My aunt is a nurse.",
+        "exKo": "우리 이모는 간호사야."
       },
       {
         "en": "painter",
         "ko": "화가",
-        "img": "cGFpbnRlci53ZWJw"
+        "img": "cGFpbnRlci53ZWJw",
+        "ex": "He is a painter.",
+        "exKo": "그는 화가야."
       },
       {
         "en": "pilot",
         "ko": "조종사",
-        "img": "cGlsb3Qud2VicA=="
+        "img": "cGlsb3Qud2VicA==",
+        "ex": "I want to be a pilot.",
+        "exKo": "나는 조종사가 되고 싶어."
       },
       {
         "en": "scientist",
         "ko": "과학자",
-        "img": "c2NpZW50aXN0LndlYnA="
+        "img": "c2NpZW50aXN0LndlYnA=",
+        "ex": "I want to be a scientist.",
+        "exKo": "나는 과학자가 되고 싶어."
       },
       {
         "en": "teacher",
         "ko": "선생님",
-        "img": "dGVhY2hlci53ZWJw"
+        "img": "dGVhY2hlci53ZWJw",
+        "ex": "She is my teacher.",
+        "exKo": "그녀는 우리 선생님이야."
       }
     ]
   },
@@ -3249,57 +4347,79 @@
       {
         "en": "did",
         "ko": "했다",
-        "img": "ZGlkLndlYnA="
+        "img": "ZGlkLndlYnA=",
+        "ex": "What did you do yesterday?",
+        "exKo": "너는 어제 무엇을 했니?"
       },
       {
         "en": "was",
         "ko": "~이었다",
-        "img": "d2FzLndlYnA="
+        "img": "d2FzLndlYnA=",
+        "ex": "It was fun.",
+        "exKo": "그것은 재미있었어."
       },
       {
         "en": "ate",
         "ko": "먹었다",
-        "img": "YXRlLndlYnA="
+        "img": "YXRlLndlYnA=",
+        "ex": "I ate pizza.",
+        "exKo": "나는 피자를 먹었어."
       },
       {
         "en": "made",
         "ko": "만들었다",
-        "img": "bWFkZS53ZWJw"
+        "img": "bWFkZS53ZWJw",
+        "ex": "I made a cake.",
+        "exKo": "나는 케이크를 만들었어."
       },
       {
         "en": "saw",
         "ko": "보았다",
-        "img": "c2F3LndlYnA="
+        "img": "c2F3LndlYnA=",
+        "ex": "I saw a movie.",
+        "exKo": "나는 영화를 봤어."
       },
       {
         "en": "swam",
         "ko": "수영했다",
-        "img": "c3dhbS53ZWJw"
+        "img": "c3dhbS53ZWJw",
+        "ex": "I swam in the sea.",
+        "exKo": "나는 바다에서 수영했어."
       },
       {
         "en": "took",
         "ko": "(사진을) 찍었다, (수업을) 들었다",
-        "img": "dG9vay53ZWJw"
+        "img": "dG9vay53ZWJw",
+        "ex": "I took pictures.",
+        "exKo": "나는 사진을 찍었어."
       },
       {
         "en": "went",
         "ko": "갔다",
-        "img": "d2VudC53ZWJw"
+        "img": "d2VudC53ZWJw",
+        "ex": "I went to the park.",
+        "exKo": "나는 공원에 갔어."
       },
       {
         "en": "played",
         "ko": "(운동 경기를) 했다",
-        "img": "cGxheWVkLndlYnA="
+        "img": "cGxheWVkLndlYnA=",
+        "ex": "I played soccer.",
+        "exKo": "나는 축구를 했어."
       },
       {
         "en": "visited",
         "ko": "방문했다",
-        "img": "dmlzaXRlZC53ZWJw"
+        "img": "dmlzaXRlZC53ZWJw",
+        "ex": "I visited my grandma.",
+        "exKo": "나는 할머니 댁을 방문했어."
       },
       {
         "en": "watched",
         "ko": "보았다",
-        "img": "d2F0Y2hlZC53ZWJw"
+        "img": "d2F0Y2hlZC53ZWJw",
+        "ex": "I watched TV.",
+        "exKo": "나는 텔레비전을 봤어."
       }
     ]
   },
@@ -3312,57 +4432,79 @@
       {
         "en": "go straight",
         "ko": "직진하다",
-        "img": "Z29fc3RyYWlnaHQud2VicA=="
+        "img": "Z29fc3RyYWlnaHQud2VicA==",
+        "ex": "Go straight and turn left.",
+        "exKo": "쭉 가서 왼쪽으로 도세요."
       },
       {
         "en": "left",
         "ko": "왼쪽의",
-        "img": "bGVmdC53ZWJw"
+        "img": "bGVmdC53ZWJw",
+        "ex": "Turn left.",
+        "exKo": "왼쪽으로 도세요."
       },
       {
         "en": "right",
         "ko": "오른쪽의",
-        "img": "cmlnaHQud2VicA=="
+        "img": "cmlnaHQud2VicA==",
+        "ex": "Turn right.",
+        "exKo": "오른쪽으로 도세요."
       },
       {
         "en": "in front of",
         "ko": "~의 앞에",
-        "img": "aW5fZnJvbnRfb2Yud2VicA=="
+        "img": "aW5fZnJvbnRfb2Yud2VicA==",
+        "ex": "It's in front of the bank.",
+        "exKo": "그것은 은행 앞에 있어요."
       },
       {
         "en": "next to",
         "ko": "(위치상으로) ~바로 옆에",
-        "img": "bmV4dF90by53ZWJw"
+        "img": "bmV4dF90by53ZWJw",
+        "ex": "It's next to the park.",
+        "exKo": "그것은 공원 바로 옆에 있어요."
       },
       {
         "en": "bank",
         "ko": "은행",
-        "img": "YmFuay53ZWJw"
+        "img": "YmFuay53ZWJw",
+        "ex": "Where is the bank?",
+        "exKo": "은행은 어디에 있나요?"
       },
       {
         "en": "hospital",
         "ko": "병원",
-        "img": "aG9zcGl0YWwud2VicA=="
+        "img": "aG9zcGl0YWwud2VicA==",
+        "ex": "Where is the hospital?",
+        "exKo": "병원은 어디에 있나요?"
       },
       {
         "en": "library",
         "ko": "도서관",
-        "img": "bGlicmFyeS53ZWJw"
+        "img": "bGlicmFyeS53ZWJw",
+        "ex": "The library is next to the school.",
+        "exKo": "도서관은 학교 옆에 있어요."
       },
       {
         "en": "museum",
         "ko": "박물관",
-        "img": "bXVzZXVtLndlYnA="
+        "img": "bXVzZXVtLndlYnA=",
+        "ex": "Let's go to the museum.",
+        "exKo": "박물관에 가자."
       },
       {
         "en": "park",
         "ko": "공원",
-        "img": "cGFyay53ZWJw"
+        "img": "cGFyay53ZWJw",
+        "ex": "Let's play in the park.",
+        "exKo": "공원에서 놀자."
       },
       {
         "en": "restaurant",
         "ko": "식당, 레스토랑",
-        "img": "cmVzdGF1cmFudC53ZWJw"
+        "img": "cmVzdGF1cmFudC53ZWJw",
+        "ex": "The restaurant is on the left.",
+        "exKo": "식당은 왼쪽에 있어요."
       }
     ]
   },
@@ -3375,57 +4517,79 @@
       {
         "en": "how much",
         "ko": "(양, 값이) 얼마, 어느 정도",
-        "img": "aG93X211Y2gud2VicA=="
+        "img": "aG93X211Y2gud2VicA==",
+        "ex": "How much is it?",
+        "exKo": "그거 얼마예요?"
       },
       {
         "en": "size",
         "ko": "크기, 사이즈",
-        "img": "c2l6ZS53ZWJw"
+        "img": "c2l6ZS53ZWJw",
+        "ex": "What size do you wear?",
+        "exKo": "어떤 사이즈를 입으세요?"
       },
       {
         "en": "thousand",
         "ko": "1000, 천",
-        "img": "dGhvdXNhbmQud2VicA=="
+        "img": "dGhvdXNhbmQud2VicA==",
+        "ex": "It's three thousand won.",
+        "exKo": "3,000원이에요."
       },
       {
         "en": "expensive",
         "ko": "비싼",
-        "img": "ZXhwZW5zaXZlLndlYnA="
+        "img": "ZXhwZW5zaXZlLndlYnA=",
+        "ex": "It's too expensive.",
+        "exKo": "그건 너무 비싸요."
       },
       {
         "en": "gloves",
         "ko": "장갑, 글러브",
-        "img": "Z2xvdmVzLndlYnA="
+        "img": "Z2xvdmVzLndlYnA=",
+        "ex": "I want these gloves.",
+        "exKo": "이 장갑을 원해요."
       },
       {
         "en": "pants",
         "ko": "바지",
-        "img": "cGFudHMud2VicA=="
+        "img": "cGFudHMud2VicA==",
+        "ex": "He is wearing black pants.",
+        "exKo": "그는 검은 바지를 입고 있어."
       },
       {
         "en": "shoes",
         "ko": "신발",
-        "img": "c2hvZXMud2VicA=="
+        "img": "c2hvZXMud2VicA==",
+        "ex": "Whose shoes are these?",
+        "exKo": "이것은 누구의 신발이니?"
       },
       {
         "en": "shorts",
         "ko": "반바지",
-        "img": "c2hvcnRzLndlYnA="
+        "img": "c2hvcnRzLndlYnA=",
+        "ex": "How much are these shorts?",
+        "exKo": "이 반바지는 얼마예요?"
       },
       {
         "en": "socks",
         "ko": "양말",
-        "img": "c29ja3Mud2VicA=="
+        "img": "c29ja3Mud2VicA==",
+        "ex": "How much are these socks?",
+        "exKo": "이 양말은 얼마예요?"
       },
       {
         "en": "sunglasses",
         "ko": "선글라스",
-        "img": "c3VuZ2xhc3Nlcy53ZWJw"
+        "img": "c3VuZ2xhc3Nlcy53ZWJw",
+        "ex": "I want these sunglasses.",
+        "exKo": "이 선글라스를 원해요."
       },
       {
         "en": "medium",
         "ko": "중간의",
-        "img": "bWVkaXVtLndlYnA="
+        "img": "bWVkaXVtLndlYnA=",
+        "ex": "Medium, please.",
+        "exKo": "중간 사이즈로 주세요."
       }
     ]
   },
@@ -3438,47 +4602,65 @@
       {
         "en": "look like",
         "ko": "(모양, 생김새 등이) ~처럼 보이다",
-        "img": "bG9va19saWtlLndlYnA="
+        "img": "bG9va19saWtlLndlYnA=",
+        "ex": "What does he look like?",
+        "exKo": "그는 어떻게 생겼니?"
       },
       {
         "en": "hair",
         "ko": "머리카락",
-        "img": "aGFpci53ZWJw"
+        "img": "aGFpci53ZWJw",
+        "ex": "She has long hair.",
+        "exKo": "그녀는 머리가 길어."
       },
       {
         "en": "long",
         "ko": "긴",
-        "img": "bG9uZy53ZWJw"
+        "img": "bG9uZy53ZWJw",
+        "ex": "It's long.",
+        "exKo": "그것은 길어."
       },
       {
         "en": "short",
         "ko": "짧은",
-        "img": "c2hvcnQud2VicA=="
+        "img": "c2hvcnQud2VicA==",
+        "ex": "He has short hair.",
+        "exKo": "그는 머리가 짧아."
       },
       {
         "en": "curly",
         "ko": "곱슬곱슬한",
-        "img": "Y3VybHkud2VicA=="
+        "img": "Y3VybHkud2VicA==",
+        "ex": "He has curly hair.",
+        "exKo": "그는 곱슬머리야."
       },
       {
         "en": "straight",
         "ko": "곧은, 똑바른",
-        "img": "c3RyYWlnaHQud2VicA=="
+        "img": "c3RyYWlnaHQud2VicA==",
+        "ex": "She has straight hair.",
+        "exKo": "그녀는 생머리야."
       },
       {
         "en": "eyes",
         "ko": "눈",
-        "img": "ZXllcy53ZWJw"
+        "img": "ZXllcy53ZWJw",
+        "ex": "He has big eyes.",
+        "exKo": "그는 눈이 커."
       },
       {
         "en": "glasses",
         "ko": "안경",
-        "img": "Z2xhc3Nlcy53ZWJw"
+        "img": "Z2xhc3Nlcy53ZWJw",
+        "ex": "These are my glasses.",
+        "exKo": "이것은 내 안경이야."
       },
       {
         "en": "wear",
         "ko": "입고[쓰고/끼고/신고/착용하고] 있다",
-        "img": "d2Vhci53ZWJw"
+        "img": "d2Vhci53ZWJw",
+        "ex": "She wears glasses.",
+        "exKo": "그녀는 안경을 써."
       }
     ]
   },
@@ -3491,47 +4673,65 @@
       {
         "en": "there is / there are",
         "ko": "~이 있다 / ~들이 있다",
-        "img": "dGhlcmVfaXNfX190aGVyZV9hcmUud2VicA=="
+        "img": "dGhlcmVfaXNfX190aGVyZV9hcmUud2VicA==",
+        "ex": "There is a bed in my room.",
+        "exKo": "내 방에는 침대가 있어."
       },
       {
         "en": "bedroom",
         "ko": "침실",
-        "img": "YmVkcm9vbS53ZWJw"
+        "img": "YmVkcm9vbS53ZWJw",
+        "ex": "This is my bedroom.",
+        "exKo": "이것은 내 침실이야."
       },
       {
         "en": "bathroom",
         "ko": "욕실, 화장실",
-        "img": "YmF0aHJvb20ud2VicA=="
+        "img": "YmF0aHJvb20ud2VicA==",
+        "ex": "He is in the bathroom.",
+        "exKo": "그는 욕실에 있어."
       },
       {
         "en": "kitchen",
         "ko": "부엌, 주방",
-        "img": "a2l0Y2hlbi53ZWJw"
+        "img": "a2l0Y2hlbi53ZWJw",
+        "ex": "Dad is in the kitchen.",
+        "exKo": "아빠는 부엌에 계셔."
       },
       {
         "en": "living room",
         "ko": "거실",
-        "img": "bGl2aW5nX3Jvb20ud2VicA=="
+        "img": "bGl2aW5nX3Jvb20ud2VicA==",
+        "ex": "We are in the living room.",
+        "exKo": "우리는 거실에 있어."
       },
       {
         "en": "garden",
         "ko": "정원",
-        "img": "Z2FyZGVuLndlYnA="
+        "img": "Z2FyZGVuLndlYnA=",
+        "ex": "Mom is in the garden.",
+        "exKo": "엄마는 정원에 계셔."
       },
       {
         "en": "bath",
         "ko": "욕조",
-        "img": "YmF0aC53ZWJw"
+        "img": "YmF0aC53ZWJw",
+        "ex": "There is a bath in the bathroom.",
+        "exKo": "욕실에 욕조가 있어."
       },
       {
         "en": "table",
         "ko": "식탁, 탁자",
-        "img": "dGFibGUud2VicA=="
+        "img": "dGFibGUud2VicA==",
+        "ex": "It's under the table.",
+        "exKo": "그것은 탁자 아래에 있어."
       },
       {
         "en": "chair",
         "ko": "의자",
-        "img": "Y2hhaXIud2VicA=="
+        "img": "Y2hhaXIud2VicA==",
+        "ex": "Sit on the chair.",
+        "exKo": "의자에 앉아."
       }
     ]
   },
@@ -3544,47 +4744,65 @@
       {
         "en": "favorite",
         "ko": "가장 좋아하는",
-        "img": "ZmF2b3JpdGUud2VicA=="
+        "img": "ZmF2b3JpdGUud2VicA==",
+        "ex": "What's your favorite subject?",
+        "exKo": "네가 가장 좋아하는 과목은 뭐니?"
       },
       {
         "en": "subject",
         "ko": "과목",
-        "img": "c3ViamVjdC53ZWJw"
+        "img": "c3ViamVjdC53ZWJw",
+        "ex": "My favorite subject is math.",
+        "exKo": "내가 가장 좋아하는 과목은 수학이야."
       },
       {
         "en": "Korean",
         "ko": "국어, 한국어의",
-        "img": "a29yZWFuLndlYnA="
+        "img": "a29yZWFuLndlYnA=",
+        "ex": "I like Korean.",
+        "exKo": "나는 국어를 좋아해."
       },
       {
         "en": "English",
         "ko": "영어",
-        "img": "ZW5nbGlzaC53ZWJw"
+        "img": "ZW5nbGlzaC53ZWJw",
+        "ex": "I like English.",
+        "exKo": "나는 영어를 좋아해."
       },
       {
         "en": "art",
         "ko": "미술",
-        "img": "YXJ0LndlYnA="
+        "img": "YXJ0LndlYnA=",
+        "ex": "My favorite subject is art.",
+        "exKo": "내가 가장 좋아하는 과목은 미술이야."
       },
       {
         "en": "math",
         "ko": "수학",
-        "img": "bWF0aC53ZWJw"
+        "img": "bWF0aC53ZWJw",
+        "ex": "I like math.",
+        "exKo": "나는 수학을 좋아해."
       },
       {
         "en": "music",
         "ko": "음악",
-        "img": "bXVzaWMud2VicA=="
+        "img": "bXVzaWMud2VicA==",
+        "ex": "I like music.",
+        "exKo": "나는 음악을 좋아해."
       },
       {
         "en": "P.E. (Physical Education)",
         "ko": "체육",
-        "img": "cF9lX19fcGh5c2ljYWxfZWR1Y2F0aW9uXy53ZWJw"
+        "img": "cF9lX19fcGh5c2ljYWxfZWR1Y2F0aW9uXy53ZWJw",
+        "ex": "I like P.E. class.",
+        "exKo": "나는 체육 수업을 좋아해."
       },
       {
         "en": "science",
         "ko": "과학",
-        "img": "c2NpZW5jZS53ZWJw"
+        "img": "c2NpZW5jZS53ZWJw",
+        "ex": "Science is fun.",
+        "exKo": "과학은 재미있어."
       }
     ]
   },
@@ -3597,42 +4815,58 @@
       {
         "en": "want",
         "ko": "원하다",
-        "img": "d2FudC53ZWJw"
+        "img": "d2FudC53ZWJw",
+        "ex": "Do you want some milk?",
+        "exKo": "우유 좀 줄까?"
       },
       {
         "en": "animal doctor",
         "ko": "수의사",
-        "img": "YW5pbWFsX2RvY3Rvci53ZWJw"
+        "img": "YW5pbWFsX2RvY3Rvci53ZWJw",
+        "ex": "I want to be an animal doctor.",
+        "exKo": "나는 수의사가 되고 싶어."
       },
       {
         "en": "designer",
         "ko": "디자이너",
-        "img": "ZGVzaWduZXIud2VicA=="
+        "img": "ZGVzaWduZXIud2VicA==",
+        "ex": "She wants to be a designer.",
+        "exKo": "그녀는 디자이너가 되고 싶어 해."
       },
       {
         "en": "engineer",
         "ko": "기술자",
-        "img": "ZW5naW5lZXIud2VicA=="
+        "img": "ZW5naW5lZXIud2VicA==",
+        "ex": "She wants to be an engineer.",
+        "exKo": "그녀는 기술자가 되고 싶어 해."
       },
       {
         "en": "pilot",
         "ko": "조종사",
-        "img": "cGlsb3Qud2VicA=="
+        "img": "cGlsb3Qud2VicA==",
+        "ex": "I want to be a pilot.",
+        "exKo": "나는 조종사가 되고 싶어."
       },
       {
         "en": "scientist",
         "ko": "과학자",
-        "img": "c2NpZW50aXN0LndlYnA="
+        "img": "c2NpZW50aXN0LndlYnA=",
+        "ex": "I want to be a scientist.",
+        "exKo": "나는 과학자가 되고 싶어."
       },
       {
         "en": "soccer player",
         "ko": "축구 선수",
-        "img": "c29jY2VyX3BsYXllci53ZWJw"
+        "img": "c29jY2VyX3BsYXllci53ZWJw",
+        "ex": "He is a soccer player.",
+        "exKo": "그는 축구 선수야."
       },
       {
         "en": "writer",
         "ko": "작가",
-        "img": "d3JpdGVyLndlYnA="
+        "img": "d3JpdGVyLndlYnA=",
+        "ex": "I want to be a writer.",
+        "exKo": "나는 작가가 되고 싶어."
       }
     ]
   },
@@ -3645,37 +4879,51 @@
       {
         "en": "go",
         "ko": "하러 가다",
-        "img": "Z28ud2VicA=="
+        "img": "Z28ud2VicA==",
+        "ex": "Let's go to school.",
+        "exKo": "학교에 가자."
       },
       {
         "en": "join",
         "ko": "가입하다",
-        "img": "am9pbi53ZWJw"
+        "img": "am9pbi53ZWJw",
+        "ex": "I will join the art club.",
+        "exKo": "나는 미술 동아리에 가입할 거야."
       },
       {
         "en": "stay",
         "ko": "머무르다",
-        "img": "c3RheS53ZWJw"
+        "img": "c3RheS53ZWJw",
+        "ex": "I'll stay home.",
+        "exKo": "나는 집에 있을 거야."
       },
       {
         "en": "study",
         "ko": "공부하다",
-        "img": "c3R1ZHkud2VicA=="
+        "img": "c3R1ZHkud2VicA==",
+        "ex": "I will study hard.",
+        "exKo": "나는 열심히 공부할 거야."
       },
       {
         "en": "take a class",
         "ko": "(수업을) 듣다",
-        "img": "dGFrZV9hX2NsYXNzLndlYnA="
+        "img": "dGFrZV9hX2NsYXNzLndlYnA=",
+        "ex": "I will take a cooking class.",
+        "exKo": "나는 요리 수업을 들을 거야."
       },
       {
         "en": "read",
         "ko": "읽다",
-        "img": "cmVhZC53ZWJw"
+        "img": "cmVhZC53ZWJw",
+        "ex": "I'm reading a book.",
+        "exKo": "나는 책을 읽고 있어."
       },
       {
         "en": "cousin",
         "ko": "사촌",
-        "img": "Y291c2luLndlYnA="
+        "img": "Y291c2luLndlYnA=",
+        "ex": "I will visit my cousin.",
+        "exKo": "나는 사촌을 방문할 거야."
       }
     ]
   },
@@ -3688,37 +4936,51 @@
       {
         "en": "get up",
         "ko": "일어나다",
-        "img": "Z2V0X3VwLndlYnA="
+        "img": "Z2V0X3VwLndlYnA=",
+        "ex": "I get up at seven.",
+        "exKo": "나는 7시에 일어나."
       },
       {
         "en": "go to bed",
         "ko": "자다",
-        "img": "Z29fdG9fYmVkLndlYnA="
+        "img": "Z29fdG9fYmVkLndlYnA=",
+        "ex": "I go to bed at nine.",
+        "exKo": "나는 9시에 자."
       },
       {
         "en": "go to school",
         "ko": "학교에 가다",
-        "img": "Z29fdG9fc2Nob29sLndlYnA="
+        "img": "Z29fdG9fc2Nob29sLndlYnA=",
+        "ex": "I go to school at eight.",
+        "exKo": "나는 8시에 학교에 가."
       },
       {
         "en": "do my homework",
         "ko": "숙제하다",
-        "img": "ZG9fbXlfaG9tZXdvcmsud2VicA=="
+        "img": "ZG9fbXlfaG9tZXdvcmsud2VicA==",
+        "ex": "I do my homework at five.",
+        "exKo": "나는 5시에 숙제를 해."
       },
       {
         "en": "lunch",
         "ko": "점심",
-        "img": "bHVuY2gud2VicA=="
+        "img": "bHVuY2gud2VicA==",
+        "ex": "It's time for lunch.",
+        "exKo": "점심 먹을 시간이야."
       },
       {
         "en": "exercise",
         "ko": "운동하다",
-        "img": "ZXhlcmNpc2Uud2VicA=="
+        "img": "ZXhlcmNpc2Uud2VicA==",
+        "ex": "I exercise in the morning.",
+        "exKo": "나는 아침에 운동해."
       },
       {
         "en": "early",
         "ko": "일찍",
-        "img": "ZWFybHkud2VicA=="
+        "img": "ZWFybHkud2VicA==",
+        "ex": "I get up early.",
+        "exKo": "나는 일찍 일어나."
       }
     ]
   },
@@ -3731,42 +4993,58 @@
       {
         "en": "draw",
         "ko": "그리다",
-        "img": "ZHJhdy53ZWJw"
+        "img": "ZHJhdy53ZWJw",
+        "ex": "I'm drawing a cat.",
+        "exKo": "나는 고양이를 그리고 있어."
       },
       {
         "en": "fly",
         "ko": "(비행기 등을) 조종하다",
-        "img": "Zmx5LndlYnA="
+        "img": "Zmx5LndlYnA=",
+        "ex": "I'm flying a kite.",
+        "exKo": "나는 연을 날리고 있어."
       },
       {
         "en": "invite",
         "ko": "초대하다",
-        "img": "aW52aXRlLndlYnA="
+        "img": "aW52aXRlLndlYnA=",
+        "ex": "I want to invite my friends.",
+        "exKo": "나는 친구들을 초대하고 싶어."
       },
       {
         "en": "learn",
         "ko": "배우다",
-        "img": "bGVhcm4ud2VicA=="
+        "img": "bGVhcm4ud2VicA==",
+        "ex": "I will learn Chinese.",
+        "exKo": "나는 중국어를 배울 거야."
       },
       {
         "en": "ride",
         "ko": "타다",
-        "img": "cmlkZS53ZWJw"
+        "img": "cmlkZS53ZWJw",
+        "ex": "Let's ride a bike.",
+        "exKo": "자전거 타자."
       },
       {
         "en": "take pictures",
         "ko": "사진을 찍다",
-        "img": "dGFrZV9waWN0dXJlcy53ZWJw"
+        "img": "dGFrZV9waWN0dXJlcy53ZWJw",
+        "ex": "I want to take pictures.",
+        "exKo": "나는 사진을 찍고 싶어."
       },
       {
         "en": "activity",
         "ko": "활동",
-        "img": "YWN0aXZpdHkud2VicA=="
+        "img": "YWN0aXZpdHkud2VicA==",
+        "ex": "What activity do you want to do?",
+        "exKo": "너는 어떤 활동을 하고 싶니?"
       },
       {
         "en": "winter",
         "ko": "겨울",
-        "img": "d2ludGVyLndlYnA="
+        "img": "d2ludGVyLndlYnA=",
+        "ex": "I like winter.",
+        "exKo": "나는 겨울이 좋아."
       }
     ]
   },
@@ -3779,27 +5057,37 @@
       {
         "en": "cheese",
         "ko": "치즈",
-        "img": "Y2hlZXNlLndlYnA="
+        "img": "Y2hlZXNlLndlYnA=",
+        "ex": "I'd like cheese pizza.",
+        "exKo": "치즈 피자로 할게요."
       },
       {
         "en": "spaghetti",
         "ko": "스파게티",
-        "img": "c3BhZ2hldHRpLndlYnA="
+        "img": "c3BhZ2hldHRpLndlYnA=",
+        "ex": "I'd like spaghetti, please.",
+        "exKo": "스파게티 주세요."
       },
       {
         "en": "salty",
         "ko": "짠, 짭짤한",
-        "img": "c2FsdHkud2VicA=="
+        "img": "c2FsdHkud2VicA==",
+        "ex": "It's too salty.",
+        "exKo": "그건 너무 짜."
       },
       {
         "en": "spicy",
         "ko": "매운",
-        "img": "c3BpY3kud2VicA=="
+        "img": "c3BpY3kud2VicA==",
+        "ex": "Is it spicy?",
+        "exKo": "그거 맵니?"
       },
       {
         "en": "sweet",
         "ko": "단, 달콤한",
-        "img": "c3dlZXQud2VicA=="
+        "img": "c3dlZXQud2VicA==",
+        "ex": "It's sweet.",
+        "exKo": "그건 달아."
       }
     ]
   },
@@ -3812,27 +5100,37 @@
       {
         "en": "wrong",
         "ko": "틀린, 잘못된",
-        "img": "d3Jvbmcud2VicA=="
+        "img": "d3Jvbmcud2VicA==",
+        "ex": "What's wrong?",
+        "exKo": "무슨 일 있니?"
       },
       {
         "en": "cold",
         "ko": "감기",
-        "img": "Y29sZC53ZWJw"
+        "img": "Y29sZC53ZWJw",
+        "ex": "I have a cold.",
+        "exKo": "나는 감기에 걸렸어."
       },
       {
         "en": "headache",
         "ko": "두통",
-        "img": "aGVhZGFjaGUud2VicA=="
+        "img": "aGVhZGFjaGUud2VicA==",
+        "ex": "I have a headache.",
+        "exKo": "나는 머리가 아파."
       },
       {
         "en": "stomachache",
         "ko": "복통",
-        "img": "c3RvbWFjaGFjaGUud2VicA=="
+        "img": "c3RvbWFjaGFjaGUud2VicA==",
+        "ex": "I have a stomachache.",
+        "exKo": "나는 배가 아파."
       },
       {
         "en": "runny nose",
         "ko": "콧물",
-        "img": "cnVubnlfbm9zZS53ZWJw"
+        "img": "cnVubnlfbm9zZS53ZWJw",
+        "ex": "I have a runny nose.",
+        "exKo": "나는 콧물이 나."
       }
     ]
   },
@@ -3845,57 +5143,79 @@
       {
         "en": "painted",
         "ko": "그렸다",
-        "img": "cGFpbnRlZC53ZWJw"
+        "img": "cGFpbnRlZC53ZWJw",
+        "ex": "He painted this picture.",
+        "exKo": "그는 이 그림을 그렸어."
       },
       {
         "en": "picture",
         "ko": "그림, 사진",
-        "img": "cGljdHVyZS53ZWJw"
+        "img": "cGljdHVyZS53ZWJw",
+        "ex": "This is a picture of my family.",
+        "exKo": "이것은 우리 가족 사진이야."
       },
       {
         "en": "invented",
         "ko": "발명했다",
-        "img": "aW52ZW50ZWQud2VicA=="
+        "img": "aW52ZW50ZWQud2VicA==",
+        "ex": "She invented this.",
+        "exKo": "그녀가 이것을 발명했어."
       },
       {
         "en": "studied",
         "ko": "연구했다",
-        "img": "c3R1ZGllZC53ZWJw"
+        "img": "c3R1ZGllZC53ZWJw",
+        "ex": "He studied stars.",
+        "exKo": "그는 별을 연구했어."
       },
       {
         "en": "built",
         "ko": "(건물, 집 등을) 지었다",
-        "img": "YnVpbHQud2VicA=="
+        "img": "YnVpbHQud2VicA==",
+        "ex": "They built a house.",
+        "exKo": "그들은 집을 지었어."
       },
       {
         "en": "made",
         "ko": "만들었다",
-        "img": "bWFkZS53ZWJw"
+        "img": "bWFkZS53ZWJw",
+        "ex": "I made a cake.",
+        "exKo": "나는 케이크를 만들었어."
       },
       {
         "en": "poor",
         "ko": "가난한",
-        "img": "cG9vci53ZWJw"
+        "img": "cG9vci53ZWJw",
+        "ex": "He was poor.",
+        "exKo": "그는 가난했어."
       },
       {
         "en": "wrote",
         "ko": "썼다",
-        "img": "d3JvdGUud2VicA=="
+        "img": "d3JvdGUud2VicA==",
+        "ex": "She wrote this book.",
+        "exKo": "그녀가 이 책을 썼어."
       },
       {
         "en": "trip",
         "ko": "여행",
-        "img": "dHJpcC53ZWJw"
+        "img": "dHJpcC53ZWJw",
+        "ex": "How was your trip?",
+        "exKo": "여행은 어땠니?"
       },
       {
         "en": "swam",
         "ko": "수영했다",
-        "img": "c3dhbS53ZWJw"
+        "img": "c3dhbS53ZWJw",
+        "ex": "I swam in the sea.",
+        "exKo": "나는 바다에서 수영했어."
       },
       {
         "en": "took",
         "ko": "(수업을) 들었다",
-        "img": "dG9vay53ZWJw"
+        "img": "dG9vay53ZWJw",
+        "ex": "I took pictures.",
+        "exKo": "나는 사진을 찍었어."
       }
     ]
   },
@@ -3908,57 +5228,79 @@
       {
         "en": "order",
         "ko": "주문, 주문하다",
-        "img": "b3JkZXIud2VicA=="
+        "img": "b3JkZXIud2VicA==",
+        "ex": "May I take your order?",
+        "exKo": "주문하시겠어요?"
       },
       {
         "en": "delicious",
         "ko": "맛있는",
-        "img": "ZGVsaWNpb3VzLndlYnA="
+        "img": "ZGVsaWNpb3VzLndlYnA=",
+        "ex": "It's delicious.",
+        "exKo": "그거 정말 맛있어."
       },
       {
         "en": "hot",
         "ko": "(맛이) 매운",
-        "img": "aG90LndlYnA="
+        "img": "aG90LndlYnA=",
+        "ex": "It's hot today.",
+        "exKo": "오늘은 더워."
       },
       {
         "en": "salty",
         "ko": "(맛이) 짠",
-        "img": "c2FsdHkud2VicA=="
+        "img": "c2FsdHkud2VicA==",
+        "ex": "It's too salty.",
+        "exKo": "그건 너무 짜."
       },
       {
         "en": "sweet",
         "ko": "(맛이) 단, 달콤한",
-        "img": "c3dlZXQud2VicA=="
+        "img": "c3dlZXQud2VicA==",
+        "ex": "It's sweet.",
+        "exKo": "그건 달아."
       },
       {
         "en": "sour",
         "ko": "(맛이) 신, 시큼한",
-        "img": "c291ci53ZWJw"
+        "img": "c291ci53ZWJw",
+        "ex": "The lemon is sour.",
+        "exKo": "레몬은 셔."
       },
       {
         "en": "salad",
         "ko": "샐러드",
-        "img": "c2FsYWQud2VicA=="
+        "img": "c2FsYWQud2VicA==",
+        "ex": "Do you like salad?",
+        "exKo": "너는 샐러드를 좋아하니?"
       },
       {
         "en": "spaghetti",
         "ko": "스파게티",
-        "img": "c3BhZ2hldHRpLndlYnA="
+        "img": "c3BhZ2hldHRpLndlYnA=",
+        "ex": "I'd like spaghetti, please.",
+        "exKo": "스파게티 주세요."
       },
       {
         "en": "juice",
         "ko": "(과일·채소의) 즙, 주스",
-        "img": "anVpY2Uud2VicA=="
+        "img": "anVpY2Uud2VicA==",
+        "ex": "Do you want some juice?",
+        "exKo": "주스 좀 마실래?"
       },
       {
         "en": "pizza",
         "ko": "피자",
-        "img": "cGl6emEud2VicA=="
+        "img": "cGl6emEud2VicA==",
+        "ex": "Pizza, please.",
+        "exKo": "피자 주세요."
       },
       {
         "en": "steak",
         "ko": "스테이크",
-        "img": "c3RlYWsud2VicA=="
+        "img": "c3RlYWsud2VicA==",
+        "ex": "I want steak.",
+        "exKo": "나는 스테이크를 원해."
       }
     ]
   },
@@ -3971,62 +5313,86 @@
       {
         "en": "favorite",
         "ko": "가장 좋아하는",
-        "img": "ZmF2b3JpdGUud2VicA=="
+        "img": "ZmF2b3JpdGUud2VicA==",
+        "ex": "What's your favorite subject?",
+        "exKo": "네가 가장 좋아하는 과목은 뭐니?"
       },
       {
         "en": "season",
         "ko": "계절",
-        "img": "c2Vhc29uLndlYnA="
+        "img": "c2Vhc29uLndlYnA=",
+        "ex": "What's your favorite season?",
+        "exKo": "네가 가장 좋아하는 계절은 뭐니?"
       },
       {
         "en": "spring",
         "ko": "봄",
-        "img": "c3ByaW5nLndlYnA="
+        "img": "c3ByaW5nLndlYnA=",
+        "ex": "I like spring.",
+        "exKo": "나는 봄이 좋아."
       },
       {
         "en": "summer",
         "ko": "여름",
-        "img": "c3VtbWVyLndlYnA="
+        "img": "c3VtbWVyLndlYnA=",
+        "ex": "It's summer.",
+        "exKo": "여름이야."
       },
       {
         "en": "fall",
         "ko": "가을",
-        "img": "ZmFsbC53ZWJw"
+        "img": "ZmFsbC53ZWJw",
+        "ex": "I like fall.",
+        "exKo": "나는 가을이 좋아."
       },
       {
         "en": "winter",
         "ko": "겨울",
-        "img": "d2ludGVyLndlYnA="
+        "img": "d2ludGVyLndlYnA=",
+        "ex": "I like winter.",
+        "exKo": "나는 겨울이 좋아."
       },
       {
         "en": "subject",
         "ko": "과목",
-        "img": "c3ViamVjdC53ZWJw"
+        "img": "c3ViamVjdC53ZWJw",
+        "ex": "My favorite subject is math.",
+        "exKo": "내가 가장 좋아하는 과목은 수학이야."
       },
       {
         "en": "English",
         "ko": "영어",
-        "img": "ZW5nbGlzaC53ZWJw"
+        "img": "ZW5nbGlzaC53ZWJw",
+        "ex": "I like English.",
+        "exKo": "나는 영어를 좋아해."
       },
       {
         "en": "Korean",
         "ko": "국어",
-        "img": "a29yZWFuLndlYnA="
+        "img": "a29yZWFuLndlYnA=",
+        "ex": "I like Korean.",
+        "exKo": "나는 국어를 좋아해."
       },
       {
         "en": "math",
         "ko": "수학",
-        "img": "bWF0aC53ZWJw"
+        "img": "bWF0aC53ZWJw",
+        "ex": "I like math.",
+        "exKo": "나는 수학을 좋아해."
       },
       {
         "en": "music",
         "ko": "음악",
-        "img": "bXVzaWMud2VicA=="
+        "img": "bXVzaWMud2VicA==",
+        "ex": "I like music.",
+        "exKo": "나는 음악을 좋아해."
       },
       {
         "en": "science",
         "ko": "과학",
-        "img": "c2NpZW5jZS53ZWJw"
+        "img": "c2NpZW5jZS53ZWJw",
+        "ex": "Science is fun.",
+        "exKo": "과학은 재미있어."
       }
     ]
   },
@@ -4039,42 +5405,58 @@
       {
         "en": "than",
         "ko": "~보다",
-        "img": "dGhhbi53ZWJw"
+        "img": "dGhhbi53ZWJw",
+        "ex": "I'm taller than you.",
+        "exKo": "나는 너보다 키가 커."
       },
       {
         "en": "bigger",
         "ko": "더 큰",
-        "img": "YmlnZ2VyLndlYnA="
+        "img": "YmlnZ2VyLndlYnA=",
+        "ex": "An elephant is bigger than a dog.",
+        "exKo": "코끼리는 개보다 더 커."
       },
       {
         "en": "faster",
         "ko": "더 빠른",
-        "img": "ZmFzdGVyLndlYnA="
+        "img": "ZmFzdGVyLndlYnA=",
+        "ex": "A cheetah is faster than a lion.",
+        "exKo": "치타는 사자보다 더 빨라."
       },
       {
         "en": "heavier",
         "ko": "더 무거운",
-        "img": "aGVhdmllci53ZWJw"
+        "img": "aGVhdmllci53ZWJw",
+        "ex": "My bag is heavier than yours.",
+        "exKo": "내 가방은 네 것보다 더 무거워."
       },
       {
         "en": "longer",
         "ko": "더 긴",
-        "img": "bG9uZ2VyLndlYnA="
+        "img": "bG9uZ2VyLndlYnA=",
+        "ex": "My hair is longer than yours.",
+        "exKo": "내 머리는 네 머리보다 더 길어."
       },
       {
         "en": "older",
         "ko": "더 나이가 많은",
-        "img": "b2xkZXIud2VicA=="
+        "img": "b2xkZXIud2VicA==",
+        "ex": "My brother is older than me.",
+        "exKo": "우리 형은 나보다 나이가 많아."
       },
       {
         "en": "stronger",
         "ko": "더 힘이 센",
-        "img": "c3Ryb25nZXIud2VicA=="
+        "img": "c3Ryb25nZXIud2VicA==",
+        "ex": "A tiger is stronger than a cat.",
+        "exKo": "호랑이는 고양이보다 더 힘이 세."
       },
       {
         "en": "taller",
         "ko": "더 키가 큰",
-        "img": "dGFsbGVyLndlYnA="
+        "img": "dGFsbGVyLndlYnA=",
+        "ex": "He is taller than me.",
+        "exKo": "그는 나보다 키가 더 커."
       }
     ]
   },
@@ -4087,52 +5469,72 @@
       {
         "en": "often",
         "ko": "자주",
-        "img": "b2Z0ZW4ud2VicA=="
+        "img": "b2Z0ZW4ud2VicA==",
+        "ex": "How often do you exercise?",
+        "exKo": "너는 얼마나 자주 운동하니?"
       },
       {
         "en": "brush",
         "ko": "칫솔[칫솔질]하다",
-        "img": "YnJ1c2gud2VicA=="
+        "img": "YnJ1c2gud2VicA==",
+        "ex": "I have a brush.",
+        "exKo": "나는 붓이 있어."
       },
       {
         "en": "exercise",
         "ko": "운동하다",
-        "img": "ZXhlcmNpc2Uud2VicA=="
+        "img": "ZXhlcmNpc2Uud2VicA==",
+        "ex": "I exercise in the morning.",
+        "exKo": "나는 아침에 운동해."
       },
       {
         "en": "vegetable",
         "ko": "야채, 채소",
-        "img": "dmVnZXRhYmxlLndlYnA="
+        "img": "dmVnZXRhYmxlLndlYnA=",
+        "ex": "Eat more vegetables.",
+        "exKo": "채소를 더 먹어."
       },
       {
         "en": "wash",
         "ko": "씻다",
-        "img": "d2FzaC53ZWJw"
+        "img": "d2FzaC53ZWJw",
+        "ex": "Wash your hands.",
+        "exKo": "손을 씻어."
       },
       {
         "en": "once",
         "ko": "한 번",
-        "img": "b25jZS53ZWJw"
+        "img": "b25jZS53ZWJw",
+        "ex": "I play soccer once a week.",
+        "exKo": "나는 일주일에 한 번 축구를 해."
       },
       {
         "en": "twice",
         "ko": "두 번",
-        "img": "dHdpY2Uud2VicA=="
+        "img": "dHdpY2Uud2VicA==",
+        "ex": "I swim twice a week.",
+        "exKo": "나는 일주일에 두 번 수영해."
       },
       {
         "en": "week",
         "ko": "일주일",
-        "img": "d2Vlay53ZWJw"
+        "img": "d2Vlay53ZWJw",
+        "ex": "I read books three times a week.",
+        "exKo": "나는 일주일에 세 번 책을 읽어."
       },
       {
         "en": "month",
         "ko": "달, 월",
-        "img": "bW9udGgud2VicA=="
+        "img": "bW9udGgud2VicA==",
+        "ex": "I visit my grandma once a month.",
+        "exKo": "나는 한 달에 한 번 할머니 댁을 방문해."
       },
       {
         "en": "more",
         "ko": "더",
-        "img": "bW9yZS53ZWJw"
+        "img": "bW9yZS53ZWJw",
+        "ex": "Exercise more.",
+        "exKo": "운동을 더 해."
       }
     ]
   },
@@ -4145,52 +5547,72 @@
       {
         "en": "get to",
         "ko": "(~에) 가다, 도착하다",
-        "img": "Z2V0X3RvLndlYnA="
+        "img": "Z2V0X3RvLndlYnA=",
+        "ex": "How can I get to the museum?",
+        "exKo": "박물관에 어떻게 가나요?"
       },
       {
         "en": "bookstore",
         "ko": "서점, 책방",
-        "img": "Ym9va3N0b3JlLndlYnA="
+        "img": "Ym9va3N0b3JlLndlYnA=",
+        "ex": "Where is the bookstore?",
+        "exKo": "서점은 어디에 있나요?"
       },
       {
         "en": "library",
         "ko": "도서관",
-        "img": "bGlicmFyeS53ZWJw"
+        "img": "bGlicmFyeS53ZWJw",
+        "ex": "The library is next to the school.",
+        "exKo": "도서관은 학교 옆에 있어요."
       },
       {
         "en": "museum",
         "ko": "박물관",
-        "img": "bXVzZXVtLndlYnA="
+        "img": "bXVzZXVtLndlYnA=",
+        "ex": "Let's go to the museum.",
+        "exKo": "박물관에 가자."
       },
       {
         "en": "by",
         "ko": "(수단 등) ~타고, ~로",
-        "img": "Ynkud2VicA=="
+        "img": "Ynkud2VicA==",
+        "ex": "I go to school by bus.",
+        "exKo": "나는 버스를 타고 학교에 가."
       },
       {
         "en": "subway",
         "ko": "지하철",
-        "img": "c3Vid2F5LndlYnA="
+        "img": "c3Vid2F5LndlYnA=",
+        "ex": "Take the subway.",
+        "exKo": "지하철을 타세요."
       },
       {
         "en": "behind",
         "ko": "(위치가) ~뒤에",
-        "img": "YmVoaW5kLndlYnA="
+        "img": "YmVoaW5kLndlYnA=",
+        "ex": "It's behind the bank.",
+        "exKo": "그것은 은행 뒤에 있어요."
       },
       {
         "en": "between",
         "ko": "(위치가) ~사이에, ~중간에",
-        "img": "YmV0d2Vlbi53ZWJw"
+        "img": "YmV0d2Vlbi53ZWJw",
+        "ex": "It's between the bank and the park.",
+        "exKo": "그것은 은행과 공원 사이에 있어요."
       },
       {
         "en": "in front of",
         "ko": "~앞쪽에, ~앞에",
-        "img": "aW5fZnJvbnRfb2Yud2VicA=="
+        "img": "aW5fZnJvbnRfb2Yud2VicA==",
+        "ex": "It's in front of the bank.",
+        "exKo": "그것은 은행 앞에 있어요."
       },
       {
         "en": "next to",
         "ko": "(위치가) ~바로 옆에",
-        "img": "bmV4dF90by53ZWJw"
+        "img": "bmV4dF90by53ZWJw",
+        "ex": "It's next to the park.",
+        "exKo": "그것은 공원 바로 옆에 있어요."
       }
     ]
   },
@@ -4203,52 +5625,72 @@
       {
         "en": "know",
         "ko": "알다",
-        "img": "a25vdy53ZWJw"
+        "img": "a25vdy53ZWJw",
+        "ex": "Do you know about Hangeul?",
+        "exKo": "너는 한글에 대해 알고 있니?"
       },
       {
         "en": "anything",
         "ko": "무엇, 아무것",
-        "img": "YW55dGhpbmcud2VicA=="
+        "img": "YW55dGhpbmcud2VicA==",
+        "ex": "Do you know anything about Korea?",
+        "exKo": "너는 한국에 대해 뭐 아는 거 있니?"
       },
       {
         "en": "about",
         "ko": "~에 대한",
-        "img": "YWJvdXQud2VicA=="
+        "img": "YWJvdXQud2VicA==",
+        "ex": "Tell me about your family.",
+        "exKo": "너의 가족에 대해 말해 줘."
       },
       {
         "en": "idea",
         "ko": "생각",
-        "img": "aWRlYS53ZWJw"
+        "img": "aWRlYS53ZWJw",
+        "ex": "That's a good idea.",
+        "exKo": "그거 좋은 생각이야."
       },
       {
         "en": "traditional",
         "ko": "전통의",
-        "img": "dHJhZGl0aW9uYWwud2VicA=="
+        "img": "dHJhZGl0aW9uYWwud2VicA==",
+        "ex": "Hanbok is traditional Korean clothing.",
+        "exKo": "한복은 한국의 전통 옷이야."
       },
       {
         "en": "Chinese",
         "ko": "중국의",
-        "img": "Y2hpbmVzZS53ZWJw"
+        "img": "Y2hpbmVzZS53ZWJw",
+        "ex": "I like Chinese food.",
+        "exKo": "나는 중국 음식을 좋아해."
       },
       {
         "en": "Vietnamese",
         "ko": "베트남의",
-        "img": "dmlldG5hbWVzZS53ZWJw"
+        "img": "dmlldG5hbWVzZS53ZWJw",
+        "ex": "Pho is a Vietnamese food.",
+        "exKo": "쌀국수는 베트남 음식이야."
       },
       {
         "en": "Indian",
         "ko": "인도의",
-        "img": "aW5kaWFuLndlYnA="
+        "img": "aW5kaWFuLndlYnA=",
+        "ex": "I like Indian curry.",
+        "exKo": "나는 인도 카레를 좋아해."
       },
       {
         "en": "Australian",
         "ko": "오스트레일리아의",
-        "img": "YXVzdHJhbGlhbi53ZWJw"
+        "img": "YXVzdHJhbGlhbi53ZWJw",
+        "ex": "The koala is an Australian animal.",
+        "exKo": "코알라는 오스트레일리아 동물이야."
       },
       {
         "en": "African",
         "ko": "아프리카의",
-        "img": "YWZyaWNhbi53ZWJw"
+        "img": "YWZyaWNhbi53ZWJw",
+        "ex": "The lion is an African animal.",
+        "exKo": "사자는 아프리카 동물이야."
       }
     ]
   },
@@ -4261,52 +5703,72 @@
       {
         "en": "save",
         "ko": "구하다, 절약하다",
-        "img": "c2F2ZS53ZWJw"
+        "img": "c2F2ZS53ZWJw",
+        "ex": "We should save energy.",
+        "exKo": "우리는 에너지를 절약해야 해."
       },
       {
         "en": "should",
         "ko": "~해야 한다",
-        "img": "c2hvdWxkLndlYnA="
+        "img": "c2hvdWxkLndlYnA=",
+        "ex": "We should recycle.",
+        "exKo": "우리는 재활용해야 해."
       },
       {
         "en": "turn off",
         "ko": "(불, 전기 등을) 끄다",
-        "img": "dHVybl9vZmYud2VicA=="
+        "img": "dHVybl9vZmYud2VicA==",
+        "ex": "Turn off the light.",
+        "exKo": "불을 꺼."
       },
       {
         "en": "light",
         "ko": "(특히 전깃) 불, (전)등",
-        "img": "bGlnaHQud2VicA=="
+        "img": "bGlnaHQud2VicA==",
+        "ex": "Turn off the light, please.",
+        "exKo": "불을 꺼 주세요."
       },
       {
         "en": "energy",
         "ko": "에너지, 동력 자원",
-        "img": "ZW5lcmd5LndlYnA="
+        "img": "ZW5lcmd5LndlYnA=",
+        "ex": "Let's save energy.",
+        "exKo": "에너지를 절약하자."
       },
       {
         "en": "use",
         "ko": "사용하다",
-        "img": "dXNlLndlYnA="
+        "img": "dXNlLndlYnA=",
+        "ex": "Can I use your phone?",
+        "exKo": "네 전화기를 써도 되니?"
       },
       {
         "en": "stair",
         "ko": "(하나의) 계단",
-        "img": "c3RhaXIud2VicA=="
+        "img": "c3RhaXIud2VicA==",
+        "ex": "Let's use the stairs.",
+        "exKo": "계단을 이용하자."
       },
       {
         "en": "recycle",
         "ko": "재활용하다",
-        "img": "cmVjeWNsZS53ZWJw"
+        "img": "cmVjeWNsZS53ZWJw",
+        "ex": "We should recycle bottles.",
+        "exKo": "우리는 병을 재활용해야 해."
       },
       {
         "en": "reuse",
         "ko": "재사용하다",
-        "img": "cmV1c2Uud2VicA=="
+        "img": "cmV1c2Uud2VicA==",
+        "ex": "We should reuse bags.",
+        "exKo": "우리는 가방을 재사용해야 해."
       },
       {
         "en": "plant",
         "ko": "(나무·씨앗 등을) 심다",
-        "img": "cGxhbnQud2VicA=="
+        "img": "cGxhbnQud2VicA==",
+        "ex": "Let's plant trees.",
+        "exKo": "나무를 심자."
       }
     ]
   },
@@ -4319,52 +5781,72 @@
       {
         "en": "think",
         "ko": "(~라고) 생각하다",
-        "img": "dGhpbmsud2VicA=="
+        "img": "dGhpbmsud2VicA==",
+        "ex": "I think it's fun.",
+        "exKo": "나는 그게 재미있다고 생각해."
       },
       {
         "en": "boring",
         "ko": "재미없는, 지루한",
-        "img": "Ym9yaW5nLndlYnA="
+        "img": "Ym9yaW5nLndlYnA=",
+        "ex": "The movie was boring.",
+        "exKo": "그 영화는 지루했어."
       },
       {
         "en": "fun",
         "ko": "재미있는",
-        "img": "ZnVuLndlYnA="
+        "img": "ZnVuLndlYnA=",
+        "ex": "Soccer is fun.",
+        "exKo": "축구는 재미있어."
       },
       {
         "en": "scary",
         "ko": "무서운, 겁나는",
-        "img": "c2Nhcnkud2VicA=="
+        "img": "c2Nhcnkud2VicA==",
+        "ex": "The movie is scary.",
+        "exKo": "그 영화는 무서워."
       },
       {
         "en": "cheap",
         "ko": "값이 싼, 저렴한",
-        "img": "Y2hlYXAud2VicA=="
+        "img": "Y2hlYXAud2VicA==",
+        "ex": "It's cheap.",
+        "exKo": "그건 싸."
       },
       {
         "en": "expensive",
         "ko": "비싼",
-        "img": "ZXhwZW5zaXZlLndlYnA="
+        "img": "ZXhwZW5zaXZlLndlYnA=",
+        "ex": "It's too expensive.",
+        "exKo": "그건 너무 비싸요."
       },
       {
         "en": "difficult",
         "ko": "어려운",
-        "img": "ZGlmZmljdWx0LndlYnA="
+        "img": "ZGlmZmljdWx0LndlYnA=",
+        "ex": "Math is difficult.",
+        "exKo": "수학은 어려워."
       },
       {
         "en": "easy",
         "ko": "쉬운, 수월한",
-        "img": "ZWFzeS53ZWJw"
+        "img": "ZWFzeS53ZWJw",
+        "ex": "English is easy.",
+        "exKo": "영어는 쉬워."
       },
       {
         "en": "dangerous",
         "ko": "위험한",
-        "img": "ZGFuZ2Vyb3VzLndlYnA="
+        "img": "ZGFuZ2Vyb3VzLndlYnA=",
+        "ex": "It's dangerous.",
+        "exKo": "그건 위험해."
       },
       {
         "en": "safe",
         "ko": "안전한",
-        "img": "c2FmZS53ZWJw"
+        "img": "c2FmZS53ZWJw",
+        "ex": "It's safe.",
+        "exKo": "그건 안전해."
       }
     ]
   },
@@ -4377,42 +5859,58 @@
       {
         "en": "can",
         "ko": "(가능) ~할 수 있다",
-        "img": "Y2FuLndlYnA="
+        "img": "Y2FuLndlYnA=",
+        "ex": "Can I sit here?",
+        "exKo": "여기 앉아도 되니?"
       },
       {
         "en": "will",
         "ko": "~일[할] 것이다",
-        "img": "d2lsbC53ZWJw"
+        "img": "d2lsbC53ZWJw",
+        "ex": "I will visit my grandma.",
+        "exKo": "나는 할머니 댁을 방문할 거야."
       },
       {
         "en": "come",
         "ko": "(~쪽으로) 오다",
-        "img": "Y29tZS53ZWJw"
+        "img": "Y29tZS53ZWJw",
+        "ex": "Come here, please.",
+        "exKo": "이리 오세요."
       },
       {
         "en": "bring",
         "ko": "가져오다",
-        "img": "YnJpbmcud2VicA=="
+        "img": "YnJpbmcud2VicA==",
+        "ex": "Can I bring my dog?",
+        "exKo": "우리 개를 데려가도 되니?"
       },
       {
         "en": "festival",
         "ko": "축제, 기념제",
-        "img": "ZmVzdGl2YWwud2VicA=="
+        "img": "ZmVzdGl2YWwud2VicA==",
+        "ex": "Let's go to the festival.",
+        "exKo": "축제에 가자."
       },
       {
         "en": "graduation",
         "ko": "졸업, 졸업식",
-        "img": "Z3JhZHVhdGlvbi53ZWJw"
+        "img": "Z3JhZHVhdGlvbi53ZWJw",
+        "ex": "Can you come to my graduation?",
+        "exKo": "내 졸업식에 와 줄 수 있니?"
       },
       {
         "en": "party",
         "ko": "파티",
-        "img": "cGFydHkud2VicA=="
+        "img": "cGFydHkud2VicA==",
+        "ex": "Can you come to my party?",
+        "exKo": "내 파티에 와 줄 수 있니?"
       },
       {
         "en": "soft drink",
         "ko": "청량음료",
-        "img": "c29mdF9kcmluay53ZWJw"
+        "img": "c29mdF9kcmluay53ZWJw",
+        "ex": "I'd like a soft drink.",
+        "exKo": "청량음료로 할게요."
       }
     ]
   }

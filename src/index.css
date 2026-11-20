@@ -1262,3 +1262,31 @@ img:active {
 /* 단어 카드 화면의 선생님 도구 */
 .teacher-tools { align-items: center; margin-top: 4px; opacity: 0.85; }
 .teacher-label { font-size: 0.8rem; color: var(--text-muted); }
+
+/* ExampleSentence (예문) */
+.example-sentence {
+  margin: 12px auto 4px;
+  padding: 12px 16px;
+  max-width: 480px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-align: center;
+  cursor: default;
+}
+.example-en { font-size: 1.15rem; font-weight: 600; line-height: 1.4; }
+.example-en mark { background: none; color: var(--accent); font-weight: 800; }
+.example-ko { margin-top: 4px; color: var(--text-secondary); font-size: 0.95rem; }
+.example-actions { display: flex; justify-content: center; gap: 8px; margin-top: 8px; }
+.example-actions button {
+  font: inherit; font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.example-sentence.large { max-width: 80vw; background: none; border: none; }
+.example-sentence.large .example-en { font-size: clamp(1.4rem, 3.2vw, 3rem); }
+.example-sentence.large .example-ko { font-size: clamp(1rem, 2vw, 1.8rem); }

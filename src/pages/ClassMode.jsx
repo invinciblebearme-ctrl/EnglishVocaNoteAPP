@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { speakWord } from '../utils/speech'
 import { getImageUrl } from '../utils/image'
+import ExampleSentence from '../components/ExampleSentence'
 
 // 교사 수업 모드: 전자칠판용 큰 단어 카드
 // 키보드 → / Space 다음, ← 이전, Enter 뒤집기, S 발음, F 전체 화면, Esc 나가기
@@ -165,6 +166,7 @@ function ClassMode() {
         </div>
         <div className={`class-en ${show.en ? '' : 'hidden'}`}>{word.en}</div>
         <div className={`class-ko ${show.ko ? '' : 'hidden'}`}>{word.ko}</div>
+        {revealed && <ExampleSentence key={word.en} word={word} large />}
         {!revealed && <div className="class-tap-hint">화면을 누르거나 Enter → 정답 보기</div>}
       </div>
 
