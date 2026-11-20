@@ -1110,3 +1110,155 @@ img:active {
     line-height: 2;
     padding-left: 24px;
 }
+
+/* ClassMode (교사 수업 모드) */
+.class-mode {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 50% 0%, #1e293b 0%, #020617 100%);
+  color: var(--text-primary);
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+.class-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.class-toolbar .class-title { font-weight: 800; color: var(--text-primary); margin-right: auto; font-size: 1.1rem; }
+.class-toolbar label { display: flex; align-items: center; gap: 6px; }
+.class-toolbar select,
+.class-toolbar button,
+.class-nav button {
+  font: inherit;
+  color: var(--text-primary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.class-stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  cursor: pointer;
+  user-select: none;
+  min-height: 0;
+}
+.class-stage .hidden { visibility: hidden; }
+.class-image { height: 42vh; display: flex; align-items: center; justify-content: center; }
+.class-image img { max-height: 100%; max-width: 70vw; object-fit: contain; border-radius: 24px; }
+.class-en { font-size: clamp(3rem, 10vw, 9rem); font-weight: 800; line-height: 1.05; text-align: center; }
+.class-ko { font-size: clamp(1.8rem, 5vw, 4.5rem); color: var(--accent); font-weight: 700; text-align: center; }
+.class-tap-hint { font-size: 0.9rem; color: var(--text-muted); }
+.class-nav { display: flex; justify-content: center; gap: 12px; }
+.class-nav button { font-size: 1.2rem; padding: 12px 24px; }
+.class-keys { text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; }
+
+/* Worksheet (인쇄용 학습지) */
+.ws-page { padding: 20px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.ws-toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center; max-width: 900px; }
+.ws-toolbar label { display: flex; align-items: center; gap: 6px; font-size: 0.9rem; color: var(--text-secondary); }
+.ws-types { display: flex; gap: 6px; }
+.ws-types .dark-button.active { border-color: var(--accent); color: var(--accent); }
+.ws-sheet {
+  width: 210mm;
+  min-height: 297mm;
+  box-sizing: border-box;
+  padding: 14mm 14mm;
+  background: #fff;
+  color: #1e293b;
+  box-shadow: var(--card-shadow);
+  font-family: 'Plus Jakarta Sans', 'Noto Sans KR', sans-serif;
+}
+.ws-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; border-bottom: 2px solid #1e293b; padding-bottom: 8px; margin-bottom: 14px; }
+.ws-grade { font-size: 11pt; color: #64748b; }
+.ws-title { font-size: 18pt; margin: 2px 0; }
+.ws-desc { font-size: 10.5pt; margin: 0; color: #334155; }
+.ws-name { display: flex; flex-direction: column; gap: 6px; font-size: 10.5pt; white-space: nowrap; text-align: right; }
+.ws-answer-tag { margin-left: 8px; font-size: 11pt; color: #dc2626; border: 1.5px solid #dc2626; border-radius: 6px; padding: 1px 6px; vertical-align: middle; }
+.ws-answer-key .ws-line, .ws-answer-key .ws-answer-num { color: #dc2626; font-weight: 700; }
+.ws-sheet img {
+  object-fit: contain;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+  transform: none;
+}
+
+.ws-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; counter-reset: ws; }
+.ws-item { border: 1px solid #cbd5e1; border-radius: 10px; padding: 8px; text-align: center; break-inside: avoid; counter-increment: ws; position: relative; }
+.ws-item::before { content: counter(ws); position: absolute; top: 4px; left: 8px; font-size: 9pt; color: #94a3b8; }
+.ws-item img { width: 100%; height: 26mm; }
+.ws-ko { font-size: 10.5pt; color: #475569; margin: 4px 0; min-height: 1.2em; }
+.ws-line { border-bottom: 1.5px solid #1e293b; min-height: 1.6em; font-size: 14pt; text-align: center; }
+
+.ws-trace { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 8px; }
+.ws-trace li { display: flex; align-items: center; gap: 10px; break-inside: avoid; border-bottom: 1px dashed #e2e8f0; padding-bottom: 6px; }
+.ws-trace img { width: 18mm; height: 18mm; flex-shrink: 0; }
+.ws-trace-body { flex: 1; }
+.ws-trace-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; align-items: end; }
+.ws-ghost { font-size: 20pt; color: #cbd5e1; letter-spacing: 1px; border-bottom: 1.5px solid #1e293b; text-align: center; font-family: 'Comic Sans MS', 'Plus Jakarta Sans', sans-serif; }
+.ws-trace .ws-line { font-size: 20pt; }
+/* 단어가 많은 회차(11개 이상)는 한 쪽에 들어가도록 촘촘하게 */
+.ws-trace.dense { gap: 3px; }
+.ws-trace.dense li { padding-bottom: 3px; }
+.ws-trace.dense img { width: 12mm; height: 12mm; }
+.ws-trace.dense .ws-trace-body { display: grid; grid-template-columns: 22mm 1fr; align-items: end; gap: 6px; }
+.ws-trace.dense .ws-ko { font-size: 9pt; margin: 0; }
+.ws-trace.dense .ws-ghost, .ws-trace.dense .ws-line { font-size: 15pt; }
+
+.ws-match { display: flex; justify-content: space-between; gap: 30mm; padding: 0 6mm; }
+.ws-match-col { flex: 1; margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 6px; }
+.ws-match-col li { display: flex; align-items: center; justify-content: space-between; min-height: 15mm; break-inside: avoid; }
+.ws-match-col.right li { justify-content: flex-start; gap: 10px; }
+.ws-match-col img { width: 15mm; height: 15mm; }
+.ws-match-word { font-size: 15pt; font-weight: 700; }
+.ws-dot { font-size: 10pt; color: #1e293b; }
+.ws-answer-num { font-size: 10pt; }
+.ws-match.dense .ws-match-col { gap: 2px; }
+.ws-match.dense .ws-match-col li { min-height: 12mm; }
+.ws-match.dense .ws-match-col img { width: 12mm; height: 12mm; }
+.ws-match.dense .ws-match-word { font-size: 13pt; }
+
+@media print {
+  @page { size: A4; margin: 0; }
+  body { background: #fff !important; }
+  /* 학습지 외의 화면 요소(메뉴, 학년 선택 여백 등)는 인쇄하지 않음 */
+  #root > *:not(.ws-page), .ws-toolbar { display: none !important; }
+  .ws-page { padding: 0; gap: 0; }
+  .ws-sheet { box-shadow: none; break-after: page; min-height: 0; }
+  .ws-sheet:last-child { break-after: auto; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* StudyStatus (연속 학습일 · 오늘의 목표) */
+.study-status { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 4px 0 16px; }
+.study-chip {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 12px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--border);
+  font-size: 0.85rem; color: var(--text-secondary);
+}
+.study-chip b { color: var(--text-primary); }
+.study-goal-bar { display: inline-block; width: 50px; height: 5px; border-radius: 999px; background: rgba(148,163,184,0.2); overflow: hidden; }
+.study-goal-bar span { display: block; height: 100%; background: var(--accent); transition: width 0.3s; }
+.study-goal.done { border-color: #22c55e; }
+.study-goal.done .study-goal-bar span { background: #22c55e; }
+
+/* 단어 카드 화면의 선생님 도구 */
+.teacher-tools { align-items: center; margin-top: 4px; opacity: 0.85; }
+.teacher-label { font-size: 0.8rem; color: var(--text-muted); }

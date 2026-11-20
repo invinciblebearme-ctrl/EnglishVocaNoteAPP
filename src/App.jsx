@@ -6,6 +6,8 @@ import ScrambleHome from './pages/ScrambleHome'
 import ScrambleGame from './pages/ScrambleGame'
 import MyVocabulary from './pages/MyVocabulary'
 import Review from './pages/Review'
+import ClassMode from './pages/ClassMode'
+import Worksheet from './pages/Worksheet'
 import Navbar from './components/Navbar'
 import GradeNav from './components/GradeNav'
 
@@ -24,6 +26,8 @@ function App() {
         <Route path="/scramble-game/:id" element={<ScrambleGame />} />
         <Route path="/my-voca" element={<MyVocabulary />} />
         <Route path="/review" element={<Review />} />
+        <Route path="/class/:id" element={<ClassMode />} />
+        <Route path="/worksheet/:id" element={<Worksheet />} />
       </Routes>
     </Router>
   )

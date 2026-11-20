@@ -49,6 +49,41 @@ export const recordResult = (word, correct) => {
     lastSeen: todayStr(),
   }
   save(data)
+  logActivity()
+}
+
+// ── 학습 활동 (연속 학습일 · 하루 목표) ──────────────────────────
+const ACTIVITY_KEY = 'learning_activity_v1'
+export const DAILY_GOAL = 10
+
+const loadActivity = () => {
+  try {
+    return JSON.parse(localStorage.getItem(ACTIVITY_KEY)) || {}
+  } catch {
+    return {}
+  }
+}
+
+const logActivity = () => {
+  const log = loadActivity()
+  const today = todayStr()
+  log[today] = (log[today] || 0) + 1
+  localStorage.setItem(ACTIVITY_KEY, JSON.stringify(log))
+  window.dispatchEvent(new Event(PROGRESS_EVENT))
+}
+
+export const getTodayCount = () => loadActivity()[todayStr()] || 0
+
+// 연속 학습일: 오늘(또는 아직 안 했다면 어제)부터 거꾸로 센다
+export const getStreak = () => {
+  const log = loadActivity()
+  let offset = log[todayStr()] ? 0 : -1
+  let streak = 0
+  while (log[todayStr(offset)]) {
+    streak++
+    offset--
+  }
+  return streak
 }
 
 // 오늘 복습할 단어 (틀린 단어 → 낮은 상자 순)
@@ -72,6 +107,13 @@ export const getWrongWords = () =>
     .filter((r) => r.wrong > 0 && r.box < MASTERED_BOX)
     .sort((a, b) => b.wrong - a.wrong)
     .map((r) => r.word)
+
+// 모든 단어를 익힌 회차 수
+export const getCompletedRoundCount = (rounds) =>
+  rounds.filter((r) => {
+    const { total, mastered } = getRoundProgress(r)
+    return total > 0 && mastered === total
+  }).length
 
 // 회차 진도: { total, tried, mastered }
 export const getRoundProgress = (round) => {

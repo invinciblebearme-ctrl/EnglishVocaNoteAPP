@@ -215,6 +215,12 @@ function WordChallenge() {
           <button onClick={() => navigate('/')} className="nav-btn-premium">목록으로</button>
         </div>
 
+        <div className="challenge-controls teacher-tools">
+          <span className="teacher-label">선생님 도구</span>
+          <button onClick={() => navigate(`/class/${id}`)} className="nav-btn-premium">🖥 수업 모드</button>
+          <button onClick={() => navigate(`/worksheet/${id}`)} className="nav-btn-premium">🖨 학습지 만들기</button>
+        </div>
+
         <div className="stt-controls">
           <button 
             className={`mic-button ${isListening ? 'listening' : ''}`} 
