@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getMyVoca, removeFromMyVoca } from '../utils/storage'
-import jsPDF from 'jspdf'
-import html2canvas from 'html2canvas'
 
 function VocaItem({ word, handleDelete, speakWord }) {
   const [showKo, setShowKo] = useState(false);
@@ -94,6 +92,11 @@ function MyVocabulary() {
 
     setTimeout(async () => {
       try {
+        // PDF 저장 시에만 무거운 라이브러리를 불러온다 (초기 로딩 단축)
+        const [{ default: jsPDF }, { default: html2canvas }] = await Promise.all([
+          import('jspdf'),
+          import('html2canvas'),
+        ])
         const element = printRef.current
         const canvas = await html2canvas(element, {
           scale: 2,
