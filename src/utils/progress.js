@@ -27,7 +27,12 @@ const load = () => {
   }
 }
 
-const save = (data) => localStorage.setItem(STORAGE_KEY, JSON.stringify(data))
+export const PROGRESS_EVENT = 'learning_progress_change'
+
+const save = (data) => {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data))
+  window.dispatchEvent(new Event(PROGRESS_EVENT)) // 복습 배지 등 즉시 갱신
+}
 
 // 채점 결과 기록
 export const recordResult = (word, correct) => {

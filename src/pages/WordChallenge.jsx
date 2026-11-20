@@ -4,6 +4,7 @@ import allRounds from '../data/all_rounds.json'
 import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 import { isCorrectAnswer, isPartialAnswer } from '../utils/answer'
 import { speakWord } from '../utils/speech'
+import { recordResult } from '../utils/progress'
 import { getImageUrl } from '../utils/image'
 
 function WordChallenge() {
@@ -123,6 +124,8 @@ function WordChallenge() {
         level = 2; // Good
       }
       
+      // 발음 평가 결과도 학습 기록에 반영 (애매한 'Good'은 기록하지 않음)
+      if (level !== 2) recordResult(currentWord, level === 3);
       setPronunciationScore({ transcript, level });
     };
 

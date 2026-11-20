@@ -828,3 +828,39 @@ img:active {
     color: #ef4444;
 }
 
+
+/* Review (오늘의 복습) */
+.nav-badge {
+  display: inline-block;
+  min-width: 18px;
+  margin-left: 4px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: #f87171;
+  color: #fff;
+  font-size: 0.7rem;
+  line-height: 18px;
+  text-align: center;
+}
+.review-start { text-align: center; }
+.review-desc { opacity: 0.8; line-height: 1.6; margin: 10px 0 20px; }
+.review-options { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 16px 0; }
+.review-options button:disabled { opacity: 0.4; cursor: not-allowed; }
+.review-empty { opacity: 0.6; margin-top: 20px; }
+.review-wrong-list { margin-top: 24px; }
+.review-wrong-list h3 { font-size: 1rem; opacity: 0.8; margin-bottom: 10px; }
+.review-chip {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+.review-chip small { opacity: 0.6; margin-left: 4px; }
+.review-score { font-size: 2rem; font-weight: 800; margin: 16px 0; }
+.review-card { flex-direction: column; gap: 8px; }
+.review-answer { font-size: 1.8rem; font-weight: 800; }
+.review-answer.correct { color: #4ade80; }
+.review-answer.wrong { color: #f87171; }
+.review-form { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; }
