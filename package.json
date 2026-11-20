@@ -10,7 +10,6 @@
     "deploy": "vite build && npx -y wrangler@4 pages deploy dist --project-name english-voca-note-app --branch main --commit-dirty=true"
   },
   "dependencies": {
-    "@expo-google-fonts/plus-jakarta-sans": "^0.4.2",
     "html2canvas": "^1.4.1",
     "jspdf": "^4.2.1",
     "react": "^18.3.1",
