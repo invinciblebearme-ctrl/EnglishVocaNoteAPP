@@ -37,6 +37,8 @@ header {
     width: 95%;
     max-width: 380px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     z-index: 2000;
     pointer-events: none;
@@ -1290,3 +1292,19 @@ img:active {
 .example-sentence.large { max-width: 80vw; background: none; border: none; }
 .example-sentence.large .example-en { font-size: clamp(1.4rem, 3.2vw, 3rem); }
 .example-sentence.large .example-ko { font-size: clamp(1rem, 2vw, 1.8rem); }
+
+/* InstallButton (앱 설치) */
+.install-wrap { position: relative; display: flex; justify-content: center; margin-top: 8px; pointer-events: auto; }
+.install-btn {
+  font: inherit; font-size: 0.8rem; font-weight: 700;
+  color: var(--accent); background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 999px;
+  padding: 4px 12px; cursor: pointer;
+}
+.install-help {
+  position: absolute; top: 34px; z-index: 50;
+  padding: 10px 14px; border-radius: 12px; width: 240px;
+  background: var(--bg-main); border: 1px solid var(--border);
+  font-size: 0.85rem; line-height: 1.5; text-align: center;
+  box-shadow: var(--card-shadow);
+}

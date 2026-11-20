@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="0%" r="110%">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <!-- 펼친 책 -->
+  <path d="M96 150 Q176 120 256 160 Q336 120 416 150 L416 370 Q336 340 256 380 Q176 340 96 370 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="14" stroke-linejoin="round"/>
+  <line x1="256" y1="160" x2="256" y2="380" stroke="#38bdf8" stroke-width="10"/>
+  <text x="176" y="300" text-anchor="middle" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-weight="800" font-size="120" fill="#f8fafc">A</text>
+  <text x="336" y="300" text-anchor="middle" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-weight="800" font-size="120" fill="#38bdf8">a</text>
+  <circle cx="420" cy="110" r="34" fill="#fbbf24"/>
+  <text x="420" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="40" fill="#0f172a">★</text>
+</svg>
