@@ -126,7 +126,7 @@ function WordChallenge() {
       }
       
       // 발음 평가 결과도 학습 기록에 반영 (애매한 'Good'은 기록하지 않음)
-      if (level !== 2) recordResult(currentWord, level === 3);
+      if (level !== 2) recordResult(currentWord, level === 3, { roundId: roundData.id, source: 'speak' });
       setPronunciationScore({ transcript, level });
     };
 
@@ -222,6 +222,7 @@ function WordChallenge() {
           <span className="teacher-label">선생님 도구</span>
           <button onClick={() => navigate(`/class/${id}`)} className="nav-btn-premium">🖥 수업 모드</button>
           <button onClick={() => navigate(`/worksheet/${id}`)} className="nav-btn-premium">🖨 학습지 만들기</button>
+          <button onClick={() => navigate('/teacher')} className="nav-btn-premium">👩‍🏫 학급 현황판</button>
         </div>
 
         <div className="stt-controls">

@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { useSelectedGrade } from '../hooks/useSelectedGrade'
 import { getImageUrl } from '../utils/image'
@@ -115,6 +115,12 @@ function RoundList({ title, placeholder, linkPrefix, imgProps }) {
           })
         )}
       </div>
+
+      <footer className="list-footer">
+        <Link to="/my-class">🏫 우리 반 참여하기</Link>
+        <span>·</span>
+        <Link to="/teacher">👩‍🏫 선생님 현황판</Link>
+      </footer>
     </div>
   )
 }

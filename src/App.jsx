@@ -8,6 +8,8 @@ import MyVocabulary from './pages/MyVocabulary'
 import Review from './pages/Review'
 import ClassMode from './pages/ClassMode'
 import Worksheet from './pages/Worksheet'
+import MyClass from './pages/MyClass'
+import Teacher from './pages/Teacher'
 import Navbar from './components/Navbar'
 import GradeNav from './components/GradeNav'
 
@@ -28,6 +30,8 @@ function App() {
         <Route path="/review" element={<Review />} />
         <Route path="/class/:id" element={<ClassMode />} />
         <Route path="/worksheet/:id" element={<Worksheet />} />
+        <Route path="/my-class" element={<MyClass />} />
+        <Route path="/teacher" element={<Teacher />} />
       </Routes>
     </Router>
   )

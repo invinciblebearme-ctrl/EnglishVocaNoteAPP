@@ -2,11 +2,14 @@
 //
 // 사용법 (각 학습 화면에서 채점 직후 호출):
 //   import { recordResult } from '../utils/progress'
-//   recordResult(word, true)   // 맞힘   (word = all_rounds.json의 { en, ko, img })
-//   recordResult(word, false)  // 틀림
+//   recordResult(word, true, { roundId, source })   // 맞힘 (word = all_rounds.json의 { en, ko, img })
+//   recordResult(word, false, { roundId, source })  // 틀림
+//   source: 'listen' | 'scramble' | 'review' | 'speak' — 학급에 참여한 경우 현황판으로 전송
 //
 // 상자(box) 0~5: 맞히면 한 칸 올라가고, 틀리면 1로 내려가 오늘 다시 복습한다.
 // 상자별 다음 복습까지 간격(일): 0 → 0, 1 → 1, 2 → 3, 3 → 7, 4 → 14, 5 → 30
+
+import { queueClassEvent } from './classSync'
 
 const STORAGE_KEY = 'learning_progress_v1'
 const INTERVAL_DAYS = [0, 1, 3, 7, 14, 30]
@@ -35,7 +38,7 @@ const save = (data) => {
 }
 
 // 채점 결과 기록
-export const recordResult = (word, correct) => {
+export const recordResult = (word, correct, meta = {}) => {
   if (!word?.en) return
   const data = load()
   const prev = data[word.en] || { box: 0, correct: 0, wrong: 0 }
@@ -50,6 +53,7 @@ export const recordResult = (word, correct) => {
   }
   save(data)
   logActivity()
+  queueClassEvent(word, correct, meta)
 }
 
 // ── 학습 활동 (연속 학습일 · 하루 목표) ──────────────────────────

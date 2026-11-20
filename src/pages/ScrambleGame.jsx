@@ -68,9 +68,9 @@ function ScrambleGame() {
 
       if (!hasRecordedCorrect) {
         if (hintStep === 0) {
-          recordResult(currentWord, true)
+          recordResult(currentWord, true, { roundId: roundData.id, source: 'scramble' })
         } else if (!hasRecordedWrong) {
-          recordResult(currentWord, false)
+          recordResult(currentWord, false, { roundId: roundData.id, source: 'scramble' })
           setHasRecordedWrong(true)
         }
         setHasRecordedCorrect(true)
@@ -80,7 +80,7 @@ function ScrambleGame() {
       setShowImage(true) // Show image on correct answer
     } else {
       if (!hasRecordedWrong) {
-        recordResult(currentWord, false)
+        recordResult(currentWord, false, { roundId: roundData.id, source: 'scramble' })
         setHasRecordedWrong(true)
       }
       setFeedback({ level: 1, message: 'Try Again! 다시 시도해보세요' })

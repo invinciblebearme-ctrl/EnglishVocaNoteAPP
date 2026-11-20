@@ -1,0 +1,11 @@
+# Cloudflare Pages 설정 (학급 현황판 API용 D1 연결)
+name = "english-voca-note-app"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "voca-class"
+# 실제 D1을 만든 뒤 `npx wrangler d1 create voca-class`가 알려 주는 id로 바꾼다
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"

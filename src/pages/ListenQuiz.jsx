@@ -60,7 +60,7 @@ function QuizSession({ round }) {
     if (answered.current) return
     answered.current = true
     const correct = option.en === question.word.en
-    recordResult(question.word, correct)
+    recordResult(question.word, correct, { roundId: round.id, source: 'listen' })
     setAnswers(previous => [...previous, { word: question.word, choice: option.en, correct }])
   }
 
