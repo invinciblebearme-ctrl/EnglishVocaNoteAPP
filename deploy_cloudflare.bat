@@ -4,16 +4,8 @@ echo ==============================================
 echo [EnglishVocaNoteAPP] Cloudflare Pages 배포 시작
 echo ==============================================
 
-echo 1. 빌드 실행 중...
-call npm run build
-if %errorlevel% neq 0 (
-    echo [오류] 빌드에 실패했습니다.
-    pause
-    exit /b %errorlevel%
-)
-
-echo 2. Cloudflare Pages 배포 중...
-call "c:\Users\user\.gemini\antigravity-ide\scratch\pdfviewer\node_modules\.bin\wrangler.cmd" pages deploy dist --project-name english-voca-note-app --branch main --commit-dirty=true
+echo 빌드 및 Cloudflare Pages 배포 중... (처음 실행 시 wrangler 로그인 창이 열릴 수 있습니다)
+call npm run deploy
 if %errorlevel% neq 0 (
     echo [오류] 배포에 실패했습니다.
     pause
