@@ -4,6 +4,7 @@ import allRounds from '../data/all_rounds.json'
 import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 import { getPrimaryAnswer, isCorrectAnswer, shuffleLetters } from '../utils/answer'
 import { speakWord } from '../utils/speech'
+import { getImageUrl } from '../utils/image'
 
 function ScrambleGame() {
   const { id } = useParams()
@@ -81,7 +82,7 @@ function ScrambleGame() {
     setUserInput(prev => prev + letter)
   }
 
-  const imgUrl = currentWord ? `https://englishvocanote.pages.dev/${window.atob(currentWord.img)}` : null
+  const imgUrl = getImageUrl(currentWord?.img)
 
   return (
     <div className="challenge-body scramble-game">

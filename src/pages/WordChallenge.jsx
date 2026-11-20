@@ -4,6 +4,7 @@ import allRounds from '../data/all_rounds.json'
 import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 import { isCorrectAnswer, isPartialAnswer } from '../utils/answer'
 import { speakWord } from '../utils/speech'
+import { getImageUrl } from '../utils/image'
 
 function WordChallenge() {
   const { id } = useParams()
@@ -87,7 +88,7 @@ function WordChallenge() {
   if (!roundData) return <div className="challenge-body">데이터를 불러오는 중...</div>;
 
   const currentWord = roundData.words[index]
-  const imgUrl = currentWord.img ? `https://englishvocanote.pages.dev/${window.atob(currentWord.img)}` : null
+  const imgUrl = getImageUrl(currentWord.img)
 
   // STT 발음 측정 시작
   const startSTT = () => {
