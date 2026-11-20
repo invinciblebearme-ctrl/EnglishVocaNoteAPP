@@ -427,9 +427,9 @@
   },
   {
     "id": 7,
-    "name": "과일",
+    "name": "과일·채소",
     "grade": "3학년 1학기",
-    "category": "과일",
+    "category": "과일·채소",
     "words": [
       {
         "en": "apple",
@@ -2570,7 +2570,7 @@
       },
       {
         "en": "broke",
-        "ko": "부쳤다",
+        "ko": "부러뜨렸다, 고장 냈다",
         "img": "YnJva2Uud2VicA==",
         "ex": "I broke my leg.",
         "exKo": "나는 다리가 부러졌어."

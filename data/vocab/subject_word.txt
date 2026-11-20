@@ -324,7 +324,7 @@
 6학년 1학기	5. Why Are You Happy? (감정의 이유 묻고 답하기)	angry	화난
 6학년 1학기	5. Why Are You Happy? (감정의 이유 묻고 답하기)	tired	피곤한
 6학년 1학기	5. Why Are You Happy? (감정의 이유 묻고 답하기)	because	~ 때문에, 왜냐하면
-6학년 1학기	5. Why Are You Happy? (감정의 이유 묻고 답하기)	broke	부쳤다
+6학년 1학기	5. Why Are You Happy? (감정의 이유 묻고 답하기)	broke	부러뜨렸다, 고장 냈다
 6학년 1학기	5. Why Are You Happy? (감정의 이유 묻고 답하기)	congratulations	축하해요
 6학년 1학기	6. She Has Long Curly Hair (외모 묻고 답하기)	look	(~해, ~처럼) 보이다
 6학년 1학기	6. She Has Long Curly Hair (외모 묻고 답하기)	wear	입고[신고, 쓰고, 차고, 매고] 있다
