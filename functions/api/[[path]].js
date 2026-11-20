@@ -43,7 +43,7 @@ const newClassCode = () => {
 const normCode = (code) => String(code || '').trim().toUpperCase()
 
 const verifyTeacher = async (db, code, password) => {
-  const cls = await db.prepare('SELECT * FROM classes WHERE code = ?').bind(normCode(code)).first()
+  const cls = await db.prepare('SELECT * FROM voca_classes WHERE code = ?').bind(normCode(code)).first()
   if (!cls || typeof password !== 'string') return null
   const hash = await hashPassword(password, cls.salt)
   return safeEqual(hash, cls.teacher_hash) ? cls : null
@@ -65,7 +65,7 @@ async function createClass(db, body) {
   for (let attempt = 0; attempt < 5; attempt++) {
     const code = newClassCode()
     const res = await db
-      .prepare('INSERT OR IGNORE INTO classes (code, name, teacher_hash, salt, created_at) VALUES (?, ?, ?, ?, ?)')
+      .prepare('INSERT OR IGNORE INTO voca_classes (code, name, teacher_hash, salt, created_at) VALUES (?, ?, ?, ?, ?)')
       .bind(code, name, teacherHash, salt, Date.now())
       .run()
     if (res.meta.changes === 1) return json({ code, name })
@@ -76,12 +76,12 @@ async function createClass(db, body) {
 async function deleteClass(db, body) {
   const cls = await verifyTeacher(db, body.code, body.password)
   if (!cls) return fail(401, '학급 코드 또는 비밀번호가 맞지 않아요.')
-  const ids = 'SELECT id FROM students WHERE class_code = ?'
+  const ids = 'SELECT id FROM voca_students WHERE class_code = ?'
   await db.batch([
-    db.prepare(`DELETE FROM events WHERE student_id IN (${ids})`).bind(cls.code),
-    db.prepare(`DELETE FROM student_tokens WHERE student_id IN (${ids})`).bind(cls.code),
-    db.prepare('DELETE FROM students WHERE class_code = ?').bind(cls.code),
-    db.prepare('DELETE FROM classes WHERE code = ?').bind(cls.code),
+    db.prepare(`DELETE FROM voca_events WHERE student_id IN (${ids})`).bind(cls.code),
+    db.prepare(`DELETE FROM voca_student_tokens WHERE student_id IN (${ids})`).bind(cls.code),
+    db.prepare('DELETE FROM voca_students WHERE class_code = ?').bind(cls.code),
+    db.prepare('DELETE FROM voca_classes WHERE code = ?').bind(cls.code),
   ])
   return json({ ok: true })
 }
@@ -92,11 +92,11 @@ async function join(db, body) {
   const nickname = cleanText(body.nickname, 12)
   if (!Number.isInteger(number) || number < 1 || number > 60) return fail(400, '번호는 1~60 사이로 입력하세요.')
   if (!nickname) return fail(400, '별명을 입력하세요.')
-  const cls = await db.prepare('SELECT code, name FROM classes WHERE code = ?').bind(code).first()
+  const cls = await db.prepare('SELECT code, name FROM voca_classes WHERE code = ?').bind(code).first()
   if (!cls) return fail(404, '학급 코드를 찾을 수 없어요.')
 
   let student = await db
-    .prepare('SELECT id, nickname FROM students WHERE class_code = ? AND number = ?')
+    .prepare('SELECT id, nickname FROM voca_students WHERE class_code = ? AND number = ?')
     .bind(code, number)
     .first()
   if (student && student.nickname !== nickname) {
@@ -105,14 +105,14 @@ async function join(db, body) {
   }
   if (!student) {
     const res = await db
-      .prepare('INSERT INTO students (class_code, number, nickname, created_at) VALUES (?, ?, ?, ?)')
+      .prepare('INSERT INTO voca_students (class_code, number, nickname, created_at) VALUES (?, ?, ?, ?)')
       .bind(code, number, nickname, Date.now())
       .run()
     student = { id: res.meta.last_row_id }
   }
   const token = randomHex(32)
   await db
-    .prepare('INSERT INTO student_tokens (token_hash, student_id, created_at) VALUES (?, ?, ?)')
+    .prepare('INSERT INTO voca_student_tokens (token_hash, student_id, created_at) VALUES (?, ?, ?)')
     .bind(await sha256(token), student.id, Date.now())
     .run()
   return json({ token, className: cls.name, code, number, nickname })
@@ -121,7 +121,7 @@ async function join(db, body) {
 async function saveEvents(db, body) {
   if (typeof body.token !== 'string') return fail(401, '참여 정보가 없어요.')
   const row = await db
-    .prepare('SELECT student_id FROM student_tokens WHERE token_hash = ?')
+    .prepare('SELECT student_id FROM voca_student_tokens WHERE token_hash = ?')
     .bind(await sha256(body.token))
     .first()
   if (!row) return fail(401, '참여 정보가 만료됐어요. 다시 참여해 주세요.')
@@ -137,7 +137,7 @@ async function saveEvents(db, body) {
     if (!en || !source || !day) continue
     stmts.push(
       db
-        .prepare('INSERT INTO events (student_id, en, round_id, correct, source, day, ts) VALUES (?, ?, ?, ?, ?, ?, ?)')
+        .prepare('INSERT INTO voca_events (student_id, en, round_id, correct, source, day, ts) VALUES (?, ?, ?, ?, ?, ?, ?)')
         .bind(row.student_id, en, roundId, e.correct ? 1 : 0, source, day, ts)
     )
   }
@@ -171,26 +171,26 @@ async function dashboard(db, body) {
   w.setUTCDate(w.getUTCDate() - 6)
   const weekStart = w.toISOString().slice(0, 10)
 
-  const inClass = 'student_id IN (SELECT id FROM students WHERE class_code = ?1)'
+  const inClass = 'student_id IN (SELECT id FROM voca_students WHERE class_code = ?1)'
   const [students, perStudent, days, rounds, wrongWords, weak] = await db.batch([
-    db.prepare('SELECT id, number, nickname FROM students WHERE class_code = ?1 ORDER BY number').bind(code),
+    db.prepare('SELECT id, number, nickname FROM voca_students WHERE class_code = ?1 ORDER BY number').bind(code),
     db.prepare(
       `SELECT student_id, COUNT(*) AS total, SUM(correct) AS correct,
               SUM(CASE WHEN day >= ?2 THEN 1 ELSE 0 END) AS week,
               MAX(ts) AS last_ts
-       FROM events WHERE ${inClass} GROUP BY student_id`
+       FROM voca_events WHERE ${inClass} GROUP BY student_id`
     ).bind(code, weekStart),
-    db.prepare(`SELECT DISTINCT student_id, day FROM events WHERE ${inClass}`).bind(code),
+    db.prepare(`SELECT DISTINCT student_id, day FROM voca_events WHERE ${inClass}`).bind(code),
     db.prepare(
       `SELECT round_id, COUNT(*) AS total, SUM(correct) AS correct, COUNT(DISTINCT student_id) AS students
-       FROM events WHERE ${inClass} AND round_id IS NOT NULL GROUP BY round_id ORDER BY round_id`
+       FROM voca_events WHERE ${inClass} AND round_id IS NOT NULL GROUP BY round_id ORDER BY round_id`
     ).bind(code),
     db.prepare(
       `SELECT en, COUNT(*) AS wrong, COUNT(DISTINCT student_id) AS students
-       FROM events WHERE ${inClass} AND correct = 0 GROUP BY en ORDER BY wrong DESC, students DESC LIMIT 15`
+       FROM voca_events WHERE ${inClass} AND correct = 0 GROUP BY en ORDER BY wrong DESC, students DESC LIMIT 15`
     ).bind(code),
     db.prepare(
-      `SELECT student_id, en, COUNT(*) AS wrong FROM events
+      `SELECT student_id, en, COUNT(*) AS wrong FROM voca_events
        WHERE ${inClass} AND correct = 0 GROUP BY student_id, en ORDER BY student_id, wrong DESC`
     ).bind(code),
   ])

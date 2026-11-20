@@ -5,7 +5,7 @@ compatibility_date = "2026-11-01"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "voca-class"
-# 실제 D1을 만든 뒤 `npx wrangler d1 create voca-class`가 알려 주는 id로 바꾼다
-database_id = "00000000-0000-0000-0000-000000000000"
+database_name = "english-cbt"  # 무료 플랜 D1 개수 한도로 기존 DB를 함께 씀 (테이블은 voca_ 접두사)
+database_id = "9fc40049-21fd-4142-812b-5cc9a5a56bfb"
 migrations_dir = "migrations"
+migrations_table = "voca_migrations"  # english-cbt의 d1_migrations와 섞이지 않게
