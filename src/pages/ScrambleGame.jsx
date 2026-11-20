@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 import { getPrimaryAnswer, isCorrectAnswer, shuffleLetters } from '../utils/answer'
+import { speakWord } from '../utils/speech'
 
 function ScrambleGame() {
   const { id } = useParams()
@@ -61,11 +62,7 @@ function ScrambleGame() {
     }, 800) // 0.8s spinner
   }
 
-  const handleSpeak = () => {
-    const utterance = new SpeechSynthesisUtterance(currentWord.en)
-    utterance.lang = 'en-US'
-    window.speechSynthesis.speak(utterance)
-  }
+  const handleSpeak = () => speakWord(currentWord.en)
 
   const nextWord = () => {
     if (index < roundData.words.length - 1) {

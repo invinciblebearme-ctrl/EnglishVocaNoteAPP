@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getMyVoca, removeFromMyVoca } from '../utils/storage'
+import { speakWord } from '../utils/speech'
 
 function VocaItem({ word, handleDelete, speakWord }) {
   const [showKo, setShowKo] = useState(false);
@@ -76,13 +77,6 @@ function MyVocabulary() {
     setVocaList(getMyVoca())
   }
 
-  const speakWord = (word) => {
-    window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(word)
-    utterance.lang = 'en-US'
-    utterance.rate = 0.9
-    window.speechSynthesis.speak(utterance)
-  }
 
   const exportToPDF = async () => {
     if (vocaList.length === 0) return
