@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { useSelectedGrade } from '../hooks/useSelectedGrade'
 import { getImageUrl } from '../utils/image'
+import { getRoundProgress } from '../utils/progress'
 
 // 학년별 회차 목록 (듣기/읽기, 쓰기 연습 화면 공통)
 function RoundList({ title, placeholder, linkPrefix, imgProps }) {
@@ -72,23 +73,38 @@ function RoundList({ title, placeholder, linkPrefix, imgProps }) {
                     <div className="grid-container">
                       {roundsInGrade
                         .filter(r => r.category === theme)
-                        .map(round => (
-                          <div key={round.id} className="item" onClick={() => navigate(`${linkPrefix}/${round.id}`)}>
-                            <img
-                              src={getImageUrl(round.words[0].img)}
-                              alt={round.name}
-                              {...imgProps}
-                              onError={(e) => {
-                                e.target.style.display = 'none';
-                                const fallback = e.target.nextSibling;
-                                if (fallback) fallback.style.display = 'flex';
-                              }}
-                            />
-                            <div className="image-fallback">
-                              이미지<br/>준비중
+                        .map(round => {
+                          const { total, mastered } = getRoundProgress(round)
+                          const percent = total > 0 ? Math.round((mastered / total) * 100) : 0
+                          const isCompleted = total > 0 && mastered === total
+
+                          return (
+                            <div key={round.id} className="item" onClick={() => navigate(`${linkPrefix}/${round.id}`)}>
+                              {isCompleted && (
+                                <span className="round-complete-badge" title="학습 완료">✅</span>
+                              )}
+                              <img
+                                src={getImageUrl(round.words[0].img)}
+                                alt={round.name}
+                                {...imgProps}
+                                onError={(e) => {
+                                  e.target.style.display = 'none';
+                                  const fallback = e.target.nextSibling;
+                                  if (fallback) fallback.style.display = 'flex';
+                                }}
+                              />
+                              <div className="image-fallback">
+                                이미지<br/>준비중
+                              </div>
+                              <div className="round-progress-bar" title={`${mastered} / ${total} 익힘`}>
+                                <div
+                                  className={`round-progress-fill ${isCompleted ? 'completed' : ''}`}
+                                  style={{ width: `${percent}%` }}
+                                />
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          )
+                        })}
                     </div>
                   </div>
                 ))}
