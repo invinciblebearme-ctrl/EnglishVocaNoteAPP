@@ -31,11 +31,11 @@ API는 `functions/api/[[path]].js`(Pages Functions), 데이터베이스 구조�
 
 ```bash
 # 로컬에서 시험하기
-npx wrangler d1 migrations apply english-cbt --local
+npx wrangler d1 migrations apply word-app-db --local
 npm run build && npx wrangler pages dev dist     # http://localhost:8788
 
 # 처음 한 번: 실제 DB에 테이블 만들기
-npx wrangler d1 migrations apply english-cbt --remote  # 기존 english-cbt DB에 voca_ 테이블 추가
+npx wrangler d1 migrations apply word-app-db --remote  # 단어 앱 공용 DB에 voca_ 테이블 추가
 ```
 
 개인정보: 학생은 학급 코드·출석번호·별명만 저장하고 실명은 저장하지 않습니다.
