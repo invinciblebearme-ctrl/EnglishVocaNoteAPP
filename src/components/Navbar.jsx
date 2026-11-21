@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { getDueCount, PROGRESS_EVENT } from '../utils/progress'
-import InstallButton from './InstallButton'
 
 function Navbar() {
   const location = useLocation()
@@ -29,29 +28,32 @@ function Navbar() {
           to="/" 
           className={`segment-item ${isReadingActive ? 'active' : ''}`}
         >
-          <span className="nav-icon">🎧</span> 듣기 / 읽기
+          <span className="nav-icon">🎧</span>
+          <span className="nav-label">듣기 / 읽기</span>
         </Link>
         <Link 
           to="/scramble" 
           className={`segment-item ${isWritingActive ? 'active' : ''}`}
         >
-          <span className="nav-icon">✍️</span> 쓰기 연습
+          <span className="nav-icon">✍️</span>
+          <span className="nav-label">쓰기 연습</span>
         </Link>
         <Link 
           to="/my-voca" 
           className={`segment-item ${isMyVocaActive ? 'active' : ''}`}
         >
-          <span className="nav-icon">⭐</span> 단어장
+          <span className="nav-icon">⭐</span>
+          <span className="nav-label">단어장</span>
         </Link>
         <Link
           to="/review"
           className={`segment-item ${isReviewActive ? 'active' : ''}`}
         >
-          <span className="nav-icon">🔁</span> 복습
+          <span className="nav-icon">🔁</span>
+          <span className="nav-label">복습</span>
           {dueCount > 0 && <span className="nav-badge">{dueCount}</span>}
         </Link>
       </div>
-      <InstallButton />
     </nav>
   )
 }

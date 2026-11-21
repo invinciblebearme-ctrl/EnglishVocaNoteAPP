@@ -5,6 +5,7 @@ import { useSelectedGrade } from '../hooks/useSelectedGrade'
 import { getImageUrl } from '../utils/image'
 import { getRoundProgress } from '../utils/progress'
 import StudyStatus from './StudyStatus'
+import InstallButton from './InstallButton'
 
 // 학년별 회차 목록 (듣기/읽기, 쓰기 연습 화면 공통)
 function RoundList({ title, placeholder, linkPrefix, imgProps }) {
@@ -36,6 +37,7 @@ function RoundList({ title, placeholder, linkPrefix, imgProps }) {
       <div className="home-body" style={{ textAlign: 'center' }}>
         <h1 className="home-title">{title}</h1>
         <StudyStatus />
+        <InstallButton />
 
         <div className="search-container">
           <input

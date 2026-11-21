@@ -33,8 +33,20 @@ function GradeNav() {
 
   return (
     <div className="grade-nav-container">
-      {/* Semester Selector */}
-      <div className="semester-tabs">
+      {/* 학년 선택 */}
+      <div className="grade-tabs" role="group" aria-label="학년">
+        {GRADES.map((grade) => (
+          <button
+            key={grade}
+            className={`grade-tab-item ${currentGrade === grade ? 'active' : ''}`}
+            onClick={() => handleGradeSelect(grade)}
+          >
+            {grade}
+          </button>
+        ))}
+      </div>
+      {/* 학기 선택 (오른쪽 작은 스위치) */}
+      <div className="semester-tabs" role="group" aria-label="학기">
         {SEMESTERS.map((semester) => (
           <button
             key={semester}
@@ -46,18 +58,6 @@ function GradeNav() {
         ))}
       </div>
 
-      {/* Grade Selector */}
-      <div className="grade-tabs">
-        {GRADES.map((grade) => (
-          <button
-            key={grade}
-            className={`grade-tab-item ${currentGrade === grade ? 'active' : ''}`}
-            onClick={() => handleGradeSelect(grade)}
-          >
-            {grade}
-          </button>
-        ))}
-      </div>
     </div>
   )
 }

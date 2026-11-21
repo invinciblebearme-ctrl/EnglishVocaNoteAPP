@@ -10,16 +10,12 @@ import ClassMode from './pages/ClassMode'
 import Worksheet from './pages/Worksheet'
 import MyClass from './pages/MyClass'
 import Teacher from './pages/Teacher'
-import Navbar from './components/Navbar'
-import GradeNav from './components/GradeNav'
+import AppHeader from './components/AppHeader'
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div style={{ marginTop: '20px' }}>
-        <GradeNav />
-      </div>
+      <AppHeader />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/challenge/:id" element={<WordChallenge />} />

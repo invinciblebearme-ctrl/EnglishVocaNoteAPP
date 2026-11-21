@@ -29,19 +29,29 @@ header {
     padding: 1rem;
 }
 
-.floating-navbar {
+/* 상단 고정 영역: 메뉴 + 학년·학기. 높이는 AppHeader가 재서 --header-h에 적는다 */
+.app-header {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    max-width: 470px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
+    padding: calc(env(safe-area-inset-top, 0px) + 12px)
+             calc(env(safe-area-inset-right, 0px) + 8px)
+             6px
+             calc(env(safe-area-inset-left, 0px) + 8px);
+    pointer-events: none; /* 빈 틈으로는 아래 화면을 누를 수 있게 */
+}
+
+.floating-navbar {
+    width: 100%;
+    max-width: 470px;
+    display: flex;
     justify-content: center;
-    z-index: 2000;
-    pointer-events: none;
 }
 
 .segmented-control {
@@ -57,9 +67,12 @@ header {
     box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.5),
                 0 0 20px var(--accent-glow);
     pointer-events: auto;
+    box-sizing: border-box;
 }
 
 .segment-item {
+    position: relative;
+    white-space: nowrap;
     padding: 10px 12px;
     text-decoration: none;
     color: var(--text-secondary);
@@ -93,27 +106,22 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 190px;
+    padding-top: calc(var(--header-h, 140px) + 8px);
     padding-bottom: 3rem;
 }
 
 .grade-nav-container {
-    position: fixed;
-    top: 86px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
+    width: 100%;
     max-width: 470px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 7px;
-    z-index: 1000;
+    gap: 6px;
+    pointer-events: auto;
 }
 
 .semester-tabs {
     display: flex;
-    width: 200px;
+    flex: none;
     gap: 4px;
     background: rgba(15, 23, 42, 0.65);
     backdrop-filter: blur(12px);
@@ -124,7 +132,7 @@ header {
 }
 
 .semester-tab-item {
-    padding: 5px 14px;
+    padding: 6px 10px;
     border-radius: 30px;
     border: 1px solid transparent;
     background: transparent;
@@ -155,7 +163,8 @@ header {
 
 .grade-tabs {
     display: flex;
-    width: 100%;
+    flex: 1;
+    min-width: 0;
     gap: 4px;
     background: rgba(15, 23, 42, 0.55);
     backdrop-filter: blur(10px);
@@ -303,7 +312,7 @@ img:active {
     font-weight: 800;
     color: var(--text-primary);
     margin-bottom: 0px;
-    margin-top: 35px;
+    margin-top: 16px;
     background: linear-gradient(to right, #f8fafc, #38bdf8);
     -webkit-background-clip: text;
     background-clip: text;
@@ -327,7 +336,7 @@ img:active {
     border-radius: 12px;
     border-left: 4px solid var(--accent);
     position: sticky;
-    top: 80px;
+    top: calc(var(--header-h, 140px) + 4px);
     z-index: 10;
     text-align: left;
     width: calc(100% - 40px);
@@ -409,7 +418,10 @@ img:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: calc(var(--header-h, 140px) + 12px) 0 24px;
     margin: 0;
 }
 
@@ -973,7 +985,7 @@ img:active {
     height: auto;
     min-height: 100vh;
     justify-content: flex-start;
-    padding: 100px 16px 40px;
+    padding: calc(var(--header-h, 140px) + 12px) 16px 40px;
 }
 
 .listen-quiz .challenge-container {
@@ -1294,7 +1306,11 @@ img:active {
 .example-sentence.large .example-ko { font-size: clamp(1rem, 2vw, 1.8rem); }
 
 /* InstallButton (앱 설치) */
-.install-wrap { position: relative; display: flex; justify-content: center; margin-top: 8px; pointer-events: auto; }
+.install-wrap { position: relative; display: flex; justify-content: center; align-items: center; gap: 6px; margin-top: 12px; }
+.install-later {
+  font: inherit; font-size: 0.75rem; color: var(--text-muted);
+  background: none; border: none; padding: 4px 6px; cursor: pointer; text-decoration: underline;
+}
 .install-btn {
   font: inherit; font-size: 0.8rem; font-weight: 700;
   color: var(--accent); background: rgba(56, 189, 248, 0.1);
@@ -1370,3 +1386,26 @@ img:active {
 }
 .nav-btn-premium:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .nav-btn-premium:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* 휴대폰: 메뉴를 아이콘 위·이름 아래로 (이름이 두 줄로 꺾이지 않게) */
+@media (max-width: 480px) {
+  .segmented-control { padding: 4px; }
+  .segment-item {
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px 2px;
+    font-size: 0.72rem;
+    min-width: 0;
+  }
+  .nav-icon { font-size: 1.15rem; line-height: 1.2; }
+  .nav-badge { position: absolute; top: 2px; right: calc(50% - 22px); margin: 0; }
+  .grade-tabs { padding: 3px; gap: 2px; }
+  .grade-tab-item { padding: 6px 2px; font-size: 0.78rem; }
+  .semester-tabs { padding: 3px; gap: 2px; }
+  .semester-tab-item { padding: 6px 7px; font-size: 0.75rem; }
+}
+
+/* 단어 카드 아래 버튼: 좁은 화면에서는 줄을 바꿔 3개씩 (겹치지 않게) */
+.challenge-controls { flex-wrap: wrap; max-width: 360px; }
+.challenge-controls > button { flex: 1 1 calc(33.333% - 8px); white-space: nowrap; padding: 10px 6px; }
+.teacher-tools .teacher-label { flex-basis: 100%; text-align: center; }
