@@ -43,13 +43,20 @@ function QuizSession({ round }) {
   const [answers, setAnswers] = useState([])
   const answered = useRef(false)
   const nextButton = useRef(null)
+  const replayButton = useRef(null)
+  const resultTitle = useRef(null)
   const question = questions[index]
   const selected = answers[index]
   const finished = index === questions.length
   const wrongAnswers = answers.filter(answer => !answer.correct)
 
   useEffect(() => {
-    if (question) speakWord(question.word.en)
+    if (question) {
+      replayButton.current?.focus()
+      speakWord(question.word.en)
+    } else {
+      resultTitle.current?.focus()
+    }
     return () => window.speechSynthesis?.cancel()
   }, [question])
 
@@ -66,6 +73,7 @@ function QuizSession({ round }) {
   }
 
   function nextQuestion() {
+    if (!answered.current) return
     answered.current = false
     setIndex(previous => previous + 1)
   }
@@ -83,7 +91,7 @@ function QuizSession({ round }) {
         <h1>🎧 {roundLabel(round)} 듣기 퀴즈</h1>
         {finished ? (
           <section className="listen-result" aria-labelledby="listen-result-title">
-            <h2 id="listen-result-title">끝까지 잘했어요! 🎉</h2>
+            <h2 id="listen-result-title" ref={resultTitle} tabIndex={-1}>끝까지 잘했어요! 🎉</h2>
             <p className="listen-score">{answers.length - wrongAnswers.length} / {questions.length}개 정답</p>
             {wrongAnswers.length > 0 ? (
               <>
@@ -105,10 +113,10 @@ function QuizSession({ round }) {
         ) : (
           <>
             <div className="challenge-index">문제 {index + 1} / {questions.length}</div>
-            <progress className="listen-progress" value={index} max={questions.length} aria-label="퀴즈 진행" />
+            <progress className="listen-progress" value={index + (selected ? 1 : 0)} max={questions.length} aria-label="퀴즈 진행" />
             <h2 className="listen-prompt">잘 듣고 알맞은 그림을 골라요!</h2>
             <div className="action-row listen-replay-row">
-              <button className="action-btn" onClick={() => speakWord(question.word.en)}>🔊 다시 듣기</button>
+              <button ref={replayButton} className="action-btn" onClick={() => speakWord(question.word.en)}>🔊 다시 듣기</button>
             </div>
             <div className="listen-options" role="group" aria-label="그림 보기 4개" key={index}>
               {question.options.map((option, optionIndex) => {
