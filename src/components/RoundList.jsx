@@ -7,6 +7,7 @@ import { getRoundProgress } from '../utils/progress'
 import StudyStatus from './StudyStatus'
 import InstallButton from './InstallButton'
 import { CLASS_EVENT, getMembership } from '../utils/classSync'
+import { matchesRoundSearch, termNo } from '../utils/round'
 
 // 학년별 회차 목록 (듣기/읽기, 쓰기 연습 화면 공통)
 function RoundList({ title, placeholder, linkPrefix }) {
@@ -15,16 +16,8 @@ function RoundList({ title, placeholder, linkPrefix }) {
   const navigate = useNavigate()
 
   const filteredRounds = useMemo(() => {
-    const term = searchTerm.toLowerCase()
     return allRounds.filter(round => {
-      const matchSearch =
-        `${round.id}회` === term.replace(/\s/g, '') ||
-        round.name.toLowerCase().includes(term) ||
-        round.category.toLowerCase().includes(term) ||
-        round.words.some(word =>
-          word.en.toLowerCase().includes(term) ||
-          word.ko.includes(searchTerm)
-        )
+      const matchSearch = matchesRoundSearch(round, searchTerm)
       // 검색 중에는 전체 학년에서, 아니면 선택한 학년에서만 보여준다
       return searchTerm ? matchSearch : round.grade === selectedGrade && matchSearch
     })
@@ -93,7 +86,7 @@ function RoundList({ title, placeholder, linkPrefix }) {
                           />
                         </span>
                         <span className="round-card-title">
-                          <span className="round-no">{round.id}회</span> {round.name}
+                          <span className="round-no">{termNo(round)}.</span> {round.name}
                         </span>
                         <span className="round-card-meta">
                           {total}단어 · {mastered > 0 ? `${mastered}개 익힘` : '시작 전'}

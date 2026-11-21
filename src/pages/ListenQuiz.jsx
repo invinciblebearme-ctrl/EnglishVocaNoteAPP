@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { speakWord } from '../utils/speech'
 import { getImageUrl } from '../utils/image'
-import { roundLabel } from '../utils/round'
+import { roundFullLabel } from '../utils/round'
 import { recordResult } from '../utils/progress'
 
 function shuffle(items) {
@@ -88,7 +88,7 @@ function QuizSession({ round }) {
   return (
     <main className="challenge-body listen-quiz">
       <div className="challenge-container">
-        <h1>🎧 {roundLabel(round)} 듣기 퀴즈</h1>
+        <h1>🎧 {roundFullLabel(round)} 듣기 퀴즈</h1>
         {finished ? (
           <section className="listen-result" aria-labelledby="listen-result-title">
             <h2 id="listen-result-title" ref={resultTitle} tabIndex={-1}>끝까지 잘했어요! 🎉</h2>

@@ -1397,3 +1397,30 @@ header {
 .class-reset-done {
   margin: 0; font-size: 0.88rem; color: var(--text-secondary);
 }
+
+/* 회차 카드 가운데 정렬 */
+.round-card {
+  align-items: center;
+  text-align: center;
+}
+.round-card-img {
+  width: 100%;
+  margin: 0 auto;
+}
+.round-card-img img {
+  object-position: center;
+}
+.round-card-title {
+  width: 100%;
+  text-align: center;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.round-card-meta {
+  width: 100%;
+  text-align: center;
+  word-break: keep-all;
+}
+.round-card .round-progress-bar {
+  width: 100%;
+}

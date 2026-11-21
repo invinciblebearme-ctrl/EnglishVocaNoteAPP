@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
-import { roundLabel } from '../utils/round'
+import { roundFullLabel } from '../utils/round'
 import { api } from '../utils/classSync'
 
 // 선생님용: 학급 만들기 · 학급 현황판
@@ -194,7 +194,7 @@ function Dashboard({ data, onRefresh, onLogout, onDelete, onDeleteStudent, busy 
                   const round = roundById.get(r.roundId)
                   return (
                     <tr key={r.roundId}>
-                      <td>{round ? `${round.grade} · ${roundLabel(round)}` : `${r.roundId}회`}</td>
+                      <td>{round ? roundFullLabel(round) : '알 수 없는 회차'}</td>
                       <td><Bar value={r.accuracy} /> {r.accuracy}%</td>
                       <td className="dash-muted">{r.students}명 · {r.total}문제</td>
                     </tr>

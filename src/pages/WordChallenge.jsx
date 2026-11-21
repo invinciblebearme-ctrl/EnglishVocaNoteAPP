@@ -8,7 +8,7 @@ import { recognizeSpeech } from '../utils/pronounce'
 import { recordResult } from '../utils/progress'
 import ExampleSentence from '../components/ExampleSentence'
 import { getImageUrl } from '../utils/image'
-import { roundLabel } from '../utils/round'
+import { roundFullLabel } from '../utils/round'
 import { swipeHandlers } from '../utils/swipe'
 
 function WordChallenge() {
@@ -195,7 +195,7 @@ function WordChallenge() {
   return (
     <div className="challenge-body">
       <div className="challenge-container word-page">
-        <h1>{roundLabel(roundData)}</h1>
+        <h1>{roundFullLabel(roundData)}</h1>
         <div className="challenge-index">단어 {index + 1} / {roundData.words.length}</div>
 
         <div className="card-stage" {...swipe}>

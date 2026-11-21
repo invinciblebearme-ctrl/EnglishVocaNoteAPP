@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
-import { roundLabel } from '../utils/round'
+import { roundFullLabel } from '../utils/round'
 import { getImageUrl } from '../utils/image'
 import { getPrimaryAnswer } from '../utils/answer'
 
@@ -67,7 +67,7 @@ function Worksheet() {
         <div>
           <div className="ws-grade">{round.grade} · {round.category}</div>
           <h1 className="ws-title">
-            {roundLabel(round)} — {TYPES[type].label}
+            {roundFullLabel(round)} — {TYPES[type].label}
             {answerKey && <span className="ws-answer-tag">정답</span>}
           </h1>
           <p className="ws-desc">{TYPES[type].desc}</p>

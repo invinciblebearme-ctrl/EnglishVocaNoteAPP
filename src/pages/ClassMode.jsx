@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
-import { roundLabel } from '../utils/round'
+import { roundFullLabel } from '../utils/round'
 import { speakWord } from '../utils/speech'
 import { getImageUrl } from '../utils/image'
 import ExampleSentence from '../components/ExampleSentence'
@@ -124,7 +124,7 @@ function ClassMode() {
   return (
     <div className="class-mode" ref={rootRef}>
       <div className="class-toolbar">
-        <span className="class-title">{roundLabel(round)} · {index + 1} / {words.length}</span>
+        <span className="class-title">{roundFullLabel(round)} · {index + 1} / {words.length}</span>
         <button
           className="class-settings-toggle"
           onClick={() => setShowSettings((v) => !v)}

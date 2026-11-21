@@ -5,7 +5,7 @@ import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 import { getPrimaryAnswer, isCorrectAnswer, shuffleLetters, normalize } from '../utils/answer'
 import { speakWord } from '../utils/speech'
 import { getImageUrl } from '../utils/image'
-import { roundLabel } from '../utils/round'
+import { roundFullLabel } from '../utils/round'
 import { swipeHandlers } from '../utils/swipe'
 import { recordResult } from '../utils/progress'
 
@@ -178,7 +178,7 @@ function ScrambleGame() {
   return (
     <div className="challenge-body scramble-game">
       <div className="challenge-container word-page">
-        <h1>✍️ {roundLabel(roundData)} 쓰기 연습</h1>
+        <h1>✍️ {roundFullLabel(roundData)} 쓰기 연습</h1>
         <div className="challenge-index">단어 {index + 1} / {roundData.words.length}</div>
 
         <div className="card-stage" {...swipe}>
