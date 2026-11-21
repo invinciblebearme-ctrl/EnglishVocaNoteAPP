@@ -44,7 +44,7 @@ function VocaItem({ word, handleDelete, speakWord }) {
 
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }} onClick={(e) => e.stopPropagation()}>
         <button
-          className="dark-button"
+          className="util-btn"
           onClick={() => speakWord(word.en)}
           style={{ padding: '2px 8px', fontSize: '0.7rem', margin: 0, height: '26px' }}
         >
@@ -150,14 +150,15 @@ function MyVocabulary() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginTop: '30px', marginBottom: '30px' }}>
             <p style={{ color: '#8b98a5', margin: 0 }}>저장된 단어: {vocaList.length}개</p>
             {vocaList.length > 0 && (
-              <button
-                className="dark-button"
-                onClick={exportToPDF}
-                disabled={isExporting}
-                style={{ padding: '5px 10px', fontSize: '0.65rem', background: '#38bdf8', color: '#1a1a2e', fontWeight: 'bold' }}
-              >
-                {isExporting ? '생성 중...' : '📥 PDF 저장'}
-              </button>
+              <div className="util-row">
+                <button
+                  className="util-btn"
+                  onClick={exportToPDF}
+                  disabled={isExporting}
+                >
+                  {isExporting ? '생성 중...' : '📥 PDF 저장'}
+                </button>
+              </div>
             )}
           </div>
         )}

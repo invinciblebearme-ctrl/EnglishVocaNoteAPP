@@ -50,9 +50,9 @@ function MyClass() {
               퀴즈·쓰기 연습·복습·발음 평가 결과가 선생님 현황판으로 전송돼요.<br />
               선생님은 어떤 단어를 어려워하는지 보고 수업에 도움을 주실 거예요.
             </p>
-            <div className="challenge-controls">
-              <button className="nav-btn-premium" onClick={() => navigate('/')}>학습하러 가기</button>
-              <button className="nav-btn-premium" onClick={leave}>참여 그만하기</button>
+            <div className="action-row">
+              <button className="action-btn" onClick={() => navigate('/')}>학습하러 가기</button>
+              <button className="action-btn secondary" onClick={leave}>참여 그만하기</button>
             </div>
           </>
         ) : (
@@ -75,9 +75,11 @@ function MyClass() {
             </label>
             <p className="class-warn">⚠️ 별명에는 진짜 이름을 쓰지 마세요. 다른 기기에서 참여할 때도 같은 별명을 써요.</p>
             {error && <div className="class-error">{error}</div>}
-            <button className="nav-btn-premium" type="submit" disabled={busy}>
-              {busy ? '참여하는 중...' : '참여하기'}
-            </button>
+            <div className="action-row">
+              <button className="action-btn" type="submit" disabled={busy}>
+                {busy ? '참여하는 중...' : '참여하기'}
+              </button>
+            </div>
           </form>
         )}
       </div>

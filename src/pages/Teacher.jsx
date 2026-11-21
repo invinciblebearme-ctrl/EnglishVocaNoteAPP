@@ -60,7 +60,9 @@ function CreateClass({ onCreated }) {
       </label>
       <p className="class-warn">비밀번호는 다시 찾을 수 없어요. 잊어버리면 학급을 새로 만들어야 해요.</p>
       {error && <div className="class-error">{error}</div>}
-      <button className="nav-btn-premium" type="submit" disabled={busy}>{busy ? '만드는 중...' : '학급 만들기'}</button>
+      <div className="action-row">
+        <button className="action-btn" type="submit" disabled={busy}>{busy ? '만드는 중...' : '학급 만들기'}</button>
+      </div>
     </form>
   )
 }
@@ -79,7 +81,9 @@ function Login({ initial, onLogin, error, busy }) {
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
       </label>
       {error && <div className="class-error">{error}</div>}
-      <button className="nav-btn-premium" type="submit" disabled={busy}>{busy ? '불러오는 중...' : '현황판 보기'}</button>
+      <div className="action-row">
+        <button className="action-btn" type="submit" disabled={busy}>{busy ? '불러오는 중...' : '현황판 열기'}</button>
+      </div>
     </form>
   )
 }
@@ -112,9 +116,9 @@ function Dashboard({ data, onRefresh, onLogout, onDelete, busy }) {
           <h2>{data.className}</h2>
           <div className="dash-code">학급 코드 <b>{data.code}</b> — 학생들에게 알려 주세요</div>
         </div>
-        <div className="dash-actions">
-          <button className="dark-button" onClick={onRefresh} disabled={busy}>{busy ? '불러오는 중' : '🔄 새로고침'}</button>
-          <button className="dark-button" onClick={onLogout}>나가기</button>
+        <div className="dash-actions util-row">
+          <button className="util-btn" onClick={onRefresh} disabled={busy}>{busy ? '불러오는 중' : '🔄 새로고침'}</button>
+          <button className="util-btn" onClick={onLogout}>나가기</button>
         </div>
       </div>
 
@@ -202,7 +206,7 @@ function Dashboard({ data, onRefresh, onLogout, onDelete, busy }) {
       <section className="dash-danger">
         <h3>학급 삭제</h3>
         <p className="dash-muted">학년이 끝나면 학급을 삭제해 주세요. 학생 별명과 모든 학습 기록이 서버에서 지워지고 되돌릴 수 없어요.</p>
-        <button className="dark-button" onClick={onDelete}>🗑 학급과 모든 기록 삭제</button>
+        <button className="util-btn danger" onClick={onDelete}>🗑 학급과 모든 기록 삭제</button>
       </section>
     </div>
   )
@@ -267,8 +271,16 @@ function Teacher() {
       ) : (
         <div className="challenge-container class-page">
           <div className="ws-types">
-            <button className={`dark-button ${tab === 'login' ? 'active' : ''}`} onClick={() => setTab('login')}>현황판 보기</button>
-            <button className={`dark-button ${tab === 'create' ? 'active' : ''}`} onClick={() => setTab('create')}>새 학급 만들기</button>
+            <button
+              className={`util-btn ${tab === 'login' ? 'active' : ''}`}
+              aria-pressed={tab === 'login'}
+              onClick={() => setTab('login')}
+            >현황판 보기</button>
+            <button
+              className={`util-btn ${tab === 'create' ? 'active' : ''}`}
+              aria-pressed={tab === 'create'}
+              onClick={() => setTab('create')}
+            >새 학급 만들기</button>
           </div>
           {tab === 'login' ? (
             <Login initial={session} onLogin={load} error={error} busy={busy} />
@@ -279,7 +291,9 @@ function Teacher() {
             학생 기록은 학급 코드·번호·별명으로만 저장되고 실명은 저장하지 않아요.<br />
             학생은 앱의 ‘🏫 우리 반’에서 학급 코드를 입력해 참여해요.
           </p>
-          <button className="dark-button" onClick={() => navigate('/')}>목록으로</button>
+          <div className="util-row">
+            <button className="util-btn" onClick={() => navigate('/')}>☰ 목록으로</button>
+          </div>
         </div>
       )}
     </div>

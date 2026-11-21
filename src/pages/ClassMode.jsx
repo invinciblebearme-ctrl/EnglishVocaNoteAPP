@@ -106,7 +106,9 @@ function ClassMode() {
       <div className="challenge-body">
         <div className="challenge-container">
           <h1>회차를 찾을 수 없어요</h1>
-          <button className="nav-btn-premium" onClick={() => navigate('/')}>목록으로</button>
+          <div className="util-row">
+            <button className="util-btn" onClick={() => navigate('/')}>☰ 목록으로</button>
+          </div>
         </div>
       </div>
     )

@@ -52,7 +52,7 @@ function RoundList({ title, placeholder, linkPrefix }) {
             aria-label="회차 검색"
           />
           {searchTerm && (
-            <button className="dark-button" onClick={() => setSearchTerm('')}>초기화</button>
+            <button className="util-btn" onClick={() => setSearchTerm('')}>초기화</button>
           )}
         </div>
       </div>

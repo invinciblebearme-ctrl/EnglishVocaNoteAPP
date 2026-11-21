@@ -9,3 +9,7 @@ database_name = "english-cbt"  # 무료 플랜 D1 개수 한도로 기존 DB를 
 database_id = "9fc40049-21fd-4142-812b-5cc9a5a56bfb"
 migrations_dir = "migrations"
 migrations_table = "voca_migrations"  # english-cbt의 d1_migrations와 섞이지 않게
+
+# 발음하기 서버 음성 인식용
+[ai]
+binding = "AI"

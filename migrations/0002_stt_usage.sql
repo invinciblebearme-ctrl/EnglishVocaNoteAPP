@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS voca_stt_usage (
+  bucket TEXT PRIMARY KEY,
+  count INTEGER NOT NULL
+);

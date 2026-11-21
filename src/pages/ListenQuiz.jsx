@@ -95,9 +95,11 @@ function QuizSession({ round }) {
                 </ul>
               </>
             ) : <p>모두 맞혔어요! 정말 멋져요 ⭐</p>}
-            <div className="challenge-controls">
-              <button className="nav-btn-premium" onClick={restart}>다시 하기</button>
-              <button className="nav-btn-premium" onClick={() => navigate('/')}>목록으로</button>
+            <div className="action-row">
+              <button className="action-btn" onClick={restart}>다시 하기</button>
+            </div>
+            <div className="util-row">
+              <button className="util-btn" onClick={() => navigate('/')}>☰ 목록으로</button>
             </div>
           </section>
         ) : (
@@ -162,8 +164,8 @@ export default function ListenQuiz() {
       <main className="challenge-body listen-quiz">
         <div className="challenge-container">
           <h1>퀴즈를 찾을 수 없어요</h1>
-          <div className="challenge-controls">
-            <button className="nav-btn-premium" onClick={() => navigate('/')}>목록으로</button>
+          <div className="util-row">
+            <button className="util-btn" onClick={() => navigate('/')}>☰ 목록으로</button>
           </div>
         </div>
       </main>

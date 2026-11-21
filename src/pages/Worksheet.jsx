@@ -51,7 +51,9 @@ function Worksheet() {
       <div className="challenge-body">
         <div className="challenge-container">
           <h1>회차를 찾을 수 없어요</h1>
-          <button className="nav-btn-premium" onClick={() => navigate('/')}>목록으로</button>
+          <div className="util-row">
+            <button className="util-btn" onClick={() => navigate('/')}>☰ 목록으로</button>
+          </div>
         </div>
       </div>
     )
@@ -142,7 +144,8 @@ function Worksheet() {
           {Object.entries(TYPES).map(([key, t]) => (
             <button
               key={key}
-              className={`dark-button ${type === key ? 'active' : ''}`}
+              className={`util-btn ${type === key ? 'active' : ''}`}
+              aria-pressed={type === key}
               onClick={() => setType(key)}
             >
               {t.label}
@@ -158,10 +161,10 @@ function Worksheet() {
           정답지도 인쇄
         </label>
         {type === 'match' && (
-          <button className="dark-button" onClick={() => setSeed((s) => s + 1)}>🔀 단어 다시 섞기</button>
+          <button className="util-btn" onClick={() => setSeed((s) => s + 1)}>🔀 단어 다시 섞기</button>
         )}
-        <button className="dark-button ws-print" onClick={() => window.print()}>🖨 인쇄 / PDF 저장</button>
-        <button className="dark-button" onClick={() => navigate(`/challenge/${id}`)}>돌아가기</button>
+        <button className="action-btn ws-print" onClick={() => window.print()}>🖨 인쇄 / PDF 저장</button>
+        <button className="util-btn" onClick={() => navigate(`/challenge/${id}`)}>돌아가기</button>
       </div>
 
       {renderSheet(false)}

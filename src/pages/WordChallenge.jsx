@@ -4,6 +4,7 @@ import allRounds from '../data/all_rounds.json'
 import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 import { isCorrectAnswer, isPartialAnswer } from '../utils/answer'
 import { speakWord } from '../utils/speech'
+import { recognizeSpeech } from '../utils/pronounce'
 import { recordResult } from '../utils/progress'
 import ExampleSentence from '../components/ExampleSentence'
 import { getImageUrl } from '../utils/image'
@@ -18,6 +19,23 @@ function WordChallenge() {
   const [showingEnglish, setShowingEnglish] = useState(true)
   const [fav, setFav] = useState(false)
   const touchX = useRef(null)
+  const sttController = useRef(null)
+  const sttSession = useRef(0)
+  const wordKey = `${id}:${index}`
+  const activeWord = useRef(wordKey)
+  activeWord.current = wordKey
+  const [isListening, setIsListening] = useState(false)
+  const [listeningDuration, setListeningDuration] = useState(3500)
+
+  const cancelSTT = () => {
+    sttSession.current += 1
+    sttController.current?.abort()
+    sttController.current = null
+  }
+  useEffect(() => {
+    setIsListening(false)
+    return () => cancelSTT()
+  }, [index, id])
   useEffect(() => {
     const round = allRounds.find(r => r.id === parseInt(id))
     if (round) {
@@ -29,12 +47,16 @@ function WordChallenge() {
 
   const nextWord = () => {
     if (!roundData) return
+    cancelSTT()
+    setIsListening(false)
     setIndex(prev => (prev + 1) % roundData.words.length)
     setShowingEnglish(true)
   }
 
   const prevWord = () => {
     if (!roundData) return
+    cancelSTT()
+    setIsListening(false)
     setIndex(prev => (prev - 1 + roundData.words.length) % roundData.words.length)
     setShowingEnglish(true)
   }
@@ -58,15 +80,14 @@ function WordChallenge() {
   // 단어가 바뀌거나 카드를 직접 누르면 타이머가 처음부터 다시 시작된다
   const [autoFlip, setAutoFlip] = useState(true)
   useEffect(() => {
-    if (!autoFlip) return;
+    if (!autoFlip || isListening) return;
     const timer = setTimeout(() => {
       setShowingEnglish(prev => !prev);
     }, 1500); // 1.5초 간격 전환
     return () => clearTimeout(timer);
-  }, [autoFlip, showingEnglish, index]);
+  }, [autoFlip, showingEnglish, index, isListening]);
 
   const [imgError, setImgError] = useState(false)
-  const [isListening, setIsListening] = useState(false)
   const [pronunciationScore, setPronunciationScore] = useState(null)
   
   // 단어가 바뀔 때마다 이미지 에러 및 발음 점수 초기화, 즐겨찾기 상태 확인
@@ -96,64 +117,53 @@ function WordChallenge() {
   const imgUrl = getImageUrl(currentWord.img)
 
   // STT 발음 측정 시작
-  const startSTT = () => {
-    // Chrome 여부 확인
-    const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    
-    if (!isChrome) {
-      alert("⚠️ 이 기능은 Google Chrome 브라우저에서만 정상적으로 작동합니다.\n현재 브라우저에서는 인식이 안 될 수 있으니, Chrome으로 접속해 주세요!");
-    }
+  const startSTT = async () => {
+    if (sttController.current) return;
+    const controller = new AbortController();
+    sttController.current = controller;
+    const session = ++sttSession.current;
+    const isCurrent = () => session === sttSession.current && activeWord.current === wordKey && !controller.signal.aborted;
+    window.speechSynthesis?.cancel();
+    setShowingEnglish(true);
+    setPronunciationScore(null);
+    setIsListening('preparing');
+    try {
+      const transcript = (await recognizeSpeech({
+        lang: 'en-US',
+        signal: controller.signal,
+        onState: (state, duration) => {
+          if (!isCurrent()) return;
+          if (duration) setListeningDuration(duration);
+          setIsListening(state);
+        },
+      })).toLowerCase().trim();
+      if (!isCurrent()) return;
 
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) {
-      alert("이 브라우저는 음성 인식을 지원하지 않습니다. Chrome 브라우저를 설치해 주세요!");
-      return;
-    }
-
-    const recognition = new SpeechRecognition();
-    recognition.lang = 'en-US';
-    recognition.interimResults = false;
-    recognition.maxAlternatives = 1;
-
-    recognition.onstart = () => setIsListening(true);
-    recognition.onend = () => setIsListening(false);
-
-    recognition.onresult = (event) => {
-      const transcript = event.results[0][0].transcript.toLowerCase().trim();
-
-      let level = 1; // Try Again
+      let level = 1;
       if (isCorrectAnswer(transcript, currentWord.en)) {
-        level = 3; // Excellent
+        level = 3;
       } else if (isPartialAnswer(transcript, currentWord.en)) {
-        level = 2; // Good
+        level = 2;
       }
-      
-      // 발음 평가 결과도 학습 기록에 반영 (애매한 'Good'은 기록하지 않음)
+
+      // 애매한 'Good'은 기록하지 않음.
       if (level !== 2) recordResult(currentWord, level === 3, { roundId: roundData.id, source: 'speak' });
       setPronunciationScore({ transcript, level });
-    };
-
-    recognition.onerror = (event) => {
-      console.error("Speech Recognition Error:", event.error);
-      setIsListening(false);
-      
-      const isHttps = window.location.protocol === 'https:';
-
-      if (event.error === 'not-allowed') {
-        alert("🎤 마이크 사용 권한이 거부되었습니다. 주소창 왼쪽의 마이크 아이콘을 클릭하여 권한을 '허용'해 주세요!");
-      } else if (event.error === 'service-not-allowed' || !isHttps) {
-        alert("🔒 보안 연결(HTTPS)이 필요합니다.\n주소창의 주소가 'https://'로 시작하는지 확인해 주세요. (Dothome 등의 서버 설정 확인이 필요할 수 있습니다.)");
-      } else if (event.error === 'network') {
-        alert("🌐 네트워크 연결이 불안정합니다.\n1. 인터넷 연결을 확인해 주세요.\n2. Chrome 브라우저 사용을 권장합니다.\n3. 잠시 후 다시 시도해 주세요.");
-      } else if (event.error === 'no-speech') {
-        // 말소리가 들리지 않았을 때는 alert 대신 상태만 해제 (사용자 경험 개선)
-        console.log("No speech detected.");
-      } else {
-        alert("발음 인식에 실패했습니다. (오류: " + event.error + ")\n잠시 후 다시 시도해 주세요.");
+    } catch (error) {
+      if (error.code === 'aborted' || !isCurrent()) return;
+      const messages = {
+        'not-allowed': "마이크가 꺼져 있어요. 주소창 옆 마이크 모양에서 '허용'을 눌러 주세요",
+        retry: '준비됐어요! 🎤를 한 번 더 눌러 주세요',
+        server: '인터넷 연결을 확인하고 다시 해 봐요',
+        busy: '지금 사용하는 친구가 많아요. 잠시 뒤에 다시 해 봐요',
+      };
+      setPronunciationScore({ error: messages[error.code] || '잘 안 들렸어요. 조금 더 크게 말해 볼까요?' });
+    } finally {
+      if (isCurrent()) {
+        sttController.current = null;
+        setIsListening(false);
       }
-    };
-
-    recognition.start();
+    }
   };
 
   const swipe = swipeHandlers(touchX, { onLeft: nextWord, onRight: prevWord })
@@ -169,7 +179,7 @@ function WordChallenge() {
           <div className="card-main">
             <div
               className="challenge-card"
-              onClick={() => setShowingEnglish(prev => !prev)}
+              onClick={() => { if (!isListening) setShowingEnglish(prev => !prev) }}
               style={{ cursor: 'pointer', position: 'relative' }}
             >
               <button
@@ -183,7 +193,7 @@ function WordChallenge() {
               >
                 {fav ? '⭐' : '☆'}
               </button>
-              {showingEnglish ? (
+              {isListening || showingEnglish ? (
                 <div className="word-en">{currentWord.en}</div>
               ) : (
                 <div className="word-ko">{currentWord.ko}</div>
@@ -209,26 +219,34 @@ function WordChallenge() {
         <ExampleSentence key={currentWord.en} word={currentWord} />
 
         {pronunciationScore && (
-          <div className={`stt-feedback level-${pronunciationScore.level}`}>
-            {pronunciationScore.level === 3 && "Excellent! ⭐⭐⭐"}
-            {pronunciationScore.level === 2 && "Good Job! ⭐⭐"}
-            {pronunciationScore.level === 1 && "Try Again! ⭐"}
-            <div className="transcript-hint">인식된 발음: "{pronunciationScore.transcript}"</div>
+          <div className={`stt-feedback${pronunciationScore.error ? '' : ` level-${pronunciationScore.level}`}`} role="status">
+            {pronunciationScore.error}
+            {pronunciationScore.level === 3 && "완벽해요! ⭐⭐⭐"}
+            {pronunciationScore.level === 2 && "좋아요! 조금 더 또박또박 ⭐⭐"}
+            {pronunciationScore.level === 1 && "한 번 더 해 볼까요? ⭐"}
+            {!pronunciationScore.error && <div className="transcript-hint">이렇게 들렸어요: "{pronunciationScore.transcript}"</div>}
           </div>
         )}
 
         {/* 이 단어로 하는 활동 */}
         <div className="action-row">
-          <button onClick={handleManualSpeak} className="action-btn">🔊 발음 듣기</button>
+          <button onClick={handleManualSpeak} className="action-btn" disabled={!!isListening}>🔊 발음 듣기</button>
           <button
-            className={`action-btn mic-button ${isListening ? 'listening' : ''}`}
+            className={`action-btn mic-button ${isListening === 'listening' ? 'listening' : ''}`}
             onClick={startSTT}
-            disabled={isListening}
+            disabled={!!isListening}
           >
-            {isListening ? "🎤 듣는 중..." : "🎤 발음하기"}
+            {isListening === 'processing' ? "⏳ 확인 중..." : isListening === 'listening' ? "🔴 지금 말해요!" : isListening === 'preparing' ? "🎤 준비 중..." : "🎤 발음하기"}
           </button>
         </div>
-        <div className="mic-hint">발음하기가 잘 안 되면 크롬(Chrome)에서 열어 보세요</div>
+        {isListening === 'listening' && (
+          <div className="mic-progress" role="progressbar" aria-label="녹음 남은 시간" style={{ '--recording-duration': `${listeningDuration}ms` }}>
+            <span />
+          </div>
+        )}
+        <div className="mic-hint" role="status">
+          {isListening === 'listening' ? '지금 말해요!' : isListening === 'processing' ? '잘 들었는지 확인하고 있어요' : isListening === 'preparing' ? '마이크를 준비하고 있어요' : '🎤를 누르고 영어 단어를 크게 읽어요'}
+        </div>
 
         {/* 이 회차의 다른 활동 */}
         <div className="action-row">

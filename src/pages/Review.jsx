@@ -77,11 +77,11 @@ function Review() {
               </div>
             </div>
           ) : (
-            <div className="review-options">
-              <button className="nav-btn-premium" disabled={dueWords.length === 0} onClick={() => start('due')}>
+            <div className="action-row">
+              <button className="action-btn" disabled={dueWords.length === 0} onClick={() => start('due')}>
                 오늘의 복습 ({dueWords.length}개)
               </button>
-              <button className="nav-btn-premium" disabled={wrongWords.length === 0} onClick={() => start('wrong')}>
+              <button className="action-btn secondary" disabled={wrongWords.length === 0} onClick={() => start('wrong')}>
                 틀린 단어 다시 하기 ({wrongWords.length}개)
               </button>
             </div>
@@ -124,9 +124,9 @@ function Review() {
               </div>
             </div>
           )}
-          <div className="review-options">
-            <button className="nav-btn-premium" onClick={() => setMode(null)}>복습 처음으로</button>
-            <button className="nav-btn-premium" onClick={() => navigate('/')}>목록으로</button>
+          <div className="util-row">
+            <button className="util-btn" onClick={() => setMode(null)}>복습 처음으로</button>
+            <button className="util-btn" onClick={() => navigate('/')}>☰ 목록으로</button>
           </div>
         </div>
       </div>
@@ -174,9 +174,9 @@ function Review() {
               autoComplete="off"
               spellCheck={false}
             />
-            <div className="challenge-controls">
-              <button type="submit" className="nav-btn-premium">정답 확인</button>
-              <button type="button" className="nav-btn-premium" onClick={() => grade(true)}>모르겠어요</button>
+            <div className="action-row">
+              <button type="submit" className="action-btn">정답 확인</button>
+              <button type="button" className="action-btn secondary" onClick={() => grade(true)}>모르겠어요</button>
             </div>
           </form>
         ) : (
@@ -184,9 +184,9 @@ function Review() {
             <div className={`stt-feedback level-${result === 'correct' ? 3 : 1}`}>
               {result === 'correct' ? 'Excellent! ⭐⭐⭐' : '괜찮아요! 오늘 한 번 더 나와요.'}
             </div>
-            <div className="challenge-controls">
-              <button className="nav-btn-premium" onClick={() => speakWord(current.en)}>발음 듣기</button>
-              <button className="nav-btn-premium" onClick={next} autoFocus>
+            <div className="action-row">
+              <button className="action-btn secondary" onClick={() => speakWord(current.en)}>발음 듣기</button>
+              <button className="action-btn" onClick={next} autoFocus>
                 {index + 1 < queue.length ? '다음' : '결과 보기'}
               </button>
             </div>
