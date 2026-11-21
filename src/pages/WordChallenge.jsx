@@ -7,6 +7,7 @@ import { speakWord } from '../utils/speech'
 import { recordResult } from '../utils/progress'
 import ExampleSentence from '../components/ExampleSentence'
 import { getImageUrl } from '../utils/image'
+import { roundLabel } from '../utils/round'
 
 function WordChallenge() {
   const { id } = useParams()
@@ -15,6 +16,7 @@ function WordChallenge() {
   const [index, setIndex] = useState(0)
   const [showingEnglish, setShowingEnglish] = useState(true)
   const [fav, setFav] = useState(false)
+  const touchX = useRef(null)
   useEffect(() => {
     const round = allRounds.find(r => r.id === parseInt(id))
     if (round) {
@@ -153,47 +155,63 @@ function WordChallenge() {
     recognition.start();
   };
 
+  // 카드를 좌우로 밀어서 이전·다음 단어
+  const onTouchStart = (e) => { touchX.current = e.touches[0].clientX }
+  const onTouchEnd = (e) => {
+    if (touchX.current === null) return
+    const dx = e.changedTouches[0].clientX - touchX.current
+    touchX.current = null
+    if (Math.abs(dx) < 50) return
+    if (dx < 0) nextWord()
+    else prevWord()
+  }
+
   return (
     <div className="challenge-body">
-      <div className="challenge-container">
-        <h1>
-          {roundData.name}
-        </h1>
+      <div className="challenge-container word-page">
+        <h1>{roundLabel(roundData)}</h1>
         <div className="challenge-index">단어 {index + 1} / {roundData.words.length}</div>
-        
-        <div 
-          className="challenge-card"
-          onClick={() => setShowingEnglish(prev => !prev)}
-          style={{ cursor: 'pointer', position: 'relative' }}
-        >
-          <button 
-            className={`favorite-btn ${fav ? 'active' : ''}`} 
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleFavorite();
-            }}
-            title="나만의 단어장에 저장"
-          >
-            {fav ? '⭐' : '☆'}
-          </button>
-          {showingEnglish ? (
-            <div className="word-en">{currentWord.en}</div>
-          ) : (
-            <div className="word-ko">{currentWord.ko}</div>
-          )}
-        </div>
 
-        <div className="challenge-image">
-          {imgUrl && !imgError ? (
-            <img 
-              src={imgUrl} 
-              alt={currentWord.en}
-              className="word-image"
-              onError={() => setImgError(true)} 
-            />
-          ) : (
-            <div className="no-image">{imgUrl ? "이미지 준비중" : "이미지 없음"}</div>
-          )}
+        <div className="card-stage" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
+          <button className="card-nav" onClick={prevWord} aria-label="이전 단어">‹</button>
+          <div className="card-main">
+            <div
+              className="challenge-card"
+              onClick={() => setShowingEnglish(prev => !prev)}
+              style={{ cursor: 'pointer', position: 'relative' }}
+            >
+              <button
+                className={`favorite-btn ${fav ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleFavorite();
+                }}
+                title="나만의 단어장에 저장"
+                aria-label={fav ? '단어장에서 빼기' : '단어장에 저장'}
+              >
+                {fav ? '⭐' : '☆'}
+              </button>
+              {showingEnglish ? (
+                <div className="word-en">{currentWord.en}</div>
+              ) : (
+                <div className="word-ko">{currentWord.ko}</div>
+              )}
+            </div>
+
+            <div className="challenge-image">
+              {imgUrl && !imgError ? (
+                <img
+                  src={imgUrl}
+                  alt={currentWord.en}
+                  className="word-image"
+                  onError={() => setImgError(true)}
+                />
+              ) : (
+                <div className="no-image">{imgUrl ? "이미지 준비중" : "이미지 없음"}</div>
+              )}
+            </div>
+          </div>
+          <button className="card-nav" onClick={nextWord} aria-label="다음 단어">›</button>
         </div>
 
         <ExampleSentence key={currentWord.en} word={currentWord} />
@@ -207,34 +225,40 @@ function WordChallenge() {
           </div>
         )}
 
-        <div className="challenge-controls">
-          <button onClick={() => navigate(`/listen-quiz/${id}`)} className="nav-btn-premium">🎧 듣기 퀴즈</button>
-          <button onClick={prevWord} className="nav-btn-premium">이전</button>
-          <button onClick={nextWord} className="nav-btn-premium">다음</button>
-          <button onClick={handleManualSpeak} className="nav-btn-premium">발음 듣기</button>
-          <button onClick={() => setAutoFlip(prev => !prev)} className="nav-btn-premium">
-            {autoFlip ? '자동 전환 끄기' : '자동 전환 켜기'}
-          </button>
-          <button onClick={() => navigate('/')} className="nav-btn-premium">목록으로</button>
-        </div>
-
-        <div className="challenge-controls teacher-tools">
-          <span className="teacher-label">선생님 도구</span>
-          <button onClick={() => navigate(`/class/${id}`)} className="nav-btn-premium">🖥 수업 모드</button>
-          <button onClick={() => navigate(`/worksheet/${id}`)} className="nav-btn-premium">🖨 학습지 만들기</button>
-          <button onClick={() => navigate('/teacher')} className="nav-btn-premium">👩‍🏫 학급 현황판</button>
-        </div>
-
-        <div className="stt-controls">
-          <button 
-            className={`mic-button ${isListening ? 'listening' : ''}`} 
+        {/* 이 단어로 하는 활동 */}
+        <div className="action-row">
+          <button onClick={handleManualSpeak} className="action-btn">🔊 발음 듣기</button>
+          <button
+            className={`action-btn mic-button ${isListening ? 'listening' : ''}`}
             onClick={startSTT}
             disabled={isListening}
           >
-            {isListening ? "🎤 측정중..." : "🎤 발음하기"}
+            {isListening ? "🎤 듣는 중..." : "🎤 발음하기"}
           </button>
-          <div className="mic-hint">※ 발음확인은 크롬브라우저만 가능</div>
         </div>
+        <div className="mic-hint">발음하기는 크롬 브라우저에서 가장 잘 돼요</div>
+
+        {/* 이 회차의 다른 활동 */}
+        <div className="action-row">
+          <button onClick={() => navigate(`/listen-quiz/${id}`)} className="action-btn secondary">🎧 듣기 퀴즈</button>
+          <button onClick={() => navigate(`/scramble-game/${id}`)} className="action-btn secondary">✍️ 쓰기 연습</button>
+        </div>
+
+        <div className="util-row">
+          <button onClick={() => setAutoFlip(prev => !prev)} className="util-btn" aria-pressed={autoFlip}>
+            🔄 뜻 자동 전환 {autoFlip ? '켜짐' : '꺼짐'}
+          </button>
+          <button onClick={() => navigate('/')} className="util-btn">☰ 목록으로</button>
+        </div>
+
+        <details className="teacher-menu">
+          <summary>선생님 도구</summary>
+          <div className="teacher-menu-items">
+            <button onClick={() => navigate(`/class/${id}`)} className="util-btn">🖥 수업 모드</button>
+            <button onClick={() => navigate(`/worksheet/${id}`)} className="util-btn">🖨 학습지 만들기</button>
+            <button onClick={() => navigate('/teacher')} className="util-btn">👩‍🏫 학급 현황판</button>
+          </div>
+        </details>
       </div>
     </div>
   )

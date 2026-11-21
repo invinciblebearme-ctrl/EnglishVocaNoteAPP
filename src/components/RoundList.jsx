@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { useSelectedGrade } from '../hooks/useSelectedGrade'
@@ -6,9 +6,10 @@ import { getImageUrl } from '../utils/image'
 import { getRoundProgress } from '../utils/progress'
 import StudyStatus from './StudyStatus'
 import InstallButton from './InstallButton'
+import { CLASS_EVENT, getMembership } from '../utils/classSync'
 
 // 학년별 회차 목록 (듣기/읽기, 쓰기 연습 화면 공통)
-function RoundList({ title, placeholder, linkPrefix, imgProps }) {
+function RoundList({ title, placeholder, linkPrefix }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedGrade] = useSelectedGrade()
   const navigate = useNavigate()
@@ -17,6 +18,7 @@ function RoundList({ title, placeholder, linkPrefix, imgProps }) {
     const term = searchTerm.toLowerCase()
     return allRounds.filter(round => {
       const matchSearch =
+        `${round.id}회` === term.replace(/\s/g, '') ||
         round.name.toLowerCase().includes(term) ||
         round.category.toLowerCase().includes(term) ||
         round.words.some(word =>
@@ -34,19 +36,20 @@ function RoundList({ title, placeholder, linkPrefix, imgProps }) {
 
   return (
     <div className="container">
-      <div className="home-body" style={{ textAlign: 'center' }}>
+      <div className="home-body">
         <h1 className="home-title">{title}</h1>
         <StudyStatus />
+        <ClassBadge />
         <InstallButton />
 
         <div className="search-container">
           <input
-            type="text"
+            type="search"
             placeholder={placeholder}
             className="dark-button search-input"
-            style={{ width: '250px', cursor: 'text' }}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            aria-label="회차 검색"
           />
           {searchTerm && (
             <button className="dark-button" onClick={() => setSearchTerm('')}>초기화</button>
@@ -54,65 +57,58 @@ function RoundList({ title, placeholder, linkPrefix, imgProps }) {
         </div>
       </div>
 
-      <div className="grade-page-content" style={{ width: '100%' }}>
+      <div className="grade-page-content">
         {filteredRounds.length === 0 ? (
-          <div style={{ textAlign: 'center', opacity: 0.5, marginTop: '50px' }}>
-            검색 결과가 없습니다.
-          </div>
+          <div className="round-empty">검색 결과가 없습니다.</div>
         ) : (
           gradesToShow.map(grade => {
             const roundsInGrade = filteredRounds.filter(r => r.grade === grade)
             if (roundsInGrade.length === 0) return null
 
-            const themesInGrade = [...new Set(roundsInGrade.map(r => r.category))]
-
             return (
-              <div key={grade} className="grade-section">
+              <section key={grade} className="grade-section">
                 {/* 검색 중일 때만 학년 제목 표시 */}
                 {searchTerm && <h2 className="grade-header">{grade}</h2>}
+                <div className="round-grid">
+                  {roundsInGrade.map(round => {
+                    const { total, mastered } = getRoundProgress(round)
+                    const percent = total > 0 ? Math.round((mastered / total) * 100) : 0
+                    const isCompleted = total > 0 && mastered === total
 
-                {themesInGrade.map(theme => (
-                  <div key={theme} className="theme-group">
-                    <h3 className="theme-title">{theme}</h3>
-                    <div className="grid-container">
-                      {roundsInGrade
-                        .filter(r => r.category === theme)
-                        .map(round => {
-                          const { total, mastered } = getRoundProgress(round)
-                          const percent = total > 0 ? Math.round((mastered / total) * 100) : 0
-                          const isCompleted = total > 0 && mastered === total
-
-                          return (
-                            <div key={round.id} className="item" onClick={() => navigate(`${linkPrefix}/${round.id}`)}>
-                              {isCompleted && (
-                                <span className="round-complete-badge" title="학습 완료">✅</span>
-                              )}
-                              <img
-                                src={getImageUrl(round.words[0].img)}
-                                alt={round.name}
-                                {...imgProps}
-                                onError={(e) => {
-                                  e.target.style.display = 'none';
-                                  const fallback = e.target.nextSibling;
-                                  if (fallback) fallback.style.display = 'flex';
-                                }}
-                              />
-                              <div className="image-fallback">
-                                이미지<br/>준비중
-                              </div>
-                              <div className="round-progress-bar" title={`${mastered} / ${total} 익힘`}>
-                                <div
-                                  className={`round-progress-fill ${isCompleted ? 'completed' : ''}`}
-                                  style={{ width: `${percent}%` }}
-                                />
-                              </div>
-                            </div>
-                          )
-                        })}
-                    </div>
-                  </div>
-                ))}
-              </div>
+                    return (
+                      <button
+                        key={round.id}
+                        className={`round-card ${isCompleted ? 'completed' : ''}`}
+                        onClick={() => navigate(`${linkPrefix}/${round.id}`)}
+                      >
+                        {isCompleted && (
+                          <span className="round-complete-badge" title="학습 완료">✅</span>
+                        )}
+                        <span className="round-card-img">
+                          <img
+                            src={getImageUrl(round.words[0].img)}
+                            alt=""
+                            loading="lazy"
+                            onError={(e) => { e.currentTarget.style.visibility = 'hidden' }}
+                          />
+                        </span>
+                        <span className="round-card-title">
+                          <span className="round-no">{round.id}회</span> {round.name}
+                        </span>
+                        <span className="round-card-meta">
+                          {total}단어 · {mastered > 0 ? `${mastered}개 익힘` : '시작 전'}
+                        </span>
+                        <span className="round-progress-bar" title={`${mastered} / ${total} 익힘`}>
+                          <span
+                            className={`round-progress-fill ${isCompleted ? 'completed' : ''}`}
+                            style={{ width: `${percent}%` }}
+                          />
+                        </span>
+                      </button>
+                    )
+                  })}
+                </div>
+              </section>
             )
           })
         )}
@@ -124,6 +120,22 @@ function RoundList({ title, placeholder, linkPrefix, imgProps }) {
         <Link to="/teacher">👩‍🏫 선생님 현황판</Link>
       </footer>
     </div>
+  )
+}
+
+// 우리 반에 참여한 학생에게 학급·번호를 보여 준다 (누르면 우리 반 화면)
+function ClassBadge() {
+  const [member, setMember] = useState(getMembership)
+  useEffect(() => {
+    const update = () => setMember(getMembership())
+    window.addEventListener(CLASS_EVENT, update)
+    return () => window.removeEventListener(CLASS_EVENT, update)
+  }, [])
+  if (!member) return null
+  return (
+    <Link to="/my-class" className="class-badge">
+      🏫 {member.className} · {member.number}번 {member.nickname}
+    </Link>
   )
 }
 

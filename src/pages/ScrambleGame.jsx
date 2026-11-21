@@ -5,6 +5,7 @@ import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
 import { getPrimaryAnswer, isCorrectAnswer, shuffleLetters, normalize } from '../utils/answer'
 import { speakWord } from '../utils/speech'
 import { getImageUrl } from '../utils/image'
+import { roundLabel } from '../utils/round'
 import { recordResult } from '../utils/progress'
 
 function ScrambleGame() {
@@ -173,7 +174,7 @@ function ScrambleGame() {
   return (
     <div className="challenge-body scramble-game">
       <div className="challenge-container">
-        <h1>오늘의 영단어 [{roundData.id}회] - 스크램블</h1>
+        <h1>✍️ {roundLabel(roundData)} 쓰기 연습</h1>
         <div className="challenge-index">단어 {index + 1} / {roundData.words.length}</div>
         
         <div className="challenge-card" style={{ position: 'relative' }}>
