@@ -67,18 +67,24 @@ function Review() {
             뜻과 그림을 보고 영어 단어를 떠올려 써 보세요.<br />
             맞힌 단어는 1일 → 3일 → 7일 뒤에 다시 나오고, 틀린 단어는 오늘 다시 나와요.
           </p>
-          <div className="review-options">
-            <button className="nav-btn-premium" disabled={dueWords.length === 0} onClick={() => start('due')}>
-              오늘의 복습 ({dueWords.length}개)
-            </button>
-            <button className="nav-btn-premium" disabled={wrongWords.length === 0} onClick={() => start('wrong')}>
-              틀린 단어 다시 하기 ({wrongWords.length}개)
-            </button>
-          </div>
-          {dueWords.length === 0 && wrongWords.length === 0 && (
-            <p className="review-empty">
-              아직 복습할 단어가 없어요. 쓰기 연습이나 퀴즈를 하면 여기에 단어가 모여요!
-            </p>
+          {dueWords.length === 0 && wrongWords.length === 0 ? (
+            <div className="empty-state">
+              <div className="empty-state-icon">🌱</div>
+              <div className="empty-state-title">아직 복습할 단어가 없어요</div>
+              <p>쓰기 연습이나 듣기 퀴즈를 하면 여기에 단어가 모여요.</p>
+              <div className="action-row">
+                <button className="action-btn" onClick={() => navigate('/')}>📚 학습하러 가기</button>
+              </div>
+            </div>
+          ) : (
+            <div className="review-options">
+              <button className="nav-btn-premium" disabled={dueWords.length === 0} onClick={() => start('due')}>
+                오늘의 복습 ({dueWords.length}개)
+              </button>
+              <button className="nav-btn-premium" disabled={wrongWords.length === 0} onClick={() => start('wrong')}>
+                틀린 단어 다시 하기 ({wrongWords.length}개)
+              </button>
+            </div>
           )}
           {wrongWords.length > 0 && (
             <div className="review-wrong-list">

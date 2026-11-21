@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { addToMyVoca, removeFromMyVoca, isFavorite } from '../utils/storage'
@@ -6,6 +6,7 @@ import { getPrimaryAnswer, isCorrectAnswer, shuffleLetters, normalize } from '..
 import { speakWord } from '../utils/speech'
 import { getImageUrl } from '../utils/image'
 import { roundLabel } from '../utils/round'
+import { swipeHandlers } from '../utils/swipe'
 import { recordResult } from '../utils/progress'
 
 function ScrambleGame() {
@@ -22,6 +23,7 @@ function ScrambleGame() {
   const [showImage, setShowImage] = useState(false)
   const [isImageLoading, setIsImageLoading] = useState(false)
   const [fav, setFav] = useState(false)
+  const touchX = useRef(null)
   
   const roundData = useMemo(() => allRounds.find(r => r.id === parseInt(id)), [id])
   const currentWord = roundData?.words[index]
@@ -164,93 +166,86 @@ function ScrambleGame() {
 
   const firstLetter = normalize(primaryAnswer).charAt(0) || primaryAnswer.charAt(0)
   const hintLabel =
-    hintStep === 0 ? '💡 힌트 1/3: 첫 글자 보기' :
-    hintStep === 1 ? '🔊 힌트 2/3: 발음 듣기' :
-    hintStep === 2 ? '📸 힌트 3/3: 그림 보기' :
-    '✅ 모든 힌트 사용됨'
+    hintStep === 0 ? '💡 힌트: 첫 글자' :
+    hintStep === 1 ? '💡 힌트: 발음' :
+    hintStep === 2 ? '💡 힌트: 그림' :
+    '💡 힌트 다 썼어요'
+
+  const swipe = swipeHandlers(touchX, { onLeft: nextWord, onRight: prevWord })
 
   const imgUrl = getImageUrl(currentWord?.img)
 
   return (
     <div className="challenge-body scramble-game">
-      <div className="challenge-container">
+      <div className="challenge-container word-page">
         <h1>✍️ {roundLabel(roundData)} 쓰기 연습</h1>
         <div className="challenge-index">단어 {index + 1} / {roundData.words.length}</div>
-        
-        <div className="challenge-card" style={{ position: 'relative' }}>
-          <button 
-            className={`favorite-btn ${fav ? 'active' : ''}`} 
-            onClick={toggleFavorite}
-            title="나만의 단어장에 저장"
-          >
-            {fav ? '⭐' : '☆'}
-          </button>
-          <div className="word-ko">{currentWord.ko}</div>
 
-          {/* Match WordChallenge image frame and style exactly */}
-          <div className="scramble-image-area-inline">
-            {showImage && (
-              isImageLoading ? (
-                <div className="spinner-container">
-                  <div className="scramble-spinner"></div>
-                </div>
-              ) : (
-                imgUrl && (
-                  <div className="challenge-image image-scramble-inline">
-                    <img 
-                      src={imgUrl} 
-                      alt={currentWord.en}
-                      className="word-image fade-in"
-                    />
-                  </div>
-                )
-              )
-            )}
-          </div>
+        <div className="card-stage" {...swipe}>
+          <button className="card-nav" onClick={prevWord} disabled={index === 0} aria-label="이전 단어">‹</button>
+          <div className="card-main">
+            <div className="challenge-card scramble-card" style={{ position: 'relative' }}>
+              <button
+                className={`favorite-btn ${fav ? 'active' : ''}`}
+                onClick={toggleFavorite}
+                title="나만의 단어장에 저장"
+                aria-label={fav ? '단어장에서 빼기' : '단어장에 저장'}
+              >
+                {fav ? '⭐' : '☆'}
+              </button>
+              <div className="word-ko">{currentWord.ko}</div>
 
-          <div className="scrambled-hint">
-            {scrambled.map((char, i) => {
-              const isUsed = usedIndices.includes(i)
-              return (
-                <span
-                  key={i}
-                  className={`letter-card ${isUsed ? 'used' : ''}`}
-                  aria-disabled={isUsed}
-                  onClick={() => handleLetterClick(char, i)}
-                >
-                  {char}
-                </span>
-              )
-            })}
+              <div className="scramble-image-area-inline">
+                {showImage && (
+                  isImageLoading ? (
+                    <div className="spinner-container">
+                      <div className="scramble-spinner"></div>
+                    </div>
+                  ) : (
+                    imgUrl && (
+                      <div className="challenge-image image-scramble-inline">
+                        <img src={imgUrl} alt={currentWord.en} className="word-image fade-in" />
+                      </div>
+                    )
+                  )
+                )}
+              </div>
+
+              <div className="scrambled-hint">
+                {scrambled.map((char, i) => {
+                  const isUsed = usedIndices.includes(i)
+                  return (
+                    <span
+                      key={i}
+                      className={`letter-card ${isUsed ? 'used' : ''}`}
+                      aria-disabled={isUsed}
+                      onClick={() => handleLetterClick(char, i)}
+                    >
+                      {char}
+                    </span>
+                  )
+                })}
+              </div>
+              {wordCount > 1 && (
+                <div className="transcript-hint">💡 {wordCount}개의 단어로 이루어져 있어요 (띄어쓰기 자유)</div>
+              )}
+              {hintStep >= 1 && firstLetter && (
+                <div className="first-letter-badge">💡 첫 글자: {firstLetter}</div>
+              )}
+              <input
+                type="text"
+                className="scramble-input"
+                value={userInput}
+                placeholder="글자를 눌러 단어 완성"
+                aria-label="정답 입력"
+                autoCapitalize="none"
+                autoComplete="off"
+                onChange={handleInputChange}
+                onKeyDown={(e) => e.key === 'Enter' && handleCheck()}
+              />
+            </div>
           </div>
-          {wordCount > 1 && (
-            <div className="transcript-hint">💡 {wordCount}개의 단어로 이루어져 있어요 (띄어쓰기 자유)</div>
-          )}
-          {hintStep >= 1 && firstLetter && (
-            <div className="first-letter-badge">💡 첫 글자: {firstLetter}</div>
-          )}
-          <input 
-            type="text" 
-            className="scramble-input"
-            value={userInput}
-            placeholder="단어를 완성하세요..."
-            onChange={handleInputChange}
-            onKeyDown={(e) => e.key === 'Enter' && handleCheck()}
-          />
-          <div className="scramble-button-group">
-             <button className="dark-button reset-input" onClick={handleClear}>지우기</button>
-             <button className="dark-button" onClick={handleBackspace} disabled={userInput.length === 0} title="마지막 글자 지우기">⌫</button>
-             <button className="dark-button check-btn" onClick={handleCheck}>정답확인</button>
-          </div>
-          <div className="scramble-hint-row">
-            <button
-              className="hint-step-btn"
-              onClick={handleHint}
-              disabled={hintStep >= 3}
-            >
-              {hintLabel}
-            </button>
-          </div>
+          <button className="card-nav" onClick={nextWord} aria-label="다음 단어">›</button>
         </div>
 
         {feedback && (
@@ -259,11 +254,20 @@ function ScrambleGame() {
           </div>
         )}
 
-        <div className="challenge-controls">
-          <button onClick={prevWord}>← 이전</button>
-          <button onClick={nextWord}>다음 →</button>
-          <button onClick={handleSpeak}>발음 듣기</button>
-          <button onClick={() => navigate('/scramble')}>목록으로</button>
+        <div className="action-row">
+          <button className="action-btn secondary" onClick={handleBackspace} disabled={userInput.length === 0}>⌫ 지우기</button>
+          <button className="action-btn" onClick={handleCheck}>✅ 정답 확인</button>
+        </div>
+        <div className="action-row">
+          <button className="action-btn secondary" onClick={handleSpeak}>🔊 발음 듣기</button>
+          <button className="action-btn secondary hint-action" onClick={handleHint} disabled={hintStep >= 3}>
+            {hintLabel}
+          </button>
+        </div>
+
+        <div className="util-row">
+          <button className="util-btn" onClick={handleClear} disabled={userInput.length === 0}>모두 지우기</button>
+          <button className="util-btn" onClick={() => navigate('/scramble')}>☰ 목록으로</button>
         </div>
       </div>
     </div>

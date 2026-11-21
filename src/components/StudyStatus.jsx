@@ -37,7 +37,7 @@ function StudyStatus() {
         <span className="study-goal-bar"><span style={{ width: `${goalPct}%` }} /></span>
       </div>
       <div className="study-chip" title="모든 단어를 익힌 회차">
-        🏅 완료 회차 <b>{stat.completed}</b>
+        🏅 완료 <b>{stat.completed}</b>회
       </div>
     </div>
   )

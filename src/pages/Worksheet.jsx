@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import allRounds from '../data/all_rounds.json'
 import { roundLabel } from '../utils/round'
@@ -11,6 +11,10 @@ const TYPES = {
   trace: { label: '따라 쓰기', desc: '회색 글자를 따라 쓰고, 빈칸에 한 번 더 써 보세요.' },
   match: { label: '그림-단어 짝짓기', desc: '그림과 알맞은 단어를 선으로 이어 보세요.' },
 }
+
+// 화면에서만 A4 용지를 화면 폭에 맞게 줄여 보여 준다 (인쇄는 원래 크기)
+const A4_PX = 794 // 210mm
+const fitScale = () => Math.min(1, (window.innerWidth - 32) / A4_PX)
 
 const shuffle = (items) => {
   const arr = [...items]
@@ -31,6 +35,13 @@ function Worksheet() {
   const [showKo, setShowKo] = useState(params.get('ko') !== '0')
   const [withAnswers, setWithAnswers] = useState(params.get('answers') === '1')
   const [seed, setSeed] = useState(0)
+  const [scale, setScale] = useState(fitScale)
+
+  useEffect(() => {
+    const update = () => setScale(fitScale())
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
 
   // 짝짓기: 오른쪽 단어 순서를 섞는다 (다시 섞기 가능)
   const matchOrder = useMemo(() => (round ? shuffle(round.words) : []), [round, seed])
@@ -125,7 +136,7 @@ function Worksheet() {
   )
 
   return (
-    <div className="ws-page">
+    <div className="ws-page" style={{ '--ws-scale': scale }}>
       <div className="ws-toolbar">
         <div className="ws-types">
           {Object.entries(TYPES).map(([key, t]) => (

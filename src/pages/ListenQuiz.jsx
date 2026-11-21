@@ -105,8 +105,8 @@ function QuizSession({ round }) {
             <div className="challenge-index">문제 {index + 1} / {questions.length}</div>
             <progress className="listen-progress" value={index} max={questions.length} aria-label="퀴즈 진행" />
             <h2 className="listen-prompt">잘 듣고 알맞은 그림을 골라요!</h2>
-            <div className="challenge-controls listen-audio-controls">
-              <button className="nav-btn-premium" onClick={() => speakWord(question.word.en)}>🔊 다시 듣기</button>
+            <div className="action-row listen-replay-row">
+              <button className="action-btn" onClick={() => speakWord(question.word.en)}>🔊 다시 듣기</button>
             </div>
             <div className="listen-options" role="group" aria-label="그림 보기 4개" key={index}>
               {question.options.map((option, optionIndex) => {
@@ -120,9 +120,11 @@ function QuizSession({ round }) {
                     aria-label={`${optionIndex + 1}번 그림${isAnswer ? ', 정답' : isWrong ? ', 선택한 오답' : ''}`}
                     onClick={() => choose(option)}
                   >
-                    <span className="listen-option-number">{optionIndex + 1}</span>
                     <img src={getImageUrl(option.img)} alt={`${optionIndex + 1}번 그림`} />
-                    <span className="listen-option-status">{isAnswer ? '✓ 정답' : isWrong ? '다시 연습해요' : '\u00a0'}</span>
+                    <span className="listen-option-foot">
+                      <span className="listen-option-number">{optionIndex + 1}</span>
+                      <span className="listen-option-status">{isAnswer ? '✓ 정답' : isWrong ? '다시 연습해요' : ''}</span>
+                    </span>
                   </button>
                 )
               })}
@@ -135,9 +137,13 @@ function QuizSession({ round }) {
                 </div>
               )}
             </div>
-            <div className="challenge-controls">
-              {selected && <button ref={nextButton} className="nav-btn-premium" onClick={nextQuestion}>{index === questions.length - 1 ? '결과 보기' : '다음 문제 →'}</button>}
-              <button className="nav-btn-premium" onClick={() => navigate('/')}>목록으로</button>
+            {selected && (
+              <div className="action-row listen-next-row">
+                <button ref={nextButton} className="action-btn" onClick={nextQuestion}>{index === questions.length - 1 ? '결과 보기' : '다음 문제 →'}</button>
+              </div>
+            )}
+            <div className="util-row">
+              <button className="util-btn" onClick={() => navigate('/')}>☰ 목록으로</button>
             </div>
           </>
         )}

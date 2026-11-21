@@ -277,7 +277,7 @@ header {
     color: var(--text-primary);
 }
 
-img {
+.item img {
     border-radius: 24px;
     width: 80px;
     height: 80px;
@@ -295,7 +295,7 @@ img {
     box-shadow: 0 10px 25px -5px var(--accent-glow);
 }
 
-img:active {
+.item img:active {
     transform: scale(0.95);
 }
 
@@ -1528,3 +1528,91 @@ img:active {
 .listen-option img {
   border: none; box-shadow: none; background: none; border-radius: 12px; transform: none;
 }
+
+/* ── 수업 모드: 휴대폰에서도 버튼이 한 줄로, 설정은 접어 두기 ── */
+.class-settings { display: contents; }
+.class-settings-toggle { display: none; }
+.class-nav button { white-space: nowrap; min-height: 48px; }
+.class-image img { height: 100%; width: auto; }
+@media (max-width: 700px) {
+  .class-mode { padding: calc(10px + env(safe-area-inset-top)) 12px calc(10px + env(safe-area-inset-bottom)); }
+  .class-toolbar { gap: 8px; }
+  .class-toolbar .class-title { font-size: 1rem; flex-basis: 100%; margin-right: 0; }
+  .class-toolbar > button { min-height: 40px; }
+  .class-settings-toggle { display: inline-block; }
+  .class-btn-label { display: none; }
+  .class-settings { display: none; }
+  .class-settings.open {
+    display: flex; flex-wrap: wrap; gap: 8px 14px; width: 100%; order: 1;
+    padding: 10px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface);
+  }
+  .class-settings select { min-height: 36px; }
+  .class-nav { gap: 6px; }
+  .class-nav button { flex: 1 1 0; min-width: 0; padding: 10px 4px; font-size: 1rem; }
+  .class-keys { display: none; }
+  .class-image { height: 36vh; }
+  .class-image img { max-width: 88vw; }
+}
+
+/* ── 학습지: 휴대폰 화면에서는 용지를 폭에 맞게 축소해서 미리보기 ── */
+@media screen {
+  .ws-sheet { zoom: var(--ws-scale, 1); }
+}
+@media screen and (max-width: 840px) {
+  .ws-page { padding: 16px; gap: 16px; }
+}
+
+/* ── 쓰기 연습: 단어 카드와 같은 모양 ── */
+.scramble-card { padding: 22px 14px; gap: 10px; }
+.scramble-game .scramble-card .word-ko { font-size: 1.6rem; margin-bottom: 4px; }
+.scramble-card .scrambled-hint { margin: 4px 0 0; gap: 6px; }
+.scramble-card .letter-card { padding: 8px 12px; min-width: 20px; }
+.scramble-card .scramble-input {
+  width: 100%; box-sizing: border-box; margin-top: 4px; padding: 12px;
+  font-size: 1.3rem; letter-spacing: 0.04em; min-height: 52px;
+}
+.scramble-card .scramble-input::placeholder { font-size: 0.95rem; font-weight: 600; letter-spacing: 0; }
+.scramble-card .challenge-image { width: 200px; height: 200px; }
+.card-nav:disabled { opacity: 0.3; cursor: default; }
+.action-btn:disabled, .util-btn:disabled { opacity: 0.45; cursor: default; }
+.action-btn.hint-action { color: #fbbf24; border-color: rgba(251, 191, 36, 0.4); background: rgba(251, 191, 36, 0.1); }
+
+/* ── 듣기 퀴즈: 그림이 카드를 채우고, 다시 듣기를 가장 크게 ── */
+.listen-quiz .listen-prompt { margin-top: 12px; }
+.listen-replay-row, .listen-next-row { margin: 12px auto; max-width: 320px; }
+.listen-replay-row .action-btn { font-size: 1.1rem; min-height: 56px; }
+.listen-options { max-width: 440px; margin: 0 auto; gap: 10px; }
+.listen-option { padding: 6px; border-radius: 18px; gap: 2px; }
+.listen-option img {
+  width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 12px;
+}
+.listen-option-foot { display: flex; align-items: center; gap: 8px; width: 100%; padding: 4px 2px 0; box-sizing: border-box; }
+.listen-option-foot .listen-option-number { align-self: center; flex: none; }
+.listen-option-foot .listen-option-status { margin: 0; min-height: 0; font-size: 0.85rem; }
+.listen-feedback { min-height: 0; }
+
+/* ── 상태 칩: 360px 폭에서도 한 줄 ── */
+@media (max-width: 400px) {
+  .study-status { gap: 4px; }
+  .study-chip { padding: 5px 8px; gap: 4px; font-size: 0.76rem; }
+  .study-goal-bar { width: 28px; }
+}
+
+/* ── 빈 화면 (복습·단어장): 할 일을 알려 주는 큰 버튼 하나 ── */
+.empty-state {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  width: 100%; max-width: 360px; margin: 24px auto 0; padding: 28px 20px; box-sizing: border-box;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 24px;
+}
+.empty-state-icon { font-size: 2.4rem; line-height: 1; }
+.empty-state-title { margin-top: 12px; font-size: 1.15rem; font-weight: 800; color: var(--text-primary); }
+.empty-state p { margin: 8px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--text-secondary); word-break: keep-all; }
+.empty-state .action-row { margin-top: 20px; }
+
+/* ── 리뷰 반영: 터치 크기·줄바꿈·칩 간격 ── */
+.scramble-card .letter-card { min-width: 44px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; }
+@media (max-width: 700px) { .class-toolbar > button { min-height: 44px; min-width: 44px; } }
+.study-chip { gap: 0; }
+.study-chip b { margin: 0 3px; }
+.study-goal-bar { margin-left: 6px; }
+.review-desc, .class-desc, .empty-state p, .mic-hint, .dash-empty { word-break: keep-all; }

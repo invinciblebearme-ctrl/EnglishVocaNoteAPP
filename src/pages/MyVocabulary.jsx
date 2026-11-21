@@ -146,64 +146,30 @@ function MyVocabulary() {
       }}>
         <h1 className="home-title">나만의 <span className="title-gradient-accent">단어장</span></h1>
 
+        {vocaList.length > 0 && (
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginTop: '30px', marginBottom: '30px' }}>
-          <p style={{ color: '#8b98a5', margin: 0 }}>저장된 단어: {vocaList.length}개</p>
-          {vocaList.length > 0 && (
-            <button
-              className="dark-button"
-              onClick={exportToPDF}
-              disabled={isExporting}
-              style={{ padding: '5px 10px', fontSize: '0.65rem', background: '#38bdf8', color: '#1a1a2e', fontWeight: 'bold' }}
-            >
-              {isExporting ? '생성 중...' : '📥 PDF 저장'}
-            </button>
-          )}
-        </div>
+            <p style={{ color: '#8b98a5', margin: 0 }}>저장된 단어: {vocaList.length}개</p>
+            {vocaList.length > 0 && (
+              <button
+                className="dark-button"
+                onClick={exportToPDF}
+                disabled={isExporting}
+                style={{ padding: '5px 10px', fontSize: '0.65rem', background: '#38bdf8', color: '#1a1a2e', fontWeight: 'bold' }}
+              >
+                {isExporting ? '생성 중...' : '📥 PDF 저장'}
+              </button>
+            )}
+          </div>
+        )}
 
         {vocaList.length === 0 ? (
-          <div className="challenge-card" style={{ 
-            padding: '30px 20px', 
-            background: '#1a1f2e', 
-            borderRadius: '25px',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
-            boxShadow: '0 15px 30px rgba(0,0,0,0.4)',
-            maxWidth: '280px',
-            marginTop: '15px',
-            width: '85%'
-          }}>
-            <div style={{ 
-              fontSize: '1.2rem', 
-              fontWeight: 'bold', 
-              color: '#facc15', 
-              textShadow: '0 0 10px rgba(250, 204, 21, 0.4)',
-              marginBottom: '15px'
-            }}>
-              저장된 단어가 없습니다.
+          <div className="empty-state">
+            <div className="empty-state-icon">⭐</div>
+            <div className="empty-state-title">아직 저장한 단어가 없어요</div>
+            <p>듣기/읽기나 쓰기 연습에서 ☆ 버튼을 누르면 여기에 모여요.</p>
+            <div className="action-row">
+              <button className="action-btn" onClick={() => navigate('/')}>📚 학습하러 가기</button>
             </div>
-            <p style={{ 
-              color: '#94a3b8', 
-              fontSize: '0.85rem', 
-              lineHeight: '1.4',
-              marginBottom: '25px'
-            }}>
-              학습 중에 ⭐ 버튼을 눌러<br/>단어를 추가해 보세요!
-            </p>
-            <button 
-              className="dark-button" 
-              style={{ 
-                padding: '8px 20px', 
-                fontSize: '0.9rem',
-                fontWeight: 'bold',
-                borderRadius: '10px',
-                background: '#2d334a',
-                border: '1px solid rgba(255,255,255,0.1)',
-                color: 'white',
-                cursor: 'pointer'
-              }} 
-              onClick={() => navigate('/')}
-            >
-              학습하러 가기
-            </button>
           </div>
         ) : (
           <>

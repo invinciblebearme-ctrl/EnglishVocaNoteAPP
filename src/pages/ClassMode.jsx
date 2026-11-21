@@ -38,6 +38,7 @@ function ClassMode() {
   const [seed, setSeed] = useState(0) // 무작위 순서 다시 섞기용
   const [index, setIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
+  const [showSettings, setShowSettings] = useState(false) // 좁은 화면에서 설정 펼치기
   const rootRef = useRef(null)
 
   const words = useMemo(() => {
@@ -122,6 +123,14 @@ function ClassMode() {
     <div className="class-mode" ref={rootRef}>
       <div className="class-toolbar">
         <span className="class-title">{roundLabel(round)} · {index + 1} / {words.length}</span>
+        <button
+          className="class-settings-toggle"
+          onClick={() => setShowSettings((v) => !v)}
+          aria-expanded={showSettings}
+        >
+          ⚙ 설정
+        </button>
+        <div className={`class-settings ${showSettings ? 'open' : ''}`}>
         <label>
           순서
           <select value={settings.order} onChange={(e) => updateSettings({ order: e.target.value })}>
@@ -157,7 +166,8 @@ function ClassMode() {
           />
           자동 발음
         </label>
-        <button onClick={toggleFullscreen}>⛶ 전체 화면</button>
+        </div>
+        <button onClick={toggleFullscreen} aria-label="전체 화면">⛶<span className="class-btn-label"> 전체 화면</span></button>
         <button onClick={() => navigate(`/challenge/${id}`)}>✕ 나가기</button>
       </div>
 

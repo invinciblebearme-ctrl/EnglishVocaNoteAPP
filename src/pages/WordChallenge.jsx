@@ -8,6 +8,7 @@ import { recordResult } from '../utils/progress'
 import ExampleSentence from '../components/ExampleSentence'
 import { getImageUrl } from '../utils/image'
 import { roundLabel } from '../utils/round'
+import { swipeHandlers } from '../utils/swipe'
 
 function WordChallenge() {
   const { id } = useParams()
@@ -155,16 +156,7 @@ function WordChallenge() {
     recognition.start();
   };
 
-  // 카드를 좌우로 밀어서 이전·다음 단어
-  const onTouchStart = (e) => { touchX.current = e.touches[0].clientX }
-  const onTouchEnd = (e) => {
-    if (touchX.current === null) return
-    const dx = e.changedTouches[0].clientX - touchX.current
-    touchX.current = null
-    if (Math.abs(dx) < 50) return
-    if (dx < 0) nextWord()
-    else prevWord()
-  }
+  const swipe = swipeHandlers(touchX, { onLeft: nextWord, onRight: prevWord })
 
   return (
     <div className="challenge-body">
@@ -172,7 +164,7 @@ function WordChallenge() {
         <h1>{roundLabel(roundData)}</h1>
         <div className="challenge-index">단어 {index + 1} / {roundData.words.length}</div>
 
-        <div className="card-stage" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
+        <div className="card-stage" {...swipe}>
           <button className="card-nav" onClick={prevWord} aria-label="이전 단어">‹</button>
           <div className="card-main">
             <div
@@ -236,7 +228,7 @@ function WordChallenge() {
             {isListening ? "🎤 듣는 중..." : "🎤 발음하기"}
           </button>
         </div>
-        <div className="mic-hint">발음하기는 크롬 브라우저에서 가장 잘 돼요</div>
+        <div className="mic-hint">발음하기가 잘 안 되면 크롬(Chrome)에서 열어 보세요</div>
 
         {/* 이 회차의 다른 활동 */}
         <div className="action-row">
