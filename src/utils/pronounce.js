@@ -29,12 +29,6 @@ function abortable(promise, signal) {
   })
 }
 
-async function recordingDelay(signal) {
-  let timer
-  try { await abortable(new Promise(resolve => { timer = setTimeout(resolve, 3500) }), signal) }
-  finally { clearTimeout(timer) }
-}
-
 function webSpeech(Recognition, lang, onState, signal) {
   return new Promise((resolve, reject) => {
     throwIfAborted(signal)
@@ -52,6 +46,13 @@ function webSpeech(Recognition, lang, onState, signal) {
       if (error) reject(error)
       else resolve(text)
     }
+    let stoppedByUser = false
+    const stop = () => {
+      if (settled) return
+      stoppedByUser = true
+      onState?.('processing')
+      try { recognition.stop() } catch { /* Already stopped. */ }
+    }
     recognition.lang = lang
     recognition.continuous = false
     recognition.interimResults = false
@@ -59,7 +60,7 @@ function webSpeech(Recognition, lang, onState, signal) {
     recognition.onstart = () => {
       clearTimeout(timer)
       timer = setTimeout(() => finish(speechError('timeout')), 8000)
-      onState?.('listening', 8000)
+      onState?.('listening', 8000, stop)
     }
     recognition.onspeechend = () => onState?.('processing')
     recognition.onresult = event => {
@@ -68,6 +69,8 @@ function webSpeech(Recognition, lang, onState, signal) {
       else finish(speechError('no-speech'))
     }
     recognition.onerror = event => finish(speechError(event.error))
+    // 사용자가 ⏹로 끝냈으면 무음, 결과·오류 없이 스스로 끝나면 실패로 보고 서버 방식으로 넘어감.
+    recognition.onend = () => finish(speechError(stoppedByUser ? 'no-speech' : 'timeout'))
     // Also cover implementations that end without a result or error.
     timer = setTimeout(() => finish(speechError('timeout')), 8000)
     signal?.addEventListener('abort', abort, { once: true })
@@ -104,19 +107,22 @@ export function encodeWav(samples) {
   return buffer
 }
 
-async function recordWav(onState, signal) {
+async function recordWav(onState, onLevel, signal) {
   throwIfAborted(signal)
   const AudioContext = window.AudioContext || window.webkitAudioContext
   const OfflineAudioContext = window.OfflineAudioContext || window.webkitOfflineAudioContext
   if (!navigator.mediaDevices?.getUserMedia || !AudioContext || !OfflineAudioContext) {
     throw speechError('audio-capture')
   }
-  let context, stream, source, processor, mute
+  let context, stream, source, processor, mute, timer
+  let sampleRate = SAMPLE_RATE
   const chunks = []
   let length = 0
+  let lastLevelAt = 0
   try {
     // Create/resume synchronously in the button gesture, including on iOS.
     context = new AudioContext()
+    sampleRate = context.sampleRate
     const ready = context.resume()
     ready.catch(() => {})
     const permission = navigator.mediaDevices.getUserMedia({ audio: {
@@ -137,17 +143,35 @@ async function recordWav(onState, signal) {
     mute = context.createGain()
     mute.gain.value = 0
     processor.onaudioprocess = event => {
-      const remaining = Math.floor(context.sampleRate * 3.5) - length
+      const remaining = Math.floor(sampleRate * 3.5) - length
       if (remaining <= 0) return
       const samples = new Float32Array(event.inputBuffer.getChannelData(0).subarray(0, remaining))
       chunks.push(samples)
       length += samples.length
+      if (onLevel && samples.length > 0) {
+        const now = performance.now()
+        if (now - lastLevelAt >= 60) {
+          lastLevelAt = now
+          let sum = 0
+          for (let i = 0; i < samples.length; i++) sum += samples[i] * samples[i]
+          const rms = Math.sqrt(sum / samples.length)
+          onLevel(Math.min(1, rms * 4))
+        }
+      }
     }
     source.connect(processor)
     processor.connect(mute)
     mute.connect(context.destination)
-    onState?.('listening', 3500)
-    await recordingDelay(signal)
+    let finishRecording
+    const donePromise = new Promise(resolve => {
+      finishRecording = () => {
+        clearTimeout(timer)
+        resolve()
+      }
+      timer = setTimeout(finishRecording, 3500)
+    })
+    onState?.('listening', 3500, finishRecording)
+    await abortable(donePromise, signal)
   } catch (error) {
     if (signal?.aborted || error.code === 'aborted') throw speechError('aborted')
     if (error.name === 'NotAllowedError' || error.name === 'PermissionDeniedError' || error.name === 'SecurityError') {
@@ -155,6 +179,7 @@ async function recordWav(onState, signal) {
     }
     throw speechError('audio-capture')
   } finally {
+    clearTimeout(timer)
     stream?.getTracks().forEach(track => track.stop())
     if (processor) processor.onaudioprocess = null
     source?.disconnect()
@@ -164,12 +189,12 @@ async function recordWav(onState, signal) {
   }
   throwIfAborted(signal)
   onState?.('processing')
-  if (!length) throw speechError('no-speech')
+  if (!length || length < sampleRate * 0.3) throw speechError('no-speech')
   const pcm = new Float32Array(length)
   let offset = 0
   for (const chunk of chunks) { pcm.set(chunk, offset); offset += chunk.length }
-  const offline = new OfflineAudioContext(1, Math.ceil(length * SAMPLE_RATE / context.sampleRate), SAMPLE_RATE)
-  const input = offline.createBuffer(1, length, context.sampleRate)
+  const offline = new OfflineAudioContext(1, Math.ceil(length * SAMPLE_RATE / sampleRate), SAMPLE_RATE)
+  const input = offline.createBuffer(1, length, sampleRate)
   input.copyToChannel(pcm, 0)
   const playback = offline.createBufferSource()
   playback.buffer = input
@@ -186,8 +211,8 @@ async function recordWav(onState, signal) {
   }
 }
 
-async function serverSpeech(onState, signal) {
-  const wav = await recordWav(onState, signal)
+async function serverSpeech(onState, onLevel, signal) {
+  const wav = await recordWav(onState, onLevel, signal)
   throwIfAborted(signal)
   const controller = new AbortController()
   const abort = () => controller.abort()
@@ -216,7 +241,7 @@ async function serverSpeech(onState, signal) {
   }
 }
 
-export async function recognizeSpeech({ lang = 'en-US', onState, signal } = {}) {
+export async function recognizeSpeech({ lang = 'en-US', onState, onLevel, signal } = {}) {
   throwIfAborted(signal)
   onState?.('preparing')
   const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition
@@ -235,5 +260,5 @@ export async function recognizeSpeech({ lang = 'en-US', onState, signal } = {}) 
     }
   }
   rememberServer()
-  return serverSpeech(onState, signal)
+  return serverSpeech(onState, onLevel, signal)
 }

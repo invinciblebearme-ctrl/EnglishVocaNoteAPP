@@ -67,7 +67,8 @@ async function withinUsageLimit(request, db) {
       WHERE (bucket LIKE 'ip:%' AND substr(bucket, 21, 10) < ?)
          OR (bucket LIKE 'day:%' AND substr(bucket, 5, 10) < ?)`).bind(cutoff, cutoff).run()
   }
-  return results[0].results[0].count <= 40 && results[1].results[0].count <= 3000
+  // A classroom shares one public IP: allow 150 requests/minute per IP, 3000/day overall.
+  return results[0].results[0].count <= 150 && results[1].results[0].count <= 3000
 }
 
 export async function onRequestPost({ request, env }) {

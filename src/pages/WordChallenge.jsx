@@ -26,14 +26,20 @@ function WordChallenge() {
   activeWord.current = wordKey
   const [isListening, setIsListening] = useState(false)
   const [listeningDuration, setListeningDuration] = useState(3500)
+  const [micLevel, setMicLevel] = useState(null)
+  const stopListeningRef = useRef(null)
+  const speakMissCount = useRef(0)
 
   const cancelSTT = () => {
     sttSession.current += 1
+    stopListeningRef.current = null
     sttController.current?.abort()
     sttController.current = null
   }
   useEffect(() => {
     setIsListening(false)
+    setMicLevel(null)
+    speakMissCount.current = 0
     return () => cancelSTT()
   }, [index, id])
   useEffect(() => {
@@ -126,15 +132,21 @@ function WordChallenge() {
     window.speechSynthesis?.cancel();
     setShowingEnglish(true);
     setPronunciationScore(null);
+    setMicLevel(null);
+    stopListeningRef.current = null;
     setIsListening('preparing');
     try {
       const transcript = (await recognizeSpeech({
         lang: 'en-US',
         signal: controller.signal,
-        onState: (state, duration) => {
+        onState: (state, duration, stop) => {
           if (!isCurrent()) return;
           if (duration) setListeningDuration(duration);
+          stopListeningRef.current = state === 'listening' ? (stop || null) : null;
           setIsListening(state);
+        },
+        onLevel: (level) => {
+          if (isCurrent()) setMicLevel(level);
         },
       })).toLowerCase().trim();
       if (!isCurrent()) return;
@@ -146,9 +158,19 @@ function WordChallenge() {
         level = 2;
       }
 
-      // 애매한 'Good'은 기록하지 않음.
-      if (level !== 2) recordResult(currentWord, level === 3, { roundId: roundData.id, source: 'speak' });
-      setPronunciationScore({ transcript, level });
+      let firstMiss = false;
+      if (level === 3) {
+        recordResult(currentWord, true, { roundId: roundData.id, source: 'speak' });
+      } else if (level === 1) {
+        if (speakMissCount.current === 0) {
+          firstMiss = true;
+        } else {
+          // 같은 단어에서 두 번째 level 1부터 틀림 기록 (애매한 level 2는 미기록)
+          recordResult(currentWord, false, { roundId: roundData.id, source: 'speak' });
+        }
+        speakMissCount.current += 1;
+      }
+      setPronunciationScore({ transcript, level, firstMiss });
     } catch (error) {
       if (error.code === 'aborted' || !isCurrent()) return;
       const messages = {
@@ -160,7 +182,9 @@ function WordChallenge() {
       setPronunciationScore({ error: messages[error.code] || '잘 안 들렸어요. 조금 더 크게 말해 볼까요?' });
     } finally {
       if (isCurrent()) {
+        stopListeningRef.current = null;
         sttController.current = null;
+        setMicLevel(null);
         setIsListening(false);
       }
     }
@@ -224,6 +248,9 @@ function WordChallenge() {
             {pronunciationScore.level === 3 && "완벽해요! ⭐⭐⭐"}
             {pronunciationScore.level === 2 && "좋아요! 조금 더 또박또박 ⭐⭐"}
             {pronunciationScore.level === 1 && "한 번 더 해 볼까요? ⭐"}
+            {pronunciationScore.firstMiss && (
+              <div className="transcript-hint">주변이 시끄러우면 마이크에 가까이 대고 말해요</div>
+            )}
             {!pronunciationScore.error && <div className="transcript-hint">이렇게 들렸어요: "{pronunciationScore.transcript}"</div>}
           </div>
         )}
@@ -233,16 +260,23 @@ function WordChallenge() {
           <button onClick={handleManualSpeak} className="action-btn" disabled={!!isListening}>🔊 발음 듣기</button>
           <button
             className={`action-btn mic-button ${isListening === 'listening' ? 'listening' : ''}`}
-            onClick={startSTT}
-            disabled={!!isListening}
+            onClick={isListening === 'listening' ? () => stopListeningRef.current?.() : startSTT}
+            disabled={!!isListening && isListening !== 'listening'}
           >
-            {isListening === 'processing' ? "⏳ 확인 중..." : isListening === 'listening' ? "🔴 지금 말해요!" : isListening === 'preparing' ? "🎤 준비 중..." : "🎤 발음하기"}
+            {isListening === 'processing' ? "⏳ 확인 중..." : isListening === 'listening' ? "⏹ 다 말했어요" : isListening === 'preparing' ? "🎤 준비 중..." : "🎤 발음하기"}
           </button>
         </div>
         {isListening === 'listening' && (
-          <div className="mic-progress" role="progressbar" aria-label="녹음 남은 시간" style={{ '--recording-duration': `${listeningDuration}ms` }}>
-            <span />
-          </div>
+          <>
+            <div className="mic-progress" role="progressbar" aria-label="녹음 남은 시간" style={{ '--recording-duration': `${listeningDuration}ms` }}>
+              <span />
+            </div>
+            {micLevel !== null && (
+              <div className="mic-level" aria-hidden="true">
+                <span style={{ transform: `scaleX(${Math.max(0.04, micLevel)})` }} />
+              </div>
+            )}
+          </>
         )}
         <div className="mic-hint" role="status">
           {isListening === 'listening' ? '지금 말해요!' : isListening === 'processing' ? '잘 들었는지 확인하고 있어요' : isListening === 'preparing' ? '마이크를 준비하고 있어요' : '🎤를 누르고 영어 단어를 크게 읽어요'}

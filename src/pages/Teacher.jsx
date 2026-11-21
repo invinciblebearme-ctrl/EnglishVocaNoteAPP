@@ -97,7 +97,7 @@ function Bar({ value }) {
   )
 }
 
-function Dashboard({ data, onRefresh, onLogout, onDelete, busy }) {
+function Dashboard({ data, onRefresh, onLogout, onDelete, onDeleteStudent, busy }) {
   const [openStudent, setOpenStudent] = useState(null)
   const active = data.students.filter((s) => s.total > 0)
   const weekTotal = data.students.reduce((sum, s) => sum + s.week, 0)
@@ -139,7 +139,7 @@ function Dashboard({ data, onRefresh, onLogout, onDelete, busy }) {
             </thead>
             <tbody>
               {data.students.map((s) => (
-                <React.Fragment key={s.number}>
+                <React.Fragment key={s.id}>
                   <tr className="dash-row" onClick={() => setOpenStudent(openStudent === s.number ? null : s.number)}>
                     <td>{s.number}</td>
                     <td>{s.nickname}</td>
@@ -156,6 +156,9 @@ function Dashboard({ data, onRefresh, onLogout, onDelete, busy }) {
                           : <>약한 단어: {s.weakWords.map((w) => (
                               <span key={w.en} className="review-chip">{w.en} <small>{wordKo(w.en)} · {w.wrong}회</small></span>
                             ))}</>}
+                        <div className="util-row">
+                          <button className="util-btn danger" disabled={busy} onClick={() => onDeleteStudent(s)}>이 학생 삭제</button>
+                        </div>
                       </td>
                     </tr>
                   )}
@@ -262,12 +265,25 @@ function Teacher() {
     }
   }
 
+  const removeStudent = async (student) => {
+    if (busy || !window.confirm(`${student.number}번 ${student.nickname} 학생과 모든 기록을 지웁니다. 되돌릴 수 없어요.`)) return
+    setBusy(true)
+    try {
+      await api('students/delete', { ...session, studentId: student.id })
+      await load()
+    } catch (err) {
+      alert(err.message)
+    } finally {
+      setBusy(false)
+    }
+  }
+
   return (
     <div className="container teacher-page">
       <h1 className="home-title">👩‍🏫 학급 현황판</h1>
 
       {data ? (
-        <Dashboard data={data} busy={busy} onRefresh={() => load()} onLogout={logout} onDelete={remove} />
+        <Dashboard data={data} busy={busy} onRefresh={() => load()} onLogout={logout} onDelete={remove} onDeleteStudent={removeStudent} />
       ) : (
         <div className="challenge-container class-page">
           <div className="ws-types">

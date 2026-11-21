@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CLASS_EVENT, getMembership, joinClass, leaveClass } from '../utils/classSync'
+import { PROGRESS_EVENT } from '../utils/progress'
+
+const DEVICE_HISTORY_KEYS = [
+  'learning_progress_v1',
+  'learning_activity_v1',
+  'my_voca_list_english_note',
+]
 
 // 학생용: 우리 반 참여하기
 function MyClass() {
@@ -9,6 +16,7 @@ function MyClass() {
   const [form, setForm] = useState({ code: '', number: '', nickname: '' })
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
+  const [cleared, setCleared] = useState(false)
 
   useEffect(() => {
     const update = () => setMember(getMembership())
@@ -31,6 +39,17 @@ function MyClass() {
 
   const leave = () => {
     if (window.confirm('이 기기에서 학급 참여를 그만할까요? 지금까지 보낸 기록은 선생님 현황판에 남아요.')) leaveClass()
+  }
+
+  const clearDeviceHistory = () => {
+    if (!window.confirm('이 기기의 학습 진도·복습·단어장·연속 학습일 기록을 모두 지울까요?\n(학급 참여 정보와 설정은 지워지지 않아요.)')) return
+    try {
+      for (const key of DEVICE_HISTORY_KEYS) localStorage.removeItem(key)
+      window.dispatchEvent(new Event(PROGRESS_EVENT))
+      setCleared(true)
+    } catch {
+      setError('학습 기록을 지우지 못했어요.')
+    }
   }
 
   const set = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }))
@@ -82,6 +101,13 @@ function MyClass() {
             </div>
           </form>
         )}
+
+        <div className="class-device-reset">
+          <button type="button" className="util-btn danger" onClick={clearDeviceHistory}>
+            이 기기의 학습 기록 지우기
+          </button>
+          {cleared && <p className="class-reset-done" role="status">이 기기의 학습 기록을 지웠어요.</p>}
+        </div>
       </div>
     </div>
   )

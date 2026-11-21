@@ -2,6 +2,7 @@
 //
 // POST /api/classes          { name, password }              → { code }            학급 만들기
 // POST /api/classes/delete   { code, password }              → { ok }              학급과 모든 기록 삭제
+// POST /api/students/delete  { code, password, studentId }   → { ok }              학생과 모든 기록 삭제
 // POST /api/join             { code, number, nickname }      → { token, className } 학생 참여
 // POST /api/events           { token, events: [...] }        → { saved }           채점 기록 전송
 // POST /api/dashboard        { code, password }              → 현황판 데이터
@@ -82,6 +83,25 @@ async function deleteClass(db, body) {
     db.prepare(`DELETE FROM voca_student_tokens WHERE student_id IN (${ids})`).bind(cls.code),
     db.prepare('DELETE FROM voca_students WHERE class_code = ?').bind(cls.code),
     db.prepare('DELETE FROM voca_classes WHERE code = ?').bind(cls.code),
+  ])
+  return json({ ok: true })
+}
+
+async function deleteStudent(db, body) {
+  const cls = await verifyTeacher(db, body.code, body.password)
+  if (!cls) return fail(401, '학급 코드 또는 비밀번호가 맞지 않아요.')
+  const studentId = body.studentId
+  if (!Number.isSafeInteger(studentId) || studentId < 1) return fail(400, '학생 정보가 올바르지 않아요.')
+  const student = await db
+    .prepare('SELECT id FROM voca_students WHERE id = ? AND class_code = ?')
+    .bind(studentId, cls.code)
+    .first()
+  if (!student) return fail(404, '학생을 찾을 수 없어요.')
+  const ids = 'SELECT id FROM voca_students WHERE id = ? AND class_code = ?'
+  await db.batch([
+    db.prepare(`DELETE FROM voca_events WHERE student_id IN (${ids})`).bind(studentId, cls.code),
+    db.prepare(`DELETE FROM voca_student_tokens WHERE student_id IN (${ids})`).bind(studentId, cls.code),
+    db.prepare('DELETE FROM voca_students WHERE id = ? AND class_code = ?').bind(studentId, cls.code),
   ])
   return json({ ok: true })
 }
@@ -215,6 +235,7 @@ async function dashboard(db, body) {
     students: students.results.map((s) => {
       const st = statBy.get(s.id) || {}
       return {
+        id: s.id,
         number: s.number,
         nickname: s.nickname,
         total: st.total || 0,
@@ -238,6 +259,7 @@ async function dashboard(db, body) {
 const ROUTES = {
   'classes': createClass,
   'classes/delete': deleteClass,
+  'students/delete': deleteStudent,
   'join': join,
   'events': saveEvents,
   'dashboard': dashboard,
