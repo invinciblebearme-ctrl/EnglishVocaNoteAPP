@@ -70,11 +70,8 @@ function ScrambleGame() {
       }
 
       if (!hasRecordedCorrect) {
-        if (hintStep === 0) {
+        if (!hasRecordedWrong) {
           recordResult(currentWord, true, { roundId: roundData.id, source: 'scramble' })
-        } else if (!hasRecordedWrong) {
-          recordResult(currentWord, false, { roundId: roundData.id, source: 'scramble' })
-          setHasRecordedWrong(true)
         }
         setHasRecordedCorrect(true)
       }
